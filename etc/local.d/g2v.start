@@ -1,0 +1,4 @@
+# /etc/conf.d/g2v.start
+[ -x /_config/bin/myinit.sh ] && screen -dm sh -c /_config/bin/myinit.sh
+[ -x /_config/bin/g2v_init.sh ] && screen -dm sh -c /_config/bin/g2v_init.sh
+echo ""

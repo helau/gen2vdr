@@ -1,0 +1,4 @@
+#! /bin/bash
+#
+# reset to defaults: check after 23 mounts or 180 days
+tune2fs -c 23 -i 180 /dev/hda2

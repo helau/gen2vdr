@@ -1,0 +1,12 @@
+#
+# Optimized for mini DiSEqC (aka toneburst):
+#
+#S19.2E  11700 V  9750  t v W15 A W15 t
+#S19.2E  99999 V 10600  t v W15 A W15 T
+#S19.2E  11700 H  9750  t V W15 A W15 t
+#S19.2E  99999 H 10600  t V W15 A W15 T
+#
+#S13.0E  11700 V  9750  t v W15 B W15 t
+#S13.0E  99999 V 10600  t v W15 B W15 T
+#S13.0E  11700 H  9750  t V W15 B W15 t
+#S13.0E  99999 H 10600  t V W15 B W15 T

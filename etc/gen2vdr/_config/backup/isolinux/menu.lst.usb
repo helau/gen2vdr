@@ -1,0 +1,6 @@
+default=0
+timeout=10
+root=(hd0,0)
+title FreeDOS
+     kernel /memdisk
+     initrd /fdbootmp.img

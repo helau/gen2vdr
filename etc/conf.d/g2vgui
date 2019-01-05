@@ -1,0 +1,5 @@
+XINITOPTS=""
+XVT="vt7"
+XSERVEROPTS="-br"
+
+rm -f /tmp/~setres.sh

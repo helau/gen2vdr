@@ -1,0 +1,29 @@
+# System aktualisieren
+emerge --sync
+emerge -auvDN --with-bdeps=y world
+smart-live-rebuild -- -av
+emerge -av --depclean
+
+# vdr plugins updaten
+/_config/bin/build-vdr2.sh
+
+# kernel bauen
+emerge -av gentoo-sources
+# link unter /usr/src anpassen und ins linux Verzeichnis gehen
+# .config aus altem kernel baum in den aktuellen kopieren
+make oldconfig
+make -j5
+bash ../g2v/krnl-upd.sh
+emerge -av @module-rebuild @x11-module-rebuild
+reboot
+
+# for Gen2VDR build nvidia packages
+quickpkg nvidia-drivers --include-config=y
+eix -s nvidia
+sed -i /etc/portage/package.mask/x11 -e "s%>=x11-drivers/nvidia-drivers%<=x11-drivers/nvidia-drivers%"
+emerge --nodeps --buildpkgonly x11-drivers/nvidia-drivers
+sed -i /etc/portage/package.mask/x11 -e "s%<=x11-drivers/nvidia-drivers%>=x11-drivers/nvidia-drivers%"
+
+## if you ever want to switch to multilib do:
+#PORTAGE_BINHOST="http://packages.gentooexperimental.org/packages/amd64-stable/" emerge -G1av gcc glibc
+

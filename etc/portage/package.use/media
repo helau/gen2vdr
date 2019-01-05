@@ -1,0 +1,25 @@
+media-fonts/dejavu -fontforge
+media-gfx/gfxboot animate themes
+media-gfx/splashutils -mng
+media-libs/a52dec djbfft oss
+media-libs/freetype static-libs
+media-libs/harfbuzz icu
+media-libs/jpeg static-libs
+media-libs/libass harfbuzz
+media-libs/libcanberra gtk3
+media-libs/libdvbcsa -mmx
+media-libs/libjpeg-turbo static-libs
+media-libs/libpng static-libs
+media-libs/mesa gbm
+media-libs/sdl-mixer mikmod mod
+media-libs/xine-lib xinenolockdisplay -modplug
+>=media-plugins/alsa-plugins-1.0.29 pulseaudio
+media-plugins/kodi-pvr-addons pvrclient_vnsi
+media-tv/kodi -system-ffmpeg airplay avahi caps cec css goom midi nfs profile pulseaudio pvr rtmp sftp upnp webserver upower
+media-tv/minisatip dvbcsa
+media-tv/oscam irdeto_guessing -dbox2
+media-video/ffmpeg -pic threads speex faac fdk ieee1394 network openssl
+media-video/makemkv -gui
+media-video/mpv libmpv
+media-video/vlc live run-as-root vdpau xv gnutls
+~media-tv/kodi-9999 PYTHON_TARGETS: -* python2_7 PYTHON_SINGLE_TARGET: -* python2_7

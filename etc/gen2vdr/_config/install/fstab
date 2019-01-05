@@ -1,0 +1,6 @@
+/dev/cdrom	/media/dvd	auto	ro,noauto,user 0 0
+#none	/dev/pts	devpts	defaults 0 0
+none	/proc	proc	defaults 0 0
+none	/dev/shm	tmpfs	defaults 0 0
+none	/proc/bus/usb	usbfs	defaults 0 0
+#tmpfs	/tmpfs  tmpfs	size=8m	0 0

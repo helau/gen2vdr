@@ -1,0 +1,20 @@
+
+################################################
+##  Mainboard autodetection information:
+##
+##    - Mainboard vendor:   "Point of View"
+##    - Mainboard type:     "ION-MB330-1"
+##    - Mainboard revision: "Ver.1.0"
+##    - BIOS vendor:        "American Megatrends Inc."
+##    - BIOS version:       "080015"
+##    - BIOS release:       "09/11/2009"
+
+addr_min         = 0x5F
+addr_sec         = 0x60
+addr_day         = 0x63
+addr_hour        = 0x64
+addr_stat        = 0xCD
+addr_chk_h       = 0x30
+addr_chk_l       = 0x31
+
+upper_method = VT82Cxxx

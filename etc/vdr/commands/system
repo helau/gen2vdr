@@ -1,0 +1,12 @@
+CD auswerfen                   : sh /_config/bin/eject.sh
+Kapazitaet in %                : df -h | grep '/mnt/data' | awk '{ print 100 - $5 "% fuer Aufnahmen frei"; }'
+Speicherauslastung             : cat /proc/meminfo
+Update per Disc/USB?           : screen -dm sh -c "/_config/update/g2v_update.sh -media"; echo "Update wird gestartet"
+FSCheck ausloesen?             : touch /forcefsck; rm -f /etc/lastCheck >/dev/null 2>&1; echo "Beim Herunterfahren wird FSCheck ausgefuehrt"
+VDR beenden?                   : screen -dm sh -c "/etc/init.d/vdr stop"; echo "VDR wird beendet"
+VDR neu starten?               : screen -dm sh -c "kill -9 $(pidof vdr)"
+System herunterfahren?         : /_config/bin/vdr-set-shutdown 1; screen -dm sh -c "svdrpsend.pl HITK power"
+System neu starten?            : /sbin/reboot 2>&1
+GPU Temperatur                 : screen -dm sh -c "svdrpsend MESG $(echo 'GPU Kern Temperatur $(nvidia-settings --display :0 -c :0.0 -q GPUCoreTemp -t) C')"
+Display Frequenz               : screen -dm sh -c "svdrpsend MESG Display Frequenz = $(nvidia-settings --display :0 -q RefreshRate |grep Hz |cut -d ":" -f4)"
+Laufwerksbelegung(en)          : /_config/bin/df_media.sh

@@ -1,0 +1,57 @@
+VDR mit Cyberlink-FB von Pollin bedienen
+  Funktion					Cyberlink FB-Taste (Bemerkung)
+  
+  Wechsel G2V Launcher		Home (Taste ganz oben links)
+  Wechsel zu KODI 			LiveTV
+  OSD aufrufen				DVD Menu
+  Auf, Ab, Links, Rechts    Cursor-Tasten
+  Ok                        OK 
+  Zurueck                   Back  
+  Rot, Gruen, Gelb, Blau    rot,grün,gelb,blau              
+  0..9                      0..9               
+  Ausschalten               Power (Taste ganz oben rechts)  
+  Kanal +/-                 Channel+/- 
+  Vorheriger Kanal			Last Ch
+  Lautstaerke +/-           Volume+/-
+  Stumm                     MUTE-Taste    
+  Audio-OSD					Language  
+  EPG-Info akt. Sendung   	Info/EPG
+  Wiedergabe           		Play
+  Pause                		Pause (||)
+  Wiedergabe beenden   		Stop 
+  Record               		Rec (roter Punkt)
+  Vorlauf              		FWD (>>)
+  Ruecklauf            		REV (<<)
+  Spung vor (Next)			>>|
+  Sprung zurrück (Prev)		>>|
+  OSD-Teletext				Teletext
+  Untertitel				Subtitels
+  Setup-OSD-Menu			SAP
+  
+#Noch ungenutzte Tasten
+111= "Clear"-Taste
+106= "Radio"-Taste
+371= "Angel"-Taste
+  
+
+  
+KODI mit Cyberlink-FB bedienen
+  Funktion					Cyberlink FB-Taste (Bemerkung)
+  
+  Wechsel G2V Launcher		Home (Taste ganz oben links)
+  Wechsel zu VDR			Live TV
+  OSD bei Wiedergabe		DVD Menu
+  Auf, Ab, Links, Rechts    Cursor-Tasten
+  Ok                        OK 
+  Zurueck                   backspace ( <- )      
+  0..9                      0..9               
+  KODI Ausschalten          Power   
+  Lautstaerke +/-           Volume+/-
+  Stumm                     Mute                    
+  Wiedergabe           		Play
+  Pause                		Pause
+  Wiedergabe beenden   		Stop
+  Vorlauf              		>>
+  Ruecklauf            		<<
+  Rueckwaerts springen 		<<| oder über Wiedergabe-OSD
+  Vorwaerts springen   		>>| oder über Wiedergabe-OSD

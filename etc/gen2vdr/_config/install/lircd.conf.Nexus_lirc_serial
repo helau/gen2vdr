@@ -1,0 +1,73 @@
+
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.8.6(default) on Thu Jan 28 22:13:05 2010
+#
+# contributed by 
+#
+# brand:                       /etc/lirc/lircd.conf
+# model no. of remote control: 
+# devices being controlled by this remote:
+#
+
+begin remote
+
+#  name Hauppauge Nexus
+  name  Gen2VDR
+  bits           13
+  flags RC5|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  one           832   845
+  zero          832   845
+  plead         857
+  gap          107350
+  toggle_bit_mask 0x800
+
+
+      begin codes
+          up                       0x154D
+          down                     0x1551
+          menu                     0x1559
+          ok                       0x154F
+          exit                     0x1553
+          left                     0x154E
+          right                    0x1550
+          red                      0x1554
+          green                    0x1555
+          yellow                   0x1556
+          blue                     0x1557
+          0                        0x154C
+          1                        0x1543
+          2                        0x1544
+          3                        0x1545
+          4                        0x1546
+          5                        0x1547
+          6                        0x1548
+          7                        0x1549
+          8                        0x154A
+          9                        0x154B
+          info                     0x1552
+          start                    0x155A
+          schedule                 0x1562
+          play                     0x157B
+          pause                    0x157E
+          stop                     0x157C
+          record                   0x157A
+          ffwd                     0x157F
+          frew                     0x157D
+          ch+                      0x1563
+          ch-                      0x1564
+          vol+                     0x1565
+          vol-                     0x1566
+          mute                     0x1558
+          tv                       0x1542
+          power                    0x1541
+      end codes
+
+end remote
+
+

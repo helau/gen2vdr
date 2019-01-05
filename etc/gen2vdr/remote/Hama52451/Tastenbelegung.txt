@@ -1,0 +1,52 @@
+VDR mit Hama-FB bedienen
+  Funktion					Hama FB-Taste (Bemerkung)
+  
+  Wechsel G2V Launcher		@ (Taste ganz oben links)
+  Wechsel zu KODI 			Symbol-Taste unterhalb gelber Taste
+  OSD aufrufen				große grüne Start-Taste
+  Auf, Ab, Links, Rechts    Cursor-Tasten
+  Ok                        OK 
+  Zurueck                   backspace ( <- )  
+  Rot, Gruen, Gelb, Blau    rot,grün,gelb,blau              
+  0..9                      0..9               
+  Ausschalten               Power (Taste ganz oben rechts)  
+  Kanal-Übersicht			Symbol-Taste unterhalb der grünen Tastet 
+  Kanal +/-                 Channel+/- 
+  Lautstaerke +/-           Volume+/-
+  Stumm                     MUTE-Taste    
+  Audio-OSD					Symbol-Taste mit CD-Symbol unterhalb der roten Taste  
+  EPG-Info akt. Sendung   	Taste unterhalb kleiner grüner Taste
+  Wiedergabe           		Symbol-Taste Play
+  Pause                		Richtungstaste unten (da Symbol-Taste gleichen Code wie Play sendet)
+  Wiedergabe beenden   		backspace ( <- ) 
+  Record               		Rec (roter Punkt)
+  Vorlauf              		>>
+  Ruecklauf            		<<
+  Spung vor (Next)			>>|
+  Sprung zurrück (Prev)		|<<
+  
+#Noch ungenutzte Tasten
+A62= "Close"-Taste
+1= "Clear"-Taste=
+  
+
+KODI mit Hama-FB bedienen
+  Funktion					Hama FB-Taste (Bemerkung)
+  
+  Wechsel G2V Launcher		@ (Taste ganz oben links)
+  Wechsel zu VDR			Taste unterhalb gelber Taste
+  OSD bei Wiedergabe		große grüne Start-Taste
+  Auf, Ab, Links, Rechts    Cursor-Tasten
+  Ok                        OK 
+  Zurueck                   backspace ( <- )      
+  0..9                      0..9               
+  KODI Ausschalten          Power (Symbol-Taste ganz oben rechts)     
+  Lautstaerke +/-           VOL-/VOL+
+  Stumm                     MUTE-Taste                   
+  Wiedergabe           		Play Symbol-Taste
+  Pause                		Pause Symbol-Taste (sendet gleichen Code wie Play, was bei KODI aber nichts ausmacht)
+  Wiedergabe beenden   		Stop Symbol-Taste
+  Vorlauf              		>>
+  Ruecklauf            		<<
+  Rueckwaerts springen 		>>|
+  Vorwaerts springen   		|<<

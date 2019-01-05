@@ -1,0 +1,12 @@
+Status "Erledigt"                    : /etc/vdr/plugins/rectags/rectags_setstat.sh Erledigt
+Status "In Arbeit"                   : /etc/vdr/plugins/rectags/rectags_setstat.sh "In Arbeit"
+Status "Neu"                         : /etc/vdr/plugins/rectags/rectags_setstat.sh "Neu"
+Aufnahmeliste aktualisieren          : touch /video/.update
+Index neu generieren                 : /_config/bin/rec_index.sh
+Auf USB Platte kopieren?             : /_config/bin/copy2usb.sh
+Markieren fuer Zusammenfügen         : /_config/bin/rec_merge_mark.sh
+An Markierte Aufnahme anhängen?      : /_config/bin/rec_merge.sh
+Zusammenfügen rückgängig machen?     : /_config/bin/rec_merge_undo.sh
+Aufnahmen umbenennen?                : screen -dm sh -c "/_config/bin/rename_recordings.sh"
+Aufnahme als ungesehen markieren     : /_config/bin/del_resume.sh
+Alle Aufnahmen auf USB verschieben?  : screen -dm sh -c  /_config/bin/move2usb.sh

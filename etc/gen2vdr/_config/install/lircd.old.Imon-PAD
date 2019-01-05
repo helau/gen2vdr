@@ -1,0 +1,93 @@
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.8.0(imon_pad) on Mon Jan 23 20:22:11 2006
+#
+# contributed by M.Brakemeier
+#
+# brand:                       SoundGraph
+# model no. of remote control: iMON-PAD
+# devices being controlled by this remote:
+#
+
+begin remote
+
+#  name     Imon-PAD
+  name  Gen2VDR
+  bits           32
+  eps            30
+  aeps          100
+
+  one             0     0
+  zero            0     0
+  gap          235965
+  min_repeat      1
+  toggle_bit      0
+
+      begin codes
+          exit                     0x288195B7
+          power                    0x289115B7
+          rec                      0x298115B7
+          play                     0x2A8115B7
+          open                     0x29B1d5B7
+          frew                     0x2A8195B7
+          pause                    0x2A9115B7
+          ffwd                     0x2B8115B7
+          prev                     0x2B9115B7
+          stop                     0x2B9715B7
+          next                     0x298195B7
+          esc                      0x2BB715B7
+          eject                    0x299395B7
+          AppLauncher              0x29B715B7
+          MultiMon                 0x2AB195B7
+          TaskSwitcher             0x2A9395B7
+          mute                     0x2B9595B7
+          vol+                     0x28A395B7
+          vol-                     0x28A595B7
+          ch+                      0x289395B7
+          ch-                      0x288795B7
+          timer                    0x2B8395B7
+          1                        0x28B595B7
+          2                        0x2BB195B7
+          3                        0x28B195B7
+          4                        0x2A8595B7
+          5                        0x299595B7
+          6                        0x2AA595B7
+          7                        0x2B9395B7
+          8                        0x2A8515B7
+          9                        0x2AA115B7
+          0                        0x2BA595B7
+          shifttab                 0x28B515B7
+          tab                      0x29A115B7
+          red                      0x2B8515B7 # MyMovie
+          green                    0x299195B7 # MyMusic
+          blue                     0x2BA115B7 # MyPhoto
+          yellow                   0x28A515B7 # MyTV
+          bookmark                 0x288515B7
+          thumbnail                0x2AB715B7
+          aspectratio              0x29A595B7
+          fullscreen               0x2AA395B7
+          purple                   0x29A295B7 # MyDVD
+          menu                     0x2BA385B7
+          caption                  0x298595B7
+          language                 0x2B8595B7
+          MouseKeyboard            0x299115B7
+          SelectSpace              0x2A9315B7
+          MouseMenu                0x28B715B7
+          MouseRightClick          0x688481B7
+          enter                    0x28A195B7
+          MouseLeftClick           0x688301B7
+          WindowsKey               0x2B8195B7
+          Backspace                0x28A115B7
+          Mouse_N                  0x690281B7
+          Mouse_S                  0x688291B7
+          Mouse_W                  0x6A8281B7
+          Mouse_E                  0x688A81B7
+          Mouse_N                  0x01008000
+          Mouse_S                  0x01007F00
+          Mouse_W                  0x01000080
+          Mouse_E                  0x0100007F
+      end codes
+
+end remote 

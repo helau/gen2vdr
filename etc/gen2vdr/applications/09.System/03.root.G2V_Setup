@@ -1,0 +1,2 @@
+#!/bin/bash
+xterm -e /_config/bin/g2v_setup.sh

@@ -1,0 +1,3 @@
+USB-Geräte einbinden          : screen -dm sh -c "/_config/bin/usbmount.sh -mount"
+USB-Geräte deaktivieren       : screen -dm sh -c "/_config/bin/usbmount.sh -unmount"
+Alle Aufnahmen auf USB verschieben?  : screen -dm sh -c  /_config/bin/move2usb.sh

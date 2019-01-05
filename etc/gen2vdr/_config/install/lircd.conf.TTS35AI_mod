@@ -1,0 +1,69 @@
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.8.2(default) on Sun Mar 23 23:54:13 2008
+#
+# contributed by 
+#
+# brand:  Technisat_TTS35AI my_modded JP2
+# 
+# model no. of remote control: 
+# devices being controlled by this remote:
+#
+
+begin remote
+
+  name Gen2VDR
+  bits           13
+  flags RC5|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  one           923   849
+  zero          923   849
+  plead         955
+  gap          113443
+  min_repeat      2
+  toggle_bit_mask 0x800
+
+      begin codes
+          mute                     0x120D
+          power                    0x120C
+          1                        0x1201
+          2                        0x1202
+          3                        0x1203
+          4                        0x1204
+          5                        0x1205
+          6                        0x1206
+          7                        0x1207
+          8                        0x1208
+          9                        0x1209
+          recordings               0x120A
+          0                        0x1200
+          timers                   0x1223
+          red                      0x022B
+          green                    0x022C
+          yellow                   0x022D
+          blue                     0x022E
+          up                       0x0210
+          down                     0x0211
+          left                     0x0215
+          right                    0x0216
+          ok                       0x0217
+          schedule                 0x122F
+          exit                     0x1222
+          info                     0x020F
+          audio                    0x0213
+          menu                     0x0212
+          vol+                     0x1210
+          vol-                     0x1211
+          ch+                      0x1220
+          ch-                      0x1221
+          channels                 0x0200
+          user1                    0x123C
+          user2                    0x1229
+          tv                       0x1238
+      end codes
+
+end remote

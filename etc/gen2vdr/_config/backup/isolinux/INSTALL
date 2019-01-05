@@ -1,0 +1,50 @@
+Gen2VDR V6.0 - 02.01.2019
+
+
+Installationsanleitung
+
+- ISO Image auf DVD brennen oder mittels Unetbootin:
+  http://unetbootin.sourceforge.net/
+  einen USB Stick damit "bootbar" machen.
+
+- von DVD oder USB booten
+  Bei USB Boot muss man Option 1 auswaehlen, der Default klappt nicht.
+
+Ab da geht alles menugesteuert (Interaktiv=empfohlen!) oder vollautomatisch
+Fuer die vollautomatische Installation muss die Platte mind. 30 GB haben.
+
+- Standard Partitionierung ( = AUTO ):
+  sda1: System+Boot   32 GB ext4
+  sda2: Swap           4 GB
+  sda3: Video          REST ext4
+
+- Bei 2 Platten landet Video auf der 2. Platte und Swap je nach Groesse der
+  ersten Platte auf der ersten oder 2. Disk
+
+Man kann bei der manuellen Installation die Partitionen beliebig waehlen.
+Die Installation kann jederzeit mit Ctrl+C abgebrochen werden.
+
+Nach dem Reboot erfolgt die Konfiguration, zuerst automatisch und am Ende
+wird nach der Audiokonfiguration gefragt und man gelangt in das Setup-Menu,
+in welchem man noch Einstellungen vornehmen kann,
+z.B. Bildschirmaufloesung auf 1080p umstellen, BootSplash aktivieren ...
+
+Danach startet das System neu und "sollte" einsatzfaehig sein.
+
+Waehrend der Installation werden die alten Konfigurationsdateien unter
+/mnt/data/g2v-backup gesichert und zumindest teilweise integriert :-)
+Wer das nicht moechte kann dies in der manuellen Installation verhindern.
+
+Moechte man zusaetzliche Dateien bei der Installation austauschen oder hinzufuegen
+so kann man diese auf dem Installationsmedium in das Verzeichnis "g2v_inst" stellen.
+Alles was sich darunter befindet wird in denselben Pfad auf dem System kopiert.
+
+
+Disclaimer
+----------
+
+Wer das Projekt unterstuetzen moechte findet hier Informationen:
+http://htpc-forum.de/index.php?url=about.php
+
+Der Anwender uebernimmt fuer alle Taetigkeiten und Auswirkungen
+die volle Verantwortung !

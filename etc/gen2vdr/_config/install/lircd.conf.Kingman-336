@@ -1,0 +1,82 @@
+# Copyright (C) 1999 Christoph Bartelmus
+#
+# You may only use this file if you make it available to others,
+# i.e. if you send it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.6.5(serial) on Sat Sep 20 22:03:34 2003
+#
+# contributed by
+#
+# brand:                       Code 336 of Kingman 10 in 1
+# model no. of remote control:
+# devices being controlled by this remote:
+#
+
+begin remote
+
+#  name  Kingman-336
+  name  Gen2VDR
+  bits           13
+  flags RC5|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  one           939   852
+  zero          939   852
+  plead         977
+  gap          114606
+  toggle_bit      2
+
+
+      begin codes
+
+          power                    0x000000000000114C
+
+          1                        0x0000000000001141
+          2                        0x0000000000001142
+          3                        0x0000000000001143
+          4                        0x0000000000001144
+          5                        0x0000000000001145
+          6                        0x0000000000001146
+          7                        0x0000000000001147
+          8                        0x0000000000001148
+          9                        0x0000000000001149
+          0                        0x0000000000001140
+          11                       0x000000000000114A
+          12                       0x000000000000117F
+
+          ch                       0x000000000000114B
+          prog                     0x0000000000001168
+          av                       0x0000000000001178
+
+          timer                    0x0000000000001163
+          recordings               0x000000000000114E
+          ch+                      0x0000000000001160
+          ch-                      0x0000000000001161
+
+          up                       0x000000000000116E
+          down                     0x000000000000116C
+          right                    0x0000000000001174
+          left                     0x0000000000001172
+          ok                       0x0000000000001175
+
+          red                      0x000000000000115E
+          green                    0x000000000000117A
+          yellow                   0x000000000000115D
+          blue                     0x000000000000117E
+
+          vol+                     0x0000000000001150
+          vol-                     0x0000000000001151
+          mute                     0x0000000000001161
+
+          rec                      0x0000000000001177
+          play                     0x0000000000001173
+          user1                    0x000000000000116A
+
+          menu                     0x0000000000001169
+          exit                     0x0000000000001176
+
+      end codes
+
+end remote

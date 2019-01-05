@@ -1,0 +1,51 @@
+VDR mit Tastatur bzw. MedionX10 bedienen
+
+  Funktion					MedionX10 FB-Taste (Bemerkung)
+  Wechsel G2V Launcher		SETUP (S-Taste li. oben)
+  Wechsel zw KODI und VDR	TV (ganz links oben)
+  OSD aufrufen				DVD MENU (Taste ganz links unten)
+  Auf, Ab, Links, Rechts    Cursor-Tasten
+  Ok                        OK 
+  Zurueck                   backspace ( <- )  
+  Rot, Gruen, Gelb, Blau    rot,grün,gelb,blau              
+  0..9                      0..9               
+  Ausschalten               Power-Taste    
+  Kanal +/-                 CHAN-/CHAN+ 
+  Lautstaerke +/-           VOL-/VOL+  (gehen leider derzeit nicht)
+  Stumm                     MUTE                   
+  EPG-Info akt. Sendung   	TV PREVIEW
+  Wiedergabe           		>
+  Pause                		PAUSE (II)
+  Wiedergabe beenden   		STOP
+  Record               		Rec (roter Punkt)
+  Vorlauf              		>>
+  Ruecklauf            		<<
+  Rueckwaerts springen 		I<<
+  Vorwaerts springen   		>>I
+  DVD wiedergeben			DVD (dvd plugin - DVD muss eingelegt sein!)
+  Musik abspielen			MUSIC (music plugin aufrufen)
+  Videos abspielen			VCR (mplayer plugin aufrufen)
+  
+  
+	Tastatur-Steuerung des VDR 
+(!! In VDR 2.2.0 - Gen2VDR 5.2 und 5.3 haben die Buchstabentasten keine Funktion mehr !!)
+(!! Für einen Teil der Funkionstasten haben sich ebenfalls die VDR-Funktionen geändert!!)
+(Daher ist eine Anpassung der VDR.conf nötig, in der bisher FB-Tasten auf Keyb-Tasten gemapped wurden)
+  Auf, Ab, Links, Rechts    Cursor-Tasten        	Aufnahmen            r   =>  
+  Menu                      tab                  	Info                 F2  => F11 
+  Ok                        enter                	Befehle              c   => 
+  Zurueck                   backspace ( <- )     	Record               F3  =>
+  Rot                       r => F1					Wiedergabe           F4  =>
+  Grün						g => F2
+  Gelb						y => F3
+  Blau						b => F4
+  0..9                      0..9                  	Pause                F5  =>
+  Ausschalten               x  => F12               Wiedergabe beenden   F6
+  Kanal +/-                 PageUp, PageDown =>    	Vorlauf              F9  => F8
+  Lautstaerke +/-           +, - (Num-Block) =>    	Ruecklauf            F8  => F7
+  Stumm                     m  =>                  	Vorwaerts springen   F10
+  Kanalliste                k  =>                   Rueckwaerts springen F7  => F9
+  Programm                  p  =>                   User1 (=Autoplay)    u   =>
+  Timer                     t  =>                   User2                v   =>
+  Audio Menu                a  =>                   User3                w   =>
+  Einstellungen             F1 => 					Starte laufende Aufnahme    F5

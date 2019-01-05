@@ -1,0 +1,20 @@
+ ------------------------------------------------------------------------------
+                 Gen2VDR V6.0 - erstellt am 02.01.2019
+
+  Mit Hilfe dieser Installations-CD wird ein Gentoo Linux-System mit dem 
+  digitalen  Videorekorder VDR von Klaus Schmidinger installiert.
+  Dazu ist eine CPU ab Pentium4 mit mindestens 512 MB RAM und 8 GB freiem 
+  Festplattenplatz erforderlich.
+  Die Platte wird bei der Erst-Installation komplett neu formattiert, bei
+  jeder Folgeinstallation bleiben die Video-Aufnahmen erhalten.
+
+  Viel Erfolg!
+  HelAu <helmut@helmutauer.de>                           sponsored by Auer-EDV
+
+  Optionen:
+
+  1) Startet die Default-Installation
+     Sollte dies fehlschlagen, dann bitte mit 2-5 testen.
+  2) Kernel 3.9
+  3-5) Installation mit anderen Kernel-Optionen (z.B. bei USB Problemen)
+  9) DOS-Boot.

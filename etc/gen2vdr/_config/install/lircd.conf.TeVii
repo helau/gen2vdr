@@ -1,0 +1,86 @@
+
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.8.6(default) on Tue Mar  9 16:22:10 2010
+#
+# contributed by 
+#
+# brand:                       lircd_TeVii.conf
+# model no. of remote control: 
+# devices being controlled by this remote:
+#
+
+begin remote
+
+  name  Gen2VDR
+  bits           16
+  flags SPACE_ENC|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  header       9040  4431
+  one           618  1626
+  zero          618   503
+  ptrail        615
+  repeat       9041  2186
+  pre_data_bits   16
+  pre_data       0xFF
+  gap          107777
+  min_repeat      1
+  toggle_bit_mask 0x0
+
+      begin codes
+          power                    0x50AF
+          mute                     0x30CF
+          1                        0x8877
+          2                        0x48B7
+          3                        0xC837
+          4                        0x28D7
+          5                        0xA857
+          6                        0x6897
+          7                        0xE817
+          8                        0x18E7
+          9                        0x9867
+          recall                   0x58A7
+          0                        0x08F7
+          fav                      0xD827
+          vol+                     0x906F
+          vol-                     0xF00F
+          mlive                    0xA05F
+          mplay                    0xE01F
+          ch+                      0x10EF
+          ch-                      0x609F
+          up                       0x00FF
+          down                     0x807F
+          left                     0xC03F
+          right                    0x40BF
+          ok                       0xF807
+          menu                     0x38C7
+          exit                     0xB847
+          play                     0x02FD
+          frew                     0x7887
+          ffwd                     0xB24D
+          epg                      0x22DD
+          user1                    0x20DF
+          timers                   0xD02F
+          open                     0x708F
+          info                     0x32CD
+          ab                       0x827D
+          audio                    0xC23D
+          subtitles                0xA25D
+          list                     0x52AD
+          red                      0x629D
+          green                    0xE21D
+          yellow                   0x7A85
+          blue                     0x3AC5
+          f5                       0x4AB5
+          f6                       0x5AA5
+          user7                    0x6A95
+          user8                    0x1AE5
+      end codes
+
+end remote
+
+

@@ -1,0 +1,5 @@
+VDR-Partner suchen             : screen -dm sh -c "/_config/bin/detect_partners.sh"
+VDR-Partner trennen            : /_config/bin/detect_partners.sh -d
+Netzwerkeinstellungen ansehen  : ifconfig
+Uhrzeit vom INET holen         : screen -dm sh -c "chronyd -q 'server pool.ntp.org iburst'"; echo "Uhrzeit wird aktualisiert"
+Anrufliste                     : grep ";RING;" /log/fritz.log | cut -f 1,4,5,8 -d ";" | tac

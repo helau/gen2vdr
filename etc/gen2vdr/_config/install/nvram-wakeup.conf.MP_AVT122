@@ -1,0 +1,12 @@
+##    Settings for MP AVT 1.22
+addr_stat   = 0x53
+shift_stat  = 2
+shift_day   = 3
+addr_day    = 0x53
+addr_hour   = 0x54
+addr_min    = 0x55
+addr_sec    = 0x56
+addr_chk_h  = 0x30   # guessed
+addr_chk_l  = 0x31
+need_reboot = ON_ANY_CHANGE
+

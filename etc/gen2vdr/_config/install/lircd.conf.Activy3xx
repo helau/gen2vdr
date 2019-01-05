@@ -1,0 +1,90 @@
+#
+# this config file was automatically generated
+# using lirc-0.7.0pre7(serial) on Fri Oct  8 01:11:44 2004
+#
+# contributed by : Mike Kennell
+#
+# brand:                       Fujitsu Siemens
+# model no. of remote control: RC1455301
+# devices being controlled by this remote:  Activy 320/350/370 Media Center
+#
+
+begin remote
+
+#  name  Activy3xx
+  name  Gen2VDR
+  bits           8
+  flags RCMM
+#  eps             5
+  eps            10
+#  aeps           75
+  aeps           85
+
+  header        490   225
+  three         225   720
+  two           225   555
+  one           225   390
+  zero          225   225
+  ptrail        225
+  pre_data_bits   24
+  pre_data       0x20B024
+  gap          99817
+  min_repeat      1
+  toggle_bit      17
+
+
+      begin codes
+          stop                     0x31
+          play                     0x2C
+          ch+                      0xF0
+          ch-                      0xEF
+          vol+                     0x10
+          vol-                     0x11
+          mute                     0x0D
+          tv                       0x64
+          exit                     0x0A
+          ?                        0x81
+          power                    0x0C
+          up                       0x58
+          left                     0x5A
+          right                    0x5B
+          ok                       0x5C
+          down                     0x59
+          start                    0x82
+          menu                     0x54
+          red                      0x87
+          green                    0xDA
+          yellow                   0xF3
+          blue                     0x88
+          1                        0x01
+          2                        0x02
+          3                        0x03
+          4                        0x04
+          5                        0x05
+          6                        0x06
+          7                        0x07
+          8                        0x08
+          9                        0x09
+          0                        0x00
+          eject                    0x42
+          record                   0x37
+          next                     0x20
+          prev                     0x21
+          ffwd                     0x2E
+          frew                     0x2F
+          cancel                   0x69
+          enter                    0x6D
+          clear                    0x6B
+          asterisk                 0x66
+          hash                     0x6A
+          dup                      0x60
+          ddown                    0x61
+          dleft                    0x62
+          dright                   0x63
+          scr+                     0xFE
+          scr-                     0xFF
+          keyb                     0x86
+          goto                     0x40
+          option                   0x65
+     end codes
+end remote

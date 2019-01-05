@@ -1,0 +1,3 @@
+Backup erstellen?              : screen -dm sh -c "nice -n 15 /_config/backup/g2v_backup.sh -b"; echo "Backup gestartet"
+Backup brennen?                : screen -dm sh -c "/_config/bin/burn_backup.sh";  echo "Brennen gestartet"
+Backup löschen?                : rm -f /mnt/data/backup/g2v*.iso

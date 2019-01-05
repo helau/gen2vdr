@@ -1,0 +1,13 @@
+media-fonts/teletext-ttf
+media-libs/libbluray **
+media-libs/libdvbcsa
+media-libs/libdvdcss
+media-tv/epgd **
+media-tv/epgd-plugin-tvm **
+media-tv/epgd-plugin-tvsp **
+media-tv/linuxtv-dvb-apps **
+media-tv/minisatip **
+media-tv/oscam **
+media-tv/vdrcm **
+media-video/makemkv
+media-video/noad

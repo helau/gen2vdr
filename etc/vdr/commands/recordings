@@ -1,0 +1,7 @@
+Aufnahmeliste aktualisieren            : touch /video/.update
+Aufnahmen endgültig löschen?           : screen -dm sh -c "/_config/bin/deldel.sh"; echo "Löschen gestartet"
+Gelöschte Aufnahmen wiederherstellen?  : sh /_config/bin/undel.sh; echo "Fertig"
+Schnitt/Noad Dienst starten            : screen -dm sh -c "/_config/bin/g2v_maintain_recordings.sh"; echo "Dienst wird gestartet"
+Aufnahmen umbenennen?                  : screen -dm sh -c "/_config/bin/rename_recordings.sh"
+Alle Aufnahmen auf USB verschieben?    : screen -dm sh -c  /_config/bin/move2usb.sh
+Status des Verschiebens auf USB        : cat /tmp/move2usb.status

@@ -1,0 +1,15 @@
+--- ./drivers/media/rc/imon.c	2018-02-07 09:57:50.686689580 +0100
++++ ./drivers/media/rc/imon.c	2018-02-07 10:01:15.150690861 +0100
+@@ -645,9 +645,9 @@
+ 		}
+ 		mutex_lock(&ictx->lock);
+ 
+-		retval = ictx->tx.status;
+-		if (retval)
+-			pr_err_ratelimited("packet tx failed (%d)\n", retval);
++		//retval = ictx->tx.status;
++		//if (retval)
++		//	pr_err_ratelimited("packet tx failed (%d)\n", retval);
+ 	}
+ 
+ 	kfree(control_req);

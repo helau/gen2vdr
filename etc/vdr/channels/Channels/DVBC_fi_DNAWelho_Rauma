@@ -1,0 +1,189 @@
+:[C/uncategorized] Telenor HDTV scrambled
+SVT1 HD;Telenor:258:M256:C:6875:1109=27:1108=sve;1107=sve:0:B00:79:0:17:0
+:[C/uncategorized] Telenor SDTV FTA
+Music Television Finland;Telenor:162000:C0M128:C:6875:517=2:656=fin:0:0:210:0:9:0
+:[C/uncategorized] Telenor SDTV scrambled
+4 Kino;Telenor:338000:C0M128:C:6875:2781=2:2786=fin:0:B00:60:0:6:0
+Adult (01-06);Telenor:354000:C0M128:C:6875:236=2:0:0:B00:65:0:4:0
+Animal Planet;Telenor:322000:C0M128:C:6875:1000=2:1001=eng:302:B00:43:0:7:0
+Barnkanalen;Telenor:346:M128:C:6875:879=2:878:1004:B00:82:0:5:0
+BBC Entertainment;Telenor:322000:C0M128:C:6875:512=2:640=eng:576:B00:39:0:7:0
+BBC Lifestyle;Telenor:322000:C0M128:C:6875:3000=2:3002=eng:3001:B00:40:0:7:0
+CANAL+ ACTION;Telenor:314:M128:C:6875:3001=2:664=sve,667=fin;668=eng:3002:B00:26:0:8:0
+CANAL+ EMOTION;Telenor:314:M128:C:6875:518=2:687=fin,684=sve;645=eng:581:B00:27:0:8:0
+CANAL+ FIRST;Telenor:314:M128:C:6875:512=2:650=sve,653=fin;654=eng:576:B00:24:0:8:0
+CANAL+ HITS;Telenor:314:M128:C:6875:3004=2:3006=sve,692=fin;679=eng:3005:B00:25:0:8:0
+CANAL+ SERIES;Telenor:314:M128:C:6875:515=2:680=sve,683=fin;641=eng:579:B00:28:0:8:0
+CANAL+ SPORT 2;Telenor:314:M128:C:6875:519=2:672=sve,675=fin:578:B00:31:0:8:0
+CANAL+ URHEILU;Telenor:314:M128:C:6875:523=2:688=fin:577:B00:30:0:8:0
+Cartoon Network;Telenor:338000:C0M128:C:6875:700=2:701=eng,702=sve,703=dan,704=nor:0:B00:54:0:6:0
+CNN International;Telenor:322000:C0M128:C:6875:3004=2:3005=eng:0:B00:36:0:7:0
+Discovery Channel;Telenor:322000:C0M128:C:6875:516=2:656=fin:301:B00:42:0:7:0
+Discovery Science;Telenor:322000:C0M128:C:6875:514=2:648=eng,650=hun,651=cze:578:B00:44:0:7:0
+Discovery World;Telenor:322000:C0M128:C:6875:513=2:644=eng,646=hun,647=cze:577:B00:45:0:7:0
+Eurosport;Telenor:306000:C0M128:C:6875:513=2:644=sve,647=fin:577:B00:211:0:10:0
+Eurosport 2;Telenor:306000:C0M128:C:6875:512=2:640=eng,641=dan,642=cze,643=hun,680=rom:0:B00:64:0:10:0
+National Geographic;Telenor:250000:C0M256:C:6875:400=2:401=sve+nor,402=dan+fin:201:B00:41:0:16:0
+Nickelodeon;Telenor:354000:C0M128:C:6875:512=2:643=fin:576:B00:215:0:4:0
+Showtime;Telenor:338000:C0M128:C:6875:521=2:676=eng:579:B00:35:0:6:0
+Silver;Telenor:338000:C0M128:C:6875:514=2:648=eng:576:B00:62:0:6:0
+Star;Telenor:306000:C0M128:C:6875:520=2:672=eng:581:B00:212:0:10:0
+SVT1;Telenor:346:M128:C:6875:1019=2:1018;1017:3002:B00:80:0:5:0
+TCM Nordic;Telenor:338000:C0M128:C:6875:500=2:501=eng:204:B00:56:0:6:0
+TLC;Telenor:322000:C0M128:C:6875:515=2:652=eng,654=hun,655=cze:0:B00:46:0:7:0
+Travel Channel;Telenor:306000:C0M128:C:6875:516=2:656=eng,657=cze,658=hun:580:B00:213:0:10:0
+TV4;Telenor:346:M128:C:6875:6209+1000=2:6208:6206:B00:84:0:5:0
+VH1;Telenor:322000:C0M128:C:6875:517=2:660=eng:0:B00:61:0:7:0
+VH1 Classic;Telenor:354000:C0M128:C:6875:3071+3002=2:3072:0:1:67:0:4:0
+:[C/uncategorized] Viasat HDTV scrambled
+MTV LIVE HD;Viasat:274:M256:C:6875:3000=27:1012=eng;1013=eng:0:B00:129:0:14:0
+:[C/uncategorized] Viasat SDTV scrambled
+Boomerang;Viasat:274:M256:C:6875:3851=2:3852=fin+eng,3855=nor,3854=dan,3853=sve:0:B00:105:0:14:0
+Disney Channel;Viasat:306000:C0M128:C:6875:3181=2:3182=sve,3183=nor,3184=dan,3185=fin,3186=eng:3187:B00:57:0:10:0
+Nat Geo Wild;Viasat:162:M128:C:6875:5081=2:5082:5087:B00:106:0:9:0
+Nature/Crime/Playboy;Viasat:354:M128:C:6875:2111=2:2112=sve,2115=fin:2117:B00:121:0:4:0
+TV1000;Viasat:370:M128:C:6875:1141=2:1142=sve,1145=fin;1146=eng:1147:B00:111:0:2:0
+TV1000 Action;Viasat:370:M128:C:6875:1151=2:1152=sve,1155=fin;1156=eng:1157:B00:114:0:2:0
+TV1000 Classic;Viasat:370:M128:C:6875:3131=2:3132=sve,3135=fin;3137=eng:3136:B00:116:0:2:0
+TV1000 Drama;Viasat:370:M128:C:6875:1131=2:1134=dan,1133=nor,1135=fin,1132=sve,1136=eng:1137:B00:317:0:2:0
+TV1000 Family;Viasat:370:M128:C:6875:3111=2:3112=sve,3115=fin:3116:B00:113:0:2:0
+TV1000 Nordic;Viasat:370:M128:C:6875:3121=2:3122=sve,3125=fin:3126:B00:115:0:2:0
+TV3;Viasat:346:M128:C:6875:1101=2:1102:1106:B00:83:0:5:0
+Viasat Golf;Viasat:354:M128:C:6875:1861=2:1862=sve,1865=eng:0:B00:119:0:4:0
+Viasat hockey;Viasat:282:M256:C:6875:2141=2:2142=sve:0:B00:125:0:13:0
+Viasat Sport;Viasat:370:M128:C:6875:2101=2:2102=sve,2103=fin:0:B00:117:0:2:0
+:[C/uncategorized] YLE HDTV FTA
+YLE HD;YLE:274:M256:C:6875:512=27:0;641=fin:1011:0:250:0:14:0
+:[C/uncategorized] YLE SDTV FTA
+YLE FST5;YLE:170000:C0M128:C:6875:514=2:670=sve:5001:0:5:0:1:0
+YLE Teema;YLE:170000:C0M128:C:6875:516=2:690=fin:5000:0:9:0:1:0
+YLE TV1;YLE:170000:C0M128:C:6875:512=2:650=fin:5000:0:1:0:1:0
+YLE TV2;YLE:170000:C0M128:C:6875:513=2:660=fin:5000:0:2:0:1:0
+:[C/uncategorized] YLE Radio FTA
+YLE Puhe;YLE:170000:C0M128:C:6875:0:905=fin:0:0:1001:0:1:0
+YLEMONDO;YLE:170000:C0M128:C:6875:0:903=fin:0:0:1005:0:1:0
+YLEN KLASSINEN;YLE:170000:C0M128:C:6875:0:901=fin:0:0:1003:0:1:0
+:[C/uncategorized] MTV Oy SDTV FTA
+MTV3;MTV Oy:170000:C0M128:C:6875:305=2:561=fin,562=dut:5010:0:3:0:1:0
+:[C/uncategorized] MTV Oy SDTV scrambled
+MTV Dance;MTV Oy:162:M128:C:6875:3051+8190=2:3052:0:B00:69:0:9:0
+MTV Hits;MTV Oy:162:M128:C:6875:3041+8189=2:3042:0:B00:70:0:9:0
+MTV Music 24;MTV Oy:354000:C0M128:C:6875:4011+8190=2:4012:0:B00:68:0:4:0
+MTV3 MAX;MTV Oy:298000:C0M128:C:6875:342=2:343=fin:346:B00:13:0:11:0
+:[C/uncategorized] MTV3 SDTV FTA
+AVA;MTV3:298000:C0M128:C:6875:352=2:353:356:0:14:0:11:0
+:[C/uncategorized] MTV3 SDTV scrambled
+MTV3 Fakta;MTV3:298000:C0M128:C:6875:312=2:313=fin:314:B00:47:0:11:0
+MTV3 Sarja;MTV3:298:M128:C:6875:372=2:373:377:B00:50:0:11:0
+MTV3 Scifi;MTV3:298:M128:C:6875:362=2:363:367:B00:49:0:11:0
+:[C/uncategorized] MTV3 Data FTA
+MTV3 Leffa;MTV3:298000:C0M128:C:6875:0:0:0:0:48:0:11:0
+:[C/uncategorized] DNA SDTV FTA
+Infokanava;DNA:290000:C0M256:C:6875:68=2:0:0:0:99:0:12:0
+Rauma TV;DNA:274000:C0M256:C:6875:4131=2:4129=fin:0:0:190:0:14:0
+:[C/uncategorized] DNA SDTV scrambled
+Kuukauden kanava;DNA:330000:C0M128:C:6875:2063=2:2045=fin,2062=sve;2059=eng:2055:B00:499:0:18:0
+:[C/uncategorized] Provider SDTV FTA
+TV5 Monde Europe;Provider:162000:C0M128:C:6875:615=2:635=fra:835:0:202:0:9:0
+:[C/uncategorized] Provider SDTV scrambled
+Channel One Russia;Provider:346:M128:C:6875:167=2:108:0:B00:100:0:5:0
+Viasat History;Provider:354:M128:C:6875:6051=2:6052=sve,6057=rus,6059=eng:6056:B00:120:0:4:0
+:[C/uncategorized] UPCtv/EuroHITS SDTV scrambled
+Explorer/Spice;UPCtv/EuroHITS:354:M128:C:6875:7051=2:7052=sve,7058=rus,7220=eng:7057:B00:122:0:4:0
+Extreme Sports;UPCtv/EuroHITS:338000:C0M128:C:6875:2601=2:2610=eng,2617=fra,2626=rus,2621=tur,2620=hun,2613=deu:2801:B00:51:0:6:0
+Zone Reality;UPCtv/EuroHITS:338000:C0M128:C:6875:2301=2:2310=eng,2326=rus,2318=cze,2320=hun,2321=tur:2501:B00:52:0:6:0
+:[C/uncategorized] canal digital HDTV scrambled
+Canal+ First HD;canal digital:282:M256:C:6875:513=27:644=eng;645=eng:0:B00:34:0:13:0
+Canal+ Sport HD;canal digital:282:M256:C:6875:514=27:648=sve,650=dan,649=nor,651=fin:0:B00:33:0:13:0
+:[C/uncategorized] canal digital SDTV scrambled
+SF Kanalen;canal digital:314:M128:C:6875:513=2:644=sve,647=fin:580:B00:29:0:8:0
+:[C/uncategorized]  SDTV scrambled
+Disney Junior:306000:C0M128:C:6875:1131=2:1132=sve,1133=nor,1134=dan,1135=fin,1136=eng:1137:B00:59:0:10:0
+Disney XD:306000:C0M128:C:6875:3191=2:3192=sve,3193=nor,3194=dan,3195=fin,3196=eng:3197:B00:58:0:10:0
+:[C/uncategorized] Eurosport HDTV scrambled
+Eurosport 2 HD;Eurosport:266:M256:C:6875:538=27:738=dan,5384=eng,5387=sve:0:B00:135:0:15:0
+Eurosport HD;Eurosport:266:M256:C:6875:518=27:0;655=fin,653=sve:0:B00:134:0:15:0
+:[C/uncategorized] Globecast SDTV scrambled
+Euronews;Globecast:306000:C0M128:C:6875:2221=2:2231=fra,2232=eng,2233=deu,2234=ita,2235=esl,2236=por,2237=rus,2238=ara,2239=tur,2240=per,2241=ukr,2242=pol,2246:0:B00:214:0:10:0
+:[C/uncategorized] Globecast Data FTA
+Mezzo;Globecast:338000:C0M128:C:6875:0:0:0:0:63:0:6:0
+:[C/uncategorized] MTV3 OY SDTV scrambled
+MTV3 Juniori;MTV3 OY:298000:C0M128:C:6875:332=2:333:0:B00:16:0:11:0
+MTV3 Komedia;MTV3 OY:330000:C0M128:C:6875:382=2:383=fin:314:B00:72:0:18:0
+:[C/uncategorized] Nelonen HDTV scrambled
+Nelonen HD;Nelonen:290000:C0M256:C:6875:401+8190=27:402=fin:0:B00:244:0:12:0
+:[C/uncategorized] Nelonen SDTV FTA
+LIV;Nelonen:290000:C0M256:C:6875:522=2:720=fin:0:0:8:0:12:0
+:[C/uncategorized] SBS SDTV FTA
+The Voice;SBS:330000:C0M128:C:6875:523=2:655=fin:0:0:15:0:18:0
+TV Viisi;SBS:162000:C0M128:C:6875:513=2:660=fin:0:0:10:0:9:0
+:[C/uncategorized] Sanoma Television Oy SDTV FTA
+Jim;Sanoma Television Oy:170000:C0M128:C:6875:3000=2:3001=fin:5012:0:11:0:1:0
+Nelonen;Sanoma Television Oy:170000:C0M128:C:6875:3004=2:3005=fin,658=dut:5012:0:4:0:1:0
+:[C/uncategorized] canal plus HDTV scrambled
+Canal+ Premier HD;canal plus:330:M128:C:6875:3402=27:3403=eng:0:B00:431:0:18:0
+:[C/uncategorized] canal plus SDTV scrambled
+CANAL+ AITIO;canal plus:290:M256:C:6875:412=2:413=fin:414:B00:32:0:12:0
+:[C/uncategorized] discovery HDTV scrambled
+Animal Planet HD;discovery:250:M256:C:6875:2600=27:0;2601=eng,2603=rus:0:B00:132:0:16:0
+Discovery HD;discovery:250:M256:C:6875:2500=27:0;2501=eng,2503=rus:0:B00:131:0:16:0
+:[C/uncategorized] suomi tv HDTV scrambled
+Suomi TV HD;suomi tv:258000:C0M256:C:6875:1000=27:1002=fin:0:B00:236:0:17:0
+:[C/uncategorized] suomi tv SDTV FTA
+Suomi TV;suomi tv:250000:C0M256:C:6875:2000=2:2100=fin:0:0:235:0:16:0
+:[C/uncategorized] ARD SDTV scrambled
+ARTE Deutsch;ARD:362:M128:C:6875:401=2:402=deu,403=fra:404:B00:94:0:3:0
+:[C/uncategorized] BBC SDTV scrambled
+BBC Knowledge;BBC:290000:C0M256:C:6875:512=2:640:576:B00:38:0:12:0
+:[C/uncategorized] Canal Digital SDTV scrambled
+CANAL+ FAMILY;Canal Digital:282:M256:C:6875:523=2:688=sve,689=dan,690=nor,691=fin:579:B00:23:0:13:0
+:[C/uncategorized] DNA Palvelut SDTV FTA
+TurkuTV;DNA Palvelut:306000:C0M128:C:6875:532=2:788=fin:1556:0:20:0:10:0
+:[C/uncategorized] Deutsche Telekom AG SDTV scrambled
+Deutsche Welle;Deutsche Telekom AG:162000:C0M128:C:6875:1000=2:1001:1003:B00:201:0:9:0
+:[C/uncategorized] Digital media SDTV scrambled
+Private Spice;Digital media:362:M128:C:6875:1089=2:1289=eng,1389=fra:0:B00:96:0:3:0
+:[C/uncategorized] Kingston SDTV scrambled
+ESPN Classic Sports;Kingston:338000:C0M128:C:6875:520=2:1120=eng,1121=deu,1122=pol,1123=dut,1124=por:790:B00:53:0:6:0
+:[C/uncategorized] Lighthouse Network SDTV FTA
+TV7;Lighthouse Network:162000:C0M128:C:6875:800+802=2:801:400:0:76:0:9:0
+:[C/uncategorized] MAXISAT SDTV FTA
+Toto TV;MAXISAT:354:M128:C:6875:514=2:648=fin:0:0:75:0:4:0
+:[C/uncategorized] MTV Networks Europe SDTV scrambled
+MTV ROCKS;MTV Networks Europe:354:M128:C:6875:3091+3003=2:3092:0:B00:66:0:4:0
+:[C/uncategorized] MTV oy SDTV scrambled
+Big Brother 24/7;MTV oy:250000:C0M256:C:6875:392=2:393=fin:304:B00:247:0:16:0
+:[C/uncategorized] NSAB SDTV scrambled
+NTV Mir;NSAB:346:M128:C:6875:50=2:51:0:B00:101:0:5:0
+:[C/uncategorized] Poker channel SDTV scrambled
+Poker Channel;Poker channel:290000:C0M256:C:6875:517=2:688=eng:0:B00:77:0:12:0
+:[C/uncategorized] RAI SDTV scrambled
+RAI Uno;RAI:362:M128:C:6875:512=2:650=ita,694=oth:576:B00:93:0:3:0
+:[C/uncategorized] RTL World SDTV scrambled
+RTL Television;RTL World:362:M128:C:6875:163=2:104=deu;106=deu:105:B00:91:0:3:0
+:[C/uncategorized] Rai SDTV scrambled
+Rai Due;Rai:362:M128:C:6875:513=2:651=ita,695=oth:577:B00:89:0:3:0
+:[C/uncategorized] SBS Radiot SDTV FTA
+IskelmäTV;SBS Radiot:162000:C0M128:C:6875:512=2:650=fin:0:0:230:0:9:0
+:[C/uncategorized] SVT SDTV scrambled
+SVT 2;SVT:346:M128:C:6875:1029=2:3001;1027:3000:B00:81:0:5:0
+:[C/uncategorized] SubTV OY SDTV FTA
+Sub;SubTV OY:170000:C0M128:C:6875:353=2:609=fin:5011:0:6:0:1:0
+:[C/uncategorized] TVE SDTV scrambled
+TVE Internacional Europe;TVE:362:M128:C:6875:2911=2:2912=esl,2915=qaa:2913:B00:92:0:3:0
+:[C/uncategorized] UrhoTv SDTV scrambled
+URHOtv;UrhoTv:266:M256:C:6875:515=2:660=fin:0:B00:74:0:15:0
+:[C/uncategorized] ZDFvision SDTV scrambled
+3sat;ZDFvision:370:M128:C:6875:210=2:220=deu;225=deu:230:B00:90:0:2:0
+:[C/uncategorized] iskelmä Radio FTA
+Iskelmä;iskelmä:162000:C0M128:C:6875:0:555=fin:0:0:1006:0:9:0
+:[C/uncategorized] mtv3 HDTV scrambled
+MTV3 MAX F1 HD;mtv3:330000:C0M128:C:6875:3342=27:3343=fin:0:B00:148:0:18:0
+:[C/uncategorized] nelonen SDTV scrambled
+4 Pro 1;nelonen:266000:COM256:C:6875:3821=2:3822:0:B00:126:0:15:0
+:[C/uncategorized] nonstop HDTV scrambled
+Silver HD;nonstop:258:M256:C:6875:512=27:640=eng;641=eng:0:B00:133:0:17:0
+:[C/uncategorized] telenor SDTV scrambled
+BBC World;telenor:162000:C0M128:C:6875:518=2:684=eng:576:B00:203:0:9:0
+:[C/uncategorized] viasat HDTV scrambled
+TV1000 HD;viasat:274:M256:C:6875:1601=27:1602=sve,1603=nor,1604=dan,1605=fin;1608=eng:1606:B00:128:0:14:0

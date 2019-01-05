@@ -1,0 +1,204 @@
+ac3mode Anzahl der Audio Kanäle
+actuator Sat Rotorsteuerung
+admin Administrative Aufgaben
+advchctrl Audiopegel pro Kanal festlegen
+adzap Werbezapper
+aide OSD Hilfe System
+alcd Activy Display
+analogradio analoge Radio-Karte als Eingabegerät
+analogtv analoge TV-Karte als MPEG-Eingabegerät
+arghdirector Premiere Multifeed Support
+asterisk Asterisk Sprachbox
+autosort Kanaele sortieren
+autotimeredit Autotimer für vdradmin
+avolctl Lautstärkeregler der Audiokarte steuern
+beep PC-Speaker Ausgabe
+bitstreamout DolbyDigital via Audiokarte
+btrcu Bluetooth Handy als Fernbedienung
+burn DVD erstellen
+calc Taschenrechner
+calendar EPG in Kalenderform
+cc Zeigt verborgene Untertitel
+ccd400 CCD400 Kamera
+cdda AudioCD Spieler
+channelscan Sat Sendersuchlauf
+channelswitcher Umschalten zwischen mehreren Kanaleinstellungen
+chanorg Sortiert Kanäle
+cinebars Virtuelle Kinostreifen
+clock Uhrzeit anzeigen
+console Linux Console
+control OSD Terminalausgabe
+csf Kanaele sortieren
+daap Digital Audio Access Protocol Client
+decruft Kanaele loeschen
+digicam Digital Kamera Support
+director Premiere Multifeed Support
+dsmcc Mhp Datenkarussell
+dummydevice Dummy Ausgabe Device
+dv Camcorder Supportz
+dvd DVD-Player
+dvdconvert dvd2vdr
+dvdrepg IGOR EPG Verteiler
+dvdrsched IGOR Aufnahmeverteiler
+dvdrvidtrans IGOR Verteiler
+dvdselect DVD-Images einbinden
+dvdswitch DVD-Images abspielen
+dxr3 DXR3/Hollywood+ Support
+em84xx em84xx als MPEG-Ausgabegerät
+eggtimer Eieruhr für den Fernsehsüchtigen
+epgsearch EPG durchsuchen
+extb Extension Boards
+externalplayer externe Programme als Player
+extrecmenu Aufzeichnungs-Menü
+femon DVB Signal Anzeige
+fepg EPG Grafisch + Navigation
+ffnetdev FF DVB Emulation übers Netzwerk
+filebrowser Dateimanager
+freecell FreeCell Kartenspiel
+fussball Bundesligatabelle und Spielergebnisse
+games Spielesammlung
+gbc GameBoy Emulator
+graphlcd Grafisches LCD
+graphtft OSD auf Monitor
+iaxphone Softphone
+image Bildbetrachter
+instantimer Timer für naechsten Event
+ipod iPod ITunesDB
+isdnlog ISDN Log
+joystick Joysticks als FB
+kathreinlcd I2C Displays
+kvdrmon VDR-Status auf KDE
+launcher Plugin-Starter
+lcdproc Zeichen-LCD
+lcr Least Cost Routing
+lircrc LIRC-RC Unterstützung
+loadepg EPG Datenimport (Canal+ group)
+locker Kinderschutz
+logviewer Systemlogs anzeigen
+mailbox eMail-Client
+manual XML Hilfe Dateien
+mediamvp Media MVP
+message Shell-Skripte
+mhp Mhp
+mlcd Multitainer Display
+mldkgui MLDonkey
+mldonkey MLDonkey
+monochannel
+mp3 MP3-Player
+mplayer Video-Player
+mplayercluster MPlayer im Verbund
+muggle MP3-Player mit DB
+netconfig Netzwerkeinstellungen
+network Netzwerkeinstellungen
+newsticker Newsticker
+noepgmenu
+nordlichtsepg EPG Erweiterung
+openmhp MHP implementation
+osdimage Bildbetrachter
+osdout
+osdpip Bild-im-Bild
+osdteletext Teletext Dekoder
+otv4vdr
+parallelportcontroller
+pcd Kodak PhotoCD Player
+perl
+pilot Zapping Co-Pilot
+pim Personal Information Manager
+pin Kindersicherung für Aufnahmen
+playlist Video-Playlisten
+pluginsetup Plugin-Manager
+podcatcher
+powermate Griffin PowerMate
+prefermenu Bevorzugte Kanäle
+premiereepg Premiere EPG einlesen
+proxy Plugin-Loader
+ptv Hauppauge PVR x50
+pvr350 Hauppauge PVR x50
+pvrinput Hauppauge PVR x50
+pvrusb2 Hauppauge PVR USB2
+radio Radio Hintergrundbild
+radiolist Radio Kanalliste
+recstatus Aufnahmestatus
+relay
+remote Nexus Fernbedienung
+rotor Sat Rotorsteuerung
+rssreader
+safe Kommandos mit Codes versehen
+savechannel
+screenshot Screenshot erzeugen
+serial TastenSteuerung
+serialremote
+serled
+setup Systemeinstellungen
+showrecinfo Detailinfos der Aufnahmen
+skinclassic Klassischer Skin
+skincurses Skin für die Konsole
+skinelchi Elchi Skin
+skinsoppalusikka Elchi Skin
+skinnotrans Transparente Menus
+skinreel
+sky MPEG2 Encoder
+sleeptimer Timer fuer shutdown
+snapshot Screenshot erstellen
+softdevice Framebuffer Ausgabe
+softdevice2net Netzwerk Ausgabe
+softieee1394
+softmpeg
+softplay Softdevice Video-Player
+solitaire Solitaire Kartenspiel
+soundtest
+spider Kartenspiel
+statusbits
+statusleds Tastatur LED Anzeige
+statusandquestion Svdrp Erweiterung
+streamdev-client Streaming Client
+streamdev-server Streaming Server
+streamplayer Video-Streamplayer
+submenu Menu Untergruppen
+subtitles DVB Subtitles
+sudoku Zahlenpuzzles
+surfer News Browser
+suspendoutput Radio Hintergrundbild
+svdrppara VDR Systemparameter
+sysinfo Systeminformationen
+taste Geschmacks-Plugin
+text2skin OSD-Skins
+timeline Timer Anzeige
+transfron Transcode/MPeg4ip
+trayopen CD/DVD auswerfen
+ttxtsubs Teletext Subtitles
+tvonscreen EPG Erweiterung
+tvtv TvTv
+umsadmin ISDN Capisuite
+undelete Wiederherstellung gelöschter Aufnahmen
+usbremote USB-FB (AVR)
+vbox VBox Anrufbeantworter
+vcd S/VCD-Player
+vdrcd AutoPlay
+vdrconvert DVD/SVCD Erstellung
+vdricq ICQ-Client
+vdrrip Movie encoder
+videosystem
+viewer Syslog Anzeige
+vod Video on Demand
+vompserver MediaMVP
+wapd WAP Bedienung
+weatherng Wetterinfo
+x10 X10 Devices
+x11out X11 auf DVB
+xine Xine Ausgabe
+xineliboutput X11 FrontEnd
+xms Medien Verwaltung
+xxvautotimer XXV Autotimer
+yaepg EPG Erweiterung
+zaphistory
+ditherndemo
+epgsearchclient
+femonclient
+hello
+osddemo
+osdtest256
+rtextdemo
+servicedemo
+status
+svdrpdemo

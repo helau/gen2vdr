@@ -1,0 +1,21 @@
+
+################################################
+##  Mainboard autodetection information:
+##
+##    - Mainboard vendor:   "ASRock"
+##    - Mainboard type:     "K10N78M Pro"
+##    - Mainboard revision: ""
+##    - BIOS vendor:        "American Megatrends Inc."
+##    - BIOS version:       "P1.50"
+##    - BIOS release:       "05/21/2010"
+
+addr_min         = 0x5F
+addr_sec         = 0x62
+addr_day         = 0x66
+addr_hour        = 0x67
+addr_chk_h       = 0x30
+addr_chk_l       = 0x31
+addr_stat        = 0xC4
+shift_stat       = 1
+
+upper_method = VT82Cxxx

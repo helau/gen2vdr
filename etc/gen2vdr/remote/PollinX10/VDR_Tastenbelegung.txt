@@ -1,0 +1,45 @@
+VDR mit Tastatur bzw. MedionX10 bedienen
+
+  Funktion					PollinX10 FB-Taste (Bemerkung)
+  Wechsel G2V Launcher		WeltTaste
+  Wechsel zw KODI und VDR	Live TV (ganz links oben)
+  OSD aufrufen				DVD Menu (links dritte von oben)
+  Auf, Ab, Links, Rechts    Cursor-Tasten
+  Ok                        OK 
+  Zurueck                   backspace ( <- )  
+  Rot, Gruen, Gelb, Blau    rot,grün,gelb,blau              
+  0..9                      0..9               
+  Ausschalten               Power-Taste    
+  Kanal +/-                 CHAN-/CHAN+ 
+  Lautstaerke +/-           VOL-/VOL+  (gehen leider derzeit nicht)
+  Stumm                     MUTE                   
+  EPG-Info akt. Sendung   	TV PREVIEW
+  Wiedergabe           		>
+  Pause                		PAUSE (II)
+  Wiedergabe beenden   		STOP
+  Record               		Rec (roter Punkt)
+  Vorlauf              		>>
+  Ruecklauf            		<<
+  Rueckwaerts springen 		I<<
+  Vorwaerts springen   		>>I
+  OSD-Teletext				Text
+  Musik abspielen			MUSIC (music plugin aufrufen)
+  Videos abspielen			Video (mplayer plugin aufrufen)
+  
+
+							Tastatur
+  Auf, Ab, Links, Rechts    Cursor-Tasten        Aufnahmen            r
+  Menu                      tab                  Info                 F2
+  Ok                        enter                Befehle              c
+  Zurueck                   backspace ( <- )     Record               F3
+  Rot, Gruen, Gelb, Blau    r,g,y,b              Wiedergabe           F4
+  0..9                      0..9                 Pause                F5
+  Ausschalten               x                    Wiedergabe beenden   F6
+  Kanal +/-                 PageUp, PageDown     Vorlauf              F9
+  Lautstaerke +/-           +, - (Num-Block)     Ruecklauf            F8
+  Stumm                     m                    Vorwaerts springen   F10
+  Kanalliste                k                    Rueckwaerts springen F7
+  Programm                  p                    User1 (=Autoplay)    u
+  Timer                     t                    User2                v
+  Audio Menu                a                    User3                w
+  Einstellungen             F1

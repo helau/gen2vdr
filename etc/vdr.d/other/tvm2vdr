@@ -1,0 +1,2 @@
+[ ! -d /tmp/tvmovie2vdr/downloadupdatefiles ] && mkdir -p /tmp/tvmovie2vdr/downloadupdatefiles
+[ ! -d /tmp/tvmovie2vdr/downloadfiles ] && mkdir -p /tmp/tvmovie2vdr/downloadfiles

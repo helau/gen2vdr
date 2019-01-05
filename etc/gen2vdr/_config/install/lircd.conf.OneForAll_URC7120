@@ -1,0 +1,86 @@
+
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.9.0(default) on Wed Mar 19 14:49:25 2014
+#
+# contributed by 
+#
+# brand:                                   ONE FOR ALL
+# model no. of remote control:             URC-7120
+# devices being controlled by this remote: SAT-2620 (Sky Reciever)
+#
+# Manuell belegte Taten: FAV (00255), unten Links (00276) und unten Rechts (00397)
+
+# Um eine einzelne (leere) Tasten zu belegen, gehen Sie bitte folgendemaßen vor:
+# 1. Wählen Sie mit Hilfe der MODE-Taste den SAT Modus
+# 2. Halten Sie die MAGIC-Taste gedrückt, bis das Licht erst einmal und dann zweimal aufblinkt und schließlich an bleibt
+# 3. Geben Sie 994 ein (das Licht wird zweimal aufblinken)
+# 4. Drücken Sie einmal kurz auf die MAGIC-Taste (das Licht wird einmal aufblinken)
+# 5. Geben Sie eine Funktionscode ein (sehe unten)
+# 6. Drücken Sie die leere Taste der One For All, auf die Sie die Funktion programmieren möchten
+# 7. Das Licht wird zweimal aufleuchten und die Taste sollte nun funktionieren
+
+# Funktionskodes: 00255, 00276, 00397, 00430, 00483, 00512, 00612, 00678, 00702
+
+begin remote
+
+#  name  /tmp/lircd.conf.one4all-urc7120
+  name  Gen2VDR
+  bits            8
+  flags RC6|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  header       2694   819
+  one           474   410
+  zero          474   410
+  pre_data_bits   29
+  pre_data       0x37FB759
+  gap          106527
+  toggle_bit_mask 0x8000
+  rc6_mask    0x100000000
+
+      begin codes
+          1                        0xFE
+          2                        0xFD
+          3                        0xFC
+          4                        0xFB
+          5                        0xFA
+          6                        0xF9
+          7                        0xF8
+          8                        0xF7
+          9                        0xF6
+          0                        0xFF
+          power                    0xF3
+          user1                    0x7E # AV
+          vol+                     0xEF
+          vol-                     0xEE
+          ch+                      0xE1
+          ch-                      0xE0
+          mute                     0xF2
+          user2                    0xAA # Back
+          user3                    0x33 # GUIDE
+          menu                     0xAB
+          user4                    0x27 # 16:9
+          up                       0xA7
+          down                     0xA6
+          left                     0xA5
+          right                    0xA4
+          ok                       0xA3
+          user5                    0xF0 # INFO
+          exit                     0x7C
+          red                      0x92
+          green                    0x91
+          yellow                   0x90
+          blue                     0x8F
+          user6                    0xCE # Taste unten mitte links
+          user7                    0xC8 # Taste unten mitte rechts (2x Betätigen)
+          user8                    0x59 # FAV (Keycode 00255)
+          user9                    0x3C # Taste unten links (Teletext) KeyCode 00276
+          tv                       0x0F # Taste unten rechts (TV) Keycode 00397
+      end codes
+
+end remote
+

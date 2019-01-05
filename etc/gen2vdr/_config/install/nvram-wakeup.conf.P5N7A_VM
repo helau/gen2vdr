@@ -1,0 +1,22 @@
+################################################
+##  Mainboard autodetection information:
+##
+##    - Mainboard vendor:   "ASUSTeK Computer INC."
+##    - Mainboard type:     "P5N7A-VM"
+##    - Mainboard revision: "Rev 1.xx"
+##    - BIOS vendor:        "American Megatrends Inc."
+##    - BIOS version:       "0519"
+##    - BIOS release:       "04/29/2010"
+
+addr_min         = 0x53
+addr_sec         = 0x54
+addr_day         = 0x55
+addr_hour        = 0x56
+addr_stat        = 0xBD
+shift_stat       = 5
+addr_chk_h       = 0x30
+addr_chk_l       = 0x31
+
+need_reboot  = ON_ANY_CHANGE
+
+upper_method = VT82Cxxx

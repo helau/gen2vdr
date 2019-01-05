@@ -1,0 +1,93 @@
+#########
+#
+# Philips Media Center Edition remote control
+# For use with the USB MCE ir receiver
+#
+# Dan Conti  dconti|acm.wwu.edu
+#
+# Updated with codes for MCE 2005 Remote additional buttons
+# *, #, Teletext, Red, Green, Yellow & Blue Buttons
+# Note: TV power button transmits no code until programmed.
+# Updated 12th September 2005
+# Graham Auld - mce|graham.auld.me.uk
+#
+# Radio, Print, RecTV are only available on the HP Media Center remote control
+#
+
+begin remote
+
+#  name MCEUSB
+  name  Gen2VDR
+  bits           16
+  flags RC6|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  header       2667   889
+  one           444   444
+  zero          444   444
+  pre_data_bits 21
+  pre_data      0x37FF0
+  gap          105000
+  toggle_bit     22
+  rc6_mask     0x100000000
+
+
+      begin codes
+        power   0x00007bf3
+        blue    0x00007ba1
+        yellow  0x00007ba2
+        green   0x00007ba3
+        red     0x00007ba4
+        9        0x00007bf6
+        8        0x00007bf7
+        7        0x00007bf8
+        6        0x00007bf9
+        5        0x00007bfa
+        4        0x00007bfb
+        3        0x00007bfc
+        2        0x00007bfd
+        1        0x00007bfe
+        0        0x00007bff
+        menu    0x00007bf2
+        exit    0x00007bdc
+        ok      0x00007bdd
+        right   0x00007bde
+        left    0x00007bdf
+        down    0x00007be0
+        up      0x00007be1
+        info    0x00007bf0
+        ch-     0x00007bec
+        ch+     0x00007bed
+        vol-    0x00007bee
+        vol+    0x00007bef
+        mute    0x00007bf1
+        rec     0x00007be8
+        play    0x00007be9
+        stop    0x00007be6
+        pause   0x00007be7
+        frew    0x00007bea
+        ffwd    0x00007beb
+        next    0x00007be4
+        prev    0x00007be5
+        txt     0x00007ba5
+        radio    0x00007baf
+        print    0x00007bb1
+        video    0x00007bb5
+        pictures 0x00007bb6
+        recording 0x00007bb7
+        audio    0x00007bb8
+        tv       0x00007bb9
+        guide    0x00007bd9
+        livetv   0x00007bda
+        dvd      0x00007bdb
+        star     0x00007be2
+        hash     0x00007be3
+        enter    0x00007bf4
+        clear    0x00007bf5
+      end codes
+
+end remote
+
+#unused buttons
+

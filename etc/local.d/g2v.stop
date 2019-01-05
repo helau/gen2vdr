@@ -1,0 +1,4 @@
+# /etc/conf.d/g2v.stop
+[ -x /_config/bin/myexit.sh ] && screen -dm sh -c /_config/bin/myexit.sh
+[ -x /_config/bin/g2v_exit.sh ] && screen -dm sh -c /_config/bin/g2v_exit.sh
+echo ""

@@ -1,0 +1,57 @@
+VDR mit Merlin-FB/MiniKeyb von L4M bedienen
+  Funktion					Merlin FB-Taste (Bemerkung)
+  
+  Wechsel G2V Launcher		S-Sondertaste
+  Wechsel zu KODI 			Listen-Sondertaste (FB links neben VT/ Keyb neben S-Sondertaste)
+  OSD aufrufen				M-Sondertaste (und auf Keyb zus. Tab)
+  Auf, Ab, Links, Rechts    Cursor-Tasten
+  Ok                        OK (und auf Keyb zus. Return)
+  Zurueck                   EXIT-Sondertaste  
+  Rot, Gruen, Gelb, Blau    rot,grün,gelb,blau (und auf Keyb zus. r, g, Y und b)            
+  0..9                      0..9               
+  Ausschalten               P-Sondertaste (rote Powertaste reagiert nur auf L4M-Display-Relais)  
+  Kanal +/-                 Channel+/- 
+  Vorheriger Kanal			Symboltaste rechts neben VT auf der FB (und auf Keyb l)
+  Lautstaerke +/-           Volume+/-
+  Stumm                     MUTE-Taste (und auf Keyb l) 
+  Audio-OSD					FM-Sondertaste  (und auf Keyb zus. a)
+  EPG-Info akt. Sendung   	HELP-Sondertaste
+  Wiedergabe           		Play
+  Pause                		Pause (||)
+  Wiedergabe beenden   		Sysbol-Taste (Rechteck auf FB) auf Keyb STOP-Taste oder s 
+  Record               		Symbolstaste roter Punkt (FB neben 0; Keyb neben FM)
+  Vorlauf              		FWD (>>)
+  Ruecklauf            		REV (<<)
+  Spung vor (Next)			nur auf Keyb n
+  Sprung zurrück (Prev)		nur auf Keyb z
+  CD/DVD Auswerfen			Eject-Symboltaste auf FB (über Rewind) und auf Keyb e
+  OSD-Teletext				VT-Sondertaste
+  Untertitel				nur auf Keyb u
+  Setup-OSD-Menu			nur auf Keyb s
+  Kanalliste 				nur auf Keyb k
+  Programmübersicht			grüne Taste (und auf Keyb zus. p)
+  Aufnahemen				rote Taste (und auf Keyb zus. r)
+  Timer-OSD					gelbe Taste (und auf Keyb zus. t)
+  Befehle-OSD				blaue Taste (und auf Keyb zus. c)
+  
+  
+KODI mit Merlin-FB/MiniKeyb von L4M bedienen
+  Funktion					Merlin FB-Taste (Bemerkung)
+  
+  Wechsel G2V Launcher		S-Sondertaste
+  Wechsel zu VDR			Listen-Sondertaste (FB links neben VT/ Keyb neben S-Sondertaste)
+  OSD bei Wiedergabe		M-Sondertaste
+  Auf, Ab, Links, Rechts    Cursor-Tasten
+  Ok                        OK 
+  Zurueck                   EXIT-Sondertaste      
+  0..9                      0..9               
+  KODI Ausschalten          P-Sondertaste   
+  Lautstaerke +/-           Volume+/-
+  Stumm                     Mute                    
+  Wiedergabe           		Play
+  Pause                		Pause
+  Wiedergabe beenden   		Stop
+  Vorlauf              		>>
+  Ruecklauf            		<<
+  Rueckwaerts springen 		über Wiedergabe-OSD
+  Vorwaerts springen   		über Wiedergabe-OSD

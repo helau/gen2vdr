@@ -1,0 +1,60 @@
+#
+# this config file was automatically generated
+# using lirc-0.6.5(any) on Wed Jun 26 10:43:32 2002
+#
+# contributed by 
+#
+# brand:                       Nokia (M.B.)
+# model no. of remote control: VCN621
+# devices being controlled by this remote: N.A.
+#
+
+begin remote
+
+#  name  Nokia-MB
+  name Gen2VDR
+  bits           15
+  flags SPACE_ENC
+  eps            30
+  aeps          100
+
+  one           272  1711
+  zero          272   737
+  ptrail        272
+  gap          42131
+  min_repeat      2
+  toggle_bit      0
+
+
+      begin codes
+          1                        0x0000000000006202
+          2                        0x0000000000006102
+          3                        0x0000000000006302
+          4                        0x0000000000006082
+          5                        0x0000000000006282
+          6                        0x0000000000006182
+          7                        0x0000000000006382
+          8                        0x0000000000006042
+          9                        0x0000000000006242
+          0                        0x0000000000006142
+          exit                     0x0000000000006262
+          menu                     0x0000000000006012
+          vol+                     0x0000000000006222
+          vol-                     0x0000000000006122
+          up                       0x0000000000006112
+          down                     0x0000000000006392
+          left                     0x0000000000006312
+          right                    0x0000000000006212
+          ok                       0x0000000000006166
+          red                      0x0000000000006252
+          green                    0x0000000000006292
+          yellow                   0x0000000000006032
+          blue                     0x00000000000063D2
+          mute                     0x0000000000006052
+          audio                    0x00000000000061C2
+          prog                     0x0000000000006066
+          pop                      0x00000000000060C6
+          power                    0x00000000000061A2
+      end codes
+
+end remote 

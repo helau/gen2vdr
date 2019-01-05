@@ -1,0 +1,28 @@
+#!/sbin/openrc-run
+
+depend() {
+   before vdr
+}
+
+start() {
+   ebegin "Starting Automount"
+   screen -dm sh -c /_config/bin/g2v_automount.sh
+   screen -dm sh -c /_config/bin/g2v_netmount.sh
+   eend 0
+}
+
+stop() {
+   ebegin "Stopping Automount"
+   kill $(pidof -x /_config/bin/g2v_automount.sh) >/dev/null 2>&1
+   kill $(pidof -x /_config/bin/g2v_netmount.sh) >/dev/null 2>&1
+   # cleanup mounts
+   for i in /media/* ; do 
+      if [ -d $i ] ; then
+         [ "$(mount |grep " $i ")" != "" ] && umount $i 2>/dev/null
+         rm $i/.creat* >/dev/null 2>&1
+         [ "$i" != "/media/dvd" ] && rmdir $i 2>/dev/null
+      fi
+   done
+   eend 0
+}
+

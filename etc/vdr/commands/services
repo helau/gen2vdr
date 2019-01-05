@@ -1,0 +1,6 @@
+VDRAdmin starten               : screen -dm sh -c "/etc/init.d/vdradmin start"; echo "VDRAdmin wird gestartet"
+VDRAdmin beenden               : screen -dm sh -c "/etc/init.d/vdradmin stop"; echo "VDRAdmin wird beendet"
+XXV starten                    : screen -dm sh -c "/etc/init.d/xxv start"; echo "XXV wird gestartet"
+XXV beenden                    : screen -dm sh -c "/etc/init.d/xxv stop"; echo "XXV wird beendet"
+KODI (XBMC) starten            : screen -dm sh -c "/_config/bin/gg_switch.sh KODI"
+Launcher starten               : screen -dm sh -c "/_config/bin/gg_switch.sh"

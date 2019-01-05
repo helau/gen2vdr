@@ -1,0 +1,5 @@
+# Options to pass to the lircd process
+# DEVICE_ID="^N.*MCE"
+DEVICE_ID="^I.*1d57.*ac01"
+
+DEVICE="$(grep "$DEVICE_ID" -A 5 /proc/bus/input/devices |grep "^H: Handlers.*kbd"|sed -e "s%.*event%/dev/input/event%" -e "s/ .*//" | tr "\n" " ")"

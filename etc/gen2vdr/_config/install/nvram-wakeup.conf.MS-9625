@@ -1,0 +1,22 @@
+
+################################################
+##  Mainboard information for MSI 915GM Speedster-FA4
+##
+##    - Mainboard vendor:   "MICRO-STAR INTERNATIONAL CO., LTD"
+##    - Mainboard type:     "MS-9625"
+##    - Mainboard revision: "1.0"
+##    - BIOS vendor:        "Phoenix Technologies, LTD"
+##    - BIOS version:       "6.00 PG"
+##    - BIOS release:       "09/19/2006"
+
+need_reboot      = ON_ANY_CHANGE
+
+addr_stat        = 0x46
+addr_day         = 0x47
+addr_hour        = 0x48
+addr_min         = 0x49
+addr_sec         = 0x4A
+addr_chk_h       = 0x6F
+addr_chk_l       = 0x70
+
+upper_method = INTEL

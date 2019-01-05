@@ -1,0 +1,22 @@
+#!/bin/sh
+WAIT=0
+STR_SRV="$(grep "streamdev-client.RemoteIp" /etc/vdr/setup.conf | tr -d " "| cut -f 2 -d "=")"
+if [ "$STR_SRV" != "" -a "$STR_SRV" != "-none"  ] ; then
+   if [ "$(grep "streamdev-client.StartClient" /etc/vdr/setup.conf | tr -d " "| cut -f 2 -d "=")" = "1" ] ; then
+      WAIT=1
+      ping -c 1 -w 1 $STR_SRV > /dev/null 2>&1
+      if [ "$?" != "0" ] ; then
+         # Wait for server
+         logger -s "Waiting for server"
+         for i in $(seq 1 90) ; do
+            sleep 1
+            ping -c 1 -w 1 $STR_SRV > /dev/null 2>&1
+            if [ "$?" = "0" ] ; then
+               sleep 1
+               break
+            fi
+         done
+      fi
+   fi
+fi
+

@@ -1,0 +1,6 @@
+VDR Fehler anzeigen            : tail -n75 /var/log/vdr_error.log
+System Messages                : tail -n75 /var/log/messages
+Logs sammeln (Standard)        : screen -dm sh -c "/_config/bin/g2v_log.sh"
+Logs sammeln (Ausführlich)     : screen -dm sh -c "/_config/bin/g2v_log.sh -v"
+Logs auf USB (Standard)        : screen -dm sh -c "/_config/bin/g2v_log.sh -m"
+Logs auf USB (Ausführlich)     : screen -dm sh -c "/_config/bin/g2v_log.sh -v -m"

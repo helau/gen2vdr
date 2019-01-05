@@ -1,0 +1,69 @@
+
+getestet mit Harmony 650
+an ImonLCD (15c2:0038)
+und ImonVFD (15c2:0036)
+
+Die User1-9 Tasten sind nicht belegt!
+Wer das benötigt muss selbst anlernen.
+
+Harmony Profil:
+--------------------------------------
+Gerät           | Hersteller | Modell |
+                |            |        |
+Media Center PC | SoundGraph | IMON   |
+--------------------------------------
+Tastenzuordnung HarmonySoftware Beispiel von mir:
+
+	UpArrow                            nicht belegt			
+	DownArrow			   nicht belegt
+	Menü			           Menu
+	Info				   Fullscreen	
+	Beenden			           Esc
+	Verzeichnis			   Audio 
+	Rot			           Red
+	Grün			           Green		
+	Gelb			           Yellow
+	Blau			           Blue	
+	Oben			           DirectionUp
+	Unten			           DirectionDown
+	Links			           DirectionLeft
+	Rechts			           DirectionRight
+	OK			           Enter
+	Lauter			           VolumeUp
+	Leiser			           VolumeDown
+	Kanal +			           ChannelUp
+	Kanal -			           ChannelDown
+	Stumm			           Mute
+	Prev			           AppExit
+	Wiedergabe			   Play
+	Pause			           Pause
+	Schneller Vorlauf		   FastForward	
+	Springen vorwärts		   SkipForward	
+	Skip Back			   SkipBack
+	Zurückspulen			   Rewind
+	Aufnahme			   Record
+	Stopp			           Stop
+	1			           1
+	2			           2
+	3			           3
+	4			           4
+	5			           5
+	6			           6
+	7			           7 
+	8			           8
+	9			           9
+	Plus			           Backspace
+	0                                  0
+	E                                  Subtitle
+
+Menupunkt "Weitere Tasten":
+
+   Seite1
+   
+       3 PowerOn                       PowerToggle
+
+       Der Rest ist nicht bewusst belegt, weil ich es nicht nutze!
+
+
+Anhand der VDR.conf.template kann man seine Tasten identifizieren,
+falls man ne andere config basteln möchte.

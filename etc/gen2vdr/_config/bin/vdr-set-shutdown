@@ -1,0 +1,13 @@
+#!/bin/bash
+source /_config/bin/g2v_funcs.sh
+
+case "${1}" in
+   0|off) 
+      [ -f ${VDR_FORCE_SHUTDOWN} ] && rm -f ${VDR_FORCE_SHUTDOWN}
+      state="normal";;
+   1|on)
+      touch ${VDR_FORCE_SHUTDOWN}
+      state="forced";;
+esac
+
+echo "vdr-shutdown is set to $state"

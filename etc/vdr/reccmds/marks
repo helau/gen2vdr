@@ -1,0 +1,5 @@
+Schnittmarken setzen             : /_config/bin/g2v_noad.sh
+Schnittmarken herunterladen      : /usr/bin/pts2marks
+Schnittmarken hochladen          : /usr/bin/marks2pts -upload
+Schnitt/Noad Dienst starten      : screen -dm sh -c "/_config/bin/g2v_maintain_recordings.sh"; echo "Dienst wird gestartet"
+Schnittmarken löschen           : /_config/bin/del_marks.sh

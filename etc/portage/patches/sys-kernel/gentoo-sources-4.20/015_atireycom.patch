@@ -1,0 +1,21 @@
+--- a/drivers/media/rc/ati_remote.c	2016-12-11 20:17:54.000000000 +0100
++++ b/drivers/media/rc/ati_remote.c	2017-02-07 08:39:25.860644177 +0100
+@@ -108,6 +108,7 @@
+ #define NVIDIA_REMOTE_PRODUCT_ID	0x0005
+ #define MEDION_REMOTE_PRODUCT_ID	0x0006
+ #define FIREFLY_REMOTE_PRODUCT_ID	0x0008
++#define REYCOM_REMOTE_PRODUCT_ID	0x000c
+ 
+ #define DRIVER_VERSION		"2.2.1"
+ #define DRIVER_AUTHOR           "Torrey Hoffman <thoffman@arnor.net>"
+@@ -227,6 +228,10 @@
+ 		USB_DEVICE(ATI_REMOTE_VENDOR_ID, FIREFLY_REMOTE_PRODUCT_ID),
+ 		.driver_info = (unsigned long)&type_firefly
+ 	},
++	{
++		USB_DEVICE(ATI_REMOTE_VENDOR_ID, REYCOM_REMOTE_PRODUCT_ID),
++		.driver_info = (unsigned long)&type_medion
++	},
+ 	{}	/* Terminating entry */
+ };
+ 

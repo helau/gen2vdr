@@ -1,0 +1,159 @@
+Historie
+
+23.12.2003 - Erste Ausgabe ( SuSE 8.0, VDR 1.26, einige Plugins ... )
+
+07.01.2004 - Unterstuetzung fuer Lidl FB, Aktivierung des Image Plugins.
+             Ueberpruefung ob das Entpacken bei der Installation erfolgreich ist.
+
+11.06.2004 - Umstellung auf Gentoo - Kernel 2.6.6, VDR 1.3.6 ....
+
+14.06.2004 - Fixes: AdminPlugin
+             Features: AudioCD Plugin erweitert ( CDDB Anzeige )
+
+23.08.2004 - Gen2VDR-0.0.3pre1
+             - Umstellung auf die Ebuilds (http://vdr.gentoo.de/wiki/)
+             - kernel 2.6.8.1
+             - DVB CVS vom 18.8.
+             - VDR 1.3.11
+             - KDE ist auch drauf ( etc/init.d/xdm start )
+             - Freevo sollte auch gehen ( /etc/init.d/freevo start )
+             - TVOut fuers MP ist unter /_config/tvout
+             - Autoerkennung von MediaPortal oder Activy bei der Installation
+             ....
+
+15.09.2004 - Gen2VDR-0.0.3pre2
+             - Komplett neu aufgesetzt auf Stand pre1
+             - DVB CVS vom 12.9. mit einigen fixes !
+
+18.10.2004 - Gen2VDR-0.0.3pre3
+             - einige neue Plugins
+             - Jede Menge Bugfixes
+             - Dual-Boot Moeglichkeit
+
+21.03.2005 - Gen2VDR-1.0-rc1
+             - jede Menge neues und Fixes ...
+             - vdr 1.3.22
+             - kernel 2.6.11
+             - dvb cvs 9.3.2005
+             - root Passwort geaendert ( siehe README )
+
+31.03.2005 - Gen2VDR-1.0-rc2
+             - Bug-Fixes (http://www.htpc-forum.de/forum/index.php?act=ST&f=12&t=1427)
+             - vdr 1.3.23
+             - dvb cvs 31.3.2005
+
+30.06.2005 - Gen2VDR-1.0-rc3
+             - vdr 1.3.27
+             - Freevo / TV-Out Anbindung
+             - Bug-Fixes
+
+23.10.2005 - Gen2VDR-1.0-rc4
+             - vdr 1.3.34
+             - kernel 2.6.13 mit DVB Treiber Update vom 5.9.2005
+             - Umstellung auf kernel DVB Treiber
+             - Umstellung auf udev
+             - Bug Fixes
+             - Jede Menge neue Plugins (Danke an Frank)
+             - Umstellung der Installation
+
+23.05.2006 - Gen2VDR-1.1
+             - vdr 1.4.0 incl BigPatch
+             - kernel 2.6.16
+             - Umstellung auf v4l-dvb Treiber
+             - Bug Fixes
+             - Jede Menge neue Plugins (Danke an Frank)
+             - Unterstuetzung des EM84 mpeg decoders der Activy.
+
+08.04.2007 - Gen2VDR-1.2
+             - vdr 1.4.6 incl BigPatch
+             - kernel 2.6.20.4
+             - kde 3.5.5
+             - aktuelle DVB Treiber incl tda10023 und Samsung SMT7020 Treiber
+             - xfce4 als Alternative zu KDE moeglich
+             - xorg 7
+             - Bug Fixes
+             - Jede Menge neue Plugins (Danke an Frank)
+             - /mnt/hda5 heisst nun /mnt/data !
+             - ...
+
+29.12.2007 - Gen2VDR-2.0
+             - vdr 1.4.7 incl extensions patch 40
+             - kernel 2.6.23.11
+             - kde 3.5.7
+             - xfce4 4.4
+             - freevo 1.8 (svn)
+             - xxv 1.0.1
+             - gcc 4.1.2 / glibc 2.5
+             - optimiert fuer Pentium3 -> Keine Unterstuetzung fuer Pentium2/Celeron2 ( < 566 mhz )
+             - Jede Menge neue Plugins (Danke an Frank)
+             - runvdr und starten der Plugins komplett umgestellt ( /etc/vdr.d )
+             - ...
+
+13.02.2009 - Gen2VDR Activy Edition
+             - Optimiert fuer Activy's mit em84 mpeg decoder
+               (200,300,320,330,350,370)
+             - vdr 1.6 / vdr 1.7 incl. extensions patch 64
+             - Unterstuetzung fuer reelEHD
+             - kernel 2.6.23.17
+             - xfce4 4.4
+             - freevo 1.8 (svn)
+             - gcc 4.1.2 / glibc 2.5
+             - optimiert fuer Pentium3 -> Keine Unterstuetzung fuer Pentium2/Celeron2 ( < 566 mhz )
+             - Downgrade auf xorg 6.8 (Performance Verbesserung fuer Activy onboard Chip)
+             - Jede Menge Plugins
+             - ...
+
+08.10.2011 - Gen2VDR-V3
+             - vdr 1.7.21 incl extensions patch
+             - kernel 3.0.6-gentoo
+             - kde 4.6.5
+             - xbmc Dharma aus svn
+             - gcc 4.5.3
+             - Unterstuetzung fuer vdpau
+             - ...
+
+31.07.2013 - Gen2VDR-V4
+             - vdr 2.0
+             - kernel 3.9.9-gentoo
+             - kein KDE !
+             - xbmc 12.2
+             - 64 Bit
+             - http://redmine.gen2vdr.org/versions/66
+             - ...
+
+20.08.2014 - Gen2VDR-V5
+             - vdr 2.1.6
+             - kernel 3.15.9-gentoo
+             - kein KDE !
+             - xbmc 13.1
+             - http://redmine.gen2vdr.org/versions/78
+             - ...
+
+02.01.2015 - Gen2VDR-V5.1
+             - vdr 2.1.6
+             - kernel 3.18.1-gentoo
+             - kein KDE !
+             - Kodi 14.0
+             - http://redmine.gen2vdr.org/versions/85
+             - ...
+
+02.07.2015 - Gen2VDR-V5.2
+             - vdr 2.2.0
+             - kernel 4.1.1-gentoo
+             - kein KDE !
+             - Kodi 14.2
+             - ...
+
+11.03.2016 - Gen2VDR-V5.3
+             - vdr 2.2.0 (alles aktualisiert)
+             - vdr-2.3.1 vorbereitet
+             - kernel 4.4.4-gentoo
+             - Kodi 16.0
+             - ...
+
+02.02.2017 - Gen2VDR-V6.0
+             - vdr 2.2.0 (alles aktualisiert)
+             - vdr-2.3.2 vorbereitet
+             - kernel 4.9.7-gentoo
+             - Kodi development incl SkyGo, Amazon Prime
+             - ...

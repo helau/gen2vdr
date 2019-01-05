@@ -1,0 +1,120 @@
+TV/Blau
+   code 29 (LeftControl)
+   code 20 (T)
+My Picture/Gelb
+   code 29 (LeftControl)
+   code 23 (I)
+My Music/Grün
+   code 29 (LeftControl)
+   code 50 (M)
+My Video/Rot
+   code 29 (LeftControl)
+   code 18 (E)
+My Radio
+   code 29 (LeftControl)
+   code 30 (A)
+Recorded Tv
+   code 29 (LeftControl)
+   code 24 (O)
+Guide
+   code 29 (LeftControl)
+   code 34 (G)
+Live Tv
+   code 29 (LeftControl)
+   code 42 (LeftShift)
+   code 20 (T)
+DVD Menu
+   code 29 (LeftControl)
+   code 42 (LeftShift)
+   code 50 (M)
+Back
+   code 14 (Backspace)
+Info
+   code 29 (LeftControl)
+   code 32 (D)
+up
+   code 103 (Up)
+down
+   code 108 (Down)
+links
+   code 105 (Left)
+    
+rechts
+   code 106 (Right)
+ok
+   code 28 (Enter)
+1
+   code 2 (1)
+2
+   code 3 (2)
+3
+   code 4 (3)
+4
+   code 5 (4)
+5
+   code 6 (5)
+6
+   code 7 (6)
+7
+   code 8 (7)
+8
+   code 9 (8)
+9
+   code 10 (9)
+0
+   code 11 (0)
+*
+   code 42 (LeftShift)
+   code 9 (8)
+#
+   code 42 (LeftShift)
+   code 4 (3)
+ch+
+   code 104 (PageUp)
+ch-
+   code 109 (PageDown)
+clear
+   code 14 (Backspace)
+enter
+   code 28 (Enter)
+vol+
+   code 68 (F10)
+vol-
+   code 67 (F9)
+start
+   code 56 (LeftAlt)
+   code 125 (LeftMeta)
+   code 28 (Enter)
+record
+   code 29 (LeftControl)
+   code 19 (R)
+play
+   code 29 (LeftControl)
+   code 42 (LeftShift)
+   code 25 (P)
+stop
+   code 29 (LeftControl)
+   code 42 (LeftShift)
+   code 31 (S)
+pause
+   code 29 (LeftControl)
+   code 25 (P)
+mute
+   code 66 (F8)
+rew
+   code 29 (LeftControl)
+   code 42 (LeftShift)
+   code 48 (B)
+   
+fwd
+   code 29 (LeftControl)
+   code 42 (LeftShift)
+   code 33 (F)
+replay
+   code 29 (LeftControl)
+   code 48 (B)
+skip
+   code 29 (LeftControl)
+   code 33 (F)
+Power 
+ENDE          

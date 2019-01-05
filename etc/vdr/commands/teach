@@ -1,0 +1,4 @@
+Tastatur neu belegen?          : sed -i /etc/vdr/remote.conf -e "/^KBD*/d"; screen -dm sh -c /_config/bin/killvdr.sh
+Fernbedienung neu belegen?     : sed -i /etc/vdr/remote.conf -e "/^LIRC*/d"; screen -dm sh -c /_config/bin/killvdr.sh
+Nexus FB neu belegen?          : sed -i /etc/vdr/remote.conf -e "/^remote*/d"; screen -dm sh -c /_config/bin/killvdr.sh
+

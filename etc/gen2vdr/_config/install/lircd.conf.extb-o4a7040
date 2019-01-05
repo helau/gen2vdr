@@ -1,0 +1,885 @@
+# *****************************************************************************
+#
+#                 lircd.conf fuer das VDR Extension Board
+#   
+#   Diese lircd.conf ist nur fuer PIC-Firmware-Versionen ab 1.09 verwendbar!
+#
+#   by Thomas Breuer (tb@tb-electronic.de)            last updated: 15 SEP 2004
+#
+# *****************************************************************************
+#
+#
+# Aenderungen gegenueber alten Versionen fuer die PIC-Firmware bis 1.04:
+# ======================================================================
+# 
+# * Neue RC5 Sendeadressen von LIRC zum PIC (24, 25, 27 dezimal). Diese
+#   sind i.A. nicht von Fernbedienungen belegt, und es kommt nicht mehr
+#   zu Ueberschneidungen bei der Anzeige der Codes durch irw.
+# * Neue RC5 Sendeadresse vom PIC zu LIRC (28 dezimal). Zur Vermeidung von
+#   direkten Ueberschneidungen durch Fernbedienungen. Eine RC5-Adressuebersicht
+#   gibt es z.B hier: http://www.sprut.de/electronic/ir/rc5.htm#3
+# * Erweiterung auf 14 Status-LEDs
+# * Blinkmodus fuer alle 14 LEDs
+# * Zusaetzliche Empfangscodes (PIC_0 ... PIC_F). Momentan noch unbenutzt.
+#
+#
+# Hinweise zur Installation
+# =========================
+#
+# Diese Konfigurationsdatei ist in drei Abschnitte aufgeteilt:
+#
+# SECTION 1 - NORMAL VDR RECEIVE CODES
+# ------------------------------------
+# Hier werden die RC5-Empfangscodes aus der bereits vorhandenen lirc.conf
+# eingetragen, und zwar komplett mit dem dazugehoerigen Header. (Prinzipiell
+# koennen das auch nicht-RC5 Codes sein, da alle IR-Signale vom Extension
+# Board an LIRC weitergereicht werden. Da aber die PWR-Taste direkt vom PIC 
+# ausgewertet wird, muss zumindest hier ein RC5-Code verwendet werden - also
+# macht es wenig Sinn, zusaetzlich einen anderen Code zu verwenden.)
+#
+# Der VDR Empfangscode fuer die PWR-Taste muss mit einem '#' auskommentiert
+# werden. Siehe weiter unten in der SECTION 1, in der als Beispiel die Codes
+# fuer eine OneForAll URC-7040 (Code 0081) eingetragen sind. Wer diese oder
+# eine aehnliche Fernbedienung von OneForAll benutzt, kann ggf. SECTION 1
+# komplett uebernehmen. Als Ersatz fuer den auskommentierten Code enthaelt
+# die SECTION 3 einen speziellen Empfangscode.
+#
+# SECTION 2 - TRANSMIT CODES
+# --------------------------
+# Dieser Abschnitt enthaelt die Codes, die von LIRC an den PIC-Controller auf
+# dem Extension Board gesendet werden. Damit werden saemtliche Funktionen des
+# Boards gesteuert.
+#
+# SECTION 3 - SPECIAL RECEIVE CODES AND CODES FOR REPORTING PIC SETTINGS
+# ----------------------------------------------------------------------
+# In diesem Abschnitt sind zunaecht drei spezielle Empfangscodes eingetragen,
+# die vom PIC-Controller auf dem Extension Board erzeugt werden:
+#
+#  1. Der Empfangscode fuer die EJECT-Taste der Frontplatine (0x073d)
+#  2. Der Ersatz-Empfangscode fuer die PWR-Taste (0x073e)
+#  3. Der Empfangscode fuer eine VDR-Restart-Funktion, wenn 5 Sekunden lang die
+#     Taste '0' der Fernbedienung gedrueckt wird (0x073f)
+#
+# Wenn EJECT und die Restart-Funktion genutzt werden sollen, sind noch
+# entsprechende Eintraege in der lircrc und auch entsprechende Scripte
+# notwendig (siehe lircrc.extb)
+#
+# Ueber die weiteren Codes in diesem Abschnitt werden Statusinformationen vom
+# PIC empfangen.
+#
+# 
+# >>>>>>>> Wichtig: Bitte SECTION 2 und 3 unveraendert uebernehmen! <<<<<<<<<<<
+
+
+
+#******************************************************************************
+#                       SECTION 1 - NORMAL VDR RECEIVE CODES
+#******************************************************************************
+
+# RC5, ONE FOR ALL URC-7040 code 0081
+
+begin remote
+
+  #name  URC-7040-0081
+  name  Gen2VDR
+  bits           13
+  flags RC5|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  one           910   860
+  zero          910   860
+  plead         924
+  gap          113950
+  min_repeat      2
+  toggle_bit      0
+
+
+      begin codes
+
+# ------------------------
+# Key:     +/-
+  info                     0x000000000000114A
+  info                     0x000000000000194A
+# ------------------------
+# Key:     Record
+  rec                      0x0000000000001177
+  rec                      0x0000000000001977
+# ------------------------
+# Key:     0
+# 0                        0x0000000000001A51
+# 0                        0x0000000000001251
+  0                        0x0000000000001140
+  0                        0x0000000000001940
+# ------------------------
+# Key:     1
+  1                        0x0000000000001941
+  1                        0x0000000000001141
+# ------------------------
+# Key:     2
+  2                        0x0000000000001942
+  2                        0x0000000000001142
+# ------------------------
+# Key:     3
+  3                        0x0000000000001943
+  3                        0x0000000000001143
+# ------------------------
+# Key:     4
+  4                        0x0000000000001944
+  4                        0x0000000000001144
+# ------------------------
+# Key:     5
+  5                        0x0000000000001945
+  5                        0x0000000000001145
+# ------------------------
+# Key:     6
+  6                        0x0000000000001946
+  6                        0x0000000000001146
+# ------------------------
+# Key:     7
+  7                        0x0000000000001147
+  7                        0x0000000000001947
+# ------------------------
+# Key:     8
+  8                        0x0000000000001148
+  8                        0x0000000000001948
+# ------------------------
+# Key:     9
+  9                        0x0000000000001149
+  9                        0x0000000000001949
+# ------------------------
+# Key:     OK
+  ok                       0x000000000000114B
+  ok                       0x000000000000194B
+# ------------------------
+# Key:     Power (disabled because of the VDR/RC5 problem)
+# power                    0x000000000000194C
+# power                    0x000000000000114C
+# ------------------------
+# Key:     Mute
+  mute                     0x000000000000114D
+  Mute                     0x000000000000194D
+# ------------------------
+# Key:     Volume up
+  vol+                     0x0000000000001150
+  vol+                     0x0000000000001950
+# ------------------------
+# Key:     Volume down
+  vol-                     0x0000000000001151
+  vol-                     0x0000000000001951
+# ------------------------
+# Key:     Menu
+  menu                     0x000000000000115D
+  menu                     0x000000000000195D
+# ------------------------
+# Key:     Joystick up
+  up                       0x0000000000001160
+  up                       0x0000000000001960
+# ------------------------
+# Key:     Joystick down
+  down                     0x0000000000001161
+  down                     0x0000000000001961
+# ------------------------
+# Key:     Pause
+  pause                    0x0000000000001169
+  pause                    0x0000000000001969
+# ------------------------
+# Key:     Exit
+  exit                     0x0000000000001171
+  exit                     0x0000000000001971
+# ------------------------
+# Key:     Fast Rewind
+  frew                   0x0000000000001172
+  frew                   0x0000000000001972
+# ------------------------
+# Key:     Fast Forward
+  ffwd                  0x0000000000001174
+  ffwd                  0x0000000000001974
+# ------------------------
+# Key:     Play
+  play                     0x0000000000001175
+  play                     0x0000000000001975
+# ------------------------
+# Key:     Stop
+  stop                     0x0000000000001176
+  stop                     0x0000000000001976
+# ------------------------
+# Key:     Joystick left
+  left                     0x0000000000000155
+  left                     0x0000000000000955
+# ------------------------
+# Key:     Joystick right
+  right                    0x0000000000000156
+  right                    0x0000000000000956
+# ------------------------
+# Key:     Red
+  red                      0x000000000000016B
+  red                      0x000000000000096B
+# ------------------------
+# Key:     Green
+  green                    0x000000000000016C
+  green                    0x000000000000096C
+# ------------------------
+# Key:     Yellow
+  yellow                   0x000000000000016D
+  yellow                   0x000000000000096D
+# ------------------------
+# Key:     Blue
+  blue                     0x000000000000016E
+  blue                     0x000000000000096E
+# ------------------------
+
+      end codes
+
+end remote
+
+#------------------------------------------------------------------------------
+
+# RC5 extended, ONE FOR ALL URC-7040 code 0081
+
+begin remote
+
+  #name  URC-7040-0081
+  name  Gen2VDR
+  bits           11
+  flags RC5
+  eps            30
+  aeps            0
+
+  header          0     0
+  one           940   840
+  zero          940   840
+  ptrail          0
+  plead         940
+  foot            0     0
+  repeat          0     0
+  pre_data_bits   2
+  pre_data       0x01
+  post_data_bits  0
+  post_data      0x0
+  pre             0     0
+  post            0     0
+  gap          90000
+  repeat_bit      2
+
+      begin codes
+
+# ---------------------------------
+# Key:     Shift-AV (Ext. code 100)
+  Shift-AV 0x014a
+# ---------------------------------
+# Key:     Channel+ (Ext. code 101)
+  ch+      0x0142
+# ---------------------------------
+# Key:     Channel- (Ext. code 102)
+  ch-      0x015a
+# ---------------------------------
+      end codes
+
+end remote
+
+# ------------------------------------------------------------------------------------
+# RC5, SAA3010   RC5 ADR 0x0B (11) / CMD 0x00...0x06 (0...6) [0x2C0 offset]
+# ------------------------------------------------------------------------------------
+
+begin remote
+
+  #name  SAA3010
+  name  Gen2VDR
+  bits           11
+  flags RC5
+  eps            30
+  aeps            0
+
+  header          0     0
+  one           940   840
+  zero          940   840
+  ptrail          0
+  plead         940
+  foot            0     0
+  repeat          0     0
+  pre_data_bits   2
+  pre_data       0x02
+  post_data_bits  0
+  post_data      0x0
+  pre             0     0
+  post            0     0
+  gap          90000
+  repeat_bit      2
+
+      begin codes
+
+# ------------------------
+# Key:     Skip Rewind
+  prev  0x02C0
+# ------------------------
+# Key:     Fast Rewind
+  frew  0x02C1
+# ------------------------
+# Key:     Stop
+  stop     0x02C2
+# ------------------------
+# Key:     Play
+  play     0x02C3
+# ------------------------
+# Key:     Fast Forward
+  ffwd  0x02C4
+# ------------------------
+# Key:     Skip Forward
+  next  0x02C5
+# ------------------------
+# Key:     Record
+  rec   0x02C6
+# ------------------------
+
+      end codes
+
+end remote
+
+
+#******************************************************************************
+#                       SECTION 2 - TRANSMIT CODES
+#******************************************************************************
+
+# RC5 transmit codes, to be received by the PIC on the Extension Board
+
+begin remote
+
+  name  EXTB_TX
+  bits           11
+  flags RC5
+  eps            20
+  aeps            0
+
+  header          0     0
+  one           940   840
+  zero          940   840
+  ptrail          0
+  plead         940
+  foot            0     0
+  repeat          0     0
+  pre_data_bits   2
+  pre_data       0x02
+  post_data_bits  0
+  post_data      0x0
+  pre             0     0
+  post            0     0
+  gap          90000
+  repeat_bit      2
+
+      begin codes
+
+# ------------------------------------------------------------------------------------
+#      RESET/SET OUTPUTS   RC5 ADR 0x18 (24) / CMD 0x00...0x41 (0...59) [0x600 offset]
+# ------------------------------------------------------------------------------------
+
+# ---------------------------
+# Function: LED1 OFF
+  R_LD1     0x0600
+# Function: LED1 ON
+  S_LD1     0x0601
+# Function: LED1 BLINK
+  B_LD1     0x0602
+# ---------------------------
+# Function: LED2 OFF
+  R_LD2     0x0603
+# Function: LED2 ON
+  S_LD2     0x0604
+# Function: LED2 BLINK
+  B_LD2     0x0605  
+# ---------------------------
+# Function: LED3 OFF
+  R_LD3     0x0606
+# Function: LED3 ON
+  S_LD3     0x0607
+# Function: LED3 BLINK
+  B_LD3     0x0608  
+# ---------------------------
+# Function: LED4 OFF
+  R_LD4     0x0609
+# Function: LED4 ON
+  S_LD4     0x060A
+# Function: LED4 BLINK
+  B_LD4     0x060B  
+# ---------------------------
+# Function: LED5 OFF
+  R_LD5     0x060C
+# Function: LED5 ON
+  S_LD5     0x060D
+# Function: LED5 BLINK
+  B_LD5     0x060E  
+# ---------------------------
+# Function: LED6 OFF
+  R_LD6     0x060F
+# Function: LED6 ON
+  S_LD6     0x0610
+# Function: LED6 BLINK
+  B_LD6     0x0611 
+# ---------------------------
+# Function: LED7 OFF
+  R_LD7     0x0612
+# Function: LED7 ON
+  S_LD7     0x0613
+# Function: LED7 BLINK
+  B_LD7     0x0614
+# ---------------------------
+# Function: LED8 OFF
+  R_LD8     0x0615
+# Function: LED8 ON
+  S_LD8     0x0616
+# Function: LED8 BLINK
+  B_LD8     0x0617  
+# ---------------------------
+# Function: LED9 OFF
+  R_LD9     0x0618
+# Function: LED9 ON
+  S_LD9     0x0619
+# Function: LED9 BLINK
+  B_LD9     0x061A  
+# ---------------------------
+# Function: LED10 OFF
+  R_LD10    0x061B
+# Function: LED10 ON
+  S_LD10    0x061C
+# Function: LED10 BLINK
+  B_LD10    0x061D  
+# ---------------------------
+# Function: LED11 OFF
+  R_LD11    0x061E
+# Function: LED11 ON
+  S_LD11    0x061F
+# Function: LED11 BLINK
+  B_LD11    0x0620  
+# ---------------------------
+# Function: LED12 OFF
+  R_LD12    0x0621
+# Function: LED12 ON
+  S_LD12    0x0622
+# Function: LED12 BLINK
+  B_LD12    0x0623  
+# ---------------------------
+# Function: LED13 OFF
+  R_LD13    0x0624
+# Function: LED13 ON
+  S_LD13    0x0625
+# Function: LED13 BLINK
+  B_LD13    0x0626  
+# ---------------------------
+# Function: LED14 OFF
+  R_LD14    0x0627
+# Function: LED14 ON
+  S_LD14    0x0628
+# Function: LED14 BLINK
+  B_LD14    0x0629  
+# ---------------------------  
+  
+# ---------------------------
+# Function: LCD OFF
+  R_LCD     0x062A
+# Function: LCD ON
+  S_LCD     0x062B
+# ---------------------------
+# Function: SCART Pin 8 12V
+  R_SC8_6V  0x062C
+# Function: SCART Pin 8 6V
+  S_SC8_6V  0x062D
+# ---------------------------
+# Function: Analog audio OFF
+  R_ANA     0x062E
+# Function: Analog audio ON
+  S_ANA     0x062F
+# ---------------------------
+# Function: S/PDIF OFF
+  R_DIA     0x0630
+# Function: S/PDIF ON
+  S_DIA     0x0631
+# ---------------------------  
+  
+# ---------------------------
+# Function: Ext. output 1 OFF
+  R_OUT1    0x0632
+# Function: Ext. output 1 ON
+  S_OUT1    0x0633
+# ---------------------------
+# Function: Ext. output 2 OFF
+  R_OUT2    0x0634
+# Function: Ext. output 2 ON
+  S_OUT2    0x0635
+# ---------------------------
+# Function: Ext. output 3 OFF
+  R_OUT3    0x0636
+# Function: Ext. output 3 ON
+  S_OUT3    0x0637
+# ---------------------------
+# Function: Ext. output 4 OFF
+  R_OUT4    0x0638
+# Function: Ext. output 4 ON
+  S_OUT4    0x0639
+# ---------------------------
+
+# -----------------------------------------------
+# Function: Reset SCART Pin 8 to 0V temporarily
+  R_SC8_TMP  0x063A
+# Function: Set SCART Pin 8 to 6/12V temporarily
+  S_SC8_TMP  0x063B  
+# -----------------------------------------------
+
+# ---------------------------------------------------------------------------------
+#      TOGGLE OUTPUTS   RC5 ADR 0x19 (25) / CMD 0x00...0x13 (0...19) [0x640 offset]
+# ---------------------------------------------------------------------------------
+
+# -------------------------------
+# Function: Toggle LED1
+  T_LD1     0x0640
+# -------------------------------
+# Function: Toggle LED2
+  T_LD2     0x0641
+# -------------------------------
+# Function: Toggle LED3
+  T_LD3     0x0642
+# -------------------------------
+# Function: Toggle LED4
+  T_LD4     0x0643
+# -------------------------------
+# Function: Toggle LED5
+  T_LD5     0x0644
+# -------------------------------
+# Function: Toggle LED6
+  T_LD6     0x0645
+# -------------------------------
+# Function: Toggle LED7
+  T_LD7     0x0646
+# -------------------------------
+# Function: Toggle LED8
+  T_LD8     0x0647
+# -------------------------------
+# Function: Toggle LED9
+  T_LD9     0x0648
+# -------------------------------
+# Function: Toggle LED10
+  T_LD10    0x0649
+# -------------------------------
+# Function: Toggle LED11
+  T_LD11    0x064A
+# -------------------------------
+# Function: Toggle LED12
+  T_LD12    0x064B
+# -------------------------------
+# Function: Toggle LED13
+  T_LD13    0x064C
+# -------------------------------
+# Function: Toggle LED14
+  T_LD14    0x064D
+# -------------------------------
+
+# -------------------------------
+# Function: Toggle analog audio
+  T_ANA     0x064E
+# -------------------------------
+# Function: Toggle S/PDIF
+  T_DIA     0x064F
+# -------------------------------
+
+# -------------------------------
+# Function: Toggle ext. output 1
+  T_OUT1    0x0650
+# -------------------------------
+# Function: Toggle ext. output 2
+  T_OUT2    0x0651
+# -------------------------------
+# Function: Toggle ext. output 3
+  T_OUT3    0x0652
+# -------------------------------
+# Function: Toggle ext. output 4
+  T_OUT4    0x0653
+# -------------------------------
+
+
+
+# -----------------------------------------------------------------------------------
+#     Command sequences   RC5 ADR 0x1B (27) / CMD 0x00...0x37 (0...55) [0x6C0 offset]
+# -----------------------------------------------------------------------------------
+
+# ----------------------------------------------
+# Function: 0 (for setting the count down timer)
+  0  0x06C0
+# ----------------------------------------------
+# Function: 1 (for setting the count down timer)
+  1  0x06C1
+# ----------------------------------------------
+# Function: 2 (for setting the count down timer)
+  2  0x06C2
+# ----------------------------------------------
+# Function: 3 (for setting the count down timer)
+  3  0x06C3  
+# ----------------------------------------------
+# Function: 4 (for setting the count down timer)
+  4  0x06C4
+# ----------------------------------------------
+# Function: 5 (for setting the count down timer)
+  5  0x06C5
+# ----------------------------------------------
+# Function: 6 (for setting the count down timer)
+  6  0x06C6
+# ----------------------------------------------
+# Function: 7 (for setting the count down timer)
+  7  0x06C7
+# ----------------------------------------------
+# Function: 8 (for setting the count down timer)
+  8  0x06C8
+# ----------------------------------------------
+# Function: 9 (for setting the count down timer)
+  9  0x06C9
+# ----------------------------------------------
+# Function: A (for setting the count down timer)
+  A  0x06CA
+# ----------------------------------------------
+# Function: B (for setting the count down timer)
+  B  0x06CB
+# ----------------------------------------------
+# Function: C (for setting the count down timer)
+  C  0x06CC
+# ----------------------------------------------
+# Function: D (for setting the count down timer)
+  D  0x06CD
+# ----------------------------------------------
+# Function: E (for setting the count down timer)
+  E  0x06CE
+# ----------------------------------------------
+# Function: F (for setting the count down timer)
+  F  0x06CF
+# ----------------------------------------------
+  
+# -----------------------------------------------------------
+# Function:  LCD backlight ON
+  R_LCD_BL   0x06D0
+# -----------------------------------------------------------
+# Function:  LCD backlight OFF
+  S_LCD_BL   0x06D1
+# -----------------------------------------------------------
+# Function:  Select DVB as video source, deselect VGA and AUX
+  S_DVB      0x06D2
+# -----------------------------------------------------------
+# Function:  Select VGA as video source, deselect DVB and AUX
+  S_VGA      0x06D3
+# -----------------------------------------------------------
+# Function:  Select AUX as video source, deselect DVB and VGA
+  S_AUX      0x06D4
+# -----------------------------------------------------------
+# Function:  Toggle DVB/VGA video source
+  T_DVB_VGA  0x06D5
+# -----------------------------------------------------------
+# Function:  Toggle DVB/AUX video source
+  T_DVB_AUX  0x06D6
+# -----------------------------------------------------------
+# Function:  Toggle VGA/AUX video source
+  T_VGA_AUX  0x06D7
+# -----------------------------------------------------------
+# Function:  Turn off all video sources
+  R_VID_ALL  0x06D8
+# -----------------------------------------------------------
+# Function:  Turn off analog audio and S/PDIF
+  R_ANDIA    0x06D9
+# -----------------------------------------------------------
+# Function:  Turn on analog audio and S/PDIF
+  S_ANDIA    0x06DA
+# -----------------------------------------------------------
+# Function:  Toggle analog audio and S/PDIF
+  T_ANDIA    0x06DB
+# -----------------------------------------------------------
+# Function:  Set F_DVB_RGB, reset F_DVB_CS
+  F_DVB_RGB  0x06DC
+# -----------------------------------------------------------
+# Function:  Set F_DVB_CS, reset F_DVB_RGB
+  F_DVB_CS   0x06DD
+# -----------------------------------------------------------
+# Function:  Set F_VGA_RGB, reset F_VGA_CS
+  F_VGA_RGB  0x06DE
+# -----------------------------------------------------------
+# Function:  Set F_VGA_CS, reset F_VGA_RGB
+  F_VGA_CS   0x06DF
+# -----------------------------------------------------------
+# Function:  Set F_AUX_RGB, reset F_AUX_C
+  F_AUX_RGB  0x06E0
+# -----------------------------------------------------------
+# Function:  Set F_AUX_CS, reset F_AUX_RGB
+  F_AUX_CS   0x06E1
+# -----------------------------------------------------------
+# Function:    Set F_SC8_ON_PWR, reset F_SC8_ON_VDR
+  F_SC8_ON_PWR 0x06E2
+# -----------------------------------------------------------
+# Function:    Set F_SC8_ON_VDR, reset F_SC8_ON_PWR
+  F_SC8_ON_VDR 0x06E3
+# -----------------------------------------------------------
+# Function:  Reset F_SC8_ON_PWR, reset F_SC8_ON_VDR
+  F_SC8_OFF  0x06E4
+# -----------------------------------------------------------
+# Function:  Set F_BOOT_VGA, reset F_BOOT_AUX
+  F_BOOT_VGA 0x06E5
+# -----------------------------------------------------------
+# Function:  Set F_BOOT_AUX, reset F_BOOT_VGA
+  F_BOOT_AUX 0x06E6
+# -----------------------------------------------------------
+# Function:  Reset F_BOOT_VGA, reset F_BOOT_AUX
+  F_BOOT_OFF 0x06E7
+# -----------------------------------------------------------
+# Function:  Triggers the PIC to send the current options
+  STATUS     0x06E8
+# -----------------------------------------------------------
+# Function:  (Reserved)
+#            0x06E9
+# -----------------------------------------------------------
+# Function:  (Reserved)
+#            0x06EA
+# -----------------------------------------------------------
+# Function:  (Reserved)
+#            0x06EB
+# -----------------------------------------------------------
+# Function:  (Reserved)
+#            0x06EC
+# -----------------------------------------------------------
+# Function:  (Reserved)
+#            0x06ED
+# -----------------------------------------------------------
+
+# -----------------------------------------------------------------------------
+#     Macros   RC5 ADR 0x1B (27) / CMD 0x28...0x31 (40...49) [0x6E9 offset]
+# -----------------------------------------------------------------------------
+
+# ---------------------------
+# Function: Macro 1
+  M1        0x06EE
+# ---------------------------
+# Function: Macro 2
+  M2 	    0x06EF
+# ---------------------------
+# Function: Macro 3
+  M3        0x07F0
+# ---------------------------
+# Function: Macro 4
+  M4        0x06F1
+# ---------------------------
+# Function: Macro 5
+  M5        0x06F2
+# ---------------------------
+# Function: Macro 6
+  M6        0x06F3
+# ---------------------------
+# Function: Macro 7
+  M7        0x06F4
+# ---------------------------
+# Function: Macro 8
+  M8        0x06F5
+# ---------------------------
+# Function: Macro 9
+  M9        0x06F6
+# ---------------------------
+# Function: Macro 10
+  M10       0x06F7
+# ---------------------------
+
+    end codes
+
+end remote
+
+
+#******************************************************************************
+#     SECTION 3 - SPECIAL RECEIVE CODES AND CODES FOR REPORTING PIC SETTINGS
+#******************************************************************************
+
+begin remote
+
+  name  EXTB_RX
+  bits           11
+  flags RC5
+  eps            20
+  aeps            0
+
+  header          0     0
+  one           940   840
+  zero          940   840
+  ptrail          0
+  plead         940
+  foot            0     0
+  repeat          0     0
+  pre_data_bits   2
+  pre_data       0x02
+  post_data_bits  0
+  post_data      0x0
+  pre             0     0
+  post            0     0
+  gap          90000
+  repeat_bit      2
+
+      begin codes
+      
+# The following RC5 codes are generated by the PIC on the Extension Board
+
+# -----------------------------------------------------------------------------
+# Codes for PWR/EJECT/RESTART    RC5 ADR 0x1C (28) / [0x73d offset]
+# -----------------------------------------------------------------------------
+
+# -----------------------------------------------
+# For CD/DVD eject script called by LIRC's irexec
+  eject    0x073d
+# -----------------------------------------------
+# Replacement for the 'normal' Power command
+  Power    0x073e
+# -----------------------------------------------
+# For VDR restart script called by LIRC's irexec
+  restart  0x073f
+# -----------------------------------------------
+
+# -----------------------------------------------------------------------------
+# For reporting the current video/SCART/boot modes     RC5 ADR 0x1C (28)
+# -----------------------------------------------------------------------------
+
+# [0x700 offset]
+
+SB0 0x0700
+SB1 0x0701 
+SB2 0x0702
+SB4 0x0704
+SB5 0x0705
+SB6 0x0706
+SB8 0x0708
+SB9 0x0709
+SBa 0x070a
+
+# [0x710 offset]
+
+V0  0x0710	
+V1  0x0711
+V2  0x0712
+V3  0x0713
+V4  0x0714
+V5  0x0715
+V6  0x0716
+V7  0x0717
+
+# -----------------------------------------------------------------------------
+# PIC_0...PIC_F for reporting other settings     RC5 ADR 0x1C (28)
+# -----------------------------------------------------------------------------
+
+# [0x720 offset]
+
+PIC_0  0x0720
+PIC_1  0x0721
+PIC_2  0x0722
+PIC_3  0x0723
+PIC_4  0x0724
+PIC_5  0x0725
+PIC_6  0x0726
+PIC_7  0x0727
+PIC_8  0x0728
+PIC_9  0x0729
+PIC_A  0x072A
+PIC_B  0x072B
+PIC_C  0x072C
+PIC_D  0x072D
+PIC_E  0x072E
+PIC_F  0x072F
+
+    end codes
+
+end remote

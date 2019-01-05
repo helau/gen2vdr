@@ -1,0 +1,6 @@
+app-arch/bzip2 static-libs
+app-misc/graphlcd-base driver_ax206_experimental driver_picolcd_256x64_experimental serdisplib
+app-misc/lcdproc hid
+app-misc/lirc transmitter hardware-carrier
+app-misc/mc sftp
+app-text/asciidoc python_single_target_python2_7

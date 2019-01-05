@@ -1,0 +1,1 @@
+wget -O tst.diff "https://github.com/s-moch/linux-saa716x/compare/master...s-moch:saa716x-4.14.patch"

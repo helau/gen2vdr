@@ -1,0 +1,33 @@
+vdrShuttleXS35G ~ # grep "value 1" event.out
+Event: time 1319921867.643608, type 1 (Key), code 116 (Power), Power-Taste 
+Event: time 1319921870.519986, type 1 (Key), code 353 (Select), Sources-Taste
+Event: time 1319921873.052109, type 1 (Key), code 372 (Zoom), Zoom-Taste
+Event: time 1319921875.137984, type 1 (Key), code 174 (Exit), Shutdown-Taste
+Event: time 1319921877.680114, type 1 (Key), code 2 (1), 1
+Event: time 1319921878.706366, type 1 (Key), code 3 (2), 2
+Event: time 1319921881.498252, type 1 (Key), code 4 (3), 3
+Event: time 1319921889.512148, type 1 (Key), code 5 (4), 4
+Event: time 1319921893.206382, type 1 (Key), code 6 (5), 5
+Event: time 1319921900.697523, type 1 (Key), code 7 (6), 6
+Event: time 1319921904.575883, type 1 (Key), code 8 (7), 7
+Event: time 1319921907.486661, type 1 (Key), code 9 (8), 8
+Event: time 1319921909.909009, type 1 (Key), code 10 (9), 9
+Event: time 1319921916.068011, type 1 (Key), code 402 (ChannelUp), CH+
+Event: time 1319921918.623642, type 1 (Key), code 403 (ChannelDown), CH-
+Event: time 1319921921.453024, type 1 (Key), code 115 (VolumeUp), Vol+
+Event: time 1319921922.510844, type 1 (Key), code 114 (VolumeDown), Vol-
+Event: time 1319921926.124027, type 1 (Key), code 158 (Back), Back
+Event: time 1319921926.999527, type 1 (Key), code 11 (0), 0
+Event: time 1319921929.337900, type 1 (Key), code 28 (Enter), Enter
+Event: time 1319921933.360041, type 1 (Key), code 167 (Record), REc
+Event: time 1319921934.184900, type 1 (Key), code 128 (Stop), Stop
+Event: time 1319921935.324908, type 1 (Key), code 207 (Play), Play
+Event: time 1319921936.791551, type 1 (Key), code 113 (Mute), Mute
+Event: time 1319921944.131276, type 1 (Key), code 103 (Up), Pfeil Auf
+Event: time 1319921945.067078, type 1 (Key), code 108 (Down), Pfeil Ab
+Event: time 1319921945.992559, type 1 (Key), code 105 (Left), Pfeil Links
+Event: time 1319921947.456911, type 1 (Key), code 106 (Right), Pfeil Rechts
+Event: time 1319921953.961280, type 1 (Key), code 398 (Red), Rot
+Event: time 1319921954.724542, type 1 (Key), code 399 (Green), Grün
+Event: time 1319921955.477911, type 1 (Key), code 400 (Yellow), Gelb
+Event: time 1319921956.445428, type 1 (Key), code 401 (Blue), Blau

@@ -1,0 +1,118 @@
+
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.6.6(serial) on Thu Dec 11 12:35:19 2003
+#
+# contributed by
+#
+# brand:       ALDI Remote 4688 Code 065 / 260
+# model no. of remote control:
+# devices being controlled by this remote:
+#
+
+begin remote
+
+#  name  ALDI4688-065-260
+  name  Gen2VDR
+  bits           24
+  flags SPACE_ENC
+  eps            30
+  aeps          100
+
+  header       3568  1662
+  one           509  1233
+  zero          509   368
+  ptrail        510
+  pre_data_bits   24
+  pre_data       0x400401
+  gap          74163
+  min_repeat      1
+  toggle_bit      0
+
+
+      begin codes
+          ch+                      0x0000000000002C2D
+          ch-                      0x000000000000ACAD
+          vol+                     0x0000000000000405
+          vol-                     0x0000000000008485
+          mute                     0x0000000000004C4D
+          red                      0x0000000000000E0F
+          green                    0x0000000000008E8F
+          yellow                   0x0000000000004E4F
+          blue                     0x000000000000CECF
+          user6                    0x000000000080A021
+          1                        0x0000000000000809
+          2                        0x0000000000008889
+          3                        0x0000000000004849
+          4                        0x000000000000C8C9
+          5                        0x0000000000002829
+          6                        0x000000000000A8A9
+          7                        0x0000000000006869
+          8                        0x000000000000E8E9
+          9                        0x0000000000001819
+          0                        0x0000000000009899
+          user7                    0x000000000000A0A1
+          user8                    0x000000000000DCDD
+          up                       0x0000000000005253
+          down                     0x000000000000D2D3
+          left                     0x0000000000007273
+          right                    0x000000000000F2F3
+          ok                       0x000000000000ABAA
+          user1                    0x0000000000005C5D
+          user2                    0x0000000000809011
+          user3                    0x0000000000009C9D
+          user4                    0x0000000000801091
+          user5                    0x000000000080C041
+          power                    0x000000000000BCBD
+          menu                     0x0000000000004A4B
+          exit                     0x0000000000003031
+      end codes
+
+end remote
+
+
+
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.6.6(serial) on Thu Dec 11 12:38:25 2003
+#
+# contributed by
+#
+# brand:                       /etc/260.conf
+# model no. of remote control:
+# devices being controlled by this remote:
+#
+
+begin remote
+
+  name  /etc/260.conf
+  bits           22
+  flags SPACE_ENC|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  header       3711  3500
+  one           979  2624
+  zero          979   810
+  ptrail        982
+  gap          107829
+  min_repeat      2
+  toggle_bit      0
+
+
+      begin codes
+          play                     0x000000000010A5EB
+          frew                     0x00000000001085EF
+          ffwd                     0x00000000001185CF
+          rec                      0x00000000001025FB
+          stop                     0x00000000001005FF
+          pause                    0x000000000010C5E7
+      end codes
+
+end remote
+
+

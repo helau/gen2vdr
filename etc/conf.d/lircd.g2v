@@ -1,0 +1,44 @@
+# Options to pass to the lircd process
+
+# for devices with lirc-kernel-module
+#LIRCD_OPTS="-d /dev/lirc0"
+#LIRCD_OPTS="-d /dev/lirc"
+
+# for devices using the input-layer
+#LIRCD_OPTS="-H devinput -d /dev/input/by-path/pci-0000:00:0a.0--event-ir"
+# This should work, Bug #235107
+#LIRCD_OPTS="-H devinput -d name=*DVB*"
+#LIRCD_OPTS="-H ya_usbir"
+
+# set default protocol to 'lirc' for in-kernel IR decoding
+# for the following entries in /sys/class/rc/
+# (space-separated list if there is more than one)
+LIRCD_SET_SYSCLASSRCS="rc0"
+
+#for bdremote
+#LIRCD_OPTS="-H null --connect 127.0.0.1:8888"
+
+#Here we go - some settings for Gen2VDR
+#set -x
+source /etc/vdr.d/conf/vdr
+
+if [ "$REMOTE" = "ya_usbir" ] ; then
+   LIRCD_OPTS="-H ya_usbir"
+elif [ "$REMOTE" = "LircSerial" ] ; then
+   LIRC_DEV="/dev/lirc0"
+   LIRC_MOD="serial_ir"
+   setserial /dev/ttyS0 uart none
+   if [ "$(lsmod | grep $LIRC_MOD)" = "" ] ; then
+      modprobe $LIRC_MOD
+      for i in 1 2 3 4 5 ; do
+         [ -e $LIRC_DEV ] && break
+         sleep 1
+         logger -s "Waiting for $LIRC_DEV"
+      done
+   fi
+   LIRCD_OPTS="-d $LIRC_DEV"
+elif [ "$REMOTE" = "AtricUSB" ] ; then
+   LIRCD_OPTS="-d /dev/ttyatric -H irman"
+fi
+#echo $REMOTE
+LIRCD_OPTS="$LIRCD_OPTS -a"

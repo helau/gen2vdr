@@ -1,0 +1,8 @@
+#!/bin/bash
+source /_config/bin/g2v_funcs.sh
+trap "" HUP INT QUIT TERM ABRT ALRM EXIT KILL STOP
+
+logger -s "$*"
+echo "$1;$3;$4" > $WAKEUP_FILE
+
+screen -dm sh -c "sh /_config/bin/vdrshutdown.sh \"$1\""

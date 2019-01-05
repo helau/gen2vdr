@@ -1,0 +1,62 @@
+
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.6.6(any) on Fri Jun 20 14:35:17 2003
+#
+# contributed by 
+#
+# brand:          LIDL Universal Code 054 VCR (Philips)
+# model no. of remote control: 
+# devices being controlled by this remote:
+#
+
+begin remote
+
+#  name  LIDL-054
+  name  Gen2VDR
+  bits           13
+  flags RC5|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  one           946   793
+  zero          946   793
+  plead         960
+  gap          109781
+  min_repeat      2
+  toggle_bit      2
+
+
+      begin codes
+          1                        0x0000000000001141
+          2                        0x0000000000001142
+          3                        0x0000000000001143
+          4                        0x0000000000001144
+          5                        0x0000000000001145
+          6                        0x0000000000001146
+          7                        0x0000000000001147
+          8                        0x0000000000001148
+          9                        0x0000000000001149
+          0                        0x0000000000001140
+          ok                       0x0000000000000157
+          up                       0x0000000000000150
+          down                     0x0000000000000151
+          left                     0x0000000000000155
+          right                    0x0000000000000156
+          menu                     0x0000000000000152
+          exit                     0x0000000000001171
+          power                    0x000000000000114C
+          ch+                      0x0000000000001160
+          ch-                      0x0000000000001161
+          red                      0x0000000000001165
+          yellow                   0x0000000000001175
+          green                    0x0000000000001176
+          blue                     0x0000000000001166
+          ok                       0x000000000000114B
+      end codes
+
+end remote
+
+

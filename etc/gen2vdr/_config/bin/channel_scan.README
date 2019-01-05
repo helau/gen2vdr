@@ -1,0 +1,199 @@
+Dieses kleine bash-script dient zur Erstellung einer channel.conf für den
+vdr. Für die Anfaenger, die DVB-T oder DVB-C verwenden und keine passende
+channels.conf finden. Erfahrene user werden dieses script  mit Sicherheit
+nicht mehr benoetigen.
+
+
+
+Los gehts.
+
+0) WIR SCHAUN MAL, OB DER TREIBER GEHT
+________________________________________________________________________________________________
+
+Benoetigt wird ein funktionierender und geladener DVB-Treiber fuer linux und
+dessen scan-tool im Ordner linuxtv-dvb-1.x.x/apps/scan.
+Sind die Treiber geladen?
+Das prüfen wir doch vor dem Start des scripts gleich mal mit dem folgenden Befehl:
+
+	lsmod
+
+Die Ausgabe von lsmod sollte eine Unmenge geladener dvb-Treiber bringen
+und könnte etwa so aussehen:
+
+	dvb-ttpci             309812   5
+	mt312                   6440   0
+	tda1004x               10372   1
+	ves1820                 4928   1
+	stv0299                 7824   0  (unused)
+	grundig_29504-491       4032   0
+	grundig_29504-401       4584   0
+	alps_tdlb7              6132   0
+	alps_tdmb7              4324   0
+	alps_bsrv2              4408   0
+	dvb-core               43748  28  [dvb-ttpci mt312 tda1004x ves1820 stv0299 grundig_29504-491
+ 	grundig_29504-401 alps_tdlb7 alps_tdmb7 alps_bsrv2]
+	videodev                6624   5  [dvb-ttpci]
+
+Welche Treiber genau geladen sein müssen haengt von der verwendeten Hardware ab, also der Art
+der DVB-Karte (DVB-S/C/T) und der Revision der Hardware (1.3, 1.5, ..)
+
+Wenn bis hier was fehlt: noch mal alle README's des DVB-Treibers lesen und dessen
+Module laden.
+
+Das naechste Hindernis: viele Karten benötigen Firmware. Die wird nicht mit dem DVB-Treiber
+selbst mitinstalliert und muss extra kopiert werden. Beispiele dafür sind DVB-T-Budget Karten,
+dort muss die Firmware aus dem Windows-Treiberpaket verwendet werden. Siehe die README's des DVB-Treibers.
+Kontrollieren wir also mal, ob alles korrekt gefunden wurde:
+
+	dmesg
+
+okay, schauen wir einmal:
+
+	Linux video capture interface: v1.00
+	DVB: registering new adapter (Siemens cable card PCI rev1.5).
+	DVB: VES1820(0): setup for tuner spXXXX
+	DVB: VES1820(0): pwm=0x52
+	DVB: registering frontend 0:0 (VES1820 based DVB-C frontend)...
+
+Aha, eine DVB-C Karte wurde gefunden. Der Karte wurde Frontend 0:0 zugewiesen.
+Mit anderen Worten die Karte ist also /dev/dvb/adapter0 und hat ein Frontend /dev/dvb/adapter0/frontend0
+
+	DVB: registering new adapter (TT-Budget/WinTV-NOVA-T  PCI).
+	tda1004x: Detected Philips TDA10045H.
+	tda1004x: Detected Philips TDM1316L tuner.
+	DVB: registering frontend 1:0 (Philips TDA10045H)...
+
+okay, da ist also die zweite Karte in diesem System: eine NOVA-T DVB-T Karte mit
+/dev/dvb/adapter1 und hat ein Frontend /dev/dvb/adapter1/frontend0
+
+	DVB: AV7111(0) - firm f0240009, rtsl b0250018, vid 71010068, app 8000261a
+	DVB: AV7111(0) - firmware supports CI link layer interface
+
+okay, auch die notwendige Firmware wurde gefunden. Es kann also weitergehen mit 1).
+
+
+
+1) SCRIPT ANPASSEN
+________________________________________________________________________________________________
+
+Dieses script muss an dein System angepasst werden.
+Merke: alles in einer Zeile hinter ein Raute => # ist ein Kommentar.
+Also im Editor deiner Wahl oeffnen (kedit, joe, midnight commander, vi...)
+und editieren:
+(bitte auf Gross- und Kleinschreibung achten, shell-scripte moegen keine
+Tippfehler!!!!!)
+
+Ab der Zeile
+#------------------- BITTE HIER AENDERN!!!!----------[BEGIN]--------------------------
+
+..
+
+USER_HAS_CHANGED_THIS_PART_OF_FILE=NO
+=> in YES aendern.
+..
+SCAN=/usr/src/vdr/DVB/apps/scan/scan
+
+=> hier gehoert der vollstaendige Pfad zum oben erwaehnten scan hin,
+Beispiele wären in /usr/bin/scan, /usr/local/bin/scan oder
+/usr/src/linuxtv-dvb-1.x.x/apps/scan
+Falls scan sich in einem Standardverzeichnis befindet hilft hier der Befehl
+which und verraet uns den kompletten Pfad. Falls nicht kommt eine Ausgabe
+wie "no scan in (...)" und etwas manuelle Suche ist erforderlich.
+
+	which scan
+
+
+CONFDIR=/etc/vdr
+
+=> welches Verzeichnis verwendet der VDR auf deinem Syxstem für seine
+Konfigurationsdateien? Normalerweise /video/vdr oder /etc/vdr.
+
+CONF_FILE=$CONFDIR/scan/channels.conf.aktuell
+
+=> wohin soll die fertige channels.conf geschrieben werden? In diesem
+Beispiel ist $CONFDIR auf /etc/vdr gesetzt, die fertige Datei wird also
+als /etc/vdr/scan/channels.conf.aktuell gespeichert. Jeder andere
+DateiName ist ebenso möglich. (Wenn auch kaum sinnvoll.)
+
+CABLE=YES			# default: YES
+CABLE_ADAPTER=0			# use DVB /dev/dvb/adapterN
+default: 0 (erste Karte)
+CABLE_FRONTEND=0		# use DVB /dev/dvb/adapter?/frontendN
+default: 0
+CABLE_DEMUX=0			# use DVB /dev/dvb/adapter?/demuxN
+default: 0
+
+Die erste Frage bestimmt, ob Kabelfrequenzen gescannt werden sollen.
+Falls ja: YES hintippen.
+Die anderen Fragen beziehen sich auf die DVB Kabelkarte, mit Adapter
+ist hier gefragt als welche Karte der DVB-Treiber die Kabelkarte erkannt
+hat. Bei nur einer Karte ist die Antwort einfach: 0 für die erste Karte, bei
+mehreren Karten ist hier einzutragen welche Karte die Kabelkarte ist.
+Frontend und Demux koennen normalerweise auf 0 bleiben.
+dmesg hat uns ja schon bei Schritt 0) verraten, was wir hier eintragen muessen.
+
+
+TERRESTRIAN=YES			# default: YES
+TERRESTRIAN_ADAPTER=1		# use DVB /dev/dvb/adapterN
+default: 1 (zweite Karte)
+TERRESTRIAN_FRONTEND=0		# use DVB /dev/dvb/adapter?/frontendN
+default: 0
+TERRESTRIAN_DEMUX=0		# use DVB /dev/dvb/adapter?/demuxN
+default: 0
+
+wie zuvor, nur diesmal fuer eine terrestrische (digital via Antenne) Karte.
+Wir wissen bereits aus Schritt 0), dass hier in diesem Beispiel
+adapter1 und frontend0 gewaehlt werden muss.
+
+Alles ausgefüllt? Super. Speichern.
+
+
+2) DANN MAL LOS...
+________________________________________________________________________________________________
+
+Kopier das script hier an einen Platz deiner Wahl.
+/usr/local/bin
+waere ein guter Platz.
+Nochmal checken, ob das script wirklich ausfuehrbar ist:
+	chmod +x /usr/local/bin/channel_scan.sh
+und ausfuehren:
+	cd /usr/local/bin
+	killall runvdr
+	killall vdr
+	./channel_scan.sh
+
+Jetzt sollte das script laufen und der Reihe nach alle Sender suchen, eine
+gute Gelegenheit fuer einen Kaffee.
+Jedesmal, wenn auf einer Frequenz nichts gefunden wurde erscheint ein
+>>> Warning: Tuning failed.
+Logisch, wo keine Sender sind kann die Karte ja auch nicht tunen und die
+PLL des Empfaengers findet nichts, kein Grund zur Aufregung.
+
+3) WENN ALLES GETAN IST..
+________________________________________________________________________________________________
+
+Fertig?
+Dann die erstellte Datei im Editor oeffnen und alles ueberfluessige aussortieren.
+Lies dir dazu noch vdr(1) und vdr(5) aus den vdr sources durch,
+um zu verstehen was die vielen Zahlen in der Datei bedeuten.
+Je nach deinen gewaehlten Einstellungen kann uebrigens durchaus ein Sender mehrfach auftauchen.
+Danach als channel.conf im Konfigurationsordner des vdr speichern.
+
+noch was zum Schluss:
+Das script hat in $CONFDIR/scan ein oder zwei neue Dateien angelegt:
+$CONFDIR/scan/searchlist.dvb-c und $CONFDIR/scan/searchlist.dvb-t
+Je nachdem ob nach Kabel und terrestrisch gesucht wurde oder nur nach einem von beiden.
+Für zukuenftige Suchvorgaenge koennen diese Dateien individuell angepasst werden. Wenn diese vorhanden sind,
+werden diese NICHT neu erstellt.
+Damit koennen unbenutzte Frequenzen aus diesen Dateien geloescht werden und
+werden zukuenftig nicht mehr beruecksichtigt. Zumindest solange diese Dateien eben nicht geloescht werden.
+
+Der Nachteil ist aber, dass nach Aenderungen in diesem script bezueglich Symbolrate, Frequenzen oder aehnlichem
+diese Datein manuell geloescht werden muessen
+
+
+
+
+have phun..
+
+wirbel  => see you at vdr-portal.de

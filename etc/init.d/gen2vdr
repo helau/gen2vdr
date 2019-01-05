@@ -1,0 +1,35 @@
+#!/sbin/openrc-run
+# Distributed under the terms of the GNU General Public License v2
+
+source /etc/vdr.d/conf/vdr
+
+depend() {
+        need localmount
+        after clock
+        after virtualbox-guest-additions
+        before bootmisc
+        before alsasound
+        before vdr
+        before lircd
+}
+
+start() {
+        [ -s /etc/adjtime ] &&  rm /etc/adjtime
+        ebegin "Gen2VDR Init"
+        /_config/bin/set_timer.sh
+        screen -dm sh -c /_config/bin/check_df.sh
+        [ ! -d /var/run/samba ] && mkdir /var/run/samba
+        [ ! -d /log/samba ] && mkdir /log/samba
+        [ ! -d /var/run/mysqld ] && mkdir -p /var/run/mysqld; chown mysql:users /var/run/mysqld
+        chmod 755 /var/log /var/log/ConsoleKit/ /var/log/mysql/
+        eend 0
+}
+
+stop() {
+        ebegin "Gen2VDR Exit"
+        echo "Cleanup routines"
+        dmesg -c
+        /_config/bin/cleanup.sh > /mnt/data/shutdown.log 2>&1
+        dmesg >> /mnt/data/shutdown.log 2>&1
+        eend 0
+}

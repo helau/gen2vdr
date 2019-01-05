@@ -1,0 +1,6 @@
+# /etc/acpi/events/a-power
+# Called when the power button is pressed
+
+#event=button[ /]power.*
+event=button[ /]power[ ]PBTN.*
+action=/_config/bin/powerb.sh

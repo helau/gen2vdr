@@ -1,0 +1,26 @@
+#!/sbin/openrc-run
+# Copyright 1999-2004 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+
+LIRCD_SYMLINKFILE=/var/run/lirc/lircd
+IRMP_PARMS="-t /etc/irmp_stm32.map -r 300 -s 100 /dev/irmp_stm32"
+
+depend() {
+	before irexec
+}
+
+start() {
+	ebegin "Starting activylircd"
+	LIRCD_SOCKET=/dev/lircd
+	mkdir -p /var/run/lirc 2>/dev/null
+	ln -sf ${LIRCD_SOCKET} ${LIRCD_SYMLINKFILE}
+	start-stop-daemon --start --quiet --background --exec /usr/bin/irmplircd -- ${IRMP_PARMS}
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping activylircd"
+	start-stop-daemon --stop --quiet --exec /usr/bin/irmplircd
+	rm ${LIRCD_SYMLINKFILE}
+	eend $?
+}

@@ -1,0 +1,19 @@
+#!/sbin/openrc-run
+
+depend() {
+        need net
+}
+
+start() {
+	ebegin "Starting Fritzwatch"
+	touch /tmp/.fritzwatch
+	/_config/bin/fritzwatch.sh -start
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping Fritzwatch"
+	rm /tmp/.fritzwatch
+	/_config/bin/fritzwatch.sh -stop
+	eend 0
+}

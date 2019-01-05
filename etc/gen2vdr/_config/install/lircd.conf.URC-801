@@ -1,0 +1,82 @@
+
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.8.4a(default) on Wed Mar  4 13:17:52 2009
+#
+# contributed by faulmeier
+#
+# brand:                       silvercrest
+# model no. of remote control: urc 801
+# devices being controlled by this remote:
+# PC-Mode (Windows Media Center Mode)
+
+begin remote
+
+  name           Gen2VDR
+  bits           16
+  flags RC6|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  header       2692   874
+  one           481   417
+  zero          481   417
+  pre_data_bits   21
+  pre_data       0x37FF0
+  gap          107426
+  toggle_bit_mask 0x8000
+  rc6_mask    0x100000000
+
+      begin codes
+        0		0xFBFF
+		1		0x7BFE
+		2		0x7BFD
+		3		0xFBFC
+		4		0x7BFB
+		5		0xFBFA
+		6		0x7BF9
+		7		0xFBF8
+		8		0x7BF7
+		9		0xFBF6
+		blue	0x7BA1
+		ch-		0x7BEC
+		ch+		0xFBED
+		down	0x7BE0
+		exit	0x7BF5
+		green	0x7BA3
+		left	0xFBDF
+		menu	0xFBDB
+		mute	0xFBF1
+		ok		0x7BDD
+		power	0xFBF3
+		red		0xFBA4
+		right	0xFBDE
+		up		0x7BE1
+		vol-	0xFBEE
+		vol+	0x7BEF
+		yellow	0xFBA2
+		pause	0xFBE7
+		play	0x7BE9
+		record	0x7BE8
+		skipback	0xFBEA
+		skipforward	0x7BEB
+		fastforward	0x7BE5
+		fastrew	0xFBE4
+		stop	0xFBE6
+		audio	0x7BF4   #-/--
+		user1	0x7B03   #fav
+		user2	0x7BD9   #guide
+		user3	0xFBF0   #info
+		user4	0xFBE2   #pip
+		user5	0x7BDC   #recall
+		user6	0xFBB7   #sleep
+		user7	0x7BE3   #swap
+		user8	0x7BA5   #text
+		user9	0xFBDA   #aspect
+		tv		0xFBF2   #input
+      end codes
+
+end remote
+

@@ -1,0 +1,11 @@
+sys-apps/gptfdisk -icu
+sys-apps/util-linux static-libs
+sys-apps/v86d debug
+sys-block/gparted xfs btrfs fat hfs jfs mdadm reiser4 reiserfs
+sys-block/partimage nls -pam -ssl nologin static
+sys-fs/eudev gudev
+sys-fs/udev extras
+sys-kernel/ddbridge-sources dddvb-api-extra
+sys-libs/glibc gd
+sys-libs/gpm static-libs
+sys-libs/zlib minizip static-libs

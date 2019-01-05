@@ -1,0 +1,221 @@
+Gen2VDR V6.0 - 02.01.2019
+
+Unterschiede zu Gen2VDR V53
+  - Alle Pakete aktualisiert
+  - kodi development incl SkyGo, Amazon Prime
+
+Wer sollte diese Version anstelle der V5 benutzen:
+  - Jeder der ein aktuelleres System haben moechte :)
+
+
+Tastaturbelegung:
+
+  Auf, Ab, Links, Rechts    Cursor-Tasten        Aufnahmen            r
+  Menu                      tab                  Info                 F2
+  Ok                        enter                Befehle              c
+  Zurueck                   backspace ( <- )     Record               F3
+  Rot, Gruen, Gelb, Blau    r,g,y,b              Wiedergabe           F4
+  0..9                      0..9                 Pause                F5
+  Ausschalten               x                    Wiedergabe beenden   F6
+  Kanal +/-                 PageUp, PageDown     Vorlauf              F9
+  Lautstaerke +/-           +, - (Num-Block)     Ruecklauf            F8
+  Stumm                     m                    Vorwaerts springen   F10
+  Kanalliste                k                    Rueckwaerts springen F7
+  Programm                  p                    User1 (=Autoplay)    u
+  Timer                     t                    User2                v
+  Audio Menu                a                    User3                w
+  Einstellungen             F1
+
+
+Konfiguration:
+
+- Die Konfigurationsdateien fuer VDR befinden sich unter /etc/vdr,
+  bzw /etc/vdr.d.
+
+- Einige Einstellungen ( Netzwerk, VDR-Plugins, Wakeup, VDRADMIN .. )
+  werden ueber das Admin Plugin eingestellt:
+  Menu->Einstellungen->Plugins->Admin
+  Die Ziffer hinter den Plugins legt fest wo diese im Menu erscheinen,
+  und mit 0 ist das Plugin disabled.
+  Nummer 1 bedeutet: das Plugin steht oben im Menu.
+
+- Für WLAN wird via g2v-setup als Netzwerk Wifi eingestellt, und dann mittels
+  wicd-curses konfiguriert (gibts auch im Launcher unter System)
+
+- Wer lirc mit ya_usbir oder AtricUSB nutzen will, muss zuerst in der
+  /etc/portage/make.conf die LIRC_DEVICES anpassen und lirc neu
+  bauen (emerge --sync && emerge -av lirc)
+
+- Für den irmp Empfaänger muss eine /etc/irmp_stm32.map bereitgestellt werden.
+
+- Wer satip nutzen will, kann dies durch Aktivieren des VDR Plugins satip,
+  oder alternat mittels:
+  rc-update add satip boot
+  Dazu muss in der /etc/conf.d/satip der SATIP_SERVER eingestellt werden.
+
+- Anstelle des Admin Plugins wird in der shell:
+  g2v-setup
+  zur Konfiguration empfohlen.
+
+- Die Kanalliste bzw Unicable oder Diseqc wird mittels:
+  g2v-setup-reciever
+  eingestellt.
+
+- Falls ein VDR-Plugin Parameter benoetigt muss dies in der Datei:
+  /etc/vdr.d/plugins/<pluginname>
+  angegeben werden (es gibt einige Beispiele dafuer).
+
+- Als GUI steht der Launcher zur Verfuegung.
+  Der Launcher läuft unter dem user root,
+  Konfiguration/Bedienung:
+  http://www.htpc-forum.de/forum/index.php?showtopic=7913
+
+- Die VDR-Befehle koennen ebenso in der shell mit:
+  /_config/bin/g2v_cmd.sh
+  ausgefuehrt werden.
+
+- Bei Soundproblemen hilft evtl:
+  http://wiki.xbmc.org/index.php?title=HOW-TO_set_up_HDMI_audio_on_nVidia_GeForce_G210,_GT220,_or_GT240
+  Mittels:
+  /_config/bin/mkac.sh
+  kann eine Standard asound.conf angelegt werden
+
+- Unter /etc liegen auch vorbereitete asound.conf Dateien welche man z.B. so testen kann:
+  stp alsasound
+  ln -sf asound.conf.xxx /etc/asound.conf
+  stt alsasound
+
+- cpupower zum Drosseln der cpu kann mit:
+  rc-update del cpupower default
+  deaktiviert werden.
+
+
+System-Aktualisierung:
+
+- Um emerge zu benutzen, macht man folgendes:
+
+     beim ersten Mal:
+     emerge --sync
+     eix-update
+
+     danach gehts mit:
+     eix-sync
+
+- Neue VDR-Plugins erstellt man z.B. mit dem inst_plg script, z.B:
+
+    /_config/bin/instplg.sh /tmp/vdr-burn-0.2.0.tar.bz2
+
+  installiert das bereits heruntergeladene Plugin, oder:
+
+    /_config/bin/instplg.sh http://www.burn.org/download/vdr-burn-0.2.0.tar.bz2
+
+  laedt man das Plugin auch gleich noch mit runter.
+
+- VDR und die Plugins koennen mittels:
+  /_config/bin/build_vdr2.sh
+  aktualisisert und gebaut werden.
+
+- Fast alle Pakete sind auf dem Gentoo-ueblichen Weg ueber emerge installiert,
+  Lediglich VDR und dessen Plugins bilden da eine Ausnahme.
+
+- siehe auch /_config/backup/README.update
+
+
+Netzwerk:
+
+- Nach vollendeter Netzwerk-Installation (bei DHCP automatisch) stehen via Samba
+  die Freigaben root, video, audio, film, pictures und games zur Verfuegung.
+  (userid root, pw gen2vdr)
+
+- Mittels SSH (putty) kann man ueber das lokale Netzwerk auf den Rechner
+  zugreifen (userid root, pw gen2vdr).
+  Auf der CD unter \isolinux\DOS befindet sich putty.exe
+
+- Das Live Plugin wird ueber:
+     http://vdr01:8008/
+        oder
+     https://vdr01:8443/
+  angesprochen, User admin, pw: live
+
+  VDRADMIN ruft man im Browser mit:
+     http://vdr01:8001/
+  auf. Userid und Passwort sind gen2vdr.
+
+  Alternativ (aber langsamer) gibts XXV:
+     http://vdr01:8080/
+  Userid und Passwort sind xxv.
+  vdr01 muss man evtl. durch die passende IP-Adresse ersetzen.
+
+- Um den Fritzbox-Anrufbeantworter zu benutzen muss diese Funktionalitaet
+  an der Fritzbox aktiviert sein ( #96*5* am Telefon eingeben ).
+
+
+Dokumentation und Hilfe:
+
+- Doku gibts auf der CD unter doc und unter /usr/local/share/doc/vdr/ !
+
+- Anlaufstellen bei Fragen rund um VDR:
+  http://www.vdr-wiki.de/
+  http://www.vdrportal.de/
+
+- Bei Anfragen bitte die eigene Konfiguration und wenn moeglich auch die
+  Logs posten.
+  Entweder ueber Menu->Befehle, oder mittels /_config/bin/g2v_log.sh,
+  werden die Logs gesammelt und unter /tmp/g2v_log*.tar.xz archiviert.
+  Falls ein USB Geraet eingesteckt wirds gleich darauf kopiert :)
+
+- Falls VDR abstuerzt wird automatisch ein /log/g2v_log_x.tar.xz erstellt.
+  Dies bitte zusammen mit der Fehlerbeschreinbbung posten.
+
+- Einige wichtige Gentoo Konfigurationsdateien befinden sich unter /etc/conf.d
+  ( z.B. network, hdparm ).  Weitere Informationen zu Gentoo finden sich hier:
+  http://www.gentoo.org
+  http://de.gentoo-wiki.com
+
+- Tipps fuer wireless LAN gibts hier:
+  http://www.gentoo.de/doc/de/handbook/handbook-mips.xml?part=4&chap=4
+
+- Fuer vaapi Untertstuetzung:
+  https://github.com/huceke/xine-lib-vaapi/blob/vaapi-testing/README.vaapi
+
+- Homepage von Gen2VDR:
+  http://redmine.gen2vdr.org/
+
+- Forum zu Gen2VDR:
+  http://www.htpc-forum.de
+
+- Bugtracker und Features:
+  http://redmine.gen2vdr.org/projects/g2v60/issues
+
+
+Tipps:
+
+- Zum schnelleren Systemstart sollte eine feste IP-Adresse statt DHCP genutzt werden.
+
+- Auf langsameren System bremst das Plugin tvguide den VDR Start ein wenig aus.
+
+
+Anmerkungen:
+
+Das Passwort fuer root ist gen2vdr !
+
+Fuer Anregungen, Wuensche und Danksagungen steht das Forum:
+http://www.htpc-forum.de/forum zur Verfuegung:-)
+
+
+Mein Dank geht an:
+- Die armen leidgeplagten Betatester ;)
+- Klaus Schmidinger fuer "the one and only" VDR
+- das Gentoo Team
+- all diejenigen, deren Software hier verwendet wird.
+- und an die Benutzer die durch Spenden Gen2VDR unterstuetzt haben.
+
+
+Disclaimer
+----------
+
+Wer das Projekt unterstuetzen moechte findet hier Informationen:
+http://htpc-forum.de/index.php?url=about.php
+
+Der Anwender uebernimmt fuer alle Taetigkeiten und Auswirkungen
+die volle Verantwortung !

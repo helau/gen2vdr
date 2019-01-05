@@ -1,0 +1,81 @@
+#!/sbin/openrc-run
+
+source /etc/vdr.d/conf/gen2vdr.cfg
+source /etc/vdr.d/conf/vdr
+
+depend() {
+    after hotplug
+    after lirc
+    after net
+    after metalog
+    need gen2vdr
+}
+
+start() {
+    if [ "$(pidof -x "/_config/install/init.sh")" != "" ] ; then
+       echo "Init detected - not starting vdr"
+       return 1
+    fi
+    ebegin "Starting vdr"
+    if [ -n "${VDR_CONSOLE}" ] ; then
+       [ -f /_config/bin/myvdrinit.sh ] && /_config/bin/myvdrinit.sh
+#       /_config/bin/splash_stop.sh
+       PROCS="$(pidof -x runvdr) $(pidof vdr)"
+       if [ "$PROCS" != " " ] ; then
+           logger -s "Killing vdr runvdr <$PROCS>"
+           kill -9 $PROCS > /dev/null 2>&1
+           sleep 3
+       fi
+       mkdir /tmp/vtx >/dev/null 2>&1
+       chown ${VDR_USER} /dev/ttys$VDR_CONSOLE
+       logger -s "Starting <openvt -c $VDR_CONSOLE -f -- /etc/vdr/runvdr>"
+       openvt -c $VDR_CONSOLE -f -- /etc/vdr/runvdr
+       for i in 1 2 3 4 5 6 7 8 9 0; do
+           sleep 1
+           [ "$(pidof -x runvdr)" != "" ] && break
+       done
+       if [ "$(pidof -x runvdr)" = "" ] ; then
+          PROCS="$(pidof -x runvdr openvt) $(pidof vdr)"
+          if [ "$PROCS" != " " ] ; then
+             logger -s "Killing vdr runvdr <$PROCS>"
+             kill -9 $PROCS > /dev/null 2>&1
+             sleep 3
+          fi
+          logger -s "Starting again <openvt -c $VDR_CONSOLE -s -f -- /etc/vdr/runvdr>"
+          openvt -c $VDR_CONSOLE -f -- /etc/vdr/runvdr
+          sleep 2
+       fi
+    else
+       echo "No terminal given - not starting vdr"
+    fi
+    eend 0
+}
+
+stop() {
+    NT=$(svdrpsend.pl NEXT rel |grep "^250" |cut -f 3 -d " ")
+    if [ "${NT:0:1}" == "-" ] ; then
+       echo "Aufnahme laeuft - Verhindern des VDR Abbruchs mit Ctrl-C"
+       for i in 10 9 8 7 6 5 4 3 2 1 ; do
+          echo -n "$i . "
+          sleep 1
+       done
+    fi
+    ebegin "Stopping vdr"
+    echo "Shutting down VDR"
+    kill $(pidof -x runvdr) $(pidof vdr) > /dev/null 2>&1
+    echo -n "Waiting for vdr termination "
+    for i in $(seq 1 30) ; do
+        [ "$(pidof vdr)" = "" ] && break
+        echo -n "."
+        sleep 1
+    done
+    echo ""
+    sleep 2
+    PROCS="$(pidof -x /etc/vdr/runvdr) $(pidof vdr)"
+    if [ "$PROCS" != " " ] ; then
+       logger -s "VDR does not terminate normally - killing <$PROCS>"
+       kill -9 $PROCS > /dev/null 2>&1
+    fi
+    kill -9 $(/_config/bin/getproctree.sh /_config/bin/x2vdr.sh) > /dev/null 2>&1
+    eend 0
+}

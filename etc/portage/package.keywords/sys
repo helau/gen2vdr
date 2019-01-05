@@ -1,0 +1,5 @@
+sys-apps/lshw
+sys-firmware/intel-microcode
+sys-kernel/gentoo-sources
+sys-kernel/linux-firmware
+sys-kernel/linux-headers

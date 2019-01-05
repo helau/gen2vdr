@@ -1,0 +1,90 @@
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.7.0(atiusb) on Fri Feb 18 01:53:46 2005
+#
+# contributed by FUX 2005-02-17
+#
+# brand: Medion
+# model no. of remote control: RF Remote Control
+#                              FCC ID: B4S20016398
+# devices being controlled by this remote:
+#
+
+begin remote
+
+#  name  MedionX10
+  name  Gen2VDR
+  bits           16
+  eps            30
+  aeps          100
+
+  one             0     0
+  zero            0     0
+  pre_data_bits   8
+  pre_data       0x14
+  post_data_bits  16
+  post_data      0x0
+  gap          227928
+#  toggle_bit      0
+  toggle_bit_mask 0x80800000
+
+
+      begin codes
+          3                        0x000000000000E40F
+          2                        0x000000000000E30E
+          1                        0x000000000000E20D
+          4                        0x000000000000E510
+          5                        0x000000000000E611
+          6                        0x000000000000E712
+          7                        0x000000000000E813
+          8                        0x000000000000E914
+          9                        0x000000000000EA15
+          0                        0x000000000000EC17
+          ok                       0x000000000000F31E
+          up                       0x000000000000EF1A
+          down                     0x000000000000F722
+          right                    0x000000000000F41F
+          left                     0x000000000000F21D
+          exit                     0x000000000000F520
+          ren                      0x0000000000000B36
+          red                      0x0000000000000732
+          green                    0x0000000000000833
+          yellow                   0x0000000000000934
+          blue                     0x0000000000000A35
+          tv                       0x000000000000EB16
+          ch-                      0x000000000000E10C
+          ch+                      0x000000000000E00B
+          vol+                     0x000000000000DE09
+          vol-                     0x000000000000DD08
+          mute                     0x000000000000D500
+          tv                       0x000000000000012C
+          vcr                      0x000000000000022D
+          dvd                      0x000000000000D904
+          music                    0x000000000000DB06
+          radio                    0x000000000000032E
+          photo                    0x000000000000DA05
+          preview                  0x000000000000042F
+          list                     0x0000000000000530
+          desktop                  0x0000000000000631
+          setup                    0x000000000000F01B
+          snapshot                 0x000000000000ED18
+          acquire                  0x0000000000000C37
+          play                     0x000000000000FA25
+          frew                     0x000000000000F924
+          ffwd                     0x000000000000FB26
+          stop                     0x000000000000FD28
+          rec                      0x000000000000FC27
+          pause                    0x000000000000FE29
+          prev                     0x000000000000F621
+          next                     0x000000000000F823
+          menu                     0x000000000000EE19
+          audio                 0x0000000000000F3A
+          off                      0x000000000000D702
+          chsearch                 0x000000000000F11C
+          fullscreen               0x0000000000000E39
+          editimage                0x0000000000000D38
+     end codes
+
+end remote

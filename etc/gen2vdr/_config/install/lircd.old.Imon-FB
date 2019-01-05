@@ -1,0 +1,95 @@
+
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.8.6(default) on Mon Dec 14 01:14:21 2009
+#
+# contributed by 
+#
+# brand:                       /
+# model no. of remote control: 
+# devices being controlled by this remote:
+#
+
+begin remote
+
+#  name  Imon-FB
+  name  Gen2VDR
+  bits           64
+  eps            30
+  aeps          100
+
+  one             0     0
+  zero            0     0
+  gap          96000
+  toggle_bit_mask 0x4000000000
+
+      begin codes
+          1                        0x0200001E00000000
+          2                        0x0200001F00000000
+          3                        0x0200002000000000
+          4                        0x0200002100000000
+          5                        0x0200002200000000
+          6                        0x0200002300000000
+          7                        0x0200002400000000
+          8                        0x0200002500000000
+          9                        0x0200002600000000
+          0                        0x0200002700000000
+          *                        0x0220002500000000
+          #                        0x0220002000000000
+          red                      0x2B8515B700000201
+          green                    0x299195B700000201
+          blue                     0x2BA115B700000201
+          yellow                   0x28A515B700000201
+          video                    0x288515B700000201
+          music                    0x2AB715B700000201
+          pictures                 0x29A595B700000201
+          tv                       0x2AA395B700000201
+          purple                   0x29A395B700000201
+          menu                     0x2BA395B700000201
+          subtitle                 0x298595B700000201
+          audio                    0x2B8595B700000201
+          bookmark                 0x288515B700000201
+          thumbnail                0x2AB715B700000201
+          zoom                     0x29A595B700000201
+          fullscreen               0x2AA395B700000201
+          mute                     0x2B9595B700000201
+          vol+                     0x28A395B700000201
+          vol-                     0x28A595B700000201
+          ch+                      0x289395B700000201
+          ch-                      0x288795B700000201
+          timer                    0x2B8395B700000201
+          appexit                  0x29B715B700000201
+          win                      0x2AB195B700000201
+          task                     0x2A9395B700000201
+          back                     0x0200002900000000
+          eject                    0x299395B700000201
+          left                     0x0100008000000000
+          right                    0x0100007F00000000
+          up                       0x0100800000000000
+          down                     0x01007F0000000000
+          ok                       0x0100008000000000
+          play                     0x2A9115B700000201
+          rec                      0x298115B700000201
+          frew                     0x2A8195B700000201
+          ffwd                     0x2B8115B700000201
+          pause                    0x2A9115B700000201
+          prev                     0x2B9115B700000201
+          next                     0x298195B700000201
+          stop                     0x2B9715B700000201
+          back                     0x288195B700000201
+          power                    0x289115B700000201
+          r1                       0x0280000000000000
+          r2                       0x0200002A00000000
+          r3                       0x299155B700000201
+          r4                       0x0200002C00000000
+          r5                       0x0200006500000000
+          r6                       0x0102010000000000
+          ok                       0x0200002800000000
+          r8                       0x0101000000000000
+      end codes
+
+end remote
+
+

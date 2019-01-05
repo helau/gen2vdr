@@ -1,0 +1,33 @@
+KeyCode, TFB-Taste, VDR-Funktion/Befehl
+code 2 (1), 1
+code 3 (2), 2
+code 4 (3), 3
+code 5 (4), 4
+code 6 (5), 5
+code 7 (6), 6
+code 8 (7), 7
+code 9 (8), 8
+code 10 (9), 9
+code 11 (0), 0
+code 28 (Enter), Enter, OK / key Return
+code 103 (Up), Pfeil Auf, Auf / key Up
+code 105 (Left), Pfeil Links, Links / key Left
+code 106 (Right), Pfeil Rechts, Rechts / key Right
+code 108 (Down), Pfeil Ab, Ab / key Down
+code 113 (Mute), Mute; Mute / key m
+code 114 (VolumeDown), Vol-, Leiser /_config/bin/svdrpsend.sh hitk volume-
+code 115 (VolumeUp), Vol+, Lauter /_config/bin/svdrpsend.sh hitk volume+
+code 116 (Power), Power-Taste, Ausschalten / key x
+code 128 (Stop), Stop, Stop / key F6
+code 158 (Back), Back, Zurrück / key BackSpace
+code 167 (Record), Rec, Aufnahme / key F3
+code 174 (Exit), Shutdown-Taste, Wechsel zum Launcher /_config/bin/gg_switch.sh
+code 207 (Play), Play, Wiedergabe / key F4
+code 353 (Select), Sources-Taste, OSD-Menü / key Tab
+code 372 (Zoom), Zoom-Taste, Wechsel VDR<->KODI / 
+code 398 (Red), Rot, Rot / key r
+code 399 (Green), Grün, Grün /key g
+code 400 (Yellow), Gelb, Gelb / key y
+code 401 (Blue), Blau, Blau /key b
+code 402 (ChannelUp), CH+, Kanal auf /_config/bin/svdrpsend.sh hitk channel+
+code 403 (ChannelDown), CH-, Kanal ab /_config/bin/svdrpsend.sh hitk channel-

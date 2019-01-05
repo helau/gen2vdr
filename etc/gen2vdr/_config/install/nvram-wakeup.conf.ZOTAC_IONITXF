@@ -1,0 +1,23 @@
+
+################################################
+##  Mainboard autodetection information:
+##
+##    - Mainboard vendor:   "To be filled by O.E.M."
+##    - Mainboard type:     "To be filled by O.E.M."
+##    - Mainboard revision: "To be filled by O.E.M."
+##    - BIOS vendor:        "American Megatrends Inc."
+##    - BIOS version:       "080015"
+##    - BIOS release:       "10/12/2009"
+
+#addr_min         = 0x58
+#addr_sec         = 0x59
+#addr_day         = 0x5D
+#addr_hour        = 0x5E
+addr_stat        = 0x8C
+shift_stat       = 6
+addr_min         = 0xE6
+addr_sec         = 0xE7
+addr_day         = 0xEB
+addr_hour        = 0xEC
+
+upper_method = INTEL

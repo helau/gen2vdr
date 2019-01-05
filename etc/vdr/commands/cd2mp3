@@ -1,0 +1,3 @@
+Audio CD einlesen              : screen -dm sh -c "/_config/bin/cd2mp3.sh"
+Audio CD Status                : sh /_config/bin/cd2mp3stat.sh
+Audio CD einlesen abbrechen?   : killall -9 cd2mp3.sh lame cdda2wav; eject /dev/cdrom

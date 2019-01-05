@@ -1,0 +1,9 @@
+NAME=Gen2VDR
+ID=G2V60
+PRETTY_NAME="Gen2VDR"
+VERSION="V7.0"
+ANSI_COLOR="1;32"
+HOME_URL="http://www.htpc-forum.de/"
+SUPPORT_URL="http://www.htpc-forum.de/forum/index.php?c=11"
+BUG_REPORT_URL="http://gen2vdr.org/BT"
+FILES_URL="http://www.gen2vdr.org/files/v70"

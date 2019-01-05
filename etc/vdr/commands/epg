@@ -1,0 +1,1 @@
+EPG per Internet(tvmovie) holen    : screen -dm sh -c "/usr/bin/tvm2vdr"

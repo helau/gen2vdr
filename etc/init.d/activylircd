@@ -1,0 +1,25 @@
+#!/sbin/openrc-run
+# Copyright 1999-2004 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+
+LIRCD_SYMLINKFILE=/var/run/lirc/lircd
+
+depend() {
+	before irexec
+}
+
+start() {
+	ebegin "Starting activylircd"
+	LIRCD_SOCKET=/dev/lircd
+	mkdir -p /var/run/lirc 2>/dev/null
+	ln -sf ${LIRCD_SOCKET} ${LIRCD_SYMLINKFILE}
+	start-stop-daemon --start --quiet --background --exec /usr/bin/activylircd
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping activylircd"
+	start-stop-daemon --stop --quiet --exec /usr/bin/activylircd
+	rm ${LIRCD_SYMLINKFILE}
+	eend $?
+}

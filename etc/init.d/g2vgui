@@ -1,0 +1,34 @@
+#!/sbin/openrc-run
+# Copyright 1999-2004 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+
+depend() {
+   after lirc
+   after alsasound
+}
+
+start() {
+   if [ "$(pidof X kdm)" != "" ] ; then
+      /etc/init.d/kdm stop > /dev/null 2>&1
+      /_config/bin/killX.sh
+   fi
+   [ "$(pidof irexec)" != "" ] && /etc/init.d/irexec stop
+   if [ "$(pidof -x /_config/bin/gui_stop.sh)" != "" ] ; then
+      logger -s "Waiting for GUI_Stop"
+      for i in 1 2 3 4 5 ; do
+         sleep 1
+         [ "$(pidof -x /_config/bin/gui_stop.sh)" = "" ] && break
+      done
+   fi
+#   CMD="xinit $XINITOPTS -- $XVT $XSERVEROPTS"
+   CMD="/_config/bin/xwatch.sh"
+   ebegin "Starting Gen2VDR GUI <$CMD>"
+   screen -dm sh -c "su -c \"$CMD\""
+   eend 0
+}
+
+stop() {
+   ebegin "Stopping Gen2VDR GUI"
+   screen -dm sh -c /_config/bin/gui_stop.sh
+   eend 0
+}

@@ -1,0 +1,7 @@
+net-analyzer/nmap -gtk -ndiff
+net-fs/samba client
+net-libs/glib-networking -libproxy
+net-libs/libmicrohttpd epoll messages
+net-misc/gerbera protocol-extensions
+net-misc/mediatomb thumbnail -mysql
+net-misc/wicd -libnotify -nls

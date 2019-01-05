@@ -1,0 +1,23 @@
+
+################################################
+##  Mainboard autodetection information:
+##
+##    - Mainboard vendor:   "MICRO-STAR INTERNATIONAL CO.,LTD"
+##    - Mainboard type:     "MS-7238"
+##    - Mainboard revision: "1.0"
+##    - BIOS vendor:        "American Megatrends Inc."
+##    - BIOS version:       "V1.8"
+##    - BIOS release:       "12/01/2007"
+
+need_reboot      = ON_ANY_CHANGE
+
+addr_stat        = 0xE8   # but differs somewhere else
+shift_stat       = 5
+addr_day         = 0xE8   # but differs somewhere else
+addr_hour        = 0xE9
+addr_min         = 0xEA
+addr_sec         = 0xEB
+addr_chk_h       = 0x30
+addr_chk_l       = 0x31
+
+upper_method = INTEL

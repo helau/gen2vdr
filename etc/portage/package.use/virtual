@@ -1,0 +1,3 @@
+virtual/ffmpeg speex threads
+virtual/jpeg static-libs
+virtual/mysql -embedded -minimal -static

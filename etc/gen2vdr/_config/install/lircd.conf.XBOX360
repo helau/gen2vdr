@@ -1,0 +1,79 @@
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.8.4-CVS(default) on Tue May  6 20:32:08 2008
+#
+# contributed by arnoldpascal at web.de
+#
+# brand:Microsoft XBOX 360 Universal Media Remote
+# TV CODE: 0000
+#
+
+begin remote
+
+#  name  xbox
+  name  Gen2VDR
+  bits           13
+  flags RC6|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  header       2682   906
+  one           438   451
+  zero          438   451
+  pre_data_bits   24
+  pre_data       0x1BFF80
+  gap          107066
+  toggle_bit_mask 0x8000
+  rc6_mask    0x100000000
+
+      begin codes
+          eject                    0x0BD7
+          guide                    0x0B9B
+          poweron                  0x0BF3
+          stop                     0x0BE6
+          pause                    0x0BE7
+          frew                     0x0BEA
+          play                     0x0BE9
+          ffwd                     0x0BEB
+          prev                     0x0BE4
+          next                     0x0BE5
+          channels                 0x0BB0
+          subtitles                0x0BAE
+          user1                    0x0BDB
+          exit                     0x0BDC
+          info                     0x0BF0
+          up                       0x0BE1
+          down                     0x0BE0
+          left                     0x0BDF
+          right                    0x0BDE
+          ok                       0x0BDD
+          yellow                   0x0BD9
+          blue                     0x0B97
+          green                    0x0B99
+          red                      0x0BDA
+          vol+                     0x0BEF
+          vol-                     0x0BEE
+          mute                     0x0BF1
+          ch+                      0x0B93
+          ch-                      0x0B92
+          menu                     0x0BF2
+          user4                    0x0BF4
+          rec                      0x0BE8
+          setup                    0x0BF5
+          1                        0x0BFE
+          2                        0x0BFD
+          3                        0x0BFC
+          4                        0x0BFB
+          5                        0x0BFA
+          6                        0x0BF9
+          7                        0x0BF8
+          8                        0x0BF7
+          9                        0x0BF6
+          0                        0x0BFF
+          user2                    0x0BE2
+          tv	                     0x0BE3
+      end codes
+
+end remote

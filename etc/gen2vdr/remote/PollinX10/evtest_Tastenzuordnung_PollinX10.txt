@@ -1,0 +1,76 @@
+Ausgabe von evtest - 60 mögliche TastenCodes für den X10 Receiver
+Zuordnung TastenCodes zu FB-Tasten bei Modul Option keychange=1
+für PollinX10 FB mit 46 Tasten
+
+vdrAsusIONd3 ~ # evtest /dev/input/event5
+Input driver version is 1.0.1
+Input device ID: bus 0x3 vendor 0xbc7 product 0x6 version 0x100
+Input device name: "X10 WTI RF receiver"
+Supported events:
+  Event type 0 (Sync)
+  Event type 1 (Key)
+										Taste PollinX10
+    Event code 2 (1)					1
+    Event code 3 (2)					2
+    Event code 4 (3)					3
+    Event code 5 (4)					4
+    Event code 6 (5)					5
+    Event code 7 (6)					6
+    Event code 8 (7)					8
+    Event code 9 (8)					8
+    Event code 10 (9)					9
+    Event code 11 (0)					0
+    Event code 48 (B)					
+    Event code 103 (Up)					Auf
+    Event code 105 (Left)				Links
+    Event code 106 (Right)				Rechts
+    Event code 108 (Down)				Ab
+    Event code 113 (Mute)				Stumm
+    Event code 114 (VolumeDown)			Vol+ (Wippschalter)
+    Event code 115 (VolumeUp)			Vol- (Wippschalter)
+    Event code 116 (Power)				Aus (Power)
+    Event code 119 (Pause)				II (Pause)
+    Event code 128 (Stop)				Stop
+    Event code 139 (Menu)				TEXT
+    Event code 141 (Setup)				WeltTaste
+    Event code 150 (WWW)				PHOTO
+    Event code 158 (Back)				Back
+    Event code 159 (Forward)			>> (Vorlauf)
+    Event code 167 (Record)				roter Punkt (Aufnahme)
+    Event code 168 (Rewind)				<< (Rücklauf)
+    Event code 176 (Edit)				
+    Event code 183 (F13)				
+    Event code 184 (F14)				
+    Event code 185 (F15)				Guide
+    Event code 186 (F16)				
+    Event code 187 (F17)				
+    Event code 188 (F18)				*
+    Event code 189 (F19)				#
+    Event code 207 (Play)				> (Widergabe)
+    Event code 210 (Print)				Rec TV
+    Event code 272 (LeftBtn)			
+    Event code 273 (RightBtn)			
+    Event code 275 (SideBtn)			
+    Event code 276 (ExtraBtn)			
+    Event code 352 (Ok)					OK
+    Event code 358 (Info)				Info
+    Event code 363 (Channel)			Live TV
+    Event code 377 (TV)					
+    Event code 379 (VCR)				Video
+    Event code 385 (Radio)				
+    Event code 389 (DVD)				DVD Menu
+    Event code 391 (MP3)				Music
+    Event code 395 (List)							
+    Event code 398 (Red)				Rot
+    Event code 399 (Green)				Grün
+    Event code 400 (Yellow)				Gelb
+    Event code 401 (Blue)				Blau
+    Event code 402 (ChannelUp)			P+ (Wippschalter)
+    Event code 403 (ChannelDown)		P- (Wippschalter)
+    Event code 407 (Next)				>>I (Sprung vor)
+    Event code 412 (Previous)			<<I (Sprung zurück)
+    Event code 431 (?)					
+  Event type 2 (Relative)
+    Event code 0 (X)
+    Event code 1 (Y)
+Testing ... (interrupt to exit)

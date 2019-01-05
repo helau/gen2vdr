@@ -1,0 +1,74 @@
+begin remote
+#  name  harmony_kls_vdr
+  name  Gen2VDR
+  bits           13
+  flags RC5|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  one           922   858
+  zero          922   858
+  plead         937
+  gap          116048
+  min_repeat      2
+  toggle_bit      2
+
+
+      begin codes
+        up         0x02c4
+        down       0x02c5
+        menu       0x02c9
+        ok         0x02c8
+        exit       0x02ca
+        left       0x02c6
+        right      0x02c7
+        red        0x02c0
+        green      0x02c1
+        yellow     0x02c2
+        blue       0x02c3
+        0          0x12c0
+        1          0x12c1
+        2          0x12c2
+        3          0x12c3
+        4          0x12c4
+        5          0x12c5
+        6          0x12c6
+        7          0x12c7
+        8          0x12c8
+        9          0x12c9
+        info       0x02cc
+        audio      0x02d1
+        subtitles  0x02d2
+        play       0x12f5
+        pause      0x12f3
+        stop       0x12f6
+        rec        0x12f7
+        ffwd       0x12f4
+        frew       0x12f2
+        next       0x12f1
+        prev       0x12f0
+        power      0x12cc
+        ch+        0x12e0
+        ch-        0x12e1
+        vol+       0x12d0
+        vol-       0x12d1
+        mute       0x12cd
+        channels   0x02d3
+        timers     0x02cf
+        recordings 0x02ce
+        setup      0x02d0
+        commands   0x02cd
+        guide      0x02cb
+        user1      0x02f0
+        user2      0x02f1
+        user3      0x02f2
+        user4      0x02f3
+        user5      0x02f4
+        user6      0x02f5
+        user7      0x02f6
+        user8      0x02f7
+        user9      0x02f8
+        tv         0x12e2     # Taste prevch -> Umbenannt für das Umschalten zwischen VDR und XBMC/FreeVo/KDE
+        poweron    0x12cb
+      end codes
+end remote

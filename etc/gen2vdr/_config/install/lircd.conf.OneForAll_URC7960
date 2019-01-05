@@ -1,0 +1,112 @@
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.8.6(default) on Sat Feb 27 20:24:41 2010
+#
+# contributed by M. Hippert
+# Optimised for Gen2VDR by OliverH
+#
+# Lirc Receiver: Atric
+# model no. of remote control: ONE for ALL URC 7960 SmartControl
+# devices being controlled by this remote: Code for stb: Technisat: 1195
+# 
+# press and hold the magic-Key for 3 sec -> blue ring will light up 2x
+# select "stb"
+# enter code "1195" -> blue ring will light up 2x
+# 
+# The keys PREVIEW, NEXT and "pop up X" failed
+# The keys with same code
+# Red & Rewind; Green & Stop; Yellow & Pause & Play; Blue & FastForward & 16:9; -/-- & list; back & Key-between-ChannelUp-and-ChannelDown
+#
+# Chance Code this keys:
+#  * Press and hold the magic key for 3 sec. --> The Blue ring will light up 2x
+#  * Press 9 9 4. --> The Blue ring will light up 2x
+#  * Press and release the magic key.
+#  * Enter the 5-digit magic-code
+#  * Repeat all for the next key
+# 
+#
+#  *** Magic-Code ***
+#  Die Tasten richtig fest drücken, ansonsten kann es vorkommen, dass Tasten 
+#  nicht angelernt werden obwohl der blaue Ring als Quittung blinkt
+#  Next		00240
+#  Preview	00627
+#  pop up X	00723
+#  Rewind	00560
+#  Stop		00243
+#  Pause	00720
+#  Play		00339
+#  FastForward	00563
+#  16:9		00274
+#  list		00264
+#  back & Key-between-ChannelUp-and-ChannelDown ------> not changed
+# 
+#
+
+
+begin remote
+
+#  name URC_7960
+name Gen2VDR
+# zum Umschalten zu xbmc => lircmap
+  bits           13
+  flags RC5|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  one           909   857
+  zero          909   857
+  plead         917
+  gap          113580
+  toggle_bit_mask 0x800
+
+      begin codes
+          power            0x120C
+          video            0x123F   # 16:9, kein Pendant in der remote.conf, Audio/ Videoversatz
+          prev             0x1232   # |<
+          stop             0x1236
+          next             0x122E   # >|
+          frew             0x122C		# <<
+          play             0x1235	# >
+          ffwd			   0x1234		# >>
+          list             0x022F	# noch ohne Funktion
+#		 channels		   # k (muss in remote.conf definiert werden)
+#		 setup			   # F1 (muss in remote.conf definiert werden)
+          pause            0x1229	# ||
+          rec              0x1237	# o
+          vol+             0x1210
+          mute             0x120D
+          vol-             0x1211
+          up               0x0210
+          down             0x0211
+          left             0x0215
+          right            0x0216
+          ok               0x0217
+          ch+              0x1220
+          ch-	           0x1221
+          red              0x022B
+          green            0x022C
+          yellow           0x022D
+          blue             0x022E
+          info             0x020F
+          menu             0x0212
+          timers           0x122F  # guide, liegt aber schon auf gelb
+          subtitles        0x123C  # mce
+          tv               0x1231  # pop up X
+          exit             0x1222  # auch die Taste zwischen CHANNELUP und CHANNELDOWN
+          1                0x1201
+          2                0x1202
+          3                0x1203
+          4                0x1204
+          5                0x1205
+          6                0x1206
+          7                0x1207
+          8                0x1208
+          9                0x1209
+          +                0x120A  # -/-- (+ muss in remote.conf für Tonspur rauf definiert werden)
+          0                0x1200
+          audio            0x0200  # av (n muss in remote.conf für Audio/ Videoversatz definiert werden)
+      end codes
+
+end remote

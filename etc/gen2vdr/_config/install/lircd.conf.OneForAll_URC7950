@@ -1,0 +1,171 @@
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# contributed by Dieter Fauth
+#
+# brand: One For All URC-7950, Set to code V0081
+# it might work with other models of this brand as well.
+# devices being controlled by this remote: Linux VDR
+# This is a universal remote control containing all important keys
+#
+# Revision 0.3, 2008.05.22
+# Note:
+# I left the original names as comments for future reference.
+# I also left the universal names for the unused sys_05 codes intact, feel free to removed them.
+#
+# Missing or wrong keys can be entered a a "magic key" (Advanced Codes).
+# The ones I used are from http://www.hifi-remote.com/cgi-bin2/ueic.cgi?VCR_0081
+# See the manual of the remote how to enter them.
+# Below you can find them in the comment section at the end of the line.
+# All keys do send something unique now.
+# Reprogram a key with the magic numbers:
+# <VCR><M until LED blinks twice> 994 <M short> <5 digits magic code> <Destination key> <LED blinks twice>
+#
+begin remote
+#name  OneForAll_URC7950_V0081
+name Gen2VDR
+bits           13
+flags RC5|CONST_LENGTH
+eps            30
+aeps          100
+one           866   909
+zero          866   909
+plead         858
+gap          113721
+min_repeat      1
+toggle_bit_mask 0x800
+frequency    36000
+duty_cycle   50
+                      
+begin codes
+0				0x1140          # sys_05_command_00
+1				0x1141          # sys_05_command_01
+2				0x1142          # sys_05_command_02
+3				0x1143          # sys_05_command_03
+4				0x1144          # sys_05_command_04
+5				0x1145          # sys_05_command_05
+6				0x1146          # sys_05_command_06
+7				0x1147          # sys_05_command_07
+8				0x1148          # sys_05_command_08
+9				0x1149          # sys_05_command_09
+tv			0x114a          # sys_05_command_0a
+ok			0x114b          # sys_05_command_0b
+power			0x114c     	# sys_05_command_0c
+mute			0x114d     	# sys_05_command_0d
+blue			0x114e     	# sys_05_command_0e
+info			0x114f     	# sys_05_command_0f	# magic 00268
+vol+			0x1150     	# sys_05_command_10
+vol-  			0x1151     	# sys_05_command_11
+sys_05_command_12	0x1152     	# sys_05_command_12
+sys_05_command_13	0x1153     	# sys_05_command_13
+sys_05_command_14	0x1154     	# sys_05_command_14
+sys_05_command_15	0x1155     	# sys_05_command_15
+sys_05_command_16	0x1156     	# sys_05_command_16
+sys_05_command_17	0x1157     	# sys_05_command_17
+sys_05_command_18	0x1158     	# sys_05_command_18
+sys_05_command_19	0x1159     	# sys_05_command_19
+sys_05_command_1a	0x115a     	# sys_05_command_1a
+sys_05_command_1b	0x115b     	# sys_05_command_1b
+yellow			0x115c     	# sys_05_command_1c	# magic 00558 (was required under SAT, but not under VCR)
+menu			0x115d          # sys_05_command_1d
+sys_05_command_1e	0x115e     	# sys_05_command_1e
+sys_05_command_1f	0x115f     	# sys_05_command_1f
+ch+			0x1160          # sys_05_command_20
+ch-			0x1161          # sys_05_command_21
+sys_05_command_22	0x1162     	# sys_05_command_22
+sys_05_command_23	0x1163     	# sys_05_command_23
+sys_05_command_24	0x1164     	# sys_05_command_24
+sys_05_command_25	0x1165     	# sys_05_command_25
+sys_05_command_26	0x1166     	# sys_05_command_26
+rec			0x1167		# sys_05_command_27
+#      sys_05_command_27	0x1167     	# sys_05_command_27
+sys_05_command_28	0x1168     	# sys_05_command_28
+pause			0x1169     	# sys_05_command_29
+sys_05_command_2a	0x116a     	# sys_05_command_2a
+sys_05_command_2b	0x116b     	# sys_05_command_2b
+sys_05_command_2c	0x116c     	# sys_05_command_2c
+sys_05_command_2d	0x116d     	# sys_05_command_2d
+sys_05_command_2e	0x116e     	# sys_05_command_2e
+down	      		0x116f     	# sys_05_command_2f 	# magic 00016
+sys_05_command_30	0x1170     	# sys_05_command_30
+exit			0x1171     	# sys_05_command_31
+frew			0x1172     	# sys_05_command_32
+up			0x1173     	# sys_05_command_33 	# magic 00147
+ffwd			0x1174     	# sys_05_command_34
+play			0x1175     	# sys_05_command_35
+stop			0x1176     	# sys_05_command_36
+record			0x1177     	# sys_05_command_37	# Dublette zu command 27; na
+sys_05_command_38	0x1178     	# sys_05_command_38
+sys_05_command_39	0x1179     	# sys_05_command_39
+red	      		0x117a     	# sys_05_command_3a
+sys_05_command_3b	0x117b     	# sys_05_command_3b
+sys_05_command_3c	0x117c     	# sys_05_command_3c
+sys_05_command_3d	0x117d     	# sys_05_command_3d
+audio			0x117e     	# sys_05_command_3e
+sys_05_command_3f     	0x117f     	# sys_05_command_3f
+sys_05_command_40	0x0140     	# sys_05_command_40
+sys_05_command_41	0x0141     	# sys_05_command_41
+sys_05_command_42	0x0142     	# sys_05_command_42
+sys_05_command_43	0x0143     	# sys_05_command_43
+sys_05_command_44	0x0144     	# sys_05_command_44
+sys_05_command_45	0x0145     	# sys_05_command_45
+sys_05_command_46	0x0146     	# sys_05_command_46
+sys_05_command_47	0x0147     	# sys_05_command_47
+sys_05_command_48	0x0148     	# sys_05_command_48
+sys_05_command_49	0x0149     	# sys_05_command_49
+sys_05_command_4a	0x014a     	# sys_05_command_4a
+sys_05_command_4b	0x014b     	# sys_05_command_4b
+sys_05_command_4c	0x014c     	# sys_05_command_4c
+sys_05_command_4d	0x014d     	# sys_05_command_4d
+sys_05_command_4e	0x014e     	# sys_05_command_4e
+sys_05_command_4f	0x014f     	# sys_05_command_4f
+sys_05_command_50	0x0150     	# sys_05_command_50
+sys_05_command_51	0x0151     	# sys_05_command_51
+sys_05_command_52	0x0152     	# sys_05_command_52
+sys_05_command_53	0x0153     	# sys_05_command_53
+sys_05_command_54	0x0154     	# sys_05_command_54
+left			0x0155     	# sys_05_command_55
+right			0x0156     	# sys_05_command_56
+sys_05_command_57	0x0157     	# sys_05_command_57
+sys_05_command_58	0x0158     	# sys_05_command_58
+sys_05_command_59	0x0159     	# sys_05_command_59
+sys_05_command_5a	0x015a     	# sys_05_command_5a
+sys_05_command_5b	0x015b     	# sys_05_command_5b
+sys_05_command_5c	0x015c     	# sys_05_command_5c
+sys_05_command_5d	0x015d     	# sys_05_command_5d
+sys_05_command_5e	0x015e     	# sys_05_command_5e
+sys_05_command_5f	0x015f     	# sys_05_command_5f
+sys_05_command_60	0x0160     	# sys_05_command_60
+sys_05_command_61	0x0161     	# sys_05_command_61
+sys_05_command_62	0x0162     	# sys_05_command_62
+sys_05_command_63	0x0163     	# sys_05_command_63
+sys_05_command_64	0x0164     	# sys_05_command_64
+sys_05_command_65	0x0165     	# sys_05_command_65
+sys_05_command_66	0x0166     	# sys_05_command_66
+sys_05_command_67	0x0167     	# sys_05_command_67
+sys_05_command_68	0x0168     	# sys_05_command_68
+sys_05_command_69	0x0169     	# sys_05_command_69
+sys_05_command_6a	0x016a     	# sys_05_command_6a
+sys_05_command_6b	0x016b     	# sys_05_command_6b
+green			0x016c     	# sys_05_command_6c	# magic 00040
+sys_05_command_6d	0x016d     	# sys_05_command_6d
+sys_05_command_6e	0x016e     	# sys_05_command_6e
+sys_05_command_6f	0x016f     	# sys_05_command_6f
+next			0x0170     	# sys_05_command_70 	# magic 00171
+prev			0x0171     	# sys_05_command_71 	# magic 00203
+sys_05_command_72	0x0172     	# sys_05_command_72
+sys_05_command_73	0x0173     	# sys_05_command_73
+sys_05_command_74	0x0174     	# sys_05_command_74
+sys_05_command_75	0x0175     	# sys_05_command_75
+sys_05_command_76	0x0176     	# sys_05_command_76
+sys_05_command_77	0x0177     	# sys_05_command_77
+sys_05_command_78	0x0178     	# sys_05_command_78
+sys_05_command_79	0x0179     	# sys_05_command_79
+sys_05_command_7a	0x017a     	# sys_05_command_7a
+sys_05_command_7b	0x017b     	# sys_05_command_7b
+sys_05_command_7c	0x017c     	# sys_05_command_7c
+sys_05_command_7d	0x017d     	# sys_05_command_7d
+sys_05_command_7e	0x017e     	# sys_05_command_7e
+sys_05_command_7f	0x017f     	# sys_05_command_7f
+end codes
+end remote

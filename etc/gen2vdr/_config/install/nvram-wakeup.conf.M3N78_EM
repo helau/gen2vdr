@@ -1,0 +1,25 @@
+################################################
+##  Mainboard autodetection information:
+##
+##    - Mainboard vendor:   "ASUSTeK Computer INC."
+##    - Mainboard type:     "M3N78-EM"
+##    - Mainboard revision: "Rev X.0x"
+##    - BIOS vendor:        "American Megatrends Inc."
+##    - BIOS version:       "0511"
+##    - BIOS release:       "01/13/2009"
+
+
+need_reboot      = ON_ANY_CHANGE
+
+addr_stat        = 0xDD          # Status byte
+shift_stat       = 3             # The position of the status bit in the byte
+
+addr_day         = 0x8C          # Day
+addr_hour        = 0x8D          # Hour
+addr_min         = 0x62          # Minute
+addr_sec         = 0x63          # Second
+
+addr_chk_h       = 0x30          # High checksum bit
+addr_chk_l       = 0x31          # Low checksum bit
+
+upper_method = VT82Cxxx

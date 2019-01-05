@@ -1,0 +1,280 @@
+# This file contains the tasks for the admin plugin
+# Syntax:
+# <script>:<name>:<value>:<type>:<length|default>:<choices>:<description>:
+:Netzwerk
+/etc/vdr/plugins/admin/cfgnet.sh:NET:Ja:L:1:Nein,Ja,WiFi,manuell:Netzwerk aktivieren:
+/etc/vdr/plugins/admin/cfgnet.sh:DHCP:1:B:1:Nein,Ja:DHCP:
+/etc/vdr/plugins/admin/cfgnet.sh:HOSTNAME:vdr01:A:15:a-zA-Z0-9_-:Name des VDR-PC's:
+--- Erste Netzwerkkarte ---
+/etc/vdr/plugins/admin/cfgnet.sh:IPADR:10.0.2.15:A:15:0-9.:IP-Adresse:
+/etc/vdr/plugins/admin/cfgnet.sh:GATEWAY:192.168.178.1:A:15:0-9.:Gateway (Router):
+/etc/vdr/plugins/admin/cfgnet.sh:NAMESERVER:192.168.178.1:A:15:0-9.:Nameserver:
+/etc/vdr/plugins/admin/cfgnet.sh:SUBNET:255.255.255.0:A:15:0-9.:Subnetmask:
+/etc/vdr/plugins/admin/cfgnet.sh:WORKGROUP:VDR:A:15:a-zA-Z0-9._-:Name der Arbeitsgruppe:
+/etc/vdr/plugins/admin/cfgnet.sh:DOMAIN::A:15:a-zA-Z0-9._-:Name der Domäne:
+/etc/vdr/plugins/admin/cfgnet.sh:PROXY_HOST::A:15:0-9.:Proxy Server:
+/etc/vdr/plugins/admin/cfgnet.sh:PROXY_PORT:8080:I:5:0,99999:Proxy Port:
+--- Netzwerkdienste ---
+/etc/vdr/plugins/admin/cfgnet.sh:SAMBA:1:B:1:Nein,Ja:Samba aktivieren:
+/etc/vdr/plugins/admin/cfgnet.sh:SSH:1:B:1:Nein,Ja:SSH aktivieren:
+/etc/vdr/plugins/admin/cfgnet.sh:NFS:0:B:0:Nein,Ja:NFS-Server aktivieren:
+/etc/vdr/plugins/admin/cfgnet.sh:NFS_RO:1:B:1:Nein,Ja:NFS schreibgeschützt:
+/etc/vdr/plugins/admin/cfgnet.sh:FRITZWATCH:0:B:0:Nein,Ja:FritzBox Anrufmonitor:
+/etc/vdr/plugins/admin/cfgnet.sh:VDRADMIN:0:B:0:Nein,Ja:VDRADMIN automatisch starten:
+/etc/vdr/plugins/admin/cfgnet.sh:NTP:0:B:0:Nein,Ja:Uhrzeit per Internet stellen:
+/etc/vdr/plugins/admin/cfgnet.sh:FTP:0:B:0:Nein,Ja:FTP Server aktivieren:
+/etc/vdr/plugins/admin/cfgnet.sh:WAKEONLAN:1:B:1:Nein,Ja:WakeOnLAN per ethtool aktivieren:
+:System
+/etc/vdr/plugins/admin/setvdrconf.sh:LOG_LEVEL:3:I:0:0,3:LogLevel (0=Aus,1=Normal,2=Info,3=Debug):
+/etc/vdr/plugins/admin/cfgctrl.sh:REMOTE:Other:L:0:Tastatur,ActivyFB,AtricUSB,LircSerial,MedionX10,MCEUSB,ya_usbir,IRMP,DVB,Imon,Other:FB Empfänger:
+/etc/vdr/plugins/admin/cfgctrl.sh:LIRCCFG:Other:L:0:Activy3xx,ALDI41666-186-325,ALDI4688-065-260,ALDI4689-336,ALDI6461-327,ALDI6461-376,DigitainerX10,extb-o4a7040,Hama52451,Hama52451,Harmony_Imon_R200,Harmony_Imon_R200_2,Harmony_kls_vdr,Harmony_kls_vdr_old,HauppaugeA415,Kingman-120,Kingman-175,Kingman-336,L4M_Merlin,LIDL-001,LIDL-001VCR,LIDL-054,LIDL-URC801,Loewemc,MedionX10,MystiqueSaTiX-S2-Sky_USB,Nexus_lirc_serial,Nokia-MB,OneForAll_URC7120,OneForAll_URC7950,OneForAll_URC7960,PollinCyberlink,PollinX10,Reycom,RR801-HA,Streamzap,Sundtek,SundtekIR_HauppaugeFB,TC-M19,TeVii,TTS35AI_mod,URC-801,XBOX360,Other:FB Konfig:
+/etc/vdr/plugins/admin/cfglcd.sh:LCD:None:L:0:activy3,bayrad,CFontz,CFontzPacket,curses,CwLnx,dm140,ea65,EyeboxOne,g15,glcd,glcdlib,glk,hd44780,i2500vfd,icp_a106,imon,imonlcd,IOWarrior,irtrans,joy,lb216,lcdm001,lcterm,lirc,lis,MD8800,mdm166a,ms6931,mtc_s16209x,MtxOrb,NoritakeVFD,picolcd,pyramid,sdeclcd,sed1330,sed1520,serialPOS,serialVFD,shuttleVFD,sli,stv5730,SureElec,t6963,text,tyan,ula200,vlsys_m428,xosd,None:LCD Display:
+/etc/vdr/plugins/admin/setvdrconf.sh:WARN_DISK_FREE:1000:I:1000:0,9999:Warnung freier Plattenplatz:
+/etc/vdr/plugins/admin/setvdrconf.sh:MIN_DISK_FREE:20:I:20:0,99:Minimal freier Plattenplatz:
+/etc/vdr/plugins/admin/cfglang.sh:KBD_LAYOUT:Deutsch:L:0:Deutsch,US:Tastatur Layout:
+/etc/vdr/plugins/admin/setvdrconf.sh:DISC_SLOWDOWN:cdspeed:L:1:Aus,hdparm,cdspeed:CD/DVD langsam drehen:
+/etc/vdr/plugins/admin/setvdrconf.sh:DISC_SPEED:6:I:10:1,50:CD/DVD Geschwindigkeit:
+/etc/vdr/plugins/admin/cfgmnt.sh:AUTOMOUNT:1:B:1:Nein,Ja:CD/DVD/USB automatisch mounten:
+/etc/vdr/plugins/admin/setvdrconf.sh:MOUNTNAMEDEV:0:B:0:Nein,Ja:Devicename im mountpoint:
+/etc/vdr/plugins/admin/cfgmnt.sh:DISC_AUTORUN:0:B:0:Nein,Ja:CD/DVD automatisch starten:
+/etc/vdr/plugins/admin/setvdrconf.sh:DIRECTISA:1:B:0:Nein,Ja:Parameter --directisa für rtc/nvram:
+--- Zeitraum fuer Dateisystemüberprüfung (0=Aus) ---
+/etc/vdr/plugins/admin/setvdrconf.sh:FSCK_WEEK:0:I:0:0,99:FSCK alle x Wochen:
+:Shutdown/Wakeup
+/etc/vdr/plugins/admin/cfgsplash.sh:BOOT_SPLASH:0:B:1:Nein,Ja:Gen2VDR Boot-Splash:
+/etc/vdr/plugins/admin/setvdrconf.sh:SHUTDOWN_METHOD:Shutdown:L:0:Halt,STR,STD1,STD2,Shutdown,PowerOffKernel,PowerOffNVRAM:Shutdown-Variante:
+/etc/vdr/plugins/admin/setvdrconf.sh:WAKEUP_RESERVE:300:I:300:0,9999:Wakeupreserve in Sekunden:
+/etc/vdr/plugins/admin/setvdrconf.sh:WAKEUP_METHOD:ACPI:L:1:Aus,ACPI,ACPI_NOLIMIT,NVRAM,WAKEUP_BOARD,SET_TIMER:Wakeup-Methode:
+/etc/vdr/plugins/admin/setvdrconf.sh:NVRAM_BOARD::A:32:a-zA-Z0-9_-:NVRAM Board - BIOS:
+/etc/vdr/plugins/admin/setvdrconf.sh:IGNORE_CONNECTION:1:B:1:Nein,Ja:Shutdown trotz aktiven Verbindungen:
+/etc/vdr/plugins/admin/setvdrconf.sh:PB_FUNCTION:HALT:L:1:HALT,EJECT,HALT_EJECT,none:Power Button Ereignis:
+--- Tägliches Aufwachen für Wartung (EPG-Scan...) ---
+/etc/vdr/plugins/admin/setvdrconf.sh:WAKEUP_HOUR:5:I:5:0,23:Tgl. Wakeup-Zeit:
+/etc/vdr/plugins/admin/setvdrconf.sh:WAKEUP_DURATION:0:I:0:0,120:Tgl. Dauer (0=Aus):
+/etc/vdr/plugins/admin/setvdrconf.sh:EPGSCAN:Aus:L:0:Aus,TVMovie,EPGScan:EPG-Daten bei Wakeup:
+--- Suspend To Ram Besonderheiten ---
+/etc/vdr/plugins/admin/setvdrconf.sh:STR_WU_LIMIT:5:I:5:0,99:DailyWakeup Limit(Stunden):
+/etc/vdr/plugins/admin/setvdrconf.sh:STR_MAN_LIMIT:1:I:1:0,9:ManualWakeup Limit(Tage):
+:VDR-System
+/etc/vdr/plugins/admin/setvdrconf.sh:CMDSUBMENU:1:B:1:Nein,Ja:Befehle-Untermenü:
+/etc/vdr/plugins/admin/setvdrconf.sh:WATCHDOG:30:I:500:0,999:Watchdog Timeout in Sekunden:
+/etc/vdr/plugins/admin/setvdrconf.sh:WATCHDOG_REBOOT:0:I:0:0,99:Reboot nach x Watchdog Timeouts:
+/etc/vdr/plugins/admin/setvdrconf.sh:VDR_NICE:0:I:0:-20,19:VDR Priorität(-20=Max):
+/etc/vdr/plugins/admin/setvdrconf.sh:DVB_CARD_NUM:0:I:1:0,9:Anzahl DVB-Karten:
+/etc/vdr/plugins/admin/setdvb.sh:UNICABLE:Aus:L:0:Nein,Ja,manuell:Benutze Unicable:
+:VDR-Aufnahme
+/etc/vdr/plugins/admin/setvdrconf.sh:SET_MARKS:Nie:L:0:Nie,Nach Aufnahme,Live,Immer:Schnittmarken erkennen (NOAD):
+/etc/vdr/plugins/admin/setvdrconf.sh:MAINTAIN_NOAD:0:B:1:Nein,Ja:Schnittmarken-Dienst verwenden:
+/etc/vdr/plugins/admin/setvdrconf.sh:SHAREMARKS:0:B:0:Nein,Ja:Schnittmarken sharen:
+/etc/vdr/plugins/admin/setvdrconf.sh:USE_CUTTING_DIR:0:B:1:Nein,Ja:Schnittverzeichnis verwenden:
+/etc/vdr/plugins/admin/setvdrconf.sh:MAINTAIN_CUTTING:0:B:1:Nein,Ja:Schnitt-Dienst verwenden:
+:Ausgabe/GUI
+/_config/bin/set_xorgres.sh:SCREEN_RESOLUTION:1280x1024:L:0:1080p,1080i,720p,VGA2SCART,640x480,800x600,1024x768,1200x800,1280x720,1280x1024,1360x768,1440x900,1600x1200,1650x1080,1920x1080,1920x1200,2048x1152,2048x1536,manuell:Auflösung:
+/_config/bin/setguifontsize.sh:GUI_FONTSIZE:22:I:0:0,40:Schriftgrösse (<8 ->manuell):
+/etc/vdr/plugins/admin/setvdrconf.sh:VO_DRIVER:x11:L:1:x11,vdpau,vaapi,xv,ffdvb,dxr3,manuell:Video-Ausgabe:
+/etc/vdr/plugins/admin/setvdrconf.sh:AO_DRIVER:alsa:L:1:alsa,oss,ffdvb,dxr3,manuell:Audio-Ausgabe:
+/etc/vdr/plugins/admin/setvdrconf.sh:VO_ASPECT:anamorphic:L:0:auto,square,4_3,anamorphic,dvb:Aspect Ratio(xine):
+/etc/vdr/plugins/admin/setvdrconf.sh:VO_CROP:0:B:0:Nein,Ja:Aktiviere Cropping:
+/etc/vdr/plugins/admin/setvdrconf.sh:OVERSCAN_TOP:0:I:0:0,999:Rand oben:
+/etc/vdr/plugins/admin/setvdrconf.sh:OVERSCAN_BOTTOM:0:I:0:0,999:Rand unten:
+/etc/vdr/plugins/admin/setvdrconf.sh:OVERSCAN_LEFT:0:I:0:0,999:Rand links:
+/etc/vdr/plugins/admin/setvdrconf.sh:OVERSCAN_RIGHT:0:I:0:0,999:Rand rechts:
+:Plugins
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_osdteletext:1:I:0:0,999:osdteletext:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_skinenigmang:2:I:0:0,999:skinenigmang:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_epgsearch:3:I:0:0,999:epgsearch:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_tvguide:4:I:0:0,999:tvguide:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_femon:5:I:0:0,999:femon:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_music:6:I:0:0,999:music:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_live:7:I:0:0,999:live:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_xineliboutput:8:I:0:0,999:xineliboutput:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_epgtableid0:9:I:0:0,999:epgtableid0:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_dbus2vdr:10:I:0:0,999:dbus2vdr:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_admin:11:I:0:0,999:admin:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_3dcontrol:0:I:0:0,999:3dcontrol:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_X10:0:I:0:0,999:X10:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_aide:0:I:0:0,999:aide:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_alcd:0:I:0:0,999:alcd:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_archive:0:I:0:0,999:archive:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_arghdirector:0:I:0:0,999:arghdirector:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_asterisk:0:I:0:0,999:asterisk:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_autotimer:0:I:0:0,999:autotimer:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_autotimeredit:0:I:0:0,999:autotimeredit:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_avahi4vdr:0:I:0:0,999:avahi4vdr:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_avards:0:I:0:0,999:avards:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_avolctl:0:I:0:0,999:avolctl:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_bgprocess:0:I:0:0,999:bgprocess:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_block:0:I:0:0,999:block:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_browse:0:I:0:0,999:browse:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_burn:0:I:0:0,999:burn:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_calc:0:I:0:0,999:calc:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_cdplayer:0:I:0:0,999:cdplayer:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_chanman:0:I:0:0,999:chanman:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_channelscan:0:I:0:0,999:channelscan:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_channelswitcher:0:I:0:0,999:channelswitcher:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_chanorg:0:I:0:0,999:chanorg:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_cinebars:0:I:0:0,999:cinebars:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_clock:0:I:0:0,999:clock:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_conflictcheckonly:0:I:0:0,999:conflictcheckonly:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_control:0:I:0:0,999:control:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_cpumon:0:I:0:0,999:cpumon:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_ddci2:0:I:0:0,999:ddci2:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_delsys:0:I:0:0,999:delsys:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_devstatus:0:I:0:0,999:devstatus:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_ditherndemo:0:I:0:0,999:ditherndemo:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_dm140vfd:0:I:0:0,999:dm140vfd:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_dummydevice:0:I:0:0,999:dummydevice:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_dvbhddevice:0:I:0:0,999:dvbhddevice:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_dvbsddevice:0:I:0:0,999:dvbsddevice:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_dvdselect:0:I:0:0,999:dvdselect:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_dvdswitch:0:I:0:0,999:dvdswitch:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_eepg:0:I:0:0,999:eepg:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_elvis:0:I:0:0,999:elvis:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_epg2vdr:0:I:0:0,999:epg2vdr:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_epgfixer:0:I:0:0,999:epgfixer:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_epgsearchclient:0:I:0:0,999:epgsearchclient:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_epgsearchonly:0:I:0:0,999:epgsearchonly:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_epgsync:0:I:0:0,999:epgsync:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_exec:0:I:0:0,999:exec:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_extb:0:I:0:0,999:extb:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_externalplayer:0:I:0:0,999:externalplayer:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_extrecmenu:0:I:0:0,999:extrecmenu:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_favorites:0:I:0:0,999:favorites:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_femonclient:0:I:0:0,999:femonclient:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_fepg:0:I:0:0,999:fepg:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_filebrowser:0:I:0:0,999:filebrowser:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_freecell:0:I:0:0,999:freecell:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_fritzbox:0:I:0:0,999:fritzbox:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_graphlcd:0:I:0:0,999:graphlcd:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_graphtftng:0:I:0:0,999:graphtftng:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_gstreamer:0:I:0:0,999:gstreamer:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_hdmonitor:0:I:0:0,999:hdmonitor:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_hello:0:I:0:0,999:hello:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_icetft:0:I:0:0,999:icetft:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_image:0:I:0:0,999:image:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_imdbsearch:0:I:0:0,999:imdbsearch:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_imonlcd:0:I:0:0,999:imonlcd:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_infosatepg:0:I:0:0,999:infosatepg:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_inputdev:0:I:0:0,999:inputdev:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_ipod:0:I:0:0,999:ipod:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_iptv:0:I:0:0,999:iptv:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_ircviewer:0:I:0:0,999:ircviewer:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_joystick:0:I:0:0,999:joystick:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_kvdrmon:0:I:0:0,999:kvdrmon:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_lcdcontrol:0:I:0:0,999:lcdcontrol:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_lcdproc:0:I:0:0,999:lcdproc:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_lcr:0:I:0:0,999:lcr:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_lircrc:0:I:0:0,999:lircrc:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_mailbox:0:I:0:0,999:mailbox:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_makemkv:0:I:0:0,999:makemkv:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_mame:0:I:0:0,999:mame:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_manual:0:I:0:0,999:manual:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_markad:0:I:0:0,999:markad:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_message:0:I:0:0,999:message:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_mlist:0:I:0:0,999:mlist:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_mosaic:0:I:0:0,999:mosaic:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_mount:0:I:0:0,999:mount:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_mousemate:0:I:0:0,999:mousemate:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_mp3:0:I:0:0,999:mp3:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_mplayer:0:I:0:0,999:mplayer:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_netconfig:0:I:0:0,999:netconfig:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_noepg:0:I:0:0,999:noepg:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_nordlichtsepg:0:I:0:0,999:nordlichtsepg:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_openmhp:0:I:0:0,999:openmhp:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_osdadjust:0:I:0:0,999:osdadjust:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_osddemo:0:I:0:0,999:osddemo:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_osdimage:0:I:0:0,999:osdimage:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_osdserver:0:I:0:0,999:osdserver:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_osdtest256:0:I:0:0,999:osdtest256:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_otv4vdr:0:I:0:0,999:otv4vdr:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_permashift:0:I:0:0,999:permashift:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_picselshow:0:I:0:0,999:picselshow:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_pictures:0:I:0:0,999:pictures:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_pim:0:I:0:0,999:pim:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_play:0:I:0:0,999:play:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_pluginsetup:0:I:0:0,999:pluginsetup:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_powermate:0:I:0:0,999:powermate:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_prefermenu:0:I:0:0,999:prefermenu:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_premiereepg:0:I:0:0,999:premiereepg:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_pvrinput:0:I:0:0,999:pvrinput:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_quickepgsearch:0:I:0:0,999:quickepgsearch:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_quicktimer:0:I:0:0,999:quicktimer:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_radio:0:I:0:0,999:radio:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_radioinfo:0:I:0:0,999:radioinfo:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_radiolist:0:I:0:0,999:radiolist:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_rcu:0:I:0:0,999:rcu:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_remote:0:I:0:0,999:remote:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_remoteosd:0:I:0:0,999:remoteosd:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_remotetimers:0:I:0:0,999:remotetimers:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_restfulapi:0:I:0:0,999:restfulapi:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_ripit:0:I:0:0,999:ripit:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_rssreader:0:I:0:0,999:rssreader:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_satip:0:I:0:0,999:satip:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_savechannel:0:I:0:0,999:savechannel:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_scheduler:0:I:0:0,999:scheduler:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_scraper2vdr:0:I:0:0,999:scraper2vdr:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_screenshot:0:I:0:0,999:screenshot:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_serial:0:I:0:0,999:serial:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_serialremote:0:I:0:0,999:serialremote:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_serled:0:I:0:0,999:serled:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_setuploadandsave:0:I:0:0,999:setuploadandsave:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_showrecinfo:0:I:0:0,999:showrecinfo:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_skincurses:0:I:0:0,999:skincurses:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_skinelchi:0:I:0:0,999:skinelchi:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_skinflatplus:0:I:0:0,999:skinflatplus:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_skinnopacity:0:I:0:0,999:skinnopacity:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_skinpearlhd:0:I:0:0,999:skinpearlhd:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_skinsoppalusikka:0:I:0:0,999:skinsoppalusikka:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_sleeptimer:0:I:0:0,999:sleeptimer:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_snapshot:0:I:0:0,999:snapshot:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_soccer:0:I:0:0,999:soccer:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_softhddevice:0:I:0:0,999:softhddevice:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_solitaire:0:I:0:0,999:solitaire:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_span:0:I:0:0,999:span:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_spider:0:I:0:0,999:spider:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_sportng:0:I:0:0,999:sportng:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_squeezebox:0:I:0:0,999:squeezebox:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_status:0:I:0:0,999:status:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_statusleds:0:I:0:0,999:statusleds:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_streamdev-client:0:I:0:0,999:streamdev-client:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_streamdev-server:0:I:0:0,999:streamdev-server:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_sudoku:0:I:0:0,999:sudoku:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_surfer:0:I:0:0,999:surfer:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_svccli:0:I:0:0,999:svccli:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_svcsvr:0:I:0:0,999:svcsvr:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_svdrpdemo:0:I:0:0,999:svdrpdemo:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_svdrpext:0:I:0:0,999:svdrpext:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_svdrposd:0:I:0:0,999:svdrposd:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_svdrpservice:0:I:0:0,999:svdrpservice:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_swcon:0:I:0:0,999:swcon:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_systeminfo:0:I:0:0,999:systeminfo:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_targavfd:0:I:0:0,999:targavfd:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_taste:0:I:0:0,999:taste:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_timeline:0:I:0:0,999:timeline:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_timersync:0:I:0:0,999:timersync:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_trayopen:0:I:0:0,999:trayopen:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_ttxtsubs:0:I:0:0,999:ttxtsubs:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_tvm2vdr:0:I:0:0,999:tvm2vdr:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_tvscraper:0:I:0:0,999:tvscraper:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_uactivity:0:I:0:0,999:uactivity:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_umsadmin:0:I:0:0,999:umsadmin:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_undelete:0:I:0:0,999:undelete:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_upnp:0:I:0:0,999:upnp:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_usbremote:0:I:0:0,999:usbremote:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_vdrc:0:I:0:0,999:vdrc:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_vdrconvert:0:I:0:0,999:vdrconvert:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_vdrmanager:0:I:0:0,999:vdrmanager:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_vnsiserver:0:I:0:0,999:vnsiserver:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_vod:0:I:0:0,999:vod:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_wapd:0:I:0:0,999:wapd:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_weatherng:0:I:0:0,999:weatherng:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_webepg:0:I:0:0,999:webepg:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_wirbelscan:0:I:0:0,999:wirbelscan:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_xine:0:I:0:0,999:xine:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_xmame:0:I:0:0,999:xmame:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_xmltv2vdr:0:I:0:0,999:xmltv2vdr:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_xvdr:0:I:0:0,999:xvdr:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_xxvautotimer:0:I:0:0,999:xxvautotimer:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_yacoto:0:I:0:0,999:yacoto:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_yaepghd:0:I:0:0,999:yaepghd:
+/etc/vdr/plugins/admin/cfgplg.sh:PLG_zappilot:0:I:0:0,999:zappilot:

@@ -1,0 +1,18 @@
+################################################
+## Mainboard autodetection information:
+##
+## - Mainboard vendor: "Point of View"
+## - Mainboard type: "Point of View"
+## - Mainboard revision: "1.00"
+## - BIOS vendor: "American Megatrends Inc."
+## - BIOS version: "0104"
+## - BIOS release: "06/18/2009"
+
+addr_min = 0x54
+addr_sec = 0x55
+addr_day = 0x5C
+addr_hour = 0x5D
+addr_chk_h = 0x30
+addr_chk_l = 0x31
+
+upper_method = VT82Cxxx

@@ -1,0 +1,12 @@
+#!/bin/bash
+if [ "$INSTALL_DEVICE" = "" ] ; then
+   export INSTALL_DEVICE="/dev/sr0"
+fi
+
+if [ "$INSTALL_DIR" = "" ] ; then
+   export INSTALL_DIR="/SETUP"
+fi
+
+cp -f $INSTALL_DIR/setup.sh /~setup.sh
+
+bash /~setup.sh

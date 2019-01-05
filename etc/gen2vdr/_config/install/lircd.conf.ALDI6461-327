@@ -1,0 +1,85 @@
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.6.6(any) on Thu Oct 16 19:39:58 2003
+#
+# contributed by Dieter Fauth (fauthd@web.de)
+#
+# brand: Tevion MD6461, Set to code 327 (Philips VCR)
+# model no. of remote control: MD6461
+# devices being controlled by this remote: Linux VDR
+# This is a universal remote control containing all important keys
+# It was sold by Aldi-sued in Oct.2003 (6.99 Euro)
+#
+# Note
+# Some videotext keys do send the same code as other keys
+begin remote
+
+#name ALDI6461-327
+name  Gen2VDR
+bits 13
+flags RC5|CONST_LENGTH
+eps 30
+aeps 100
+
+one 889 889
+zero 889 889
+plead 889
+gap 113792
+min_repeat 1
+toggle_bit 2
+
+frequency 36000
+
+   begin codes
+      power         0x000000000000194C
+      1             0x0000000000001141
+      2             0x0000000000001942
+      3             0x0000000000001143
+      4             0x0000000000001944
+      5             0x0000000000001145
+      6             0x0000000000001946
+      7             0x0000000000001147
+      8             0x0000000000001948
+      9             0x0000000000001149
+      0             0x0000000000001940
+      av            0x000000000000017D
+      ch+           0x0000000000001160
+      ch-           0x0000000000001961
+# Color keys
+      red           0x000000000000096B
+      green         0x000000000000016C
+      yellow        0x000000000000096D
+      blue          0x000000000000016E
+      magenta       0x0000000000001968
+# Menu navigation
+      enter         0x000000000000194A
+      up            0x0000000000000170
+      down          0x0000000000000971
+      left          0x000000000000116F
+      right         0x0000000000001969
+      menu          0x000000000000117C
+# EXIT          0x000000000000194A
+      exit          0x0000000000001171
+      ok            0x000000000000114B
+# Recorder keys
+      frew          0x000000000000116C
+      play          0x0000000000001975
+      ffwd          0x000000000000116E
+      rec           0x0000000000001977
+      stop          0x0000000000001176
+      pause         0x0000000000001976
+# Videotext keys above the color keys from left to right
+# VTON          0x000000000000117C
+      user1         0x0000000000001971
+      user2         0x000000000000114F
+      user3         0x000000000000194B
+      user4         0x0000000000001171
+# Volume seams to be a generic code, my TV also accepts it
+      vol+          0x0000000000001010
+      vol-          0x0000000000001811
+# Mute seams to be a generic code, my TV also accepts it
+      mute          0x000000000000100D
+   end codes
+end remote

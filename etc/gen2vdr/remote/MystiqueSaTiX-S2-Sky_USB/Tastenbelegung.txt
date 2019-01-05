@@ -1,0 +1,48 @@
+VDR mit FB und integrierten IR-Receiver der MystiqueSaTiX S2 Sky USB bedienen
+(baugleich DVBSky S860 USB) 
+  Funktion					FB-Taste (Bemerkung)
+  
+  Wechsel G2V Launcher		"Zoom"-Taste
+  Wechsel zu KODI 			"FAV"-Taste
+  OSD aufrufen				MENU
+  Auf, Ab, 				    Cursor-Tasten (Links, Rechts für Lautstärke)
+  Ok                        OK 
+  Zurueck                   EXIT  
+  Rot     					RECALL (rot einfärben)
+  Gruen 					EPG (grün einfärben)
+  Gelb 						PIP (gelb einfärben)
+  Blau						SNAP (blau einfärben)
+  0..9                      0..9               
+  Ausschalten               POWER    
+  Kanal +/-                 Richtungstasten auf/ab (Chan+/- nicht vorhanden)
+  Lautstaerke +/-           Cursor Links/Rechst (VOL-/VOL+ nicht vorhanden)
+  Stumm                     Mute (durchgestr. Lautsprecher)    
+  EPG-Info akt. Sendung   	INFO
+  Wiedergabe           		PLAY
+  Pause                		PAUSE
+  Wiedergabe beenden   		Stop (Rechteck) 
+  Record               		RECORD
+  Vorlauf              		>>I
+  Ruecklauf            		I<<
+  
+
+KODI mit FB und integrierten IR-Receiver der MystiqueSaTiX S2 Sky USB bedienen
+  Funktion					FB-Taste (Bemerkung)
+  
+  Wechsel G2V Launcher		"Zoom"-Taste
+  Wechsel zu VDR			"FAV"-Taste
+  OSD bei Wiedergabe		MENU
+  Auf, Ab, Links, Rechts    Cursor-Tasten
+  Ok                        OK 
+  Zurueck                   EXIT      
+  0..9                      0..9               
+  KODI Ausschalten          POWER     
+  Lautstaerke +/-           PIP (gelb einfärben)=+/EPG (grün einfärben)=-
+  Stumm                     Mute (durchgestr. Lautsprecher)                   
+  Wiedergabe           		PLAY
+  Pause                		PAUSE
+  Wiedergabe beenden   		Stop (Rechteck)
+  Vorlauf              		>>I
+  Ruecklauf            		I<<
+  Rueckwaerts springen 		über Wiedergabe-OSD
+  Vorwaerts springen   		über Wiedergabe-OSD

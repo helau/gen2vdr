@@ -1,0 +1,5 @@
+#FS  Server-IP[:MAC] Freigabe  Mountparamter
+#cifs 192.168.178.110 video     username=xxx.password=xxx
+#cifs 192.168.178.110 film      username=xxx,password=xxx
+#nfs  192.168.178.110 video     rw,intr,bg,nolock
+#nfs  192.168.178.110 film      rw,intr,bg,nolock

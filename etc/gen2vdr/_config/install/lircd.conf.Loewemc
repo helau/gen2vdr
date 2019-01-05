@@ -1,0 +1,74 @@
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.9.1-git(default) on Sun Aug 21 18:33:28 2011
+#
+# contributed by
+#
+# brand:                       /tmp/lircd.conf5
+# model no. of remote control:
+# devices being controlled by this remote:
+#
+
+begin remote
+
+  name  /tmp/lircd.conf5
+  bits           13
+  flags RC5|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  one           936   847
+  zero          936   847
+  plead         948
+  gap          114229
+  toggle_bit_mask 0x0
+
+      begin codes
+          1                        0x1281
+          2                        0x1282
+          3                        0x1A83
+          4                        0x1284
+          5                        0x1A85
+          6                        0x1286
+          7                        0x1A87
+          8                        0x1288
+          9                        0x1289
+          0                        0x1A80
+          epg                      0x028E
+          assist                   0x1AB1
+          pip                      0x0298
+          text                     0x1ABC
+          menu                     0x128B
+          exit                     0x1ABF
+          info                     0x028F
+          vol+                     0x1815
+          vol-                     0x1014
+          ch+                      0x1A98 0x1298
+          ch-                      0x1A97
+          up                       0x12A0
+          down                     0x1AA1
+          left                     0x1291
+          right                    0x1290
+          ok                       0x1AA6
+          red                      0x129B
+          green                    0x1A9A
+          yellow                   0x12AB
+          blue                     0x1AA8
+          rew                      0x12B2
+          play                     0x1AB5
+          ffwd                     0x12A8
+          ffwd1                    0x1AB4
+          rec                      0x12B7
+          pause                    0x1AA9
+          stop                     0x12B6
+          enter                    0x1A83
+          recmenu                  0x029B
+          timeshift                0x0A9A
+          audio                    0x0000
+          mute                     0x180D
+          power                    0x128C
+      end codes
+
+end remote

@@ -1,0 +1,4 @@
+=dev-libs/poco-1.7.6
+dev-libs/tntdb
+dev-libs/tntnet
+=dev-util/strace-4.25

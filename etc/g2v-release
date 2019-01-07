@@ -1,7 +1,7 @@
 NAME=Gen2VDR
-ID=G2V60
+ID=G2V70
 PRETTY_NAME="Gen2VDR"
-VERSION="V7.0"
+VERSION="V7.0 git "
 ANSI_COLOR="1;32"
 HOME_URL="http://www.htpc-forum.de/"
 SUPPORT_URL="http://www.htpc-forum.de/forum/index.php?c=11"

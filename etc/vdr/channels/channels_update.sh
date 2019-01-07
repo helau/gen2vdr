@@ -1,5 +1,8 @@
 #!/bin/bash
 SRV="channelpedia.yavdr.com"
+
+cd /etc/vdr/channels
+
 ping -c1 -i1 -W3 $SRV > /dev/null 2>&1
 [ "$?" != "0" ] && echo "Kann $SRV nicht erreichen" && exit
 

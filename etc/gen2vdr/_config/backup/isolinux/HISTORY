@@ -157,3 +157,10 @@ Historie
              - kernel 4.9.7-gentoo
              - Kodi development incl SkyGo, Amazon Prime
              - ...
+
+07.01.2019 - Gen2VDR-V7
+             - vdr 2.4.0 (alles aktualisiert)
+             - kernel 4.20-gentoo
+             - Kodi V18 RC 4
+             - Umstellung auf G2V-overlay
+             - ...

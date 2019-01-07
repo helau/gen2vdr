@@ -1,10 +1,12 @@
 Gen2VDR V6.0 - 02.01.2019
 
-Unterschiede zu Gen2VDR V53
+Unterschiede zu Gen2VDR V60
   - Alle Pakete aktualisiert
-  - kodi development incl SkyGo, Amazon Prime
+  - kodi 18 rc 4
+  - VDR 2.4
+  - Umstellung auf G2V-overlay
 
-Wer sollte diese Version anstelle der V5 benutzen:
+Wer sollte diese Version anstelle der V6 benutzen:
   - Jeder der ein aktuelleres System haben moechte :)
 
 
@@ -29,7 +31,7 @@ Tastaturbelegung:
 
 Konfiguration:
 
-- Die Konfigurationsdateien fuer VDR befinden sich unter /etc/vdr,
+- Die Konfigurationsdateien fuer VDR befinden sich unter /etc/vdr, /etc/gen2vdr
   bzw /etc/vdr.d.
 
 - Einige Einstellungen ( Netzwerk, VDR-Plugins, Wakeup, VDRADMIN .. )
@@ -100,6 +102,11 @@ System-Aktualisierung:
 
      danach gehts mit:
      eix-sync
+
+     und die Config Dateien muessen dann mit
+     etc-update
+
+     aktualisiert werden.
 
 - Neue VDR-Plugins erstellt man z.B. mit dem inst_plg script, z.B:
 

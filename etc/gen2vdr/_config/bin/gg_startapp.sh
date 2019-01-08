@@ -32,7 +32,7 @@ if [ "$CMD" != "" -a -f "$CMD" ] ; then
       ST=$(date +%s)
       glogger -s "Starting <$CMD><$APPL> with user <$USER>"
       echo "${APPL}" > $NEXT_APPL
-      su $USER -c "${APPL_DIR}/$CMD"
+      su $USER -c "bash ${APPL_DIR}/$CMD"
       ET=$(date +%s)
 #      if [ $(($ET - $ST)) -lt 10 ] ; then
 #         /_config/bin/gg_setactapp.sh G2V-Launcher

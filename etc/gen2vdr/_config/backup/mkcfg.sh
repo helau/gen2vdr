@@ -31,21 +31,15 @@ cd /
 echo -ne "admin.conf.sav*\nvdr.old*\n" >${EXCL}
 rm -f ${TARGET_DIR}/g2v_config.tar.xz
 if [ "$1" == "-b" ] ; then
-   touch /_config/update/.restored
+   touch /_config/.restored
 else
-   rm -f /_config/update/.restored
+   rm -f /_config/.restored
    {
    echo -ne "./etc/init.d/net.e*\n./etc/runlevels/boot/net.e*\n./etc/init.d/net.w*\n./etc/resolv.conf*\n./etc/env.d/*proxy\n./etc/wicd/*-settings.conf\ncookies.sqlite*\n"
    echo -ne "./etc/conf.d/modules\n./etc/machine-id\n./etc/modprobe.d/g2v.conf\n./etc/oscam/oscam.server\n./etc/eixrc.backup.*\n./etc/gen2vdr/remote/act\n./etc/udev/rules.d/*persistent*.rules\n"
    echo -ne "./root/.local\n./root/.screen\n/root/kodi*.log\n./root/.subversion/*\n./root/.ssh/*\n./root/.*_history\ndead.letter\n./root/.kodi/userdata/addon_data/plugin.video.prime_instant\n"
    echo -ne "./root/.kodi/tmp/*\n./root/.cache/*\n./home/vdr/.cache/*\n"
    } >>${EXCL}
-   cd /_config/update
-   for i in g2v*_up[0-9][0-9] ; do
-      [ -d "$i" ] && echo $i >> .blacklist
-   done
-   cat .blacklist | sort -u > /tmp/.bl
-   mv -f /tmp/.bl .blacklist
    cd /
 fi
 

@@ -716,7 +716,7 @@ doInstall() {
    unpackArchive "$INSTALL_DIR/g2v_src.tar.xz" $TARGET
    unpackArchive "$INSTALL_DIR/g2v_optvar.tar.xz" $TARGET
 
-   if [ ! -e /mnt/_config/update/.restored ] ; then
+   if [ ! -e /mnt/_config/.restored ] ; then
       msgInfo "fstab anpassen"
       echo "/dev/cdrom      /media/dvd      auto    ro,noauto,user 0 0" > /mnt/etc/fstab
       NLINE="/dev/${SYSTEM_PART}   /   ${FS_ROOT}   noatime,user_xattr 1 1"
@@ -777,7 +777,7 @@ doInstall() {
       fi
    fi
    if [ -d /mnt/mnt/data/g2v-backup ] ; then
-      if [ "$BACKUP_DONE" = "1" ] && [ ! -e /mnt/_config/update/.restored ] && [ "$DO_MIGRATE" = "1" ] ; then
+      if [ "$BACKUP_DONE" = "1" ] && [ ! -e /mnt/_config/.restored ] && [ "$DO_MIGRATE" = "1" ] ; then
          touch /mnt/mnt/data/g2v-backup/.do_migrate
       else
          rm -f /mnt/mnt/data/g2v-backup/.do_migrate > /dev/null 2>&1
@@ -932,7 +932,7 @@ cp -f $LOG_FILE /mnt/ >/dev/null 2>&1
 #fi
 
 echo ""
-if [ ! -e /mnt/_config/update/.restored ] ; then
+if [ ! -e /mnt/_config/.restored ] ; then
    echo "Installation erfolgreich beendet !"
    echo "Nach dem Reboot gehts weiter mit Stufe 2"
    for i in vdr g2vgui ; do

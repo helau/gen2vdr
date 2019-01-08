@@ -29,7 +29,7 @@ echo -ne "./mnt/*\n./audio\n./video\n./pictures\n./film\n./boot\n"
 rm -f ${TARGET_DIR}/g2v_root.tar.xz
 
 if [ "$1" == "-b" ] ; then
-   touch /_config/update/.restored
+   touch /_config/.restored
 else
    for i in ./* ./.* ; do
       [ ! -d "$i" ] && echo -ne "$i\n" >>${EXCL}

@@ -1,0 +1,248 @@
+Section "Monitor"
+   Identifier     "M_2160P"
+   ModelName      "M_2160P"
+   HorizSync      15.0 - 135.0
+   VertRefresh    24.0 - 75.0
+   Modeline       "3840x2160@50p" 594.00 3840 4896 4984 5280 2160 2168 2178 2250 +hsync +vsync
+   Modeline       "3840x2160@24p" 297.00 3840 5116 5204 5500 2160 2160 2178 2250 +hsync +vsync
+   Modeline       "3840x2160@25p" 297.00 3840 4896 4984 5280 2160 2168 2178 2250 +hsync +vsync
+   Modeline       "3840x2160@23.976"  296.70 3840 5116 5204 5500 2160 2160 2178 2250 +hsync +vsync
+   Modeline       "3840x2160@60p" 594.00 3840 4016 4104 4400 2160 2168 2178 2250 +hsync +vsync
+   Modeline       "3840x2160@59.94" 593.41 3840 4016 4104 4400 2160 2168 2178 2250 +hsync +vsync
+#   Option         "DPI" "100 x 100"
+   Option         "DPMS"
+   Option         "ExactModeTimingsDVI" "True"
+   Option         "CustomEdid" "DFP-0:/etc/X11/edid.bin"
+EndSection
+
+
+Section "Monitor"
+   Identifier     "M_1080P"
+   ModelName      "M_1080P"
+   HorizSync      28.0 - 68.0
+   VertRefresh    24.0 - 61.0
+   # 1920x1080p @ 50Hz (EIA/CEA-861B)
+   ModeLine       "1920x1080@50p" 148.50 1920 2448 2492 2640 1080 1084 1089 1125 +hsync +vsync
+   # 1920x1080p @ 24Hz (EIA/CEA-861B)
+   ModeLine       "1920x1080@24p" 74.250 1920 2558 2602 2750 1080 1084 1089 1125 +hsync +vsync
+   # 1920x1080p @ 25Hz (EIA/CEA-861B)
+   ModeLine       "1920x1080@25p" 74.25 1920 2448 2492 2640 1080 1084 1089 1125 +hsync +vsync
+   # 1920x1080p @ 23.976Hz (EIA/CEA-861B)
+   ModeLine       "1920x1080@23.976" 74.175 1920 2558 2602 2750 1080 1084 1089 1125 +hsync +vsync
+   # 1920x1080p @ 60Hz (EIA/CEA-861B)
+   ModeLine       "1920x1080@60p" 148.50 1920 2008 2052 2200 1080 1084 1089 1125 +hsync +vsync
+   Modeline       "1360x768_60" 84.720 1360 1424 1568 1776 768 769 772 795
+   Modeline       "1366x768" 87.750 1366 1408 1592 1808 768 771 777 806 +hsync -vsync
+   Option         "DPI" "100 x 100"
+   Option         "DPMS"
+   Option         "ExactModeTimingsDVI" "True"
+   Option         "CustomEdid" "DFP-0:/etc/X11/edid.bin"
+EndSection
+
+Section "Monitor"
+   Identifier     "M_1080I"
+   ModelName      "M_1080I"
+   HorizSync      28.0 - 68.0
+   VertRefresh    24.0 - 61.0
+   # 1920x1080i @ 50Hz (EIA/CEA-861B)
+   ModeLine       "1920x1080@50i" 74.25 1920 2448 2492 2640 1080 1084 1094 1124 +hsync +vsync Interlace
+   # 1920x1080i @ 60Hz (EIA/CEA-861B)
+   ModeLine       "1920x1080@60i" 74.18 1920 2008 2052 2200 1080 1084 1094 1124 +hsync +vsync Interlace
+   # 1920x1080p @ 60Hz (EIA/CEA-861B)
+   Modeline       "1360x768_60" 84.720 1360 1424 1568 1776 768 769 772 795
+   Modeline       "1366x768" 87.750 1366 1408 1592 1808 768 771 777 806 +hsync -vsync
+   Option         "DPI" "100 x 100"
+   Option         "DPMS"
+   Option         "ExactModeTimingsDVI" "True"
+   Option         "CustomEdid" "DFP-0:/etc/X11/edid.bin"
+EndSection
+
+Section "Monitor"
+   Identifier     "M_720P"
+   ModelName      "M_720P"
+   HorizSync      28.0 - 68.0
+   VertRefresh    24.0 - 61.0
+   Modeline       "1280x720_50" 49.42 1280 1312 1536 1568 720 735 741 757
+   Modeline       "1280x720_60" 73.78 1280 1312 1592 1624 720 735 742 757
+   Option         "DPI" "100 x 100"
+   Option         "DPMS"
+   Option         "ExactModeTimingsDVI" "True"
+   Option         "CustomEdid" "DFP-0:/etc/X11/edid.bin"
+EndSection
+
+Section "Monitor"
+   Identifier     "M_V2S"
+   Option         "DPMS"
+
+   HorizSync      15-16
+   Modeline       "720x576i" 13.875 720 744 808 888 576 580 585 625 -HSync -Vsync interlace
+EndSection
+
+Section "Monitor"
+   Identifier     "M_PC"
+   Option         "DPMS"
+
+   HorizSync      30-64
+   VertRefresh    40-100
+EndSection
+
+Section "Screen"
+   Identifier     "S_V2S"
+   Monitor        "M_V2S"
+   Device         "Card0"
+   DefaultDepth   24
+
+   SubSection "Display"
+      Depth       24
+      Modes       "720x576i"
+   EndSubSection
+EndSection
+
+Section "Screen"
+   Identifier     "S_2160P"
+   Device         "Card0"
+   Monitor        "M_2160P"
+   DefaultDepth   24
+   Option         "TwinView" "0"
+   Option         "DynamicTwinView" "False"
+   Option         "CustomEdid" "DFP-0:/etc/X11/edid.bin"
+   Option         "ConnectedMonitor" "DFP-1"
+   Option         "UseDisplayDevice" "DFP-1"
+   SubSection     "Display"
+       Depth      24
+       Modes      "3840x2160@50p" "3840x2160@24p" "3840x2160@25p" "3840x2160@23.976" "3840x2160@60p" "3840x2160@59.94"
+   EndSubSection
+EndSection
+
+Section "Screen"
+   Identifier     "S_1080P"
+   Device         "Card0"
+   Monitor        "M_1080P"
+   DefaultDepth   24
+   Option         "TwinView" "0"
+   Option         "DynamicTwinView" "False"
+   SubSection     "Display"
+       Depth      24
+       Modes      "1920x1080@50p" "1920x1080@24p" "1920x1080@25p" "1920x1080@23.976" "1920x1080@50i" "1920x1080@60i" "1920x1080@60p" "1360x768_60" "1366x768"
+   EndSubSection
+EndSection
+
+Section "Screen"
+   Identifier     "S_1080I"
+   Device         "Card0"
+   Monitor        "M_1080I"
+   DefaultDepth   24
+   Option         "TwinView" "0"
+   Option         "DynamicTwinView" "False"
+   SubSection     "Display"
+       Depth      24
+       Modes      "1920x1080@50i" "1920x1080@60i" "1360x768_60" "1366x768"
+   EndSubSection
+EndSection
+
+Section "Screen"
+   Identifier     "S_720P"
+   Device         "Card0"
+   Monitor        "M_720P"
+   DefaultDepth   24
+   Option         "TwinView" "0"
+   Option         "DynamicTwinView" "False"
+   SubSection     "Display"
+       Depth      24
+       Modes      "1280x720_50" "1280x720_60"
+   EndSubSection
+EndSection
+
+Section "Screen"
+   Identifier     "S_PC"
+   Device         "Card0"
+   Monitor        "M_PC"
+   DefaultDepth   24
+   Option         "TwinView" "0"
+   Option         "DynamicTwinView" "False"
+   SubSection     "Display"
+       Depth      32
+       Modes      "800x600" #G2V - do not change manually
+   EndSubSection
+   SubSection     "Display"
+       Depth      24
+       Modes      "800x600" #G2V - do not change manually
+   EndSubSection
+   SubSection     "Display"
+       Depth      16
+       Modes      "800x600" #G2V - do not change manually
+   EndSubSection
+   SubSection     "Display"
+       Depth      15
+       Modes      "800x600" #G2V - do not change manually
+   EndSubSection
+   SubSection     "Display"
+       Depth      8
+       Modes      "800x600" #G2V - do not change manually
+   EndSubSection
+EndSection
+
+Section "Extensions"
+    Option "Composite" "Disable"
+EndSection
+
+Section "DRI"
+    Mode 0666
+EndSection
+
+# **********************************************************************
+# Server flags section.
+# **********************************************************************
+
+Section "ServerFlags"
+
+    Option      "AllowMouseOpenFail" "on"
+    Option      "RandR" "on"
+    Option      "blank time" "0"
+    Option      "standby time" "0"
+    Option      "suspend time" "0"
+    Option      "off time" "0
+# Uncomment this to cause a core dump at the spot where a signal is
+# received.  This may leave the console in an unusable state, but may
+# provide a better stack trace in the core dump to aid in debugging
+
+#    Option "NoTrapSignals"
+
+# Uncomment this to disable the <Crtl><Alt><Fn> VT switch sequence
+# (where n is 1 through 12).  This allows clients to receive these key
+# events.
+
+#    Option "DontVTSwitch"
+
+# Uncomment this to disable the <Crtl><Alt><BS> server abort sequence
+# This allows clients to receive this key event.
+
+#    Option "DontZap"
+
+# Uncomment this to disable the <Crtl><Alt><KP_+>/<KP_-> mode switching
+# sequences.  This allows clients to receive these key events.
+
+#    Option "Dont Zoom"
+
+# Uncomment this to disable tuning with the xvidtune client. With
+# it the client can still run and fetch card and monitor attributes,
+# but it will not be allowed to change them. If it tries it will
+# receive a protocol error.
+
+#    Option "DisableVidModeExtension"
+
+# Uncomment this to enable the use of a non-local xvidtune client.
+
+#    Option "AllowNonLocalXvidtune"
+
+# Uncomment this to disable dynamically modifying the input device
+# (mouse and keyboard) settings.
+
+#    Option "DisableModInDev"
+
+# Uncomment this to enable the use of a non-local client to
+# change the keyboard or mouse settings (currently only xset).
+
+#    Option "AllowNonLocalModInDev"
+
+EndSection

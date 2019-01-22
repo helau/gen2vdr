@@ -1,0 +1,127 @@
+# lircd.conf - Configuration for Atric IR-Wakeup-USB
+#
+# brand:      One For All
+# model:      7960
+# receiver:	  Atric USB
+#
+#--- Konfigurations-Strings zur Auto-Konfiguration f¸r Easy-VDR (und andere Programme) ---
+#
+# Atric_FB_Name_Str="test"
+# Atric_FB_Conf_Str="0001050E0000000C000203131328270000000000000000000000007F000000000000FF24000004000000"
+#
+#----------------------------------------------------------------------------
+# ATTENTION! Do NOT use "irrecord" to automaticly learn key-codes
+# This will generate wrong remote settings with the IR-WakeupUSB!
+#
+# Manually fill in key-names and key-codes in the "codes section" or
+# use the "lircd.conf"-tool of the IR-WakeupUSB configuration software
+#
+#----------------------------------------------------------------------------
+# Do NOT change the following remote settings
+# These settings depends on the IR-WakeupUSB and are independent from
+# the used remote control.
+#
+# You can change the name of the remote control to assign the file to the
+# remote control.
+# You can also add your own remarks (use the remark tag "#").
+#----------------------------------------------------------------------------
+
+begin remote
+
+  name            Gen2VDR
+  bits            48
+  flags           SPACE_ENC
+  eps             30
+  aeps            100
+  one             0  0
+  zero            0  0
+  pre_data_bits   16
+  pre_data        0xFFFF
+  post_data_bits  0
+  post_data       0x0
+  gap             65536
+  repeat_bit      0
+  toggle_bit_mask 0x0
+
+
+#----------------------------------------------------------------------------
+# Here (after the "begin codes" tag) fill in the keycodes (one key per row)
+# Use the following syntax:
+#
+# KEY_1    0x03B800000000	# remark (optional)
+#
+# Description:	KEY_1:  the name of the remote button
+#			for a full list of available key names use the
+#			following command: "irrecord --list-namespace"
+#
+#       0x3B800000000:  IR-code of the remote button (48-bit hexcode)
+#
+#	     # remark:  optional remark for the named key
+#			this remark will be showed in the "lircd.conf"-tool
+#			of the configuration software
+#----------------------------------------------------------------------------
+
+
+  begin codes
+
+    up                   0x500400000000      # Nach oben
+    down                 0x510400000000      # Nach unten
+    menu                 0x520400000000      # Men¸
+    ok                   0x570400000000      # OK/Eingabe
+    tv                   0x310400000000      # Zur¸ck
+    left                 0x550400000000      # Nach links
+    right                0x560400000000      # Nach rechts
+    red                  0x6B0400000000      # Rot
+    green                0x6C0400000000      # Gr¸n
+    yellow               0x6D0400000000      # Gelb
+    blue                 0x6E0400000000      # Blau
+    0                    0x000400000000      # Ziffer 0
+    1                    0x010400000000      # Ziffer 1
+    2                    0x020400000000      # Ziffer 2
+    3                    0x030400000000      # Ziffer 3
+    4                    0x040400000000      # Ziffer 4
+    5                    0x050400000000      # Ziffer 5
+    6                    0x060400000000      # Ziffer 6
+    7                    0x070400000000      # Ziffer 7
+    8                    0x080400000000      # Ziffer 8
+    9                    0x090400000000      # Ziffer 9
+    info                 0x4F0400000000      # Info zum aktuellen Objekt
+    pause                0x290400000000      # Play/Pause
+    play                 0x350400000000      # Play
+    pause                0x290400000000      # Pause
+    stop                 0x360400000000      # Stop
+    rec                  0x370400000000      # Aufnehmen
+    ffwd                 0x340400000000      # Vorspulen
+    frew                 0x2C0400000000      # Zur¸ckspulen
+    next                 0x2E0400000000      # Vorw‰rts springen
+    prev                 0x320400000000      # R¸ckw‰rts springen
+    power                0x0C0400000000      # Ausschalten
+    ch+                  0x200400000000      # Kanal hoch
+    ch-                  0x210400000000      # Kanal runter
+    exit                 0x220400000000      # zur¸ck zum zuvor gew‰hlten Kanal
+    vol+                 0x100400000000      # Lautst‰rke erhˆhen
+    vol-                 0x110400000000      # Lautst‰rke verringern
+    mute                 0x0D0400000000      # Stummschalten
+    subtitles            0x000000000000      # Untertitel einblenden
+    schedule             0x2F0400000000      # Programmf¸hrer
+    recordings           0x6F0400000000      # Kan‰le
+    KEY_FAVORITES            0x000000000000      # Befehlsauswahl
+    KEY_MODE                 0x000000000000      # Tonspur w‰hlen
+    KEY_TIME                 0x000000000000      # gesetzte Timer
+    KEY_PVR                  0x000000000000      # Aufnahmen
+    KEY_SETUP                0x000000000000      # Setup-Men¸
+    KEY_TEXT                 0x000000000000      # aktiviert Teletext bei installiertem teletext-plugin
+    KEY_PROG1                0x000000000000      # User-Taste, z.B. f¸r Keymakros
+    KEY_PROG2                0x000000000000      # User-Taste, z.B. f¸r Keymakros
+    KEY_PROG3                0x000000000000      # User-Taste, z.B. f¸r Keymakros
+    KEY_PROG4                0x000000000000      # User-Taste, z.B. f¸r Keymakros
+    KEY_AUDIO                0x000000000000      # User-Taste, z.B. f¸r Keymakros
+    KEY_VIDEO                0x000000000000      # User-Taste, z.B. f¸r Keymakros
+    KEY_IMAGES               0x000000000000      # User-Taste, z.B. f¸r Keymakros
+    KEY_FN                   0x000000000000      # User-Taste, z.B. f¸r Keymakros
+    KEY_SCREEN               0x000000000000      # User-Taste, z.B. f¸r Keymakros
+
+  end codes
+
+end remote
+

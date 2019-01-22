@@ -12,6 +12,8 @@ case $SCREEN_RESOLUTION in
       RES="1920x1080";;
    1080p)
       RES="1920x1080";;
+   2160p)
+      RES="3840x2160";;
    VGA2SCART)
       RES="720x576";;
    *)

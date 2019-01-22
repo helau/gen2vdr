@@ -69,7 +69,7 @@
 /etc/vdr/plugins/admin/setvdrconf.sh:USE_CUTTING_DIR:0:B:1:Nein,Ja:Schnittverzeichnis verwenden:
 /etc/vdr/plugins/admin/setvdrconf.sh:MAINTAIN_CUTTING:0:B:1:Nein,Ja:Schnitt-Dienst verwenden:
 :Ausgabe/GUI
-/_config/bin/set_xorgres.sh:SCREEN_RESOLUTION:1280x1024:L:0:1080p,1080i,720p,VGA2SCART,640x480,800x600,1024x768,1200x800,1280x720,1280x1024,1360x768,1440x900,1600x1200,1650x1080,1920x1080,1920x1200,2048x1152,2048x1536,manuell:Auflösung:
+/_config/bin/set_xorgres.sh:SCREEN_RESOLUTION:1280x1024:L:0:1080p,1080i,720p,2160p,VGA2SCART,640x480,800x600,1024x768,1200x800,1280x720,1280x1024,1360x768,1440x900,1600x1200,1650x1080,1920x1080,1920x1200,2048x1152,2048x1536,manuell:Auflösung:
 /_config/bin/setguifontsize.sh:GUI_FONTSIZE:22:I:0:0,40:Schriftgrösse (<8 ->manuell):
 /etc/vdr/plugins/admin/setvdrconf.sh:VO_DRIVER:x11:L:1:x11,vdpau,vaapi,xv,ffdvb,dxr3,manuell:Video-Ausgabe:
 /etc/vdr/plugins/admin/setvdrconf.sh:AO_DRIVER:alsa:L:1:alsa,oss,ffdvb,dxr3,manuell:Audio-Ausgabe:

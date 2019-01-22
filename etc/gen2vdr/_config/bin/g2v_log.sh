@@ -51,7 +51,7 @@ cat /log/messages > sys.log
 FILES="/log/kodi.log.old /log/rc.log /log/dmsg /install.log /_config/update/update.log /etc/gen2vdr/applications  /etc/gen2vdr/remote \
  /etc/vdr.d/conf/vdr /etc/vdr/setup.conf /etc/vdr/channels.conf /etc/X11/xorg.conf /etc/vdr/plugins/admin/admin.conf /root/.kodi/temp/*log* \
  /log/vdr-xine.log /log/hibernate.log /log/Xorg.0.log /root/.xine/config /root/.xine/config_xineliboutput /etc/asound.conf /etc/asound.state \
- /tmp/vdr/vdr_* /etc/X11/xorg.conf.d/*"
+ /etc/g2v-release /tmp/vdr/vdr_* /etc/X11/xorg.conf.d/*"
 
 [ "$VERBOSE" = "1" ] && FILES="$FILES /log/g2v_log_install.xz /etc/conf.d $(ls /log/messages-2* | tail -n3)"
 

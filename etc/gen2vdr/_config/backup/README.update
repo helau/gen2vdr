@@ -21,9 +21,10 @@ reboot
 quickpkg nvidia-drivers --include-config=y
 eix -s nvidia
 sed -i /etc/portage/package.mask/x11 -e "s%>=x11-drivers/nvidia-drivers%<=x11-drivers/nvidia-drivers%"
+sed -i /usr/src/linux/.config -e "s%^CONFIG_I2C_NVIDIA_GPU=m%# CONFIG_I2C_NVIDIA_GPU=m%"
 emerge --nodeps --buildpkgonly x11-drivers/nvidia-drivers
 sed -i /etc/portage/package.mask/x11 -e "s%<=x11-drivers/nvidia-drivers%>=x11-drivers/nvidia-drivers%"
+sed -i /usr/src/linux/.config -e "s%^# CONFIG_I2C_NVIDIA_GPU=m%CONFIG_I2C_NVIDIA_GPU=m%"
 
 ## if you ever want to switch to multilib do:
 #PORTAGE_BINHOST="http://packages.gentooexperimental.org/packages/amd64-stable/" emerge -G1av gcc glibc
-

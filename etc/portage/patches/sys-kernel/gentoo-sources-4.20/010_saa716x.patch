@@ -1,7 +1,7 @@
 From 79bcc3886dcb9207bbecf7ff78cc799e8076c057 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 12:36:47 +0400
-Subject: [PATCH 001/362] saa716x: Initial framework driver to support SAA7160,
+Subject: [PATCH 001/364] saa716x: Initial framework driver to support SAA7160,
  SAA7161, SAA7162 chips
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
@@ -752,7 +752,7 @@ index 0000000000000..fea37861f4c4a
 From dce6bd8729bc258e0ace8f433afd6e23ff758192 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 12:40:46 +0400
-Subject: [PATCH 002/362] saa716x: Add missing return, to avoid falling through
+Subject: [PATCH 002/364] saa716x: Add missing return, to avoid falling through
  the error codes
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
@@ -779,7 +779,7 @@ index c9fefca28ec98..b710d1d095816 100644
 From 80b0bfe48ae56c57b78001b6510925c9c7f2378c Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 12:42:05 +0400
-Subject: [PATCH 003/362] saa716x: Updated board definitions
+Subject: [PATCH 003/364] saa716x: Updated board definitions
 
 From Jacky
 
@@ -878,7 +878,7 @@ index fea37861f4c4a..2380a724e5b2b 100644
 From 524945fc2bdef88c99e014748c1115fa808c3275 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 14:35:29 +0400
-Subject: [PATCH 004/362] saa716x: Add some register definitions
+Subject: [PATCH 004/364] saa716x: Add some register definitions
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -1448,7 +1448,7 @@ index 0000000000000..d6ab9d0eea4e7
 From 78975dc68ca37c6fd325f4577350c014264a5a00 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 14:36:14 +0400
-Subject: [PATCH 005/362] saa716x: Add Read/Write macros
+Subject: [PATCH 005/364] saa716x: Add Read/Write macros
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -1485,7 +1485,7 @@ index 2380a724e5b2b..caa30799a304f 100644
 From 806dbd227f658f835ae351052bd10459ffa59baa Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 14:43:25 +0400
-Subject: [PATCH 006/362] saa716x: Initial attempt to Boot the core
+Subject: [PATCH 006/364] saa716x: Initial attempt to Boot the core
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -1752,7 +1752,7 @@ index caa30799a304f..45d2aca89ee82 100644
 From 4acb958f066ae3f5af5cd6d34e77a4302224c4be Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 14:44:25 +0400
-Subject: [PATCH 007/362] saa716x: Initial attempt to initialize the I2C core
+Subject: [PATCH 007/364] saa716x: Initial attempt to initialize the I2C core
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -1976,7 +1976,7 @@ index 45d2aca89ee82..0a100915ef87a 100644
 From 3b84fba3d3b73243382db065e368fda81e161459 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 14:51:20 +0400
-Subject: [PATCH 008/362] saa716x: Setup CGU
+Subject: [PATCH 008/364] saa716x: Setup CGU
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -2238,7 +2238,7 @@ index d6ab9d0eea4e7..2429991cb6c70 100644
 From 266cf742475b849c87587a6a172899d7def68180 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 14:53:16 +0400
-Subject: [PATCH 009/362] saa716x: Whitespace cleanup
+Subject: [PATCH 009/364] saa716x: Whitespace cleanup
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -2320,7 +2320,7 @@ index be2695dc19bfa..4e50d0f85fa8f 100644
 From 03b2fd30f5bca0bd78ea36ea25ed9f2fabc1722c Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 14:54:00 +0400
-Subject: [PATCH 010/362] saa716x: Use subsystem Vendor ID
+Subject: [PATCH 010/364] saa716x: Use subsystem Vendor ID
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -2347,7 +2347,7 @@ index 4e50d0f85fa8f..d5d0865d6c1ac 100644
 From 72bc9727c1406e03a0fed22b7e2ad816c70e55b6 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 14:57:32 +0400
-Subject: [PATCH 011/362] saa716x: Small cleanups
+Subject: [PATCH 011/364] saa716x: Small cleanups
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -2433,7 +2433,7 @@ index d0a6a579d648e..20cab76789e31 100644
 From df3b8980f8f4f2c1a9a617ab89c8d00bfe2979c0 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 14:58:09 +0400
-Subject: [PATCH 012/362] saa716x: Enable all inputs
+Subject: [PATCH 012/364] saa716x: Enable all inputs
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -2577,7 +2577,7 @@ index 2429991cb6c70..96f25f5d36157 100644
 From 85400a791af6c0e8db3bb99b6b9dd9330f4f14d0 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 14:59:11 +0400
-Subject: [PATCH 013/362] saa716x: Initial go at MSI setup
+Subject: [PATCH 013/364] saa716x: Initial go at MSI setup
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -2805,7 +2805,7 @@ index 96f25f5d36157..611d4681f4ece 100644
 From da4dfc7f289cc14ed0f14c5eee25366ea8b31eaa Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 15:00:21 +0400
-Subject: [PATCH 014/362] saa716x: Update I2C register definitions and fields
+Subject: [PATCH 014/364] saa716x: Update I2C register definitions and fields
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -3029,7 +3029,7 @@ index 611d4681f4ece..264598735d7fa 100644
 From 06d0a141cc9cfdc6f739e253f32635dd650ca69b Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 15:02:06 +0400
-Subject: [PATCH 015/362] saa716x: Initial go at the I2C implementation
+Subject: [PATCH 015/364] saa716x: Initial go at the I2C implementation
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -3831,7 +3831,7 @@ index 0000000000000..dfbcfd40e0b66
 From 685e0a0598daec549910ce6d312817632f5619d6 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 15:02:53 +0400
-Subject: [PATCH 016/362] saa716x: Remove unused definitions
+Subject: [PATCH 016/364] saa716x: Remove unused definitions
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -3865,7 +3865,7 @@ index 1ad0814782cf6..c7f1084c0f864 100644
 From a53344c873ae15d08626b6bbad79cd4bd46e803a Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 15:05:49 +0400
-Subject: [PATCH 017/362] saa716x: Move i2c related stuff to it's own header
+Subject: [PATCH 017/364] saa716x: Move i2c related stuff to it's own header
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -3974,7 +3974,7 @@ index 3220e3b06ccff..d8e412fb2051e 100644
 From fe241b0df03fad106e99c8ba6253fcfefc0d8d7c Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 15:06:25 +0400
-Subject: [PATCH 018/362] saa716x: Add some labels
+Subject: [PATCH 018/364] saa716x: Add some labels
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -4069,7 +4069,7 @@ index c7f1084c0f864..f9ed86bbeb339 100644
 From 0689715927234d30b5120f22ad5bdffee600f899 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 15:08:10 +0400
-Subject: [PATCH 019/362] saa716x: Rename files
+Subject: [PATCH 019/364] saa716x: Rename files
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -4101,7 +4101,7 @@ rename to drivers/media/pci/saa716x/saa716x_vip.c
 From f044598ab34aad4646f574dec31d45280072a7e3 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 15:08:47 +0400
-Subject: [PATCH 020/362] saa716x: Fix subdevice ID
+Subject: [PATCH 020/364] saa716x: Fix subdevice ID
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -4125,7 +4125,7 @@ index 717a0cb1f1de6..624e6dcebb2d1 100644
 From 393589ceddbda65b81fb1012abca4992c80651a3 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 15:09:26 +0400
-Subject: [PATCH 021/362] saa716x: Add more register definitions
+Subject: [PATCH 021/364] saa716x: Add more register definitions
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -4194,7 +4194,7 @@ index 264598735d7fa..b0667d18ecec8 100644
 From 591d7271ca6554a77ae34edd40c38a3de718ed79 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 15:48:09 +0400
-Subject: [PATCH 022/362] saa716x: Update/Reorganize register definitions
+Subject: [PATCH 022/364] saa716x: Update/Reorganize register definitions
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -5899,7 +5899,7 @@ index b0667d18ecec8..67d12f924cbf7 100644
 From b872f5083539176d80798ee464cef266f4019fc7 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 15:49:03 +0400
-Subject: [PATCH 023/362] saa716x: Implement internal Boot mode
+Subject: [PATCH 023/364] saa716x: Implement internal Boot mode
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -5990,7 +5990,7 @@ index c030c40ce59f7..d8fd5ea66cb32 100644
 From 4cf678b2653a56c6ea2fb8144f842790a0abc7f3 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 15:49:51 +0400
-Subject: [PATCH 024/362] saa716x: Update register definitions
+Subject: [PATCH 024/364] saa716x: Update register definitions
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -6101,7 +6101,7 @@ index dfbcfd40e0b66..9f94ef20bf28b 100644
 From 514079ee82b2c074880b82011cca2da9bce56fdb Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 15:50:42 +0400
-Subject: [PATCH 025/362] saa716x: Still scratching
+Subject: [PATCH 025/364] saa716x: Still scratching
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -6171,7 +6171,7 @@ index 0000000000000..61ecba88a78b9
 From 965dad36403652e393b8fbfefac0cd96a914af0d Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 15:51:55 +0400
-Subject: [PATCH 026/362] saa716x: Initialize MSI
+Subject: [PATCH 026/364] saa716x: Initialize MSI
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -6236,7 +6236,7 @@ index 0000000000000..2320e575f3236
 From ce32814b825f46b65ace15a9c047e9c45624cc8f Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 15:52:38 +0400
-Subject: [PATCH 027/362] saa716x: Cleanup internal Boot configuration
+Subject: [PATCH 027/364] saa716x: Cleanup internal Boot configuration
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -6461,7 +6461,7 @@ index 3abfadd0e1c89..293a2f425511f 100644
 From 2deec9e582f6d892b6130626036339aceab64b09 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 15:54:41 +0400
-Subject: [PATCH 028/362] saa716x: Cleanup external Boot configuration
+Subject: [PATCH 028/364] saa716x: Cleanup external Boot configuration
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -6667,7 +6667,7 @@ index 89bdc30abe89f..cf37fceddc16d 100644
 From 7d3a88dca9bfb2273d7470879a703120d0e6b5a4 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 15:55:33 +0400
-Subject: [PATCH 029/362] saa716x: Initialize CGU and MSI modules
+Subject: [PATCH 029/364] saa716x: Initialize CGU and MSI modules
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -6709,7 +6709,7 @@ index cf37fceddc16d..946f4aa6f4648 100644
 From d6022820eb641482e29d08e4bd697cfbbe699cd0 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 15:56:19 +0400
-Subject: [PATCH 030/362] saa716x: Enable more debugging
+Subject: [PATCH 030/364] saa716x: Enable more debugging
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -6916,7 +6916,7 @@ index f9ed86bbeb339..4ae745c4db867 100644
 From 18de3bc880ce8b8aec0bc7fcbcbfd18f93185448 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 15:56:58 +0400
-Subject: [PATCH 031/362] saa716x: Check DMA availability
+Subject: [PATCH 031/364] saa716x: Check DMA availability
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -6968,7 +6968,7 @@ index 4ae745c4db867..7db468b15bb9b 100644
 From 87c055d61490ba5139cd92b408836e93febee330 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 15:57:49 +0400
-Subject: [PATCH 032/362] saa716x: Small cleanups and fixes
+Subject: [PATCH 032/364] saa716x: Small cleanups and fixes
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -7068,7 +7068,7 @@ index 293a2f425511f..22deb515da0e7 100644
 From 95440a0020892d346171ff9c9a0652e1f82ac68a Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 15:58:30 +0400
-Subject: [PATCH 033/362] saa716x: Fix typo
+Subject: [PATCH 033/364] saa716x: Fix typo
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -7102,7 +7102,7 @@ index fcbe208da4b25..9f6aa39ab16f7 100644
 From 72e22a5642c88558453b83aa551d7cd752435737 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 15:59:26 +0400
-Subject: [PATCH 034/362] saa716x: Reset internal modules
+Subject: [PATCH 034/364] saa716x: Reset internal modules
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -7177,7 +7177,7 @@ index 9f6aa39ab16f7..a2faabc95c13e 100644
 From e4fd29ca2f5d111d9eddb03c594f0732bb7b4e38 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:00:02 +0400
-Subject: [PATCH 035/362] saa716x: Still debugging
+Subject: [PATCH 035/364] saa716x: Still debugging
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -7251,7 +7251,7 @@ index 7db468b15bb9b..0bb5ac0bb14c0 100644
 From 912cfc776e52d7fbe4c376b6341cce90b6d396dd Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:00:34 +0400
-Subject: [PATCH 036/362] saa716x: Code simplification
+Subject: [PATCH 036/364] saa716x: Code simplification
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -7298,7 +7298,7 @@ index 0bb5ac0bb14c0..3d58a415e3876 100644
 From 498f86dd6785ea09025fadab6f74802cf5076737 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:01:11 +0400
-Subject: [PATCH 037/362] saa716x: Terminate PCI ID list
+Subject: [PATCH 037/364] saa716x: Terminate PCI ID list
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -7350,7 +7350,7 @@ index 44af25c67731d..730fe55775175 100644
 From 10eb36952a231a863a09c15fa5b9a14804553319 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:01:55 +0400
-Subject: [PATCH 038/362] saa716x: Rename Rd/Wr operations
+Subject: [PATCH 038/364] saa716x: Rename Rd/Wr operations
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -8338,7 +8338,7 @@ index 7e01f1ad12d06..9b22161a764bd 100644
 From 4a07b2b989f03b6981d8798b6b468158d2c04758 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:02:43 +0400
-Subject: [PATCH 039/362] saa716x: Fix usage of wrong datatypes
+Subject: [PATCH 039/364] saa716x: Fix usage of wrong datatypes
 
 Thanks to Jacky for pointing this
 
@@ -8366,7 +8366,7 @@ index dec53d49fe51b..5638c617f39a2 100644
 From 4b23e19272e603ad61bab7146858f413ae968f80 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:03:20 +0400
-Subject: [PATCH 040/362] saa716x: CGU related fixes
+Subject: [PATCH 040/364] saa716x: CGU related fixes
 
 From Jacky
 
@@ -8422,7 +8422,7 @@ index 5638c617f39a2..d251764fc29f5 100644
 From aa4be3f9a37c907f51c9865dc3971e7b7130aeb6 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:04:14 +0400
-Subject: [PATCH 041/362] saa716x: Continue MSI-X implementation
+Subject: [PATCH 041/364] saa716x: Continue MSI-X implementation
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -8828,7 +8828,7 @@ index 715eaa98a9556..a340089b53b29 100644
 From 98d8db29fccf22de44443ad77a7f29be5b5579ab Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:04:57 +0400
-Subject: [PATCH 042/362] saa716x: Add routines to handle clock related events
+Subject: [PATCH 042/364] saa716x: Add routines to handle clock related events
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -9180,7 +9180,7 @@ index d251764fc29f5..368439c7aa5af 100644
 From bbcfecd170d7e26e30aeade6755b3f761afc5f3c Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:05:58 +0400
-Subject: [PATCH 043/362] saa716x: Add support for Avermedia HC82 PCIe
+Subject: [PATCH 043/364] saa716x: Add support for Avermedia HC82 PCIe
  expresscard
 
 Thanks to Avermedia for sending device samples
@@ -9244,7 +9244,7 @@ index 624e6dcebb2d1..4fdc2411e0e5c 100644
 From 4818561209c5e0e149dac2b204198b1bed5909cb Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:06:44 +0400
-Subject: [PATCH 044/362] saa716x: Disable BAR2 access
+Subject: [PATCH 044/364] saa716x: Disable BAR2 access
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -9390,7 +9390,7 @@ index a340089b53b29..b01af2ed38881 100644
 From f65abefd6162d7336e48e66e7e37473e7a75928b Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:07:31 +0400
-Subject: [PATCH 045/362] saa716x: Code cleanup
+Subject: [PATCH 045/364] saa716x: Code cleanup
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -9550,7 +9550,7 @@ index b01af2ed38881..7f4cfec371916 100644
 From d43a304143b7e8c21c840bd0afedf8ea1e9bec24 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:08:52 +0400
-Subject: [PATCH 046/362] saa716x: Register SAA716x Adapter
+Subject: [PATCH 046/364] saa716x: Register SAA716x Adapter
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -9804,7 +9804,7 @@ index 7f4cfec371916..a6933ad7ce9c1 100644
 From d823f92d1406dfdb1fb0b6f1ebc87d9592f8c214 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:09:48 +0400
-Subject: [PATCH 047/362] saa716x: Add initial support for the second adapter
+Subject: [PATCH 047/364] saa716x: Add initial support for the second adapter
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -10283,7 +10283,7 @@ index a6933ad7ce9c1..f6a07614de7fc 100644
 From 4e22a7395084df9e824da5bf8a09587b1f1cb49b Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:10:33 +0400
-Subject: [PATCH 048/362] saa716x: Initialize adapters on the budget device
+Subject: [PATCH 048/364] saa716x: Initialize adapters on the budget device
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -10329,7 +10329,7 @@ index 85f9062d01956..68bfff84ad49e 100644
 From 74fa796e49173cf3dc6616727f17c801baf189fb Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:11:32 +0400
-Subject: [PATCH 049/362] saa716x: Register only the relevant adapters for a
+Subject: [PATCH 049/364] saa716x: Register only the relevant adapters for a
  specific device
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
@@ -10436,7 +10436,7 @@ index f6a07614de7fc..ac2dbb58719e9 100644
 From 8d700c8f23ca3cc5cb41bd4415914869b98a8f94 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:12:27 +0400
-Subject: [PATCH 050/362] saa716x: Add Avermedia HC82 specific device
+Subject: [PATCH 050/364] saa716x: Add Avermedia HC82 specific device
  configuration
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
@@ -10478,7 +10478,7 @@ index ac2dbb58719e9..24464ab69ca50 100644
 From 79d145cb0159e44854d76c9131b237aa66eedff9 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:13:36 +0400
-Subject: [PATCH 051/362] saa716x: Fix typo
+Subject: [PATCH 051/364] saa716x: Fix typo
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -10505,7 +10505,7 @@ index 24464ab69ca50..a7a70bf47419f 100644
 From 2215147da3434f75fa848fcbe186a30aef2319d1 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:14:24 +0400
-Subject: [PATCH 052/362] saa716x: Register an array of devices
+Subject: [PATCH 052/364] saa716x: Register an array of devices
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -10542,7 +10542,7 @@ index a7a70bf47419f..3ae451cf096f6 100644
 From 3753d1d1524fae74e046047c82e73600731f4afb Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:15:07 +0400
-Subject: [PATCH 053/362] saa716x: Add support for the Avermedia H788 device
+Subject: [PATCH 053/364] saa716x: Add support for the Avermedia H788 device
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -10603,7 +10603,7 @@ index 4fdc2411e0e5c..ff8cb7f816278 100644
 From c9dab68b1f34f1cbdca8c6694018268e425a679f Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:15:55 +0400
-Subject: [PATCH 054/362] saa716x: Add support for the Azurewave VP-6002 device
+Subject: [PATCH 054/364] saa716x: Add support for the Azurewave VP-6002 device
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -10660,7 +10660,7 @@ index 027171f799c02..38d94a6b2ee1f 100644
 From 918892386891ea456d071878a60e02762481139a Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:16:51 +0400
-Subject: [PATCH 055/362] saa716x: Usea separate frontend_attach for each of
+Subject: [PATCH 055/364] saa716x: Usea separate frontend_attach for each of
  the devices
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
@@ -10924,7 +10924,7 @@ index 3ae451cf096f6..1aae40ba3d5bd 100644
 From 685dce813ee0f930f786ee7952b0ef08cb29b3fc Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:18:01 +0400
-Subject: [PATCH 056/362] saa716x: Use a separate IRQ handler for separate
+Subject: [PATCH 056/364] saa716x: Use a separate IRQ handler for separate
  modules
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
@@ -11176,7 +11176,7 @@ index 1aae40ba3d5bd..a86f6157868f3 100644
 From 6c63b1706c33a27839034d5327effe0319481ee5 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:18:51 +0400
-Subject: [PATCH 057/362] saa716x: Try to attach the demodulator
+Subject: [PATCH 057/364] saa716x: Try to attach the demodulator
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -11244,7 +11244,7 @@ index 24abfa6db2b42..38f3812b7742a 100644
 From 8d69ce7677cfa65a16e05c73d243b8f47357c2e4 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:19:37 +0400
-Subject: [PATCH 058/362] saa716x: Fix typo in register definitions
+Subject: [PATCH 058/364] saa716x: Fix typo in register definitions
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -11273,7 +11273,7 @@ index c10491682e9c6..c9460d2cde286 100644
 From 1159a55283fc37fe77823e50aba9d1ba03aae9dc Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:21:54 +0400
-Subject: [PATCH 059/362] saa716x: Updates and Code simplification  -
+Subject: [PATCH 059/364] saa716x: Updates and Code simplification  -
  Initialize the I2C clock  - Disable core reset for hybrid cards
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
@@ -11817,7 +11817,7 @@ index c9460d2cde286..fec19fd2b99f0 100644
 From 6faaa3b0fb30a2d93dc97e8d2da6e92db99fa31d Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:22:51 +0400
-Subject: [PATCH 060/362] saa716x: Check device revision for I2C bus orderring
+Subject: [PATCH 060/364] saa716x: Check device revision for I2C bus orderring
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -11852,7 +11852,7 @@ index b2a355519259f..515d74970dec0 100644
 From 4647de1a203997aeb51b7772edbd05be1b1ee3e8 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:24:12 +0400
-Subject: [PATCH 061/362] saa716x: Add support for the NXP Atlantis reference
+Subject: [PATCH 061/364] saa716x: Add support for the NXP Atlantis reference
  design
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
@@ -11917,7 +11917,7 @@ index ff6d8d716b3c4..65f8b7b23bda5 100644
 From 5e101b639f4ad58bfc391f57971e9e4a9d6f22e8 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:25:22 +0400
-Subject: [PATCH 062/362] saa716x: Free IRQ before module unload
+Subject: [PATCH 062/364] saa716x: Free IRQ before module unload
 
 From: Andreas Regel <andreas.regel@gmx.de>
 
@@ -11944,7 +11944,7 @@ index 698ae064f5ce3..b9f21a780daa7 100644
 From 8ed587770d8e78f0a5d0ba46f2ffcb5e1c0f1964 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:26:03 +0400
-Subject: [PATCH 063/362] saa716x: Code reorganization
+Subject: [PATCH 063/364] saa716x: Code reorganization
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -12371,7 +12371,7 @@ index 3e6de9ae8d066..ded26976f5b9f 100644
 From b2b7eb883fe31030f73fb74c93a9bfec26ae2933 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:26:49 +0400
-Subject: [PATCH 064/362] saa716x: Add support for the KNC1 Dual S2 device
+Subject: [PATCH 064/364] saa716x: Add support for the KNC1 Dual S2 device
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -12447,7 +12447,7 @@ index 38d94a6b2ee1f..14d03e238c231 100644
 From cc54e2ea4dd6f647da9989c774055797a390e4d9 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:27:34 +0400
-Subject: [PATCH 065/362] saa716x: Add support for the VP-3071 DVB-T dual
+Subject: [PATCH 065/364] saa716x: Add support for the VP-3071 DVB-T dual
  device
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
@@ -12520,7 +12520,7 @@ index 14d03e238c231..572cd6f856635 100644
 From f42599d526065d59f8c07dd944a60fb3cca6e47d Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:28:30 +0400
-Subject: [PATCH 066/362] saa716x: Add GPIO control functions
+Subject: [PATCH 066/364] saa716x: Add GPIO control functions
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -12776,7 +12776,7 @@ index fec19fd2b99f0..97a79a21c9c0d 100644
 From c24e83eca5a4a382fe97ca953105d413ecb60d28 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:29:31 +0400
-Subject: [PATCH 067/362] saa716x: Use power and reset controls within a
+Subject: [PATCH 067/364] saa716x: Use power and reset controls within a
  sig\ngle loop
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
@@ -12937,7 +12937,7 @@ index b30430502cd19..e6c2b4bbfc021 100644
 From 66a2e30fb178d035d47ba22e1561abe7e094a86e Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:30:55 +0400
-Subject: [PATCH 068/362] saa716x: Use a configuration per adapter
+Subject: [PATCH 068/364] saa716x: Use a configuration per adapter
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -13048,7 +13048,7 @@ index 90e2691eaf2d2..49ba2be9a4463 100644
 From e54b82aa0f7458be2c3b34dda016e399e9291053 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:31:41 +0400
-Subject: [PATCH 069/362] saa716x: VP-1028: add power, reset configuration
+Subject: [PATCH 069/364] saa716x: VP-1028: add power, reset configuration
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -13078,7 +13078,7 @@ index e871bc7ad46e9..0077d711e9c4d 100644
 From 9df09835c4d75ad823a3e6a551f4f8049032d2f5 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:32:24 +0400
-Subject: [PATCH 070/362] saa716x: H788: Add power, reset configuration
+Subject: [PATCH 070/364] saa716x: H788: Add power, reset configuration
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -13109,7 +13109,7 @@ index 65f8b7b23bda5..48f24e36be3c6 100644
 From a282771446c7d5fc9bf52e05f557244708e9b6e2 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:33:16 +0400
-Subject: [PATCH 071/362] saa716x: HC82: Add power, reset configuration
+Subject: [PATCH 071/364] saa716x: HC82: Add power, reset configuration
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -13139,7 +13139,7 @@ index 48f24e36be3c6..9d7bd7391998b 100644
 From b0febf3ee1fe724b1544b5106975292e25d3e570 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:37:10 +0400
-Subject: [PATCH 072/362] saa716x: Display Bus status
+Subject: [PATCH 072/364] saa716x: Display Bus status
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -13191,7 +13191,7 @@ index 077790714fe2c..487cdddae00e8 100644
 From 4bd5a6b62acd81a38207401999c41925473bbb45 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:38:09 +0400
-Subject: [PATCH 073/362] saa716x: Bug: Address needs to be shifted one bit
+Subject: [PATCH 073/364] saa716x: Bug: Address needs to be shifted one bit
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -13272,7 +13272,7 @@ index 487cdddae00e8..1b497363c1c4f 100644
 From dec7ad954d31fdf24a8ddb63fd174710ac529865 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:38:50 +0400
-Subject: [PATCH 074/362] saa716x: Initial go at DMA routines
+Subject: [PATCH 074/364] saa716x: Initial go at DMA routines
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -13641,7 +13641,7 @@ index 0000000000000..d80e5fe9d8f74
 From 5ba77f945e41ac1b57ce4f1829b8cdb61c001381 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:39:34 +0400
-Subject: [PATCH 075/362] saa716x: Print warning, if MSI module is not
+Subject: [PATCH 075/364] saa716x: Print warning, if MSI module is not
  supported
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
@@ -13695,7 +13695,7 @@ index 97a79a21c9c0d..99e0945af4062 100644
 From 987dec666865471d614b06411550e4d741c0a569 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:40:43 +0400
-Subject: [PATCH 076/362] saa716x: Handle MSI in a generic manner
+Subject: [PATCH 076/364] saa716x: Handle MSI in a generic manner
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -14247,7 +14247,7 @@ index 99e0945af4062..fc0bd791cdef0 100644
 From 432e5d0f2a0d1276295a846bc4f6eb886e3156a5 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:41:21 +0400
-Subject: [PATCH 077/362] saa716x: Add PHI port definitions
+Subject: [PATCH 077/364] saa716x: Add PHI port definitions
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -14343,7 +14343,7 @@ index fc0bd791cdef0..174dee3de95a1 100644
 From bd5080510ca606c0d28fc3e41636caaba8212ec2 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:42:06 +0400
-Subject: [PATCH 078/362] saa716x: Initialize PHI bus
+Subject: [PATCH 078/364] saa716x: Initialize PHI bus
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -14598,7 +14598,7 @@ index 174dee3de95a1..5ffe9fcae88a0 100644
 From 44ebabe847b295fc0a0a94359c6823a6afe8d1a3 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:42:56 +0400
-Subject: [PATCH 079/362] saa716x: Add GREG routines
+Subject: [PATCH 079/364] saa716x: Add GREG routines
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -14685,7 +14685,7 @@ index 0000000000000..dea3565b502f1
 From 1e0bf0c5e2494b75f3d9ee9e91bb756582ca6d22 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:43:49 +0400
-Subject: [PATCH 080/362] saa716x: Reorganize CGU related routines
+Subject: [PATCH 080/364] saa716x: Reorganize CGU related routines
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -15607,7 +15607,7 @@ index 169b9279e372f..11809e4922fd4 100644
 From f132428b394144323565b604627f43e2f0fbb1a9 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:44:29 +0400
-Subject: [PATCH 081/362] saa716x: Do not initialize the CGU twice
+Subject: [PATCH 081/364] saa716x: Do not initialize the CGU twice
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -15631,7 +15631,7 @@ index 823a799caeded..d9ccf151bf974 100644
 From 29a405aebbb674abf048a2984bb59d68c02d07c0 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:45:11 +0400
-Subject: [PATCH 082/362] saa716x: Add more debug info, initialize handler
+Subject: [PATCH 082/364] saa716x: Add more debug info, initialize handler
  count
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
@@ -15699,7 +15699,7 @@ index bf2637b00287e..573e16c721215 100644
 From 44ff6220c1755e76f1582b368bd34cbf59ffdd89 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:45:52 +0400
-Subject: [PATCH 083/362] saa716x: Add/remove I2C MSI vectors
+Subject: [PATCH 083/364] saa716x: Add/remove I2C MSI vectors
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -15810,7 +15810,7 @@ index 1b497363c1c4f..7032dfc8257b3 100644
 From 726def3ade8cc37e32aea303fa0705b84af382b0 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:46:30 +0400
-Subject: [PATCH 084/362] saa716x: Add interrupt debugging
+Subject: [PATCH 084/364] saa716x: Add interrupt debugging
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -15846,7 +15846,7 @@ index 573e16c721215..ca471bf61a8bf 100644
 From b053953a6d24265010a8926a2cc7fcedccde14ac Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:47:06 +0400
-Subject: [PATCH 085/362] saa716x: Return error on MSI enable failure
+Subject: [PATCH 085/364] saa716x: Return error on MSI enable failure
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -15871,7 +15871,7 @@ index 7e51a7a87f07c..bbccf627ad91e 100644
 From 7530c266e6da44a5afeebad91c9396232816b22c Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:50:42 +0400
-Subject: [PATCH 086/362] saa716x: Initialize FPGI pagetables
+Subject: [PATCH 086/364] saa716x: Initialize FPGI pagetables
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -16056,7 +16056,7 @@ index 5ffe9fcae88a0..db1a37124c3e0 100644
 From 594bb48e4db56eb93f67b524ee8ecf8f4f5ff7b2 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:51:41 +0400
-Subject: [PATCH 087/362] saa716x: Setup FGPI parameters
+Subject: [PATCH 087/364] saa716x: Setup FGPI parameters
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -16354,7 +16354,7 @@ index db1a37124c3e0..41672236d4eba 100644
 From c0b7d170bf3edd35bf8765b4e04fb568f3d9c232 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:53:05 +0400
-Subject: [PATCH 088/362] saa716x: Use a separate module to handle Full fledged
+Subject: [PATCH 088/364] saa716x: Use a separate module to handle Full fledged
  cards
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
@@ -16711,7 +16711,7 @@ index 0000000000000..c01c0308960eb
 From 3cd081620643009a7fc9a8a0efccf638850879af Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:54:03 +0400
-Subject: [PATCH 089/362] saa716x: NULL terminate PCI ID list
+Subject: [PATCH 089/364] saa716x: NULL terminate PCI ID list
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -16770,7 +16770,7 @@ index 9d7bd7391998b..1e63a1c07a01e 100644
 From 4489a04176517acfe68cd54e252fe4fff79c2d2d Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:54:41 +0400
-Subject: [PATCH 090/362] saa716x: Read the mask bits instead
+Subject: [PATCH 090/364] saa716x: Read the mask bits instead
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -16829,7 +16829,7 @@ index 1e63a1c07a01e..16c30f2d57dae 100644
 From fae61d9c6685b45c4d73703a4adf9eb128661748 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:55:25 +0400
-Subject: [PATCH 091/362] saa716x: Reduce a bit of noise in the handler debug
+Subject: [PATCH 091/364] saa716x: Reduce a bit of noise in the handler debug
  mode
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
@@ -16953,7 +16953,7 @@ index 16c30f2d57dae..d8e2084e20663 100644
 From 347347a52af44c9ae6154fcf8be214b2160f932b Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:56:17 +0400
-Subject: [PATCH 092/362] saa716x: Sleep a little while before enabling
+Subject: [PATCH 092/364] saa716x: Sleep a little while before enabling
  interrupts again
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
@@ -16979,7 +16979,7 @@ index 7032dfc8257b3..18c658631ada5 100644
 From 5c301d3b5b74d09096273583e89c4adf7bc0a487 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:57:09 +0400
-Subject: [PATCH 093/362] saa716x: Use individual handlers
+Subject: [PATCH 093/364] saa716x: Use individual handlers
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -17621,7 +17621,7 @@ index dbd385cad77cb..5e1a886cae58a 100644
 From 82de00277a153035606fcf65d9ce163f74c5261b Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:57:59 +0400
-Subject: [PATCH 094/362] saa716x: Transmit D is programmed, not S data
+Subject: [PATCH 094/364] saa716x: Transmit D is programmed, not S data
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -17646,7 +17646,7 @@ index 3ee52f16fb224..e680a0a3cd0cb 100644
 From da2a4d6753e59500545821e615db2c5a11c8a445 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:58:32 +0400
-Subject: [PATCH 095/362] saa716x: Print return values
+Subject: [PATCH 095/364] saa716x: Print return values
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -17701,7 +17701,7 @@ index 9bf4f407cb6c8..81f551f565484 100644
 From bb02c3e52bd39d63d41ca64fc47aeae31a7e7604 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:59:14 +0400
-Subject: [PATCH 096/362] saa716x: Use adapter ordering
+Subject: [PATCH 096/364] saa716x: Use adapter ordering
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -17740,7 +17740,7 @@ index 90426741e07e5..5d7cc220ad7b6 100644
 From 40bf42c4dd2e57b133cecbed61b37580791058f5 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 16:59:50 +0400
-Subject: [PATCH 097/362] saa716x: Disable debugging
+Subject: [PATCH 097/364] saa716x: Disable debugging
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -17769,7 +17769,7 @@ index 2ced5e6174c6e..a707f727e52f1 100644
 From 38f0fe671fec8924558e5c20546781d8d7b0b54f Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 22:35:03 +0400
-Subject: [PATCH 098/362] osd.h: Kickstart the TT S2 6400 Dual HD Premium - OSD
+Subject: [PATCH 098/364] osd.h: Kickstart the TT S2 6400 Dual HD Premium - OSD
  update
 
 From: Andreas Regel <andreas.regel@gmx.de>
@@ -17809,7 +17809,7 @@ index e163508b9ae8b..ca31285dada48 100644
 From 8202d7c9140eed0d87bfdc73aa7132cced9a2fc4 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 22:37:45 +0400
-Subject: [PATCH 099/362] saa716x: Kickstart the TT S2 6400 Dual HD Premium
+Subject: [PATCH 099/364] saa716x: Kickstart the TT S2 6400 Dual HD Premium
 
 From: Andreas Regel <andreas.regel@gmx.de>
 
@@ -18880,7 +18880,7 @@ index 41672236d4eba..f99cc50abe3d1 100644
 From d769149376e04e422fae7e766e9f758b30b92f15 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 22:39:39 +0400
-Subject: [PATCH 100/362] saa716x: Code simplification, Overhaul, ROM dump
+Subject: [PATCH 100/364] saa716x: Code simplification, Overhaul, ROM dump
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -20695,7 +20695,7 @@ index 0000000000000..015e91cdd6c43
 From 444c8146a5c333d14fa700f96a1534a4b14e0357 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 22:40:23 +0400
-Subject: [PATCH 101/362] saa716x: Set the default rate for the NEMO reference
+Subject: [PATCH 101/364] saa716x: Set the default rate for the NEMO reference
  design
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
@@ -20753,7 +20753,7 @@ index 7f056fb26b9f4..6e1dd44a91842 100644
 From 06157e5cfa9cc6b6b2e552ac9ee200d8d31e00fe Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 22:45:07 +0400
-Subject: [PATCH 102/362] saa716x: Code simplification, Overhauling, I2C
+Subject: [PATCH 102/364] saa716x: Code simplification, Overhauling, I2C
  related fixes Initial test with the NEMO reference device
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
@@ -23654,7 +23654,7 @@ index 0000000000000..dd5387303edef
 From 57730ad64c9d7d49058c7be94bac47eb5ae072a7 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 22:46:13 +0400
-Subject: [PATCH 103/362] saa716x: Try to attach the frontends
+Subject: [PATCH 103/364] saa716x: Try to attach the frontends
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -23901,7 +23901,7 @@ index 90ce65e7ea318..a778a7a3905e9 100644
 From c45f3b3bafb574dcc461aaa5b3ece4d7e3ceafa0 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 22:47:24 +0400
-Subject: [PATCH 104/362] saa716x: Don't cast pointers to 32 bit int
+Subject: [PATCH 104/364] saa716x: Don't cast pointers to 32 bit int
 
 From: Luca Tettamanti <kronos.it@gmail.com>
 
@@ -23940,7 +23940,7 @@ index a867449292fa0..4349a2fea8c19 100644
 From fd5e2d3e70a6d4928c3af3529df2dcb894ec0e9d Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 22:48:26 +0400
-Subject: [PATCH 105/362] saa716x: Partial rework of SPI I/O
+Subject: [PATCH 105/364] saa716x: Partial rework of SPI I/O
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -24866,7 +24866,7 @@ index 61ecba88a78b9..55c6a1a84f379 100644
 From 9f79de1724a840fa9b7556373ccf3820e4f09fb7 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 22:49:19 +0400
-Subject: [PATCH 106/362] saa716x: Add video device support
+Subject: [PATCH 106/364] saa716x: Add video device support
 
 From: Andreas Regel <andreas.regel@gmx.de>
 
@@ -25796,7 +25796,7 @@ index f99cc50abe3d1..effd966bca463 100644
 From f6222a9f2d04a1e8fc02277143dfc7c7e4a3786a Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 22:52:32 +0400
-Subject: [PATCH 107/362] saa716x: S2-6400: Try to attach the frontend
+Subject: [PATCH 107/364] saa716x: S2-6400: Try to attach the frontend
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -25903,7 +25903,7 @@ index 143020132895d..9511418622053 100644
 From 6f7419278a60fe538095a0648f90b21e0cb0a8ee Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 22:53:17 +0400
-Subject: [PATCH 108/362] saa716x: Handle multiple I2C messages
+Subject: [PATCH 108/364] saa716x: Handle multiple I2C messages
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -26135,7 +26135,7 @@ index 5a7043f3ebdd0..c9e50a0a6a03a 100644
 From b3673c975f4bb234362565b79b70e8005bc31a7e Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 22:54:16 +0400
-Subject: [PATCH 109/362] saa716x: Fix ROM parser
+Subject: [PATCH 109/364] saa716x: Fix ROM parser
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -26675,7 +26675,7 @@ index e12d99802f73b..6bb317fcc2290 100644
 From 1101cb637547779fe84255a8c6062b8d4c6a1920 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 22:54:54 +0400
-Subject: [PATCH 110/362] saa716x: Setup default I2C rates
+Subject: [PATCH 110/364] saa716x: Setup default I2C rates
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -26752,7 +26752,7 @@ index 55395a551c1ea..085d1fc3f0650 100644
 From 4f1b3e976059a7967be6f33be3610f2ff51063c8 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 22:55:32 +0400
-Subject: [PATCH 111/362] saa716x: Fix BUS ordering
+Subject: [PATCH 111/364] saa716x: Fix BUS ordering
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -26904,7 +26904,7 @@ index 81741d5040645..23f8c26747d07 100644
 From bdcbb01df0263edbe2e2c5ad7e9f021536699842 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 22:56:16 +0400
-Subject: [PATCH 112/362] saa716x: Fix swapped I2C buses
+Subject: [PATCH 112/364] saa716x: Fix swapped I2C buses
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -27027,7 +27027,7 @@ index 23f8c26747d07..e254b90ca5d3b 100644
 From afdb5729f1893ae574ef92aa91772d02a7d91448 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 22:56:55 +0400
-Subject: [PATCH 113/362] saa716x: Print wait time, reduce number of loops
+Subject: [PATCH 113/364] saa716x: Print wait time, reduce number of loops
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -27061,7 +27061,7 @@ index d35cf9f0d2fed..dfbcd0bc33344 100644
 From 1e83ad06d4647dcb217ea6351aeb81eeba6091d2 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 22:57:44 +0400
-Subject: [PATCH 114/362] saa716x: Fix missing address in single write
+Subject: [PATCH 114/364] saa716x: Fix missing address in single write
  operation
 
 From: Andreas Regel <andreas.regel@gmx.de>
@@ -27101,7 +27101,7 @@ index dfbcd0bc33344..440f0c684ace0 100644
 From 38d54fa6fb20387a483c6b1d4ed73eaa300399d1 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 4 Jan 2010 23:16:19 +0400
-Subject: [PATCH 115/362] saa716x: make register definitions specific to each
+Subject: [PATCH 115/364] saa716x: make register definitions specific to each
  of the modules
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
@@ -28795,7 +28795,7 @@ index 0000000000000..2d773bd1d00d4
 From 677bbefc7968f014c6f3ba9ef52cf1c585453017 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Tue, 5 Jan 2010 00:32:53 +0400
-Subject: [PATCH 116/362] saa716x: Fix register definition typo
+Subject: [PATCH 116/364] saa716x: Fix register definition typo
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -28834,7 +28834,7 @@ index ecfc0ceb07a91..d9a12c7aeb684 100644
 From f300a3627251b9448ed6571c1dbbb8e8d3151463 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Tue, 5 Jan 2010 00:33:39 +0400
-Subject: [PATCH 117/362] saa716x: Add function declaration
+Subject: [PATCH 117/364] saa716x: Add function declaration
 
 From: Andreas Regel <andreas.regel@gmx.de>
 
@@ -28860,7 +28860,7 @@ index 05332b9d2d194..5353cf239db8d 100644
 From c0727dccb6004651967573341118bfec31882719 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Tue, 5 Jan 2010 00:50:41 +0400
-Subject: [PATCH 118/362] saa716x: Fix FGPI internal clock divider state
+Subject: [PATCH 118/364] saa716x: Fix FGPI internal clock divider state
 
 From: Andreas Regel <andreas.regel@gmx.de>
 
@@ -28911,7 +28911,7 @@ index f4e51387181b5..7198309ba1e27 100644
 From d358af12c191b6739374ec4dac2d21e78259b235 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Tue, 5 Jan 2010 00:51:26 +0400
-Subject: [PATCH 119/362] saa716x: Fix dmabuf allocation
+Subject: [PATCH 119/364] saa716x: Fix dmabuf allocation
 
 From: Andreas Regel <andreas.regel@gmx.de>
 
@@ -29076,7 +29076,7 @@ index bb3d00f7aab0f..23417b5d004cf 100644
 From 64855498e7b07530c686dec1bf8831c43053d204 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Tue, 5 Jan 2010 00:52:38 +0400
-Subject: [PATCH 120/362] saa716x: Cleanup debug prints
+Subject: [PATCH 120/364] saa716x: Cleanup debug prints
 
 From: Andreas Regel <andreas.regel@gmx.de>
 
@@ -29129,7 +29129,7 @@ index 291e936fed800..d5d3019ef6c34 100644
 From 2641e8500d1886dcd3c08e0925aebf59aba4c10a Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Tue, 5 Jan 2010 00:53:34 +0400
-Subject: [PATCH 121/362] saa716x: Handle failure correctly
+Subject: [PATCH 121/364] saa716x: Handle failure correctly
 
 From: Andreas Regel <andreas.regel@gmx.de>
 
@@ -29156,7 +29156,7 @@ index d5d3019ef6c34..0a044a93f6183 100644
 From 6de169838d58861f54048c70d9900c0613bc4c1a Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Tue, 5 Jan 2010 00:54:35 +0400
-Subject: [PATCH 122/362] saa716x: Handle proper buffer flush
+Subject: [PATCH 122/364] saa716x: Handle proper buffer flush
 
 From: Andreas Regel <andreas.regel@gmx.de>
 
@@ -29194,7 +29194,7 @@ index 0a044a93f6183..40048e65355e2 100644
 From 2dee9a559d7ba51af7a8c07fb6d2fb5ffc55b9ee Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Tue, 5 Jan 2010 00:55:50 +0400
-Subject: [PATCH 123/362] saa716x: FGPI DMA handling fixes
+Subject: [PATCH 123/364] saa716x: FGPI DMA handling fixes
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -29528,7 +29528,7 @@ index d970bf9dd2872..90a9effbcfd4f 100644
 From 41d063ee7dbfc3fde2a55c989e27f02a5a1d5884 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Tue, 5 Jan 2010 00:56:46 +0400
-Subject: [PATCH 124/362] saa716x: Finally! we have stream capture
+Subject: [PATCH 124/364] saa716x: Finally! we have stream capture
 
 From: Andreas Regel <andreas.regel@gmx.de>
 
@@ -29662,7 +29662,7 @@ index 40048e65355e2..09bf1b2bbdf7f 100644
 From c73f978f29c01d085c32deb759b129a8b3247ea3 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Tue, 5 Jan 2010 12:45:45 +0400
-Subject: [PATCH 125/362] saa716x: Make the framework buildable
+Subject: [PATCH 125/364] saa716x: Make the framework buildable
 
 [removed Kconfig and Makefile changes in media/common]
 [moved from media/common/saa716x/ to media/pci/saa716x/]
@@ -29770,7 +29770,7 @@ index 016fd2f26ced6..189f3a84174af 100644
 From 659aaff49e14ee722d6ef5fd4ce1d0bbb70da115 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Tue, 5 Jan 2010 15:25:05 +0400
-Subject: [PATCH 126/362] saa716x: Fix build issues
+Subject: [PATCH 126/364] saa716x: Fix build issues
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -29866,7 +29866,7 @@ index e3f45e8c89421..aefa46aba43c0 100644
 From 3f2ea1631213fc8158cc8751ca8d877eb36d23e5 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Tue, 5 Jan 2010 20:43:26 +0100
-Subject: [PATCH 127/362] saa716x: Simplified the code for I2C transfers.
+Subject: [PATCH 127/364] saa716x: Simplified the code for I2C transfers.
 
 I2C module of the saa716x should support all kinds of transfers now.
 As the transfers rarely fail, up to 2 retries are done in case of failures.
@@ -30153,7 +30153,7 @@ index c7545da460c74..119d8fef25981 100644
 From 2ed3dfead563b2f45003e5033c074786f3efe403 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Tue, 5 Jan 2010 20:49:04 +0100
-Subject: [PATCH 128/362] saa716x: Transport stream ports can be configured
+Subject: [PATCH 128/364] saa716x: Transport stream ports can be configured
  now.
 
 Activate the second TS path on the S2-6400.
@@ -30282,7 +30282,7 @@ index 90a9effbcfd4f..9fd4bdae5a720 100644
 From 21688d032f0367876faa6f51b04bb6a018c9fcd5 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Tue, 5 Jan 2010 20:51:59 +0100
-Subject: [PATCH 129/362] saa716x_ff: Disable frontend support through STi7109
+Subject: [PATCH 129/364] saa716x_ff: Disable frontend support through STi7109
  firmware.
 
 This is needed when the I2C of the SAA716x shall be used to access the frontend.
@@ -30314,7 +30314,7 @@ index 2b8876dcd5e66..72c5a9f2960b0 100644
 From 75de0726a52812a7e775cba66aa1d0706adf36fd Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Tue, 5 Jan 2010 20:58:16 +0100
-Subject: [PATCH 130/362] saa716x_ff: Initialize the frontend of the TT
+Subject: [PATCH 130/364] saa716x_ff: Initialize the frontend of the TT
  S2-6400.
 
 The frontend drivers (stv090x, stv6110x and isl6423) are initialised with correct parameters.
@@ -30498,7 +30498,7 @@ index 72c5a9f2960b0..ba31881662657 100644
 From 97d003b2bda742b36e10c47f0e5a4b4b1429bd2a Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Tue, 5 Jan 2010 21:00:29 +0100
-Subject: [PATCH 131/362] saa716x_ff: Add VIDEO_GET_PTS ioctl.
+Subject: [PATCH 131/364] saa716x_ff: Add VIDEO_GET_PTS ioctl.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
 
@@ -30528,7 +30528,7 @@ index ba31881662657..07b982259ac35 100644
 From 60116389f29721b6c6e1e490073f78678674ba8f Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Tue, 5 Jan 2010 21:04:25 +0100
-Subject: [PATCH 132/362] saa716x_ff: Add audio device for TT S2-6400.
+Subject: [PATCH 132/364] saa716x_ff: Add audio device for TT S2-6400.
 
 Add AUDIO_GET_PTS ioctl.
 
@@ -30670,7 +30670,7 @@ index 461581fba3ae1..8c39dcafe4f77 100644
 From a6cc5496483e4506a1faedbf07297615e135181a Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Tue, 5 Jan 2010 21:06:50 +0100
-Subject: [PATCH 133/362] saa716x_ff: Use separate interrupts for OSD commands.
+Subject: [PATCH 133/364] saa716x_ff: Use separate interrupts for OSD commands.
 
 Added definitions of missing interrupt sources.
 
@@ -30937,7 +30937,7 @@ index 8c39dcafe4f77..1c4ddb661f078 100644
 From dd11c1a0fb4fed4013b40cf7ffb85a924afce0d0 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Tue, 5 Jan 2010 21:08:40 +0100
-Subject: [PATCH 134/362] saa716x_ff: Use third TS input of the STi7109 for
+Subject: [PATCH 134/364] saa716x_ff: Use third TS input of the STi7109 for
  playback
 
 With that we still have both frontend TS available
@@ -30979,7 +30979,7 @@ index 2fdcad5c2516c..e026c74ba2cac 100644
 From 8c914308566b4d765c4117d1992ed8b14d38e03d Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Tue, 5 Jan 2010 21:10:38 +0100
-Subject: [PATCH 135/362] saa716x_ff: Set error code when boot of firmware
+Subject: [PATCH 135/364] saa716x_ff: Set error code when boot of firmware
  failed.
 
 This avoids an exception when unloading the driver afterwards.
@@ -31008,7 +31008,7 @@ index e026c74ba2cac..8b7b00f932970 100644
 From 5165f8722b66f6e897deedf60ca3904ac87ff54e Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Tue, 5 Jan 2010 21:11:40 +0100
-Subject: [PATCH 136/362] saa716x_ff: Added 10ms sleep after configuring the
+Subject: [PATCH 136/364] saa716x_ff: Added 10ms sleep after configuring the
  FPGA.
 
 The FPGA needs some time to initialize after configuration has been done.
@@ -31039,7 +31039,7 @@ index 8b7b00f932970..a2e61474e87bb 100644
 From 06256c898a247df9bce53f8ea36e6c2c6ec3d0e0 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Tue, 5 Jan 2010 21:13:01 +0100
-Subject: [PATCH 137/362] saa716x: Reduce compiler warnings
+Subject: [PATCH 137/364] saa716x: Reduce compiler warnings
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
 
@@ -31096,7 +31096,7 @@ index aefa46aba43c0..d5dbc11d9f8e3 100644
 From 00b5d0995ec28575ddcb87b79bd959df76a1aad4 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Tue, 12 Jan 2010 20:53:16 +0400
-Subject: [PATCH 138/362] saa716x: Deinitialize I2C interrupts on exit
+Subject: [PATCH 138/364] saa716x: Deinitialize I2C interrupts on exit
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -31136,7 +31136,7 @@ index 119d8fef25981..34630e15a09dc 100644
 From b69258d7cb215db9deaaff07387df3cbd122bb7a Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Tue, 12 Jan 2010 21:28:38 +0400
-Subject: [PATCH 139/362] saa716x: Factorize register/detach routines to common
+Subject: [PATCH 139/364] saa716x: Factorize register/detach routines to common
  code
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
@@ -31415,7 +31415,7 @@ index fd527b1cec29a..76eedec073884 100644
 From e47dc3a16ecba02341cc8274068078fdd2a5581b Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Tue, 12 Jan 2010 22:16:59 +0400
-Subject: [PATCH 140/362] saa716x: Start DMA engine as and when requested
+Subject: [PATCH 140/364] saa716x: Start DMA engine as and when requested
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -31547,7 +31547,7 @@ index 9fd4bdae5a720..a1738b99fc204 100644
 From 91add67f5d818b7f2e4594f6e2a491c289440812 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Tue, 12 Jan 2010 23:16:27 +0400
-Subject: [PATCH 141/362] saa716x: Enable timeout for modules having no clock
+Subject: [PATCH 141/364] saa716x: Enable timeout for modules having no clock
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -31601,7 +31601,7 @@ index 5c22d8ecb96e7..8102853bc2b0b 100644
 From 0514f938807aeb494c2973410575880620493500 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Thu, 14 Jan 2010 17:00:17 +0400
-Subject: [PATCH 142/362] saa716x: Reset the frontend after powerup
+Subject: [PATCH 142/364] saa716x: Reset the frontend after powerup
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -31643,7 +31643,7 @@ index 9813c742d80d0..f55d95bc93845 100644
 From 08b7ffa0294bab5f02cb97079359339ebbc9d7a2 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Sun, 17 Jan 2010 14:56:25 +0400
-Subject: [PATCH 143/362] saa716x: GPIO fix
+Subject: [PATCH 143/364] saa716x: GPIO fix
 
 From Andreas
 
@@ -31711,7 +31711,7 @@ index d14acefb47482..62b6112d38af2 100644
 From 2a2ffabcecce63c49fc371ea2f7d955c41c45ebe Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Sun, 17 Jan 2010 23:52:10 +0400
-Subject: [PATCH 144/362] saa716x: Fix powerup/reset
+Subject: [PATCH 144/364] saa716x: Fix powerup/reset
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -31858,7 +31858,7 @@ index a1738b99fc204..9f608a0608928 100644
 From 8628c54dd28aca547bfe5f178a221fe7d5cbb59b Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Mon, 18 Jan 2010 03:11:30 +0400
-Subject: [PATCH 145/362] saa716x: Use the correct I2C Bus
+Subject: [PATCH 145/364] saa716x: Use the correct I2C Bus
 
 Thanks to Andreas..
 Still no communication to frontend ... :-(
@@ -33806,7 +33806,7 @@ index 795caf6489fa6..9798ff41d73c9 100644
 From 66f9f6df8e9240d21bd4502d4259edee0e6a889e Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Wed, 20 Jan 2010 17:51:51 +0400
-Subject: [PATCH 146/362] saa716x: Code simplification
+Subject: [PATCH 146/364] saa716x: Code simplification
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -33915,7 +33915,7 @@ index 9f608a0608928..1193dcf129855 100644
 From aedaa5553a410ab8dd6be2252d06f6c8bfd37140 Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Wed, 20 Jan 2010 18:34:08 +0400
-Subject: [PATCH 147/362] saa716x: Try to attach frontend on the Nemo reference
+Subject: [PATCH 147/364] saa716x: Try to attach frontend on the Nemo reference
  board
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
@@ -33967,7 +33967,7 @@ index 6eff0f3895f64..67fac5e44e980 100644
 From b7e4b49915670187d8b0750563784f6e4a39ae1a Mon Sep 17 00:00:00 2001
 From: Manu Abraham <manu@linuxtv.org>
 Date: Thu, 21 Jan 2010 03:52:02 +0400
-Subject: [PATCH 148/362] saa716x: Do not report non-fatal errors to avoid
+Subject: [PATCH 148/364] saa716x: Do not report non-fatal errors to avoid
  issues with buggy BIOS's
 
 [moved from media/common/saa716x/ to media/pci/saa716x/]
@@ -34016,7 +34016,7 @@ index 507c8706cab02..21e59d04249b4 100644
 From 160c7fb721e20999422d216aafca68580178ac3d Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Fri, 8 Jan 2010 17:58:11 +0100
-Subject: [PATCH 149/362] saa716x: fix kernel oops caused by missing
+Subject: [PATCH 149/364] saa716x: fix kernel oops caused by missing
  initialisation
 
 Variable k was not initialised with 0 in saa716x_dmabuf_sgpagefill. That could lead to kernel oops.
@@ -34048,7 +34048,7 @@ index 7b3f9e4041800..21d1dd8c34d1e 100644
 From 6355eca6cf800dbe56e8f6ffd4c5f2478d6e6613 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Tue, 9 Feb 2010 22:18:10 +0100
-Subject: [PATCH 150/362] saa716x: fixed double frontend detach
+Subject: [PATCH 150/364] saa716x: fixed double frontend detach
 
 dvb_unregister_frontend and dvb_frontend_detach were called twice per adapter when unloading the driver. That lead to a kernel oops.
 
@@ -34080,7 +34080,7 @@ index 81b2de8ce6564..8e6d695903298 100644
 From 4f4232ea71c602c0e88168db29550a0bf2250c18 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Tue, 9 Feb 2010 22:22:09 +0100
-Subject: [PATCH 151/362] saa716x: 1ms is enough when waiting for the PLL
+Subject: [PATCH 151/364] saa716x: 1ms is enough when waiting for the PLL
 
 There was a delay of 1 second in saa716x_set_clk_internal and saa716x_set_clk_external to wait for the PLL. This was way too much and slowed things down, p.e. when starting or stopping the TS capturing. Now the delay is 1ms which is enough.
 
@@ -34118,7 +34118,7 @@ index 7198309ba1e27..c4a064d8e849e 100644
 From b328e265c51230160e968765956bb3466cf1137f Mon Sep 17 00:00:00 2001
 From: Oliver Endriss <o.endriss@gmx.de>
 Date: Wed, 31 Mar 2010 03:29:50 +0200
-Subject: [PATCH 152/362] saa716x_ff: Rename saa716x_ff.c to saa716x_ff_main.c
+Subject: [PATCH 152/364] saa716x_ff: Rename saa716x_ff.c to saa716x_ff_main.c
 
 From: Oliver Endriss <o.endriss@gmx.de>
 
@@ -34158,7 +34158,7 @@ rename to drivers/media/pci/saa716x/saa716x_ff_main.c
 From c830849c8d208449cbd586894d196fd0f37e1eed Mon Sep 17 00:00:00 2001
 From: Oliver Endriss <o.endriss@gmx.de>
 Date: Wed, 31 Mar 2010 03:46:11 +0200
-Subject: [PATCH 153/362] saa716x_ff: Support remote control receiver
+Subject: [PATCH 153/364] saa716x_ff: Support remote control receiver
 
 From: Oliver Endriss <o.endriss@gmx.de>
 
@@ -34543,7 +34543,7 @@ index 1193dcf129855..d0fafd87abdcb 100644
 From 876f934ebdabb409b921de28af1d42da5a137fe2 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Mon, 5 Apr 2010 15:45:21 +0200
-Subject: [PATCH 154/362] saa716x_ff: Adapted frontend init to latest driver
+Subject: [PATCH 154/364] saa716x_ff: Adapted frontend init to latest driver
  changes.
 
 With latest changes on stv090x and stv6110x drivers regardings the tuner I2C gate locking it is needed to initialize the demodulator directly after attaching it. This leads to a correct setup of the tuner's clock output divider. In case of the TT S2-6400 we must initialize adapter 1 as the second tuner drives the STV0900.
@@ -34589,7 +34589,7 @@ index cc0582059ed2f..cf7d28e077e1d 100644
 From 6644e14c63ebffb64cb4886da1a9f4bc0703681d Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Mon, 24 May 2010 21:41:12 +0200
-Subject: [PATCH 155/362] saa716x: Improve PHI performance by shorten timings a
+Subject: [PATCH 155/364] saa716x: Improve PHI performance by shorten timings a
  bit.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
@@ -34619,7 +34619,7 @@ index 0535cce72e7c7..7df9a989e08be 100644
 From 7ab6637c80c9559cde8731b0901d83131d5bd9d8 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Mon, 24 May 2010 21:48:29 +0200
-Subject: [PATCH 156/362] saa716x_ff: use double buffering for block transfers.
+Subject: [PATCH 156/364] saa716x_ff: use double buffering for block transfers.
 
 This is done by splitting the 14K data buffer in DPRAM into two 7K blocks. While one buffer is read by the STi7109 the other one can be updated by the PC. This improves data transfer performance by 70 percent. Firmware version 0.2.0 is required to be able to use it.
 
@@ -34709,7 +34709,7 @@ index cf7d28e077e1d..6a6ce01ba3aec 100644
 From e819262f6a0e2080c96477aef6a2ae7562da313c Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Mon, 7 Jun 2010 21:42:37 +0200
-Subject: [PATCH 157/362] saa716x_ff: Reset block_done after receiving it.
+Subject: [PATCH 157/364] saa716x_ff: Reset block_done after receiving it.
 
 This fixes not waiting for the last block to be transfered which lead, p.e. missing OSD parts.
 
@@ -34753,7 +34753,7 @@ index 6a6ce01ba3aec..f39b0f7d91390 100644
 From e9d7d7cb6000222f02da500697a14dedb210a34e Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 30 Jan 2011 16:39:04 +0100
-Subject: [PATCH 158/362] saa716x_ff: add interrupt source for firmware log
+Subject: [PATCH 158/364] saa716x_ff: add interrupt source for firmware log
  messages
 
 The unused FIFO2 interrupt is replaced by a new one that is used for indicating log messages coming from the firmware. The log message itself is transferred in a memory area in the DPRAM.
@@ -34822,7 +34822,7 @@ index f39b0f7d91390..ef3af303737e3 100644
 From 667982a80ed6de7d72cec4c723953dd0b485887e Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 30 Jan 2011 19:49:48 +0100
-Subject: [PATCH 159/362] saa716x_ff: read FPGA version register
+Subject: [PATCH 159/364] saa716x_ff: read FPGA version register
 
 After a successful initialize of the FPGA the version of the bitstream is read out.
 
@@ -34874,7 +34874,7 @@ index ef3af303737e3..1c1984610f1b2 100644
 From e8d7179c1ef098887addedf490c3a0ba17b54d51 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Mon, 7 Mar 2011 19:39:57 +0100
-Subject: [PATCH 160/362] saa716x_ff: fixed PTS/STC signed/unsigned issue
+Subject: [PATCH 160/364] saa716x_ff: fixed PTS/STC signed/unsigned issue
 
 There was a sign extension when building the PTS values from the byte array. Fixed this by moving the type cast.
 
@@ -34955,7 +34955,7 @@ index 1c1984610f1b2..1fef4e5e9207a 100644
 From ef5a9aed5d69cc4777b6e4d8b5ee4a0602eca927 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 13 Mar 2011 14:47:55 +0100
-Subject: [PATCH 161/362] saa716x_ff: query and print loader and firmware
+Subject: [PATCH 161/364] saa716x_ff: query and print loader and firmware
  versions
 
 The version of the loader binary is read from the binary data itself. The SZi7109 firmware version is queried through its command interface.
@@ -35109,7 +35109,7 @@ index 1fef4e5e9207a..3c15078a67fff 100644
 From aed9e63c888f533331614bd894512d4a4bfd98d4 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 13 Mar 2011 14:56:40 +0100
-Subject: [PATCH 162/362] saa716x: disable debug printk
+Subject: [PATCH 162/364] saa716x: disable debug printk
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
 
@@ -35143,7 +35143,7 @@ index 8e6d695903298..3dfb8c5ad1456 100644
 From 28b3b9e4825354a0a1c09c76825694378fcb47e3 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 13 Mar 2011 18:52:47 +0100
-Subject: [PATCH 163/362] osd.h: Add const keyword to struct members
+Subject: [PATCH 163/364] osd.h: Add const keyword to struct members
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
 
@@ -35178,7 +35178,7 @@ index ca31285dada48..a518a5c9865dd 100644
 From b63d86ce1efdcf3abf70446ffc230e6df6191b90 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 20 Mar 2011 15:16:05 +0100
-Subject: [PATCH 164/362] saa716x_ff: implement ioctl VIDEO_GET_SIZE
+Subject: [PATCH 164/364] saa716x_ff: implement ioctl VIDEO_GET_SIZE
 
 Implement video device ioctl VIDEO_GET_SIZE by calling the proper function of the firmware's command interface.
 
@@ -35251,7 +35251,7 @@ index 3c15078a67fff..caea09e1c45d1 100644
 From c2dc7711e5316067b99e294a4ae0d4e02eb2a5c6 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Tue, 29 Mar 2011 19:50:12 +0200
-Subject: [PATCH 165/362] saa716x_ff: support production version of the S2-6400
+Subject: [PATCH 165/364] saa716x_ff: support production version of the S2-6400
 
 The driver now supports both the development samples and the production version of the S2-6400 device.
 
@@ -35296,7 +35296,7 @@ index caea09e1c45d1..2e53667ed1418 100644
 From 58a7289e811f21d9bda9fd3a050fc1a0cbc0120b Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 3 Apr 2011 17:49:37 +0200
-Subject: [PATCH 166/362] saa716x: disable OVERFLOW and AV interrupts in FGPI
+Subject: [PATCH 166/364] saa716x: disable OVERFLOW and AV interrupts in FGPI
 
 As the OVERFLOW and AV interrupts are not needed for TS capturing, disable them.
 
@@ -35334,7 +35334,7 @@ index 8aa3df7e97095..337209a8d61ed 100644
 From 43ce592df9199daab561d04c38e9658d4b77eef3 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 3 Apr 2011 17:51:14 +0200
-Subject: [PATCH 167/362] saa716x_ff: add some FPGA register definitions
+Subject: [PATCH 167/364] saa716x_ff: add some FPGA register definitions
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
 
@@ -35375,7 +35375,7 @@ index deb46012fcdf8..7fb8cb3153505 100644
 From 979c8939cb9f22db5f9644e18e0dcbd7d62fdedd Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 3 Apr 2011 18:00:34 +0200
-Subject: [PATCH 168/362] saa716x_ff: restart TS capturing in case of
+Subject: [PATCH 168/364] saa716x_ff: restart TS capturing in case of
  non-aligned TS error
 
 From time to time the TS capturing of the SAA716x is not aligned after starting it. So when an alignment error is detected, just restart the FGPI module that is responsible for TS capture.
@@ -35434,7 +35434,7 @@ index 2e53667ed1418..c9f2104d8853b 100644
 From 5bff1d021fae13aa9f6d03a9b95e81be1295a5f2 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 3 Apr 2011 18:05:49 +0200
-Subject: [PATCH 169/362] saa716x_ff: don't clear FGPI interrupts in IRQ
+Subject: [PATCH 169/364] saa716x_ff: don't clear FGPI interrupts in IRQ
  routine.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
@@ -35473,7 +35473,7 @@ index c9f2104d8853b..f148cb66db507 100644
 From 3aa6c32dc40ef6d29b0abba7aa2e11d3d35925ee Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sat, 16 Apr 2011 09:54:45 +0200
-Subject: [PATCH 170/362] saa716x: comment out SPI functions that are not
+Subject: [PATCH 170/364] saa716x: comment out SPI functions that are not
  needed currently
 
 There is no need to provide a fully working SPI interface yet. It just adds dependencies on the kernel.
@@ -35525,7 +35525,7 @@ index 6a1ec10c586ea..7bf928eaaa2d3 100644
 From 1edcf19e640ee237bf8869aa9ccde558070f898e Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Tue, 3 May 2011 20:31:12 +0200
-Subject: [PATCH 171/362] saa716x: add changes needed for kernel 2.6.36 and up.
+Subject: [PATCH 171/364] saa716x: add changes needed for kernel 2.6.36 and up.
 
 That does not mean that the whole repository works with that kernels. It won't!
 
@@ -35630,7 +35630,7 @@ index 34630e15a09dc..85b205a689b07 100644
 From 1b2bd0cf25a650d191bc8d5b6334424eeed2b394 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Thu, 5 May 2011 19:18:34 +0200
-Subject: [PATCH 172/362] saa716x: support building with
+Subject: [PATCH 172/364] saa716x: support building with
  media_build_experimental
 
 Support building the saa716x driver with media_build_experimental tree under kernels older than 2.3.36.
@@ -35707,7 +35707,7 @@ index 47c30f9d6b5c9..fa312916e1b2f 100644
 From f1517e5e6601fbe8b10f1db20939dc76f29b7ccf Mon Sep 17 00:00:00 2001
 From: Oliver Endriss <o.endriss@gmx.de>
 Date: Thu, 5 May 2011 19:26:18 +0200
-Subject: [PATCH 173/362] saa716x: Use tasklet to transfer data to the demuxer
+Subject: [PATCH 173/364] saa716x: Use tasklet to transfer data to the demuxer
  (TT S2-6400)
 
 From: Oliver Endriss <o.endriss@gmx.de>
@@ -35987,7 +35987,7 @@ index d0fafd87abdcb..957b24011ac2b 100644
 From 5c596cdb2b2849c2e807c079f36d5bcd94e01d6f Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Thu, 5 May 2011 19:52:13 +0200
-Subject: [PATCH 174/362] saa716x_ff: use tasklet for FIFO transfer
+Subject: [PATCH 174/364] saa716x_ff: use tasklet for FIFO transfer
 
 To make the time in irq function as short as possible, use a tasklet for the FIFO transfers of played TS data.
 
@@ -36120,7 +36120,7 @@ index 1119e5df2d16a..5aa304f44d7e3 100644
 From 292c43f25654ce0403ed95385b85345305cdde59 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 8 May 2011 11:11:59 +0200
-Subject: [PATCH 175/362] saa716x: fix not working MSI
+Subject: [PATCH 175/364] saa716x: fix not working MSI
 
 When MSI was used by setting int_type=1 an empty interrupt handler was
 supplied to request_irq resulting in not working driver. Now the irq_handler
@@ -36151,7 +36151,7 @@ index d5dbc11d9f8e3..1ffcecbbbaaa6 100644
 From f191fc85c83e2abdb6522e2cfd4fca4aa623b9cc Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Mon, 9 May 2011 21:11:08 +0200
-Subject: [PATCH 176/362] saa716x: Disable shared IRQ when using MSI mode.
+Subject: [PATCH 176/364] saa716x: Disable shared IRQ when using MSI mode.
 
 Disable shared IRQ when using MSI mode.
 
@@ -36180,7 +36180,7 @@ index 1ffcecbbbaaa6..de7ad9a88c876 100644
 From 1717f54540f1fdf62c1c40b66efa166240048bbe Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Mon, 9 May 2011 21:15:18 +0200
-Subject: [PATCH 177/362] saa716x_ff: Do an explicit demodulator reset.
+Subject: [PATCH 177/364] saa716x_ff: Do an explicit demodulator reset.
 
 When loading the driver an explicit hardware reset of the demodulator is now
 done using the FPGA. FPGA firmware version 1.05 is needed for this to work.
@@ -36228,7 +36228,7 @@ index 5aa304f44d7e3..2489f9f6f8ada 100644
 From 3d60ca6ab4d83c10533666ea32026451a02318fa Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 29 May 2011 12:29:30 +0200
-Subject: [PATCH 178/362] saa716x: enable wait for PLL lock when setting clocks
+Subject: [PATCH 178/364] saa716x: enable wait for PLL lock when setting clocks
  of all ports.
 
 Enable wait for PLL lock when calling saa716x_set_clk_internal with PORT_ALL
@@ -36264,7 +36264,7 @@ index c4a064d8e849e..a0ffb042acdf6 100644
 From 2c2fc15101801d8034f8b76ac311b87378744146 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 29 May 2011 13:01:29 +0200
-Subject: [PATCH 179/362] saa716x_ff: add counting of interrupts
+Subject: [PATCH 179/364] saa716x_ff: add counting of interrupts
 
 Add counting of interrupts including the different external interrupt sources.
 Counting is enabled by module parameter "int_count_enable", the counters will
@@ -36425,7 +36425,7 @@ index 2489f9f6f8ada..d1d3847225436 100644
 From a18e8c493a4812c99ff182705129cd19ec60357e Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 29 May 2011 13:18:06 +0200
-Subject: [PATCH 180/362] saa716x: don't set i2c_adapter id field
+Subject: [PATCH 180/364] saa716x: don't set i2c_adapter id field
 
 Don't set i2c_adapter id field. It is not used and has been removed in
 recent kernel versions.
@@ -36463,7 +36463,7 @@ index 85b205a689b07..c18e870f3106e 100644
 From e325adcc75150ae8ab8207cce1d2297a4f5b28ea Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Fri, 3 Jun 2011 18:21:32 +0200
-Subject: [PATCH 181/362] saa716x_ff: support non-aligned TS data
+Subject: [PATCH 181/364] saa716x_ff: support non-aligned TS data
 
 Support non-aligned TS data by using dvb_dmx_swfilter instead of
 dvb_dmx_swfilter_packets. Removed reset of the FGPI module, as it did not
@@ -36518,7 +36518,7 @@ index d1d3847225436..9b0be1024bed5 100644
 From 0051a93d0568fce8df6db078bbc808d517fd6c6e Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 21 Aug 2011 17:11:06 +0200
-Subject: [PATCH 182/362] saa716x_ff: Use a TS clock of 135Mhz instead of 90
+Subject: [PATCH 182/364] saa716x_ff: Use a TS clock of 135Mhz instead of 90
  Mhz.
 
 The STV0900's TS output has a bad duty cycle when driven with a
@@ -36550,7 +36550,7 @@ index 9b0be1024bed5..d22438a83748e 100644
 From 0417bb6d54cbcb5185b5e92ae876326b7ce4253c Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 21 Aug 2011 17:18:00 +0200
-Subject: [PATCH 183/362] saa716x_ff: Ignore false remote events.
+Subject: [PATCH 183/364] saa716x_ff: Ignore false remote events.
 
 Add a work-around to ignore false remote events. Should fix the
 "IR ghost" issue until the real cause of the problem will be found.
@@ -36616,7 +36616,7 @@ index d22438a83748e..79bc833c634e2 100644
 From abf927ceeea6eb93c5123450fdea3e0308d7cec9 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Tue, 11 Oct 2011 18:05:04 +0200
-Subject: [PATCH 184/362] saa716x_ff: Fix possible crash in IRQ handler.
+Subject: [PATCH 184/364] saa716x_ff: Fix possible crash in IRQ handler.
 
 During loading or unloading the saa716x_ff module it could happen that
 saa716x->priv was accessed in the IRQ handler before being initialized
@@ -36676,7 +36676,7 @@ index 79bc833c634e2..dbd3639216131 100644
 From 8935d86af5c075230761d8e9cbbe67623790ef82 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Mon, 24 Oct 2011 19:42:05 +0200
-Subject: [PATCH 185/362] saa716x_ff: move firmware command interface code to
+Subject: [PATCH 185/364] saa716x_ff: move firmware command interface code to
  separate file.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
@@ -37422,7 +37422,7 @@ index dbd3639216131..aa785662c3a30 100644
 From ca4ccfe8d2bc69bc93cede5e6e19c4f6359dfef7 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Mon, 24 Oct 2011 19:55:09 +0200
-Subject: [PATCH 186/362] saa716x_ff: Allow to have osd device opened twice.
+Subject: [PATCH 186/364] saa716x_ff: Allow to have osd device opened twice.
 
 As the osd device is used to control the firmware functions it is useful to be
 able to access it from two processes at the same time.
@@ -37454,7 +37454,7 @@ index aa785662c3a30..d67188993b346 100644
 From f7c234f90d37c3579a470f68c5ef560f0dd4cbd6 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 6 Nov 2011 19:04:22 +0100
-Subject: [PATCH 187/362] saa716x_ff: support correct TS mux setting for FPGA
+Subject: [PATCH 187/364] saa716x_ff: support correct TS mux setting for FPGA
  1.10.
 
 With FPGA bitstream version 1.10 and up the TS muxer settings have
@@ -37550,7 +37550,7 @@ index d67188993b346..5dad6ad7704da 100644
 From 20617b4511d91dbb0982afccfdb9226478d12735 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Tue, 8 Nov 2011 21:23:06 +0100
-Subject: [PATCH 188/362] saa716x_budget: Add missing GPIO initialization.
+Subject: [PATCH 188/364] saa716x_budget: Add missing GPIO initialization.
 
 saa716x_gpio_init was not called.
 
@@ -37579,7 +37579,7 @@ index f79a24fe89722..f6d704830bfed 100644
 From 74ea89eefc27e09ba8a6bec6f4a7de55b7278c02 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Tue, 8 Nov 2011 21:25:53 +0100
-Subject: [PATCH 189/362] saa716x_hybrid: Add missing GPIO initialization.
+Subject: [PATCH 189/364] saa716x_hybrid: Add missing GPIO initialization.
 
 - saa716x_gpio_init was not called
 - GPIOs that are written are now configured properly as output
@@ -37634,7 +37634,7 @@ index 67fac5e44e980..bd9bee1f73604 100644
 From f080c890ec33edb845ea03d3b347df78de0f6c56 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Thu, 10 Nov 2011 21:05:07 +0100
-Subject: [PATCH 190/362] saa716x_hybrid: fix tuner settings for nemo reference
+Subject: [PATCH 190/364] saa716x_hybrid: fix tuner settings for nemo reference
  board
 
 The initialization of TDA10046 and TDA8175 now basically works, the TDA10046
@@ -37740,7 +37740,7 @@ index bd9bee1f73604..26109ce7b915a 100644
 From 8883803a7bb4da7a001a1d26fc7e24f085a76818 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sat, 12 Nov 2011 20:06:52 +0100
-Subject: [PATCH 191/362] saa716x_hybrid: TS capturing on the nemo reference
+Subject: [PATCH 191/364] saa716x_hybrid: TS capturing on the nemo reference
  board works.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
@@ -37877,7 +37877,7 @@ index 26109ce7b915a..bd61018dae693 100644
 From 93dfd03b56ab834bd952fd63f546a096625733e6 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sat, 12 Nov 2011 20:32:37 +0100
-Subject: [PATCH 192/362] saa716x_hybrid: Make TS capturing code more generic.
+Subject: [PATCH 192/364] saa716x_hybrid: Make TS capturing code more generic.
 
 This makes it easier to support other cards.
 
@@ -37989,7 +37989,7 @@ index bd61018dae693..f3eebf07bd81c 100644
 From e0d1edc1b6fbcb07038bf7a3f6430b2c597d6392 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 13 Nov 2011 10:38:10 +0100
-Subject: [PATCH 193/362] saa716x: remove unused members from struct
+Subject: [PATCH 193/364] saa716x: remove unused members from struct
  saa716x_config.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
@@ -38018,7 +38018,7 @@ index 957b24011ac2b..b396b25cb0f1a 100644
 From edd535dce30421fd21f9855a1e9e0879e4b1e4b0 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 13 Nov 2011 11:55:25 +0100
-Subject: [PATCH 194/362] saa716x: Add function saa716x_fgpi_get_write_index.
+Subject: [PATCH 194/364] saa716x: Add function saa716x_fgpi_get_write_index.
 
 This function returns the currently active DMA buffer. Making this a
 global function simplifies TS capturing code in the drivers a bit.
@@ -38103,7 +38103,7 @@ index a1df3e55f5ffc..225aff00f34d7 100644
 From c5230315b57656f24285a527e2aceea49880718c Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 13 Nov 2011 12:17:19 +0100
-Subject: [PATCH 195/362] saa716x_hybrid: Use saa716x_fgpi_get_write_index to
+Subject: [PATCH 195/364] saa716x_hybrid: Use saa716x_fgpi_get_write_index to
  simplify code.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
@@ -38182,7 +38182,7 @@ index f3eebf07bd81c..dc4b167189040 100644
 From 68d9a18b0fecd8fee4cc48230db97c5c838fe3d0 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 13 Nov 2011 12:24:37 +0100
-Subject: [PATCH 196/362] saa716x_ff: Use saa716x_fgpi_get_write_index to
+Subject: [PATCH 196/364] saa716x_ff: Use saa716x_fgpi_get_write_index to
  simplify code.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
@@ -38250,7 +38250,7 @@ index 5dad6ad7704da..bb07359d02ded 100644
 From 8a530c20370e502019513e54c37ad76782da9d53 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 13 Nov 2011 12:25:16 +0100
-Subject: [PATCH 197/362] saa716x: Set maximum number of adapters per saa716x
+Subject: [PATCH 197/364] saa716x: Set maximum number of adapters per saa716x
  to 4.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
@@ -38295,7 +38295,7 @@ index b396b25cb0f1a..4a8f4790d17df 100644
 From 39f7aff44851bdff89123168073a058373d0bf97 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 13 Nov 2011 12:41:45 +0100
-Subject: [PATCH 198/362] saa716x_budget: Add TS capturing code.
+Subject: [PATCH 198/364] saa716x_budget: Add TS capturing code.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
 
@@ -38417,7 +38417,7 @@ index f6d704830bfed..6191a72f8f266 100644
 From 8e2195673f6cf4e49ff47ea2ccd84b771273e4df Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 13 Nov 2011 12:42:11 +0100
-Subject: [PATCH 199/362] saa716x_hybrid: Do some cleanups.
+Subject: [PATCH 199/364] saa716x_hybrid: Do some cleanups.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
 
@@ -38469,7 +38469,7 @@ index dc4b167189040..a42199ea7450b 100644
 From fc6de28dba2748ee2810c510f431dfe705452545 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Mon, 14 Nov 2011 21:00:22 +0100
-Subject: [PATCH 200/362] saa716x: remove unused load_config functions.
+Subject: [PATCH 200/364] saa716x: remove unused load_config functions.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
 
@@ -38729,7 +38729,7 @@ index 4a8f4790d17df..53dca74afba02 100644
 From 824311b5c95e47a41ecf933b8c187b76c2722b34 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Mon, 14 Nov 2011 21:15:49 +0100
-Subject: [PATCH 201/362] saa716x_budget: Started with SkyStar 2 eXpress HD.
+Subject: [PATCH 201/364] saa716x_budget: Started with SkyStar 2 eXpress HD.
 
 PCI IDs should be correct, frontend and port configuration is missing.
 
@@ -38818,7 +38818,7 @@ index 572cd6f856635..387c2027850d0 100644
 From 07cac06db326b31795264acd7e77411de5414233 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Tue, 15 Nov 2011 20:45:27 +0100
-Subject: [PATCH 202/362] saa716x_hybrid: Add support for KWorld Dual DVB-T
+Subject: [PATCH 202/364] saa716x_hybrid: Add support for KWorld Dual DVB-T
  PE310.
 
 This card is similar to the Atlantis reference design from NXP. Also
@@ -39025,7 +39025,7 @@ index ff8cb7f816278..df34a59b2aee7 100644
 From ac910b2bfde8b29c264669e12b68c5f5d7339aac Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Fri, 18 Nov 2011 20:05:02 +0100
-Subject: [PATCH 203/362] saa716x: Fix I2C bus assignment on SAA7160ET.
+Subject: [PATCH 203/364] saa716x: Fix I2C bus assignment on SAA7160ET.
 
 The SAA7160ET has revision 3 that lead to wrong I2C bus assignment.
 
@@ -39058,7 +39058,7 @@ index 2aca0fbd2d6fc..9210654ec7e7c 100644
 From e3cbbd4ad0ec1f983d6ec5dd6cc0bb10aaea7df7 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 20 Nov 2011 18:23:35 +0100
-Subject: [PATCH 204/362] saa716x: Fix stack corruption when parsing ROM info.
+Subject: [PATCH 204/364] saa716x: Fix stack corruption when parsing ROM info.
 
 When the address size of a device descriptor in EEPROM was longer than
 1 byte, the stack was corrupted.
@@ -39088,7 +39088,7 @@ index e254b90ca5d3b..100ebf1dcd0e8 100644
 From 05bb188c4a76e36dcbf16a4116bf22b666fa4af4 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 20 Nov 2011 18:25:45 +0100
-Subject: [PATCH 205/362] saa716x: Fix memory leak in ROM parsing.
+Subject: [PATCH 205/364] saa716x: Fix memory leak in ROM parsing.
 
 After the contents of the EEPROM was parsed, the device structure
 pointer was not freed.
@@ -39127,7 +39127,7 @@ index 100ebf1dcd0e8..1851ee5a5d0c8 100644
 From 639949272a467ce8814b14f1997974b95326f3c5 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 20 Nov 2011 18:37:09 +0100
-Subject: [PATCH 206/362] saa716x: Skip unknown device descriptors when parsing
+Subject: [PATCH 206/364] saa716x: Skip unknown device descriptors when parsing
  the ROM
 
 When there were unknown device descriptors detected during parsing of
@@ -39465,7 +39465,7 @@ index 1851ee5a5d0c8..010a7a8cc25c9 100644
 From 219be30f83eff3c9bc03b727bc66e31eeeb32b2d Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 20 Nov 2011 18:47:05 +0100
-Subject: [PATCH 207/362] saa716x: change verbose level for some dprintk
+Subject: [PATCH 207/364] saa716x: change verbose level for some dprintk
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
 
@@ -39510,7 +39510,7 @@ index 010a7a8cc25c9..629fb26572396 100644
 From 2006b91546ffca56f8c8b5e20a5b5a2b6c121d52 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 20 Nov 2011 18:48:16 +0100
-Subject: [PATCH 208/362] saa716x_ff: Enable now working EEPROM parsing.
+Subject: [PATCH 208/364] saa716x_ff: Enable now working EEPROM parsing.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
 
@@ -39542,7 +39542,7 @@ index fd48db7a0f089..98d2e0bf4445b 100644
 From 9185b77edb60a664f99d5f9e143b7e265249f88e Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Tue, 22 Nov 2011 21:01:13 +0100
-Subject: [PATCH 209/362] saa716x_ff: Add error message when FPGA is not
+Subject: [PATCH 209/364] saa716x_ff: Add error message when FPGA is not
  responding.
 
 This error is often caused by a not connected power supply.
@@ -39576,7 +39576,7 @@ index 98d2e0bf4445b..cd411edf4ede6 100644
 From 82476b262a349e1b27aeec02e7b5876456547674 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Tue, 22 Nov 2011 21:24:35 +0100
-Subject: [PATCH 210/362] saa716x_budget: Add frontend attach for the Skystar2
+Subject: [PATCH 210/364] saa716x_budget: Add frontend attach for the Skystar2
  eXpress HD.
 
 The STV0903 and STV6110 should work now, the Intersil 9491 is still
@@ -39701,7 +39701,7 @@ index 271a03ffe8a43..74efca2ba635b 100644
 From 60897de051e385d344fa23577cdd24c5e226f941 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Fri, 25 Nov 2011 19:39:03 +0100
-Subject: [PATCH 211/362] saa716x_ff: Reset the frontend on the SkyStar2
+Subject: [PATCH 211/364] saa716x_ff: Reset the frontend on the SkyStar2
  eXpress HD.
 
 From looking at photographs it seems that the RESETB pin of the
@@ -39740,7 +39740,7 @@ index 74efca2ba635b..14c7da77ad0b4 100644
 From e8c4a8612ec69eba195db2101ce4350186225c40 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Mon, 2 Jan 2012 20:34:27 +0100
-Subject: [PATCH 212/362] saa716x_ff: support CEC remote codes.
+Subject: [PATCH 212/364] saa716x_ff: support CEC remote codes.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
 
@@ -39801,7 +39801,7 @@ index 55fcd057a90fc..35624789aa862 100644
 From 57ee29d52a1fdfe0cecda513624a18f8dd9f3bb0 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Thu, 19 Jan 2012 21:36:16 +0100
-Subject: [PATCH 213/362] saa716x: Use interrupts for I2C writes instead of
+Subject: [PATCH 213/364] saa716x: Use interrupts for I2C writes instead of
  polling.
 
 Up to now, the I2C_STATUS register was polled when waiting for a data
@@ -40015,7 +40015,7 @@ index 9210654ec7e7c..9ed6de11cce94 100644
 From 2dc16fe870228e34b4354b956f70da8a7c412dd0 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 22 Jan 2012 19:06:29 +0100
-Subject: [PATCH 214/362] saa716x: separate I2C reading and writing into two
+Subject: [PATCH 214/364] saa716x: separate I2C reading and writing into two
  functions.
 
 This makes things a bit clearer. It's also a preparation to do further
@@ -40186,7 +40186,7 @@ index 8253a91f31ab0..e219383e37fbe 100644
 From 3fed1979a46eb084472013ee1ad3bf3c8320a1b9 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Mon, 23 Jan 2012 18:33:33 +0100
-Subject: [PATCH 215/362] saa716x_ff: change remote event printk to hexadecimal
+Subject: [PATCH 215/364] saa716x_ff: change remote event printk to hexadecimal
  output.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
@@ -40217,7 +40217,7 @@ index 38d7a0d1d8778..48089ace59d97 100644
 From dc153497c2392dee5efa0a8f1fce85780edf41f6 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Mon, 23 Jan 2012 19:21:54 +0100
-Subject: [PATCH 216/362] saa716x: Support buffered I2C transaction using
+Subject: [PATCH 216/364] saa716x: Support buffered I2C transaction using
  interrupts.
 
 This SAA716x has a FIFO for I2C transfers that seems to have a size of
@@ -40591,7 +40591,7 @@ index 53dca74afba02..1ad1d9c37a34a 100644
 From 5844e6844cab24683365baa33950ab2367ee1a97 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Mon, 23 Jan 2012 19:23:11 +0100
-Subject: [PATCH 217/362] saa716x_ff: Use buffered I2C interrupt mode.
+Subject: [PATCH 217/364] saa716x_ff: Use buffered I2C interrupt mode.
 
 This reduces number of I2C interrupts on the S2-6400 to around 1/3.
 
@@ -40619,7 +40619,7 @@ index 48089ace59d97..3ca918fcacc03 100644
 From fc37d399ca81d0807dd17da1c901e12fb8febd65 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 29 Jan 2012 20:17:10 +0100
-Subject: [PATCH 218/362] saa716x_ff: Don't use dvb_generic_ioctl.
+Subject: [PATCH 218/364] saa716x_ff: Don't use dvb_generic_ioctl.
 
 As dvb_generic_ioctl uses dvb-global locking since october 2010, which
 is not needed for the saa716x_ff, support for using it has been
@@ -40875,7 +40875,7 @@ index 3ca918fcacc03..27b079deeef9b 100644
 From af09769fb690a192e53da6ec8c523b59391a657d Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 26 Feb 2012 12:17:40 +0100
-Subject: [PATCH 219/362] saa716x_budget: Use GPIO 26 for reset on the Skystar
+Subject: [PATCH 219/364] saa716x_budget: Use GPIO 26 for reset on the Skystar
  2 eXpress HD.
 
 The demodulator reset PIN is connected to GPIO 26 of the SAA7160 on
@@ -40916,7 +40916,7 @@ index 14c7da77ad0b4..a97ad7e666a0c 100644
 From 74e152909f83cf2585597fd465be263aaa622b08 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 26 Feb 2012 12:19:08 +0100
-Subject: [PATCH 220/362] saa716x_budget: Use I2C B for accessing the frontend
+Subject: [PATCH 220/364] saa716x_budget: Use I2C B for accessing the frontend
  on the Skystar.
 
 On the Skystar 2 eXpress HD the frontend is connected to I2C bus B of
@@ -40947,7 +40947,7 @@ index a97ad7e666a0c..6fc591ec8c766 100644
 From 49ce730685d0522db3b7d7ef7f0631d4d854543f Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 26 Feb 2012 14:27:19 +0100
-Subject: [PATCH 221/362] saa716x_budget: Get the Skystar 2 eXpress HD to work.
+Subject: [PATCH 221/364] saa716x_budget: Get the Skystar 2 eXpress HD to work.
 
 The Skystar 2 eXpress HD is working now.
 
@@ -41022,7 +41022,7 @@ index 6fc591ec8c766..2447d044dbcb1 100644
 From 1636d3461ed37699df2cefc3aa205952fcd55c18 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Mon, 27 Feb 2012 20:39:35 +0100
-Subject: [PATCH 222/362] saa716x_budget: Implement LNB power switching for
+Subject: [PATCH 222/364] saa716x_budget: Implement LNB power switching for
  Skystar 2 eXpress HD.
 
 The LNB power supply is controlled by GPIO 2 to 4 of the STV0903.
@@ -41128,7 +41128,7 @@ index 2447d044dbcb1..62c15b3f2e6c3 100644
 From 3e7377a0fdce07f44728e05a34db5e35c43dd311 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 4 Mar 2012 17:45:57 +0100
-Subject: [PATCH 223/362] saa716x_ff: Fix memory leak.
+Subject: [PATCH 223/364] saa716x_ff: Fix memory leak.
 
 iobuf was not freed when unloading the driver leading to a memory leak
 of around 200K.
@@ -41158,7 +41158,7 @@ index 27b079deeef9b..f3827c98270ee 100644
 From fcdb676ef09a3ea7222fedcf50df05de94008778 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 4 Mar 2012 18:01:07 +0100
-Subject: [PATCH 224/362] saa716x_ff: Fix missing copy user <-> kernel space.
+Subject: [PATCH 224/364] saa716x_ff: Fix missing copy user <-> kernel space.
 
 Data buffers that were given through the pointers in the raw command and data
 structure was not transferred to kernel mode using copy_to_user. The same
@@ -41664,7 +41664,7 @@ index f3827c98270ee..d105f41a46fd1 100644
 From a26e40403d69aac7c4a54acdd868d8d92760a91a Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Tue, 18 Dec 2012 12:40:36 +0100
-Subject: [PATCH 225/362] saa716x: FGPI DMA buffer size is passed to
+Subject: [PATCH 225/364] saa716x: FGPI DMA buffer size is passed to
  saa716x_fgpi_init.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
@@ -41750,7 +41750,7 @@ index 225aff00f34d7..b81edb728ebc9 100644
 From 15e4d49b8d99dba39b4886dc18b2826137b9298e Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Thu, 20 Dec 2012 13:19:27 +0100
-Subject: [PATCH 226/362] saa716x: Fix FGPI settings for SD video capture.
+Subject: [PATCH 226/364] saa716x: Fix FGPI settings for SD video capture.
 
 - Add DMA buffer setup for interlaced mode.
 - Use correct capture mode.
@@ -41888,7 +41888,7 @@ index 0257bdbfe70b5..a5038815a40ac 100644
 From e44b1832081a75bb31278536c80db6e005046196 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Thu, 20 Dec 2012 13:26:53 +0100
-Subject: [PATCH 227/362] saa716x: Export some FGPI functions.
+Subject: [PATCH 227/364] saa716x: Export some FGPI functions.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
 
@@ -41935,7 +41935,7 @@ index a5038815a40ac..0a8caf2de22f4 100644
 From 4eedf145ff09f52903c04876012b0134577a12c5 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Thu, 20 Dec 2012 14:47:32 +0100
-Subject: [PATCH 228/362] saa716x: Remove unused header file.
+Subject: [PATCH 228/364] saa716x: Remove unused header file.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
 
@@ -43235,7 +43235,7 @@ index effd966bca463..0000000000000
 From 8a67890ecd90f32925a45f71f839568d8fec1780 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Thu, 20 Dec 2012 14:49:55 +0100
-Subject: [PATCH 229/362] saa716x: Remove duplicate definition.
+Subject: [PATCH 229/364] saa716x: Remove duplicate definition.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
 
@@ -43299,7 +43299,7 @@ index 08f0aa7b7b23c..cb9e148e09d83 100644
 From f182e96a063b95f6c9627dd3db20983b92506eee Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Thu, 20 Dec 2012 15:13:49 +0100
-Subject: [PATCH 230/362] saa716x: Make BAM register macros more generic.
+Subject: [PATCH 230/364] saa716x: Make BAM register macros more generic.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
 
@@ -43442,7 +43442,7 @@ index b81edb728ebc9..5bb3bd4ccbe39 100644
 From df10b5946000847bfcb7b03cd382e779dba0a747 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Fri, 21 Dec 2012 16:56:13 +0100
-Subject: [PATCH 231/362] saa716x: Use global macros for MMU register access.
+Subject: [PATCH 231/364] saa716x: Use global macros for MMU register access.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
 
@@ -43582,7 +43582,7 @@ index 844aa38a0ebf9..69f8d72c51cdc 100644
 From f894ed573d86fd02535c5b52470b8646137125bf Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Thu, 27 Dec 2012 14:21:34 +0100
-Subject: [PATCH 232/362] saa716x: Add VI module implementation.
+Subject: [PATCH 232/364] saa716x: Add VI module implementation.
 
 VI module can be used for SD/HD video capturing.
 
@@ -44150,7 +44150,7 @@ index 2d773bd1d00d4..20a460caaf7f1 100644
 From 819682940ea6c395fdf9f89c3d8e3a143f300456 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Fri, 28 Dec 2012 10:58:29 +0100
-Subject: [PATCH 233/362] saa716x: Support one-shot video capturing.
+Subject: [PATCH 233/364] saa716x: Support one-shot video capturing.
 
 The capturing will automatically stop after receiving one frame.
 
@@ -44247,7 +44247,7 @@ index 20a460caaf7f1..b064c3583f4e9 100644
 From 5f632750111c7bdb45bf199713b2907aeed21a63 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Fri, 28 Dec 2012 11:08:29 +0100
-Subject: [PATCH 234/362] saa716x_ff: Extend interrupt counters.
+Subject: [PATCH 234/364] saa716x_ff: Extend interrupt counters.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
 
@@ -44329,7 +44329,7 @@ index d105f41a46fd1..3591271e1c269 100644
 From dcff3d67bc0f776874b0320bd4e729cdb822672e Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Fri, 28 Dec 2012 13:34:46 +0100
-Subject: [PATCH 235/362] saa716x: Change video capture format from YUYV to
+Subject: [PATCH 235/364] saa716x: Change video capture format from YUYV to
  UYUV.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
@@ -44357,7 +44357,7 @@ index 4c2f3378faa20..641a10460924f 100644
 From d92c1e189afe827d879eb5cb947b07b43a822bad Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Fri, 28 Dec 2012 14:16:40 +0100
-Subject: [PATCH 236/362] saa716x_ff: Support capturing digital video coming
+Subject: [PATCH 236/364] saa716x_ff: Support capturing digital video coming
  from STi7109.
 
 The decoder chipset (STi7109) outputs HD video through its DVO port. This
@@ -44703,7 +44703,7 @@ index 3591271e1c269..ea95fa69e9160 100644
 From e186a2cc7e3a331ad86c8b880c63c580b428c55a Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Fri, 28 Dec 2012 14:19:52 +0100
-Subject: [PATCH 237/362] saa716x_ff: Protect reading of the captured video
+Subject: [PATCH 237/364] saa716x_ff: Protect reading of the captured video
  with a mutex.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
@@ -44832,7 +44832,7 @@ index ea95fa69e9160..00e7b780c363c 100644
 From 654aa7b6de2e0a14b79998477a3e0cce62ba512a Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Fri, 4 Jan 2013 11:33:32 +0100
-Subject: [PATCH 238/362] saa716x_ff: Rename functions.
+Subject: [PATCH 238/364] saa716x_ff: Rename functions.
 
 video_get_stream_params -> video_vip_get_stream_params
 video_worker            -> video_vip_worker
@@ -44892,7 +44892,7 @@ index 00e7b780c363c..68b31eda86251 100644
 From 6a75b8788fd0886b25a2a10b64697dea1b4b4700 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Fri, 4 Jan 2013 12:28:12 +0100
-Subject: [PATCH 239/362] saa716x_ff: video capture refactoring.
+Subject: [PATCH 239/364] saa716x_ff: video capture refactoring.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
 
@@ -45027,7 +45027,7 @@ index 68b31eda86251..9d2c9da5864da 100644
 From b5d76be0e8cb91ebd633bbca4a90d12d48602103 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Fri, 4 Jan 2013 17:21:33 +0100
-Subject: [PATCH 240/362] saa716x: Use pitch value from stream params when
+Subject: [PATCH 240/364] saa716x: Use pitch value from stream params when
  setting FGPI_STRIDE.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
@@ -45070,7 +45070,7 @@ index 69f8d72c51cdc..7a122e5e7c795 100644
 From 1a7e26984a94874522f1845166c0684b88501a5c Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Fri, 4 Jan 2013 17:24:00 +0100
-Subject: [PATCH 241/362] saa716x: use offset from stream params instead of
+Subject: [PATCH 241/364] saa716x: use offset from stream params instead of
  fixed value.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
@@ -45116,7 +45116,7 @@ index 7a122e5e7c795..cc5228686b72b 100644
 From 121de84270a1d962e0df4510ee6a8aa7c872ecc1 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Fri, 4 Jan 2013 17:25:08 +0100
-Subject: [PATCH 242/362] saa716x: Clear DMA buffer after allocatiion
+Subject: [PATCH 242/364] saa716x: Clear DMA buffer after allocatiion
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
 
@@ -45142,7 +45142,7 @@ index 21d1dd8c34d1e..0adcab9a76d5f 100644
 From f42c503eeeb36a540b375bab41b47086725a05d9 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sat, 5 Jan 2013 11:53:19 +0100
-Subject: [PATCH 243/362] saa716x: Support capturing raw data via FGPI unit
+Subject: [PATCH 243/364] saa716x: Support capturing raw data via FGPI unit
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
 
@@ -45181,7 +45181,7 @@ index 5bb3bd4ccbe39..47f9a9ce774a9 100644
 From 2a09fc0492d0d4ff5296c3741ec55fbae1269972 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sat, 5 Jan 2013 11:53:54 +0100
-Subject: [PATCH 244/362] saa716x: Reset FGPI read index in saa716x_fgpi_start
+Subject: [PATCH 244/364] saa716x: Reset FGPI read index in saa716x_fgpi_start
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
 
@@ -45208,7 +45208,7 @@ index 41500ce15a5ac..ec21dd53612b3 100644
 From c0ee89995476ed21ed88f9da64e34d7b50b3c377 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Mon, 4 Feb 2013 19:48:29 +0100
-Subject: [PATCH 245/362] saa716x_ff: Cancel data transfer in case of a block
+Subject: [PATCH 245/364] saa716x_ff: Cancel data transfer in case of a block
  timeout
 
 In case a block timeout occured during a data transfer, e. g. because
@@ -45257,7 +45257,7 @@ index ac15a4439a0ac..eda30fc6d2969 100644
 From 30dd6d5e38801c19e80f1836b1e291a6679680bb Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Mon, 4 Feb 2013 19:48:48 +0100
-Subject: [PATCH 246/362] saa716x_ff: print decimal digits for firmware
+Subject: [PATCH 246/364] saa716x_ff: print decimal digits for firmware
  version.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
@@ -45285,7 +45285,7 @@ index 9d2c9da5864da..5413820bb6474 100644
 From 2b2cd677b86c07cecfa59c746db141c043da0cd3 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 24 Feb 2013 12:56:24 +0100
-Subject: [PATCH 247/362] saa716x: include fix for in-kernel build
+Subject: [PATCH 247/364] saa716x: include fix for in-kernel build
 
 support build directly in kernel source tree (not only in media-build)
 
@@ -45337,7 +45337,7 @@ index ae7a911b0674c..82a3abeb5999d 100644
 From 657fb0cf561cf2b5cabde8d8693cb1317ba2617a Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 24 Feb 2013 13:07:44 +0100
-Subject: [PATCH 248/362] saa716x: support directory structure of linux-3.7+
+Subject: [PATCH 248/364] saa716x: support directory structure of linux-3.7+
 
 fix makefile include path for compatibility to linux-3.7
 
@@ -45363,7 +45363,7 @@ index d4bdd72f2ec27..24e2d9a2c0240 100644
 From ca2fbba0fa6b28393511736abce614080bc4196d Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 24 Feb 2013 13:36:59 +0100
-Subject: [PATCH 249/362] saa716x: section mismatch fixes
+Subject: [PATCH 249/364] saa716x: section mismatch fixes
 
 fix attributes of init/exit functions to avoid section mismatches
 
@@ -45492,7 +45492,7 @@ index de7ad9a88c876..01729aed6a45f 100644
 From c6363ab53e741c9ac6102405135218c1c712a9eb Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 24 Feb 2013 14:01:09 +0100
-Subject: [PATCH 250/362] saa716x: remove __devinit and friends
+Subject: [PATCH 250/364] saa716x: remove __devinit and friends
 
 Remove __devinit/__devexit attributes for compatibility to linux-3.8. On
 older kernels built without hotplug support this will slightly increase
@@ -45670,7 +45670,7 @@ index 7bf928eaaa2d3..885945438e7f1 100644
 From 82d04431162771a9b81b0d49491cae9a8b27a88a Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 24 Feb 2013 14:06:38 +0100
-Subject: [PATCH 251/362] saa716x: convert fifo_worker tasklet to workqueue
+Subject: [PATCH 251/364] saa716x: convert fifo_worker tasklet to workqueue
 
 Run fifo_worker in work_queue, not as tasklet, to avoid heavy (soft-)interrupt
 load on slow CPUs.
@@ -45762,7 +45762,7 @@ index fb574235325cf..7189cc20d9d28 100644
 From dae4afcc5018210dcbd469574b3f2ac91a888f1b Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 24 Feb 2013 14:20:48 +0100
-Subject: [PATCH 252/362] saa716x: TS output buffer cleanup
+Subject: [PATCH 252/364] saa716x: TS output buffer cleanup
 
 - Use copy_from_user for tsout ringbuffer writes.
 - Remove temporal TS buffer, directly copy from ringbuffer to device.
@@ -46013,7 +46013,7 @@ index 7189cc20d9d28..5916c80b23404 100644
 From 51d6596e2647b69ae9765cfa8f11ad32f25e4504 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Fri, 2 Aug 2013 12:50:38 +0200
-Subject: [PATCH 253/362] saa716x: i2c_del_adapter() fix
+Subject: [PATCH 253/364] saa716x: i2c_del_adapter() fix
 
 In linux-3.10 the return type of i2c_del_adapter() has changed to void. So remove
 the error checking code.
@@ -46085,7 +46085,7 @@ index da767ac634f17..27d9c99463f2d 100644
 From c59f54bb9099db6eda7f91b6c420fade43107c06 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 9 Mar 2014 17:02:42 +0100
-Subject: [PATCH 254/362] saa716x: Fix PHI address space offsets, cleanup
+Subject: [PATCH 254/364] saa716x: Fix PHI address space offsets, cleanup
  register definitions.
 
 From: Soeren Moch <smoch@web.de>
@@ -46270,7 +46270,7 @@ index 307a07db1bec0..8c13a87259d14 100644
 From ee8c5717853af241bb478cd76e0e61490d63ea42 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 9 Mar 2014 17:03:34 +0100
-Subject: [PATCH 255/362] saa716x: Clean up PHI configuration.
+Subject: [PATCH 255/364] saa716x: Clean up PHI configuration.
 
 Based on patch by Soeren Moch <smoch@web.de>
 
@@ -46345,7 +46345,7 @@ index d79b8c8493b19..7a112c841e793 100644
 From 4dc9fc37bea0aa47d04333681bff4e239232bf2f Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 9 Mar 2014 17:04:11 +0100
-Subject: [PATCH 256/362] saa716x: Reset PHI on init.
+Subject: [PATCH 256/364] saa716x: Reset PHI on init.
 
 Based on patch by Soeren Moch <smoch@web.de>
 
@@ -46405,7 +46405,7 @@ index 0d25536852f98..c30eab9601cd6 100644
 From d645f0a3d7c67830c284a08ad3c6fbce86e23899 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 9 Mar 2014 17:06:05 +0100
-Subject: [PATCH 257/362] saa716x: Print EEPROM content on DEBUG verbosity
+Subject: [PATCH 257/364] saa716x: Print EEPROM content on DEBUG verbosity
  only.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
@@ -47101,7 +47101,7 @@ index 629fb26572396..1ae782187e4fe 100644
 From 2b20ed6604dcd6065dedd1604e1c6c4f19b004ff Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 9 Mar 2014 17:08:36 +0100
-Subject: [PATCH 258/362] saa716x: Fix errors and improve saa716x_set_clk.
+Subject: [PATCH 258/364] saa716x: Fix errors and improve saa716x_set_clk.
 
 - Use stretched clock also for 125 MHz as its active for default 125 MHz
 clocks.
@@ -47157,7 +47157,7 @@ index a0ffb042acdf6..f3af28fa3f298 100644
 From d70bc660188589ae818a3c777f76447f9e96ad33 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 9 Mar 2014 17:10:34 +0100
-Subject: [PATCH 259/362] saa716x_ff: Fix not setting command result length to
+Subject: [PATCH 259/364] saa716x_ff: Fix not setting command result length to
  0 per default.
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
@@ -47192,7 +47192,7 @@ index 430dd475d4aeb..866255665ed9c 100644
 From f7a24cf52e6a7f48606f86aede77d0905e9c1788 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sun, 2 Feb 2014 13:14:44 +0100
-Subject: [PATCH 260/362] saa716x_ff: init frontends to low-power mode
+Subject: [PATCH 260/364] saa716x_ff: init frontends to low-power mode
 
 Set tuner and demod to sleep mode after initialization. So it is no longer required
 to call open/close on frontend device to set low-power mode.
@@ -47222,7 +47222,7 @@ index 5916c80b23404..0740f28001e12 100644
 From 1f6abfe04e4c3820595f7ad0b506d17efbcc7e4f Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sat, 22 Mar 2014 15:22:23 +0100
-Subject: [PATCH 261/362] saa716x: move card specific PHI code to saa716x_ff
+Subject: [PATCH 261/364] saa716x: move card specific PHI code to saa716x_ff
  driver
 
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
@@ -47684,7 +47684,7 @@ index c30eab9601cd6..0bb2027a8946b 100644
 From ecef0880e02cbb573677c44474a83c90edfd2639 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sat, 22 Mar 2014 15:23:14 +0100
-Subject: [PATCH 262/362] saa716x_ff: use special phi_fifo_write function
+Subject: [PATCH 262/364] saa716x_ff: use special phi_fifo_write function
 
 From: Soeren Moch <smoch@web.de>
 Signed-off-by: Andreas Regel <andreas.regel@gmx.de>
@@ -47737,7 +47737,7 @@ index a7cb777e3f04d..6da915f59d149 100644
 From 1ac0df989450df1f24f8fdbdf2db7b2324654640 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sat, 22 Mar 2014 15:24:11 +0100
-Subject: [PATCH 263/362] saa716x_ff: Add write-combining PCI iomem window for
+Subject: [PATCH 263/364] saa716x_ff: Add write-combining PCI iomem window for
  PHI1 access.
 
 From: Soeren Moch <smoch@web.de>
@@ -47848,7 +47848,7 @@ index 7fa6bad45736a..842f311c335f8 100644
 From 143eb63e8e6f55bc71c28dd888eae7ec9eefcf16 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sat, 22 Mar 2014 15:26:14 +0100
-Subject: [PATCH 264/362] saa716x_ff: implement PHI speedup
+Subject: [PATCH 264/364] saa716x_ff: implement PHI speedup
 
 There is a new module parameter 'phi_mode' to select different phi bus
 access modes to speedup data transfer to FPGA (OSD and TS stream in
@@ -48149,7 +48149,7 @@ index d2d80d770390b..9305efae48567 100644
 From 835c981c8a96648ddfd314e4d85f9ebcd404cc81 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Fri, 30 May 2014 20:06:03 +0200
-Subject: [PATCH 265/362] saa716x: IO memory of upper PHI1 regions is mapped in
+Subject: [PATCH 265/364] saa716x: IO memory of upper PHI1 regions is mapped in
  saa716x_ff driver.
 
 Most saa716x cards apart from the S2-6400 only use the lower IO memory
@@ -48271,7 +48271,7 @@ index 842f311c335f8..9bf07b3865230 100644
 From 42fa4d5bc48295df5ab359287d5fd1b7df85b3b5 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 29 Jun 2014 20:17:14 +0200
-Subject: [PATCH 266/362] saa716x_ff: Optimize access to FIFO.
+Subject: [PATCH 266/364] saa716x_ff: Optimize access to FIFO.
 
 - Remove unnecessary accesses to FIFO control register.
 - Transfer bigger aligned blocks to the FIFO instead of single TS packets.
@@ -48422,7 +48422,7 @@ index 2bef367eb4f93..3115a6466dbdc 100644
 From 5f9a2d3b15be885798ae1d7a39efa9db9b0391ca Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Tue, 9 Sep 2014 21:00:35 +0200
-Subject: [PATCH 267/362] saa716x_ff: Align block data on 32 bytes for firmware
+Subject: [PATCH 267/364] saa716x_ff: Align block data on 32 bytes for firmware
  0.5.0 and up
 
 Firmware 0.5.0 and up support a special DMA transfer for copying block data
@@ -48542,7 +48542,7 @@ index 3115a6466dbdc..8d2fb4eebb706 100644
 From 71f39d0af9513b5318b706f567297820b2a16f06 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Sun, 9 Nov 2014 15:44:55 +0100
-Subject: [PATCH 268/362] saa716x_ff: Do not return on command ready timeout
+Subject: [PATCH 268/364] saa716x_ff: Do not return on command ready timeout
 
 Most probably the ready indication got lost, which happens sometimes.
 Until this is resolved just send the next command.
@@ -48579,7 +48579,7 @@ index c74fed54e0888..d64e7a141361b 100644
 From c84c0b4b2d7d71b7d91f7b4b148f268fb14f4887 Mon Sep 17 00:00:00 2001
 From: Andreas Regel <andreas.regel@gmx.de>
 Date: Tue, 22 Mar 2016 20:23:42 +0100
-Subject: [PATCH 269/362] saa716x_ff: Usa faster EMI timings only for FPGA
+Subject: [PATCH 269/364] saa716x_ff: Usa faster EMI timings only for FPGA
  version 1.10 and later
 
 ST firmware 0.5.1 introduced faster timings when reading from the FPGA. These
@@ -48631,7 +48631,7 @@ index 8d2fb4eebb706..2264cfce182c9 100644
 From c1bd3007310e747adc37332a4627cc0dc590b4ab Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Thu, 17 Mar 2016 21:38:54 +0100
-Subject: [PATCH 270/362] saa716x_ff: Add linux-4.5 support
+Subject: [PATCH 270/364] saa716x_ff: Add linux-4.5 support
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
@@ -48685,7 +48685,7 @@ index 2264cfce182c9..71beee35cfeaa 100644
 From da185a30cb50dd2a62ec465941c84d843abea239 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Tue, 29 Dec 2015 19:40:55 +0100
-Subject: [PATCH 271/362] saa716x_ff: Avoid sleeping in fifo_worker
+Subject: [PATCH 271/364] saa716x_ff: Avoid sleeping in fifo_worker
 
 Since tasklet contexts are shared among different drivers, we should not
 sleep in the fifo_worker. Instead introduce a new state TSOUT_STAT_WAIT,
@@ -48795,7 +48795,7 @@ index 71beee35cfeaa..9101dd6778eda 100644
 From a96038a38328dc6b0595dbca31312a8798d19769 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Wed, 13 Jul 2016 17:49:38 +0200
-Subject: [PATCH 272/362] saa716x: remove unused saa716x_msi_handler
+Subject: [PATCH 272/364] saa716x: remove unused saa716x_msi_handler
 
 The function saa716x_msi_handler is unused. Remove it to avoid compiler
 warnings.
@@ -48825,7 +48825,7 @@ index 9bf07b3865230..4a0fd483848f7 100644
 From d3f3df8952a8bfbadd3aa5fc915741ed4f9c9a53 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Wed, 13 Jul 2016 17:57:09 +0200
-Subject: [PATCH 273/362] saa716x: pci: Remove asm includes for compatibility
+Subject: [PATCH 273/364] saa716x: pci: Remove asm includes for compatibility
  with linux-4.6
 
 Remove asm include files to avoid compile errors with linux-4.6 on
@@ -48851,7 +48851,7 @@ index 4a0fd483848f7..af8a5caf2c81c 100644
 From 70da8b6b8d45981a8c7cc5cfac52559eb111766e Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Tue, 14 Feb 2017 20:59:20 +0100
-Subject: [PATCH 274/362] saa716x: add linux-4.10 support
+Subject: [PATCH 274/364] saa716x: add linux-4.10 support
 
 The dvb_filter.h include file is no longer available in linux-4.10 .
 So define TS_SIZE directly.
@@ -48885,7 +48885,7 @@ index 77abf65adf1ff..1282763420580 100644
 From 1464f68fcd93dc2f23c125b6b54f1e94d34a69b1 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Tue, 27 Jun 2017 23:20:14 +0200
-Subject: [PATCH 275/362] saa716x: Remove broken MSI-X support
+Subject: [PATCH 275/364] saa716x: Remove broken MSI-X support
 
 There is no MSI-X support in saa716x hardware. Remove the unused MSI-X code
 from the driver to make it compatible to linux-4.12 .
@@ -49021,7 +49021,7 @@ index af8a5caf2c81c..c69fb7b87d1eb 100644
 From 3b75bf6d5db75994b6dd3e38772481bbf9aa7560 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Mon, 10 Jul 2017 14:21:56 +0200
-Subject: [PATCH 276/362] saa716x: Use %zu printk format for sizeof return
+Subject: [PATCH 276/364] saa716x: Use %zu printk format for sizeof return
  values
 
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -49181,7 +49181,7 @@ index 1ae782187e4fe..8b572cffc5fb3 100644
 From 811c4e64e727fb151bb8923952eb1fe1c3c466df Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sun, 16 Jul 2017 15:32:59 +0200
-Subject: [PATCH 277/362] saa716x_budget: Fix build in linux-4.13
+Subject: [PATCH 277/364] saa716x_budget: Fix build in linux-4.13
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
@@ -49227,7 +49227,7 @@ index 9b50d42d09486..0a8239c0c30b8 100644
 From b8096b31d415e229cf3949366355ab6863097db8 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sun, 16 Jul 2017 15:32:07 +0200
-Subject: [PATCH 278/362] saa716x_hybrid: Fix build in linux-4.13
+Subject: [PATCH 278/364] saa716x_hybrid: Fix build in linux-4.13
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
@@ -49263,7 +49263,7 @@ index 02294191fb96d..8e3390806220a 100644
 From b1659e74077da5886ba1a471866d2ad76dc013b4 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sat, 2 Dec 2017 20:51:10 +0100
-Subject: [PATCH 279/362] saa716x_ff: Remove autorepeat handling
+Subject: [PATCH 279/364] saa716x_ff: Remove autorepeat handling
 
 Let the input layer handle autorepeat for the IR remote.
 So no repeat_key timer is required anymore.
@@ -49369,7 +49369,7 @@ index 35624789aa862..ad6f38611026c 100644
 From ef44dc119a56f192b372735feeb5d62d18f58804 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sat, 2 Dec 2017 21:23:34 +0100
-Subject: [PATCH 280/362] saa716x_ff: Convert to new timer API
+Subject: [PATCH 280/364] saa716x_ff: Convert to new timer API
 
 Convert to new timer API in linux-4.15.
 
@@ -49409,7 +49409,7 @@ index ad6f38611026c..7894adff4d4f6 100644
 From 8625708b78089d22334c0190be9dbca9432fc18f Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sat, 17 Mar 2018 15:11:54 +0100
-Subject: [PATCH 281/362] saa716x: adapt for moved header files
+Subject: [PATCH 281/364] saa716x: adapt for moved header files
 
 In linux-4.16 the dvb header files were moved to include/linux/media.
 
@@ -49484,44 +49484,23 @@ index 8c13a87259d14..2b363c3464217 100644
  #define SAA716x_ERROR		0
  #define SAA716x_NOTICE		1
 
-From ad8241aa6143ca20b20fdc3681ae12e0676b5571 Mon Sep 17 00:00:00 2001
+From d0bbb983b8c4e6ab4c8859ee79b0e93a8948246b Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sun, 21 Oct 2018 11:46:34 +0200
-Subject: [PATCH 282/362] Revert "media: dvb/audio.h: get rid of unused APIs"
+Subject: [PATCH 282/364] media: dvb/audio.h: re-add AUDIO_GET_PTS
 
-This reverts commit d21c249b26311dd193b100e65fc9e7ae96233d40.
+... since this ioctl is required for the saa716x driver.
+This partially reverts commit d21c249b26311dd193b100e65fc9e7ae96233d40
+("media: dvb/audio.h: get rid of unused APIs").
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
- Documentation/media/audio.h.rst.exceptions    |  3 +
- .../media/uapi/dvb/audio-get-pts.rst          | 65 ++++++++++++++++++
- .../media/uapi/dvb/audio-set-attributes.rst   | 67 +++++++++++++++++++
- .../media/uapi/dvb/audio-set-ext-id.rst       | 66 ++++++++++++++++++
- .../media/uapi/dvb/audio-set-karaoke.rst      | 66 ++++++++++++++++++
- .../media/uapi/dvb/audio_data_types.rst       | 37 ++++++++++
- .../media/uapi/dvb/audio_function_calls.rst   |  4 ++
- fs/compat_ioctl.c                             | 57 ++++++++++++++++
- include/uapi/linux/dvb/audio.h                | 37 ++++++++++
- 9 files changed, 402 insertions(+)
+ .../media/uapi/dvb/audio-get-pts.rst          | 65 +++++++++++++++++++
+ .../media/uapi/dvb/audio_function_calls.rst   |  1 +
+ include/uapi/linux/dvb/audio.h                | 13 ++++
+ 3 files changed, 79 insertions(+)
  create mode 100644 Documentation/media/uapi/dvb/audio-get-pts.rst
- create mode 100644 Documentation/media/uapi/dvb/audio-set-attributes.rst
- create mode 100644 Documentation/media/uapi/dvb/audio-set-ext-id.rst
- create mode 100644 Documentation/media/uapi/dvb/audio-set-karaoke.rst
 
-diff --git a/Documentation/media/audio.h.rst.exceptions b/Documentation/media/audio.h.rst.exceptions
-index 940458774cf6e..f40f3cbfe4c91 100644
---- a/Documentation/media/audio.h.rst.exceptions
-+++ b/Documentation/media/audio.h.rst.exceptions
-@@ -1,6 +1,9 @@
- # Ignore header name
- ignore define _DVBAUDIO_H_
- 
-+# Typedef pointing to structs
-+replace typedef audio_karaoke_t :c:type:`audio_karaoke`
-+
- # Undocumented audio caps, as this is a deprecated API anyway
- ignore define AUDIO_CAP_DTS
- ignore define AUDIO_CAP_LPCM
 diff --git a/Documentation/media/uapi/dvb/audio-get-pts.rst b/Documentation/media/uapi/dvb/audio-get-pts.rst
 new file mode 100644
 index 0000000000000..2d1396b003deb
@@ -49593,273 +49572,11 @@ index 0000000000000..2d1396b003deb
 +On success 0 is returned, on error -1 and the ``errno`` variable is set
 +appropriately. The generic error codes are described at the
 +:ref:`Generic Error Codes <gen-errors>` chapter.
-diff --git a/Documentation/media/uapi/dvb/audio-set-attributes.rst b/Documentation/media/uapi/dvb/audio-set-attributes.rst
-new file mode 100644
-index 0000000000000..f0c6153ca80f9
---- /dev/null
-+++ b/Documentation/media/uapi/dvb/audio-set-attributes.rst
-@@ -0,0 +1,67 @@
-+.. -*- coding: utf-8; mode: rst -*-
-+
-+.. _AUDIO_SET_ATTRIBUTES:
-+
-+====================
-+AUDIO_SET_ATTRIBUTES
-+====================
-+
-+Name
-+----
-+
-+AUDIO_SET_ATTRIBUTES
-+
-+.. attention:: This ioctl is deprecated
-+
-+
-+Synopsis
-+--------
-+
-+.. c:function:: int ioctl(fd, AUDIO_SET_ATTRIBUTES, struct audio_attributes *attr )
-+    :name: AUDIO_SET_ATTRIBUTES
-+
-+Arguments
-+---------
-+
-+.. flat-table::
-+    :header-rows:  0
-+    :stub-columns: 0
-+
-+
-+    -
-+
-+       -  int fd
-+
-+       -  File descriptor returned by a previous call to open().
-+
-+    -
-+
-+       -  audio_attributes_t attr
-+
-+       -  audio attributes according to section ??
-+
-+
-+Description
-+-----------
-+
-+This ioctl is intended for DVD playback and allows you to set certain
-+information about the audio stream.
-+
-+
-+Return Value
-+------------
-+
-+On success 0 is returned, on error -1 and the ``errno`` variable is set
-+appropriately. The generic error codes are described at the
-+:ref:`Generic Error Codes <gen-errors>` chapter.
-+
-+.. flat-table::
-+    :header-rows:  0
-+    :stub-columns: 0
-+
-+
-+    -  .. row 1
-+
-+       -  ``EINVAL``
-+
-+       -  attr is not a valid or supported attribute setting.
-diff --git a/Documentation/media/uapi/dvb/audio-set-ext-id.rst b/Documentation/media/uapi/dvb/audio-set-ext-id.rst
-new file mode 100644
-index 0000000000000..8503c47f26bd8
---- /dev/null
-+++ b/Documentation/media/uapi/dvb/audio-set-ext-id.rst
-@@ -0,0 +1,66 @@
-+.. -*- coding: utf-8; mode: rst -*-
-+
-+.. _AUDIO_SET_EXT_ID:
-+
-+================
-+AUDIO_SET_EXT_ID
-+================
-+
-+Name
-+----
-+
-+AUDIO_SET_EXT_ID
-+
-+.. attention:: This ioctl is deprecated
-+
-+Synopsis
-+--------
-+
-+.. c:function:: int  ioctl(fd, AUDIO_SET_EXT_ID, int id)
-+    :name: AUDIO_SET_EXT_ID
-+
-+Arguments
-+---------
-+
-+.. flat-table::
-+    :header-rows:  0
-+    :stub-columns: 0
-+
-+
-+    -
-+
-+       -  int fd
-+
-+       -  File descriptor returned by a previous call to open().
-+
-+    -
-+
-+       -  int id
-+
-+       -  audio sub_stream_id
-+
-+
-+Description
-+-----------
-+
-+This ioctl can be used to set the extension id for MPEG streams in DVD
-+playback. Only the first 3 bits are recognized.
-+
-+
-+Return Value
-+------------
-+
-+On success 0 is returned, on error -1 and the ``errno`` variable is set
-+appropriately. The generic error codes are described at the
-+:ref:`Generic Error Codes <gen-errors>` chapter.
-+
-+.. flat-table::
-+    :header-rows:  0
-+    :stub-columns: 0
-+
-+
-+    -  .. row 1
-+
-+       -  ``EINVAL``
-+
-+       -  id is not a valid id.
-diff --git a/Documentation/media/uapi/dvb/audio-set-karaoke.rst b/Documentation/media/uapi/dvb/audio-set-karaoke.rst
-new file mode 100644
-index 0000000000000..c759952d88aad
---- /dev/null
-+++ b/Documentation/media/uapi/dvb/audio-set-karaoke.rst
-@@ -0,0 +1,66 @@
-+.. -*- coding: utf-8; mode: rst -*-
-+
-+.. _AUDIO_SET_KARAOKE:
-+
-+=================
-+AUDIO_SET_KARAOKE
-+=================
-+
-+Name
-+----
-+
-+AUDIO_SET_KARAOKE
-+
-+.. attention:: This ioctl is deprecated
-+
-+Synopsis
-+--------
-+
-+.. c:function:: int ioctl(fd, AUDIO_SET_KARAOKE, struct audio_karaoke *karaoke)
-+    :name: AUDIO_SET_KARAOKE
-+
-+
-+Arguments
-+---------
-+
-+.. flat-table::
-+    :header-rows:  0
-+    :stub-columns: 0
-+
-+
-+    -
-+
-+       -  int fd
-+
-+       -  File descriptor returned by a previous call to open().
-+
-+    -
-+
-+       -  audio_karaoke_t \*karaoke
-+
-+       -  karaoke settings according to section ??.
-+
-+
-+Description
-+-----------
-+
-+This ioctl allows one to set the mixer settings for a karaoke DVD.
-+
-+
-+Return Value
-+------------
-+
-+On success 0 is returned, on error -1 and the ``errno`` variable is set
-+appropriately. The generic error codes are described at the
-+:ref:`Generic Error Codes <gen-errors>` chapter.
-+
-+.. flat-table::
-+    :header-rows:  0
-+    :stub-columns: 0
-+
-+
-+    -  .. row 1
-+
-+       -  ``EINVAL``
-+
-+       -  karaoke is not a valid or supported karaoke setting.
-diff --git a/Documentation/media/uapi/dvb/audio_data_types.rst b/Documentation/media/uapi/dvb/audio_data_types.rst
-index 5bffa2c98a24d..6b93359d64f7b 100644
---- a/Documentation/media/uapi/dvb/audio_data_types.rst
-+++ b/Documentation/media/uapi/dvb/audio_data_types.rst
-@@ -114,3 +114,40 @@ following bits set according to the hardwares capabilities.
-      #define AUDIO_CAP_OGG   64
-      #define AUDIO_CAP_SDDS 128
-      #define AUDIO_CAP_AC3  256
-+
-+.. c:type:: audio_karaoke
-+
-+The ioctl AUDIO_SET_KARAOKE uses the following format:
-+
-+
-+.. code-block:: c
-+
-+    typedef
-+    struct audio_karaoke {
-+	int vocal1;
-+	int vocal2;
-+	int melody;
-+    } audio_karaoke_t;
-+
-+If Vocal1 or Vocal2 are non-zero, they get mixed into left and right t
-+at 70% each. If both, Vocal1 and Vocal2 are non-zero, Vocal1 gets mixed
-+into the left channel and Vocal2 into the right channel at 100% each. Ff
-+Melody is non-zero, the melody channel gets mixed into left and right.
-+
-+
-+.. c:type:: audio_attributes
-+
-+The following attributes can be set by a call to AUDIO_SET_ATTRIBUTES:
-+
-+
-+.. code-block:: c
-+
-+     typedef uint16_t audio_attributes_t;
-+     /*   bits: descr. */
-+     /*   15-13 audio coding mode (0=ac3, 2=mpeg1, 3=mpeg2ext, 4=LPCM, 6=DTS, */
-+     /*   12    multichannel extension */
-+     /*   11-10 audio type (0=not spec, 1=language included) */
-+     /*    9- 8 audio application mode (0=not spec, 1=karaoke, 2=surround) */
-+     /*    7- 6 Quantization / DRC (mpeg audio: 1=DRC exists)(lpcm: 0=16bit,  */
-+     /*    5- 4 Sample frequency fs (0=48kHz, 1=96kHz) */
-+     /*    2- 0 number of audio channels (n+1 channels) */
 diff --git a/Documentation/media/uapi/dvb/audio_function_calls.rst b/Documentation/media/uapi/dvb/audio_function_calls.rst
-index 7dba16285dabf..0bb56f0cfed4a 100644
+index 7dba16285dabf..bb442a5c064f8 100644
 --- a/Documentation/media/uapi/dvb/audio_function_calls.rst
 +++ b/Documentation/media/uapi/dvb/audio_function_calls.rst
-@@ -22,9 +22,13 @@ Audio Function Calls
+@@ -22,6 +22,7 @@ Audio Function Calls
      audio-set-bypass-mode
      audio-channel-select
      audio-bilingual-channel-select
@@ -49867,51 +49584,14 @@ index 7dba16285dabf..0bb56f0cfed4a 100644
      audio-get-status
      audio-get-capabilities
      audio-clear-buffer
-     audio-set-id
-     audio-set-mixer
-     audio-set-streamtype
-+    audio-set-ext-id
-+    audio-set-attributes
-+    audio-set-karaoke
 diff --git a/include/uapi/linux/dvb/audio.h b/include/uapi/linux/dvb/audio.h
-index afeae063e6402..69f7a85d81b1e 100644
+index afeae063e6402..da7f370397d07 100644
 --- a/include/uapi/linux/dvb/audio.h
 +++ b/include/uapi/linux/dvb/audio.h
-@@ -67,6 +67,27 @@ typedef struct audio_status {
- } audio_status_t;                              /* separate decoder hardware */
- 
- 
-+typedef
-+struct audio_karaoke {  /* if Vocal1 or Vocal2 are non-zero, they get mixed  */
-+	int vocal1;    /* into left and right t at 70% each */
-+	int vocal2;    /* if both, Vocal1 and Vocal2 are non-zero, Vocal1 gets*/
-+	int melody;    /* mixed into the left channel and */
-+		       /* Vocal2 into the right channel at 100% each. */
-+		       /* if Melody is non-zero, the melody channel gets mixed*/
-+} audio_karaoke_t;     /* into left and right  */
-+
-+
-+typedef __u16 audio_attributes_t;
-+/*   bits: descr. */
-+/*   15-13 audio coding mode (0=ac3, 2=mpeg1, 3=mpeg2ext, 4=LPCM, 6=DTS, */
-+/*   12    multichannel extension */
-+/*   11-10 audio type (0=not spec, 1=language included) */
-+/*    9- 8 audio application mode (0=not spec, 1=karaoke, 2=surround) */
-+/*    7- 6 Quantization / DRC (mpeg audio: 1=DRC exists)(lpcm: 0=16bit,  */
-+/*    5- 4 Sample frequency fs (0=48kHz, 1=96kHz) */
-+/*    2- 0 number of audio channels (n+1 channels) */
-+
-+
- /* for GET_CAPABILITIES and SET_FORMAT, the latter should only set one bit */
- #define AUDIO_CAP_DTS    1
- #define AUDIO_CAP_LPCM   2
-@@ -94,6 +115,22 @@ typedef struct audio_status {
+@@ -94,6 +94,19 @@ typedef struct audio_status {
  #define AUDIO_SET_ID               _IO('o', 13)
  #define AUDIO_SET_MIXER            _IOW('o', 14, audio_mixer_t)
  #define AUDIO_SET_STREAMTYPE       _IO('o', 15)
-+#define AUDIO_SET_EXT_ID           _IO('o', 16)
-+#define AUDIO_SET_ATTRIBUTES       _IOW('o', 17, audio_attributes_t)
-+#define AUDIO_SET_KARAOKE          _IOW('o', 18, audio_karaoke_t)
 +
 +/**
 + * AUDIO_GET_PTS
@@ -49929,10 +49609,10 @@ index afeae063e6402..69f7a85d81b1e 100644
  
  #endif /* _DVBAUDIO_H_ */
 
-From 09c3aa2db65a34479509f83d82c84cbc1d033d59 Mon Sep 17 00:00:00 2001
+From d160f0f95d34de824931667d6a13e4c15bf4955d Mon Sep 17 00:00:00 2001
 From: Tobias Klausmann <tobias.johannes.klausmann@mni.thm.de>
 Date: Tue, 22 May 2018 16:47:06 +0200
-Subject: [PATCH 283/362] saa716x: add frontend selects to kconfig
+Subject: [PATCH 283/364] saa716x: add frontend selects to kconfig
 
 Be verbose about the frontends we may use in the driver, making sure they get
 build for later use!
@@ -49980,10 +49660,10 @@ index d678dc2232d29..9de307cd543a4 100644
  	help
  	  Support for the SAA7160/1/2 based  Full fledged PCIe DVB cards
 
-From c0dccb8259e938615c29e6597ef739f0403d675d Mon Sep 17 00:00:00 2001
+From f81d7f37298546052a6b5da80be3b29d16eea6d0 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Tycho=20L=C3=BCrsen?= <tycholursen@gmail.com>
 Date: Fri, 4 Aug 2017 14:34:00 +0200
-Subject: [PATCH 284/362] saa716x: constify pci_device_id.
+Subject: [PATCH 284/364] saa716x: constify pci_device_id.
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -50041,10 +49721,10 @@ index 8e3390806220a..5a2367fa4d8ea 100644
  	MAKE_ENTRY(TWINHAN_TECHNOLOGIES, TWINHAN_VP_6090, SAA7162, &saa716x_vp6090_config),
  	MAKE_ENTRY(AVERMEDIA, AVERMEDIA_HC82, SAA7160, &saa716x_averhc82_config),
 
-From 285e1fd980d5293a34132a9e15335b225d8524d4 Mon Sep 17 00:00:00 2001
+From 68457a073c07d6e081afd6d350880d23acc418e0 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sat, 24 Nov 2018 14:39:46 +0100
-Subject: [PATCH 285/362] saa716x: remove kernel version conditionals
+Subject: [PATCH 285/364] saa716x: remove kernel version conditionals
 
 This driver version is not supposed to run with older kernel versions anymore.
 
@@ -50203,10 +49883,10 @@ index 514fbae6c070f..8778b5b0b076a 100644
  
  	if (sti7109->video_capture != VIDEO_CAPTURE_OFF)
 
-From cc97be73b21b6518bafd048a82b4f28f89721600 Mon Sep 17 00:00:00 2001
+From 92e5bbcfce9d839b67fb437776d306c85641ca38 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sat, 24 Nov 2018 23:53:47 +0100
-Subject: [PATCH 286/362] saa716x: fix include directories
+Subject: [PATCH 286/364] saa716x: fix include directories
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
@@ -50226,10 +49906,10 @@ index 2a27dbf8c7b2b..e7556dd951959 100644
 +ccflags-y += -Idrivers/media/dvb-frontends/
 +ccflags-y += -Idrivers/media/tuners
 
-From 15c474e4dea336832e86dc2a07ed75d60048631a Mon Sep 17 00:00:00 2001
+From 1776b33feab13f259ac81b2fc345dc30b6368437 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sat, 24 Nov 2018 15:33:25 +0100
-Subject: [PATCH 287/362] saa716x: fix module dependencies
+Subject: [PATCH 287/364] saa716x: fix module dependencies
 
 Set saa716x_ff/budget/hibrid modules as adapter owner, not saa716x_core.
 So the main modules cannot be removed while dvb files are open.
@@ -50343,10 +50023,10 @@ index 2b363c3464217..43a980393ee7a 100644
  	int				num; /* device count */
  	int				verbose;
 
-From 9aad7608f66965c9ce6deebc8a4da405953dde7d Mon Sep 17 00:00:00 2001
+From fd8b3fe86a0c707695ec482b43506ef4aed6859c Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sat, 24 Nov 2018 17:27:58 +0100
-Subject: [PATCH 288/362] saa716x: simplify irq registration
+Subject: [PATCH 288/364] saa716x: simplify irq registration
 
 Simplify irq registration and vector allocation. Remove MSI-X option,
 since saa716x hardware does not support MSI-X. Make MSI the default
@@ -50541,10 +50221,10 @@ index 43a980393ee7a..c5448b272fa8b 100644
  
  	struct msix_entry		msix_entries[SAA716x_MSI_MAX_VECTORS];
 
-From 84df568b756dacd3abd20d083a871e27ae3f0449 Mon Sep 17 00:00:00 2001
+From 2df5e562b00a5b9d99443a595d4b28852ecc7d6a Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sat, 24 Nov 2018 20:33:12 +0100
-Subject: [PATCH 289/362] saa716x: remove unused multi-vector MSI support
+Subject: [PATCH 289/364] saa716x: remove unused multi-vector MSI support
 
 We never use more than one irq handler for each device.
 
@@ -50810,10 +50490,10 @@ index c5448b272fa8b..038543acd4476 100644
  /* AUDIO */
  extern int saa716x_audio_init(struct saa716x_dev *saa716x);
 
-From f839e2d87a0b5e9378e5a9e41f0e51fa650fddbd Mon Sep 17 00:00:00 2001
+From 7d63a10d6014638c299b99286c30427bf946d3a2 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sat, 24 Nov 2018 21:48:09 +0100
-Subject: [PATCH 290/362] saa716x: remove unused i2c irq code
+Subject: [PATCH 290/364] saa716x: remove unused i2c irq code
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
@@ -51359,10 +51039,10 @@ index b6cac2003c3db..01a2479110560 100644
  
  #endif /* __SAA716x_MSI_H */
 
-From 2c7463ac4716d16591b56a65761c956c528fb71f Mon Sep 17 00:00:00 2001
+From 26cc65cfa35e135c42975a24f8871e350b3807e7 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sat, 24 Nov 2018 22:34:39 +0100
-Subject: [PATCH 291/362] saa716x: simplify MSI init
+Subject: [PATCH 291/364] saa716x: simplify MSI init
 
 Disable and clear all pending interrupts, reset configs to rising edge
 triggering of first (and only used) interrupt handler.
@@ -51518,10 +51198,10 @@ index 5c25d80fd7758..472257f40a1d7 100644
  
  	return 0;
 
-From 39fa699792583ea36e2f3e5af5b9df43d542bbd0 Mon Sep 17 00:00:00 2001
+From 3b338f2606f537a606784bec366650bdd2c0087c Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sun, 25 Nov 2018 14:46:30 +0100
-Subject: [PATCH 292/362] saa716x: perform soft reset on device probe
+Subject: [PATCH 292/364] saa716x: perform soft reset on device probe
 
 Boot scripts are executed from ROM/EEPROM after power-on reset and
 PCIe reset to finish hardware initialization. Do not execute these
@@ -51931,10 +51611,10 @@ index 038543acd4476..18e650b87321d 100644
  	int				frontends;
  
 
-From 95c7b89c5ec8a0090c460a1b46fc94e4c90a7a51 Mon Sep 17 00:00:00 2001
+From 62d4969d71ba9f303afc1859fc8b63b50e6ef834 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sun, 25 Nov 2018 16:22:19 +0100
-Subject: [PATCH 293/362] saa716x: remove separate msi reset
+Subject: [PATCH 293/364] saa716x: remove separate msi reset
 
 Since we reset all core modules now, we do not need another msi reset
 afterwards.
@@ -52187,10 +51867,10 @@ index 18e650b87321d..a3ff8c3bee9a5 100644
  extern int saa716x_audio_init(struct saa716x_dev *saa716x);
  extern void saa716x_audio_exit(struct saa716x_dev *saa716x);
 
-From 19bdf9c6ce881f3f07573b70ce787aa795e4997f Mon Sep 17 00:00:00 2001
+From 3b5135d8efc39d2c81df64409b9af789f75409a5 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Fri, 7 Dec 2018 21:34:06 +0100
-Subject: [PATCH 294/362] saa716x_ff: move phi reset to probe function
+Subject: [PATCH 294/364] saa716x_ff: move phi reset to probe function
 
 So we can get rid of the separate phi core files.
 
@@ -52306,10 +51986,10 @@ index 0bb2027a8946b..0000000000000
 -
 -#endif /* __SAA716x_PHI_H */
 
-From 025ce20e9bd2af99e88b097c3ddd21f6a953422d Mon Sep 17 00:00:00 2001
+From 4f4c48eac23bb334969abb66f68da480d8980b04 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sun, 9 Dec 2018 20:10:33 +0100
-Subject: [PATCH 295/362] saa716x: also soft-reset greg and gpio blocks on
+Subject: [PATCH 295/364] saa716x: also soft-reset greg and gpio blocks on
  device probe
 
 And integrate the core_reset function into jetpack_init to avoid
@@ -52519,10 +52199,10 @@ index a3ff8c3bee9a5..7a915ff63c18b 100644
  #include "saa716x_dma.h"
  #include "saa716x_fgpi.h"
 
-From b16bb5567148e5874bb7c6f837f63928d31dd5eb Mon Sep 17 00:00:00 2001
+From f7e62980376624841dde4e92f560ec4167190235 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sat, 8 Dec 2018 20:04:52 +0100
-Subject: [PATCH 296/362] saa716x: move demux_worker to saa716x_adap
+Subject: [PATCH 296/364] saa716x: move demux_worker to saa716x_adap
 
 There is no need to implement the identical demux_worker in budget, hybrid,
 and ff modules.
@@ -52840,10 +52520,10 @@ index 7a915ff63c18b..2d1769f70a9cb 100644
  
  struct saa716x_config {
 
-From 619ec5e30536f8ed8e82f9bc9397d6358924d814 Mon Sep 17 00:00:00 2001
+From fcaabb59374eda07da2aaf73c96d9e2e2b1115ac Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sat, 24 Nov 2018 23:36:00 +0100
-Subject: [PATCH 297/362] saa716x: remove rom debug code
+Subject: [PATCH 297/364] saa716x: remove rom debug code
 
 In principle it is an interesting idea to write a formal board description
 into the PCIe bridge boot eeprom. But in this driver the eeprom descriptors
@@ -54298,10 +53978,10 @@ index 6bb317fcc2290..0000000000000
 -
 -#endif /* __SAA716x_ROM_H */
 
-From b00baa5fe2607dc6363da0573bf346467ce5a6d0 Mon Sep 17 00:00:00 2001
+From 602e26e24b2aa1e91ed1fe26b474cd73fb373ab0 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sun, 25 Nov 2018 20:43:30 +0100
-Subject: [PATCH 298/362] saa716x: remove unused audio input port code
+Subject: [PATCH 298/364] saa716x: remove unused audio input port code
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
@@ -54366,10 +54046,10 @@ index 36277b7f80176..0000000000000
 -
 -#endif /* __SAA716x_AIP_H */
 
-From e0de46cd25aab36c6bd4a5a68502b5f60a42be1c Mon Sep 17 00:00:00 2001
+From b173d5b1fdceee7dd5603d5077f74be958cf7870 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sat, 8 Dec 2018 01:41:42 +0100
-Subject: [PATCH 299/362] saa716x: remove unused spi code
+Subject: [PATCH 299/364] saa716x: remove unused spi code
 
 Move the simple spi polling write to saa716x_ff_main.c .
 
@@ -54973,10 +54653,10 @@ index 0060c22b8e39c..0000000000000
 -
 -#endif /* __SAA716x_SPI_H */
 
-From 2292f209920b13c89a6c884e0970db595f721c06 Mon Sep 17 00:00:00 2001
+From 4ff2a0c63a9dec1096c33d9dd49089332a836bc9 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sat, 8 Dec 2018 02:56:13 +0100
-Subject: [PATCH 300/362] saa716x: remove unused audio function prototypes
+Subject: [PATCH 300/364] saa716x: remove unused audio function prototypes
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
@@ -54999,10 +54679,10 @@ index 99adb75b515d8..dcca33914c5f9 100644
  extern int saa716x_core_boot(struct saa716x_dev *saa716x);
  extern int saa716x_jetpack_init(struct saa716x_dev *saa716x);
 
-From 171b695c34cb2f29568503a8df5b99a2c422c66d Mon Sep 17 00:00:00 2001
+From f245ccee50b3729f0d0e9bdc30ce67c5b8928d89 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sat, 8 Dec 2018 03:08:25 +0100
-Subject: [PATCH 301/362] saa716x: remove boot function prototypes from
+Subject: [PATCH 301/364] saa716x: remove boot function prototypes from
  saa716x_priv.h
 
 All we need is available in saa716x_boot.h .
@@ -55028,10 +54708,10 @@ index dcca33914c5f9..753306dc724ac 100644
  extern int saa716x_ir_init(struct saa716x_dev *saa716x);
  extern void saa716x_ir_exit(struct saa716x_dev *saa716x);
 
-From 43a212ecc10c3b67e50baf9f2e279fb36373ea1b Mon Sep 17 00:00:00 2001
+From ec90386371a8d1458c936647e790c628a489b6cb Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sat, 8 Dec 2018 22:19:44 +0100
-Subject: [PATCH 302/362] saa716x: remove unused greg code
+Subject: [PATCH 302/364] saa716x: remove unused greg code
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
@@ -55119,10 +54799,10 @@ index 487595e5cfcdd..0000000000000
 -
 -#endif /* __SAA716x_GREG_H */
 
-From 0743250d0f37b3644d69c681fcbc8ecd3a475ea0 Mon Sep 17 00:00:00 2001
+From 77c8e39cb82b2e8505579964d1b06c8b496aa2ab Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sun, 9 Dec 2018 16:03:15 +0100
-Subject: [PATCH 303/362] saa716x: remove unused gpio code
+Subject: [PATCH 303/364] saa716x: remove unused gpio code
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
@@ -55237,10 +54917,10 @@ index a82580b4b60f1..b33b1278a8c34 100644
  extern void saa716x_gpio_set_input(struct saa716x_dev *saa716x, int gpio);
  extern void saa716x_gpio_set_mode(struct saa716x_dev *saa716x, int gpio, int mode);
 
-From 9647e742f7b5c333473e8c0401559c7da286005b Mon Sep 17 00:00:00 2001
+From 1ababf070254a2fa46ca6ef694712ce1243d5b1b Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sun, 9 Dec 2018 17:11:07 +0100
-Subject: [PATCH 304/362] saa716x: remove unused private config and adapter
+Subject: [PATCH 304/364] saa716x: remove unused private config and adapter
  entries
 
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -55305,10 +54985,10 @@ index 753306dc724ac..07cd989c96ecd 100644
  
  	/* remote control */
 
-From a663d8a54cda9df5e40d49d26f9d8007c7d05a6f Mon Sep 17 00:00:00 2001
+From 7139c31a361208fd8e1ba70caf6422c85698ef67 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sun, 9 Dec 2018 20:16:11 +0100
-Subject: [PATCH 305/362] saa716x: remove decoder resets from common code
+Subject: [PATCH 305/364] saa716x: remove decoder resets from common code
 
 These gpio controlled resets of external ICs are already handled
 in saa716x_hybrid.
@@ -55352,10 +55032,10 @@ index 371ed246ba4be..639cfb1fef233 100644
  	SAA716x_EPWR(MMU, MMU_MODE, 0x14);
  	dprintk(SAA716x_DEBUG, 1, "SAA%02x Jetpack Successfully initialized", saa716x->pdev->device);
 
-From d863c78ab2c9e55e001ca55732f52cfcb5b45889 Mon Sep 17 00:00:00 2001
+From ae2577ce077cf51b43b74b2a3f975bfd27a19975 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sun, 9 Dec 2018 20:45:45 +0100
-Subject: [PATCH 306/362] saa716x: move function headers from priv.h to own
+Subject: [PATCH 306/364] saa716x: move function headers from priv.h to own
  header files
 
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -55458,10 +55138,10 @@ index 07cd989c96ecd..763e31e10bb59 100644
 -
  #endif /* __SAA716x_PRIV_H */
 
-From e9ab6dff828066bf11ebb4c961fd06f8dbcde345 Mon Sep 17 00:00:00 2001
+From 71d5c9efa134c96e4bfbe1a9a1ed955f5c521496 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Fri, 7 Dec 2018 23:40:09 +0100
-Subject: [PATCH 307/362] saa716x_hybrid: remove incomplete Avermedia H-788
+Subject: [PATCH 307/364] saa716x_hybrid: remove incomplete Avermedia H-788
  support
 
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -55534,10 +55214,10 @@ index df34a59b2aee7..ace24d4eb3e88 100644
  
  #endif /* __SAA716x_HYBRID_H */
 
-From d2ca2099882047ab8ad1211a1d88532e1a697463 Mon Sep 17 00:00:00 2001
+From e9d4087768344d36db35ea2df139b6b394f4e895 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Fri, 7 Dec 2018 23:43:07 +0100
-Subject: [PATCH 308/362] saa716x_hybrid: remove incomplete Avermedia HC-82
+Subject: [PATCH 308/364] saa716x_hybrid: remove incomplete Avermedia HC-82
  support
 
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -55643,10 +55323,10 @@ index ace24d4eb3e88..fad41be4c0671 100644
  
  #endif /* __SAA716x_HYBRID_H */
 
-From 6d3417d8d75db0dfe9c3de7f944a4264185da69c Mon Sep 17 00:00:00 2001
+From 0f462a0b0bd85c896d8d22130e14e2e9d0707c03 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sat, 8 Dec 2018 00:00:25 +0100
-Subject: [PATCH 309/362] saa716x_hybrid: remove incomplete Twinhan VP-6090
+Subject: [PATCH 309/364] saa716x_hybrid: remove incomplete Twinhan VP-6090
  DVB-S support
 
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -55741,10 +55421,10 @@ index b53f9f2131ac9..de9eee773820f 100644
  	if (adapter->fe == NULL) {
  		dprintk(SAA716x_ERROR, 1, "Frontend attach failed");
 
-From db944d7c26e1d281c8c06b000a98fc8d316f59bb Mon Sep 17 00:00:00 2001
+From b918544a27d82054905b3a530bea9c5bc8e32f06 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sat, 8 Dec 2018 00:20:01 +0100
-Subject: [PATCH 310/362] saa716x_budget: remove incomplete KNC1 Dual S2
+Subject: [PATCH 310/364] saa716x_budget: remove incomplete KNC1 Dual S2
  support
 
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -55823,10 +55503,10 @@ index 387c2027850d0..60b0b6f5659ff 100644
  #define SKYSTAR2_EXPRESS_HD	0x0700
  
 
-From 4b06928d45fcda5f78dea30dd84e0f83282e714a Mon Sep 17 00:00:00 2001
+From adc986758f0bf96c6718047dc64ecf54e90b2bff Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sat, 8 Dec 2018 00:25:01 +0100
-Subject: [PATCH 311/362] saa716x_budget: remove incomplete Twinhan VP-6002
+Subject: [PATCH 311/364] saa716x_budget: remove incomplete Twinhan VP-6002
  support
 
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -55903,10 +55583,10 @@ index 60b0b6f5659ff..5c75cc825dcc1 100644
  #define TECHNISAT		0x1AE4
  #define SKYSTAR2_EXPRESS_HD	0x0700
 
-From cdfe71edf318b45a4171cc534b8201fb41cebbab Mon Sep 17 00:00:00 2001
+From 74b60b6900e67a02c4345bf4cd0d5a6306bf3a03 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sat, 8 Dec 2018 00:37:36 +0100
-Subject: [PATCH 312/362] saa716x_budget: remove incomplete Twinhan VP-3071
+Subject: [PATCH 312/364] saa716x_budget: remove incomplete Twinhan VP-3071
  support
 
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -55982,10 +55662,10 @@ index 5c75cc825dcc1..86a750c23d6f8 100644
  
  #define TECHNISAT		0x1AE4
 
-From b30bfe2bc3666b02722453607db4b58e94167f1d Mon Sep 17 00:00:00 2001
+From 42cecfee576abdb0fb0a41602c69c3a66a23fbac Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sat, 8 Dec 2018 00:41:51 +0100
-Subject: [PATCH 313/362] saa716x_budget: remove incomplete Twinhan VP-1028
+Subject: [PATCH 313/364] saa716x_budget: remove incomplete Twinhan VP-1028
  support
 
 DVB-S set_voltage not supported
@@ -56151,10 +55831,10 @@ index 86a750c23d6f8..733726591a0a7 100644
  #define SKYSTAR2_EXPRESS_HD	0x0700
  
 
-From da7c4d3700fa7d2b97c7295a0c69218261bc0df8 Mon Sep 17 00:00:00 2001
+From a9aa2b895febd4371f780e70b0e41d9d230abec8 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sat, 8 Dec 2018 00:27:53 +0100
-Subject: [PATCH 314/362] saa716x_budget: document Technisat Skystar 2 Express
+Subject: [PATCH 314/364] saa716x_budget: document Technisat Skystar 2 Express
  HD support
 
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -56181,10 +55861,10 @@ index 77d35cebaa550..68972c61bdc20 100644
  
  config DVB_SAA716X_HYBRID
 
-From dd8975444e53ad9bffa092ad46143cac6a7cbc32 Mon Sep 17 00:00:00 2001
+From 20984c28b944e482c30d88b79e7b02a19142ea56 Mon Sep 17 00:00:00 2001
 From: Luis Alves <ljalvs@gmail.com>
 Date: Fri, 28 Jul 2017 11:25:19 +0200
-Subject: [PATCH 315/362] saa716x: Add support for tbs 6281 and tbs 6285 cards.
+Subject: [PATCH 315/364] saa716x: Add support for tbs 6281 and tbs 6285 cards.
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -56545,10 +56225,10 @@ index 763e31e10bb59..f623bac94156a 100644
  
  struct saa716x_dev {
 
-From 24aee7742b1f9afe18c8b654a3b6f6e3b3b6c732 Mon Sep 17 00:00:00 2001
+From fb244ac723cbb89afaa7b70564b411058bda47f0 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sat, 8 Dec 2018 23:40:54 +0100
-Subject: [PATCH 316/362] saa716x: allow individual configuration of video
+Subject: [PATCH 316/364] saa716x: allow individual configuration of video
  ports
 
 For each adapter configure the used video port und the assigned fgpi engine.
@@ -56826,10 +56506,10 @@ index f623bac94156a..203865eadf6f2 100644
  
  struct saa716x_config {
 
-From 310a31e21d1505e420c9329b2c068b9042af5047 Mon Sep 17 00:00:00 2001
+From 566dae297df39e7fe9ec065ac98be443e6719e0f Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Thu, 20 Dec 2018 17:24:22 +0100
-Subject: [PATCH 317/362] saa716x_ff: cleanup POINTER_LOCATION checkpatch
+Subject: [PATCH 317/364] saa716x_ff: cleanup POINTER_LOCATION checkpatch
  errors
 
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -57020,10 +56700,10 @@ index 9305efae48567..85b8b69b0fd56 100644
  
  #endif /* __SAA716x_FF_PHI_H */
 
-From 203f5bdfc28848fbbea044ff023b0d18f1db80df Mon Sep 17 00:00:00 2001
+From 0da210ed27ff98894c84bd767de5a7b77d0e9bec Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Thu, 20 Dec 2018 17:37:31 +0100
-Subject: [PATCH 318/362] saa716x: cleanup SPACING checkpatch errors
+Subject: [PATCH 318/364] saa716x: cleanup SPACING checkpatch errors
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
@@ -57240,10 +56920,10 @@ index 203865eadf6f2..d3ff7e9ef01db 100644
  
  #define NXP_SEMICONDUCTOR	0x1131
 
-From 5751b456e5c68e489d2e18cc7ac358138b612f23 Mon Sep 17 00:00:00 2001
+From 72a8b6e602613b6bd551c98434b191a428908b65 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Thu, 20 Dec 2018 18:01:43 +0100
-Subject: [PATCH 319/362] saa716x: cleanup ASSIGN_IN_IF checkpatch errors
+Subject: [PATCH 319/364] saa716x: cleanup ASSIGN_IN_IF checkpatch errors
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
@@ -57343,10 +57023,10 @@ index e9d88f914b1d7..7aa922d678baa 100644
  
  	pci_set_master(pdev);
 
-From 3193f4395be6ab2f7ceb9110dd48b736a944b816 Mon Sep 17 00:00:00 2001
+From 9976afb0ce5648fb2afac96acb83647529feb77c Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Thu, 20 Dec 2018 18:12:35 +0100
-Subject: [PATCH 320/362] saa716x: cleanup COMPLEX_MACRO checkpatch errors
+Subject: [PATCH 320/364] saa716x: cleanup COMPLEX_MACRO checkpatch errors
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
@@ -57426,10 +57106,10 @@ index d3ff7e9ef01db..1dc460ee43a3e 100644
  
  #define dprintk(__x, __y, __fmt, __arg...) do {								\
 
-From 60b0d8ec5e34dd2d595e14a23c61819a3e45827f Mon Sep 17 00:00:00 2001
+From cb9439c0d9203ee074f510a3862c481f388cdb68 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Thu, 20 Dec 2018 18:20:13 +0100
-Subject: [PATCH 321/362] saa716x: cleanup OPEN_BRACE and ELSE_AFTER_BRACE
+Subject: [PATCH 321/364] saa716x: cleanup OPEN_BRACE and ELSE_AFTER_BRACE
  checkpatch errors
 
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -57540,10 +57220,10 @@ index 641a10460924f..63adce8a8065e 100644
  	return 0;
  }
 
-From 1e048c4333d65cca0ca4897e60b015df3db406d6 Mon Sep 17 00:00:00 2001
+From 92751118db84e16e708281fb87f75785354a3dc0 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Thu, 20 Dec 2018 18:46:45 +0100
-Subject: [PATCH 322/362] saa716x: cleanup CODE_INDENT and
+Subject: [PATCH 322/364] saa716x: cleanup CODE_INDENT and
  SWITCH_CASE_INDENT_LEVEL checkpatch errors
 
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -57740,10 +57420,10 @@ index 63adce8a8065e..b46ac16b13521 100644
  EXPORT_SYMBOL_GPL(saa716x_vip_disable);
  
 
-From 7ba97ac8d0921065f99bdb0f34ab4efb10ea70a9 Mon Sep 17 00:00:00 2001
+From 620274042195a2efc0180d058a1618e4c0c3ebc2 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Fri, 21 Dec 2018 16:39:25 +0100
-Subject: [PATCH 323/362] saa716x: cleanup SPACE_BEFORE_TAB checkpatch warnings
+Subject: [PATCH 323/364] saa716x: cleanup SPACE_BEFORE_TAB checkpatch warnings
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
@@ -57816,10 +57496,10 @@ index 1dc460ee43a3e..6ea970c01c2d8 100644
  	/* PCI */
  	void __iomem			*mmio;
 
-From 9c6033e9a19389031ee50843f397d54ae0c60f72 Mon Sep 17 00:00:00 2001
+From 9b23104c79c45437002fc2060edc7f241e56e947 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Fri, 21 Dec 2018 17:26:55 +0100
-Subject: [PATCH 324/362] saa716x: cleanup Kconfig
+Subject: [PATCH 324/364] saa716x: cleanup Kconfig
 
 This fixes CONFIG_DESCRIPTION checkpatch warnings. Also we select the
 required core module automatically.
@@ -57919,10 +57599,10 @@ index 2f310d93934a4..d789c10ebccf7 100644
 -
  endif # SAA716X_SUPPORT
 
-From 3b94d606b4d448f64d6bee11e83ea558648a26f4 Mon Sep 17 00:00:00 2001
+From dadd0dcc1b2625588c44528d2b4807c41d1432e8 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Fri, 21 Dec 2018 19:12:33 +0100
-Subject: [PATCH 325/362] saa716x_ff: constify structs
+Subject: [PATCH 325/364] saa716x_ff: constify structs
 
 Constify struct file_operations, struct dvb_device, and config structs.
 All these are not supposed to change at runtime. This also fixes
@@ -58013,10 +57693,10 @@ index b7654035de9c5..0101027abb996 100644
  	.dev_type		= SAA716x_DEV_S2_6400_DUAL,
  	.adapters		= 2,
 
-From 4b39fb9f010a542a3547df7231bb6f736fbef084 Mon Sep 17 00:00:00 2001
+From f0be27d2b59dc1dee4d8cd4d6836f106d9484764 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Fri, 21 Dec 2018 19:26:44 +0100
-Subject: [PATCH 326/362] saa716x_budget: constify config structs
+Subject: [PATCH 326/364] saa716x_budget: constify config structs
 
 Constify all config structs that are not supposed to change at runtime.
 
@@ -58066,10 +57746,10 @@ index 8516cf75365b0..7755fd1c9de52 100644
  	.dev_type		= SAA716x_DEV_TBS6285,
  	.adapters		= 4,
 
-From 239d9ab8627da5c6e26e56f9a810b12ae6202235 Mon Sep 17 00:00:00 2001
+From 8b26ee51111699d0d9311dfe1375420044dba03e Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Fri, 21 Dec 2018 19:44:12 +0100
-Subject: [PATCH 327/362] saa716x_hybrid: constify config structs
+Subject: [PATCH 327/364] saa716x_hybrid: constify config structs
 
 Constify all config structs that are not supposed to change at runtime.
 
@@ -58137,10 +57817,10 @@ index 6f0574cd3aa6c..e3fdfa323ce79 100644
  	.dev_type		= SAA716x_DEV_NXP_NEMO,
  	.adapters		= 1,
 
-From 78914659810f0208639bf212f12451386a57884e Mon Sep 17 00:00:00 2001
+From 695cd8cce9a1fe69d3b549ffd2bcf942e51d83b5 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sun, 23 Dec 2018 13:47:00 +0100
-Subject: [PATCH 328/362] saa716x: convert printk to pci_info/err/dbg
+Subject: [PATCH 328/364] saa716x: convert printk to pci_info/err/dbg
 
 Use recommended pci device print functions to unify output and to get rid of
 related checkpatch warnings.
@@ -59096,10 +58776,10 @@ index b46ac16b13521..9ea098ea9f2c5 100644
  	}
  
 
-From 0b8720127fbb8a0d50c78059f708aee566f4afe7 Mon Sep 17 00:00:00 2001
+From 1b8217bae920a36f63ad2f3a89779dcf56b4d9b7 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Fri, 21 Dec 2018 21:26:42 +0100
-Subject: [PATCH 329/362] saa716x_ff: convert printk to pci_info/err/dbg
+Subject: [PATCH 329/364] saa716x_ff: convert printk to pci_info/err/dbg
 
 Use recommended pci device print functions to unify output and to get rid of
 related checkpatch warnings.
@@ -59857,10 +59537,10 @@ index b215ed8625a25..15b741b165317 100644
  		goto fail1;
  	}
 
-From 77719ebc1a3f3453ac2c96d1cde4cf9f6726c984 Mon Sep 17 00:00:00 2001
+From 932d621e4e76db1f29773cb77c5139c0e9dcb1eb Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Fri, 21 Dec 2018 21:54:27 +0100
-Subject: [PATCH 330/362] saa716x_budget: convert printk to pci_err/dbg
+Subject: [PATCH 330/364] saa716x_budget: convert printk to pci_err/dbg
 
 Use recommended pci device print functions to unify output and to get rid of
 related checkpatch warnings.
@@ -60039,10 +59719,10 @@ index 7755fd1c9de52..d916f0f6ffa79 100644
  	return -ENODEV;
  }
 
-From 4f0417d869108cc7f8c8908cefb42595632fe76a Mon Sep 17 00:00:00 2001
+From b460e0a228ecc7053df42b99c7ad341d679b5421 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Fri, 21 Dec 2018 22:16:02 +0100
-Subject: [PATCH 331/362] saa716x_hybrid: convert printk to pci_err/dbg
+Subject: [PATCH 331/364] saa716x_hybrid: convert printk to pci_err/dbg
 
 Use recommended pci device print functions to unify output and to get rid of
 related checkpatch warnings.
@@ -60253,10 +59933,10 @@ index e3fdfa323ce79..658281034da48 100644
  }
  
 
-From 7121d38671a2ce66f65a358c142f9cbd82b14205 Mon Sep 17 00:00:00 2001
+From d26a8f247f9ba63c8e5a19050841227abddae568 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sun, 23 Dec 2018 14:20:59 +0100
-Subject: [PATCH 332/362] saa716x: remove dprintk macro
+Subject: [PATCH 332/364] saa716x: remove dprintk macro
 
 dprintk's are converted to pci_info/err/dbg. So we can remove the macro
 definition and associated variables.
@@ -60314,10 +59994,10 @@ index 6ea970c01c2d8..f4573e30cc056 100644
  
  	/* PCI */
 
-From a90dca7a93b5d257ab383e0efdb7de16b38bd6ed Mon Sep 17 00:00:00 2001
+From 7012cf58741fa2c59cb7f1c04055d517af8dc394 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sun, 23 Dec 2018 14:53:19 +0100
-Subject: [PATCH 333/362] saa716x_ff: remove interrupt counting debug code
+Subject: [PATCH 333/364] saa716x_ff: remove interrupt counting debug code
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
@@ -60487,10 +60167,10 @@ index ef56ec5868870..62d47b55e2cef 100644
  }
  
 
-From 1e7576d47b57da12816e77a3a8981ec792cada98 Mon Sep 17 00:00:00 2001
+From e7d3c7cc84a42747259c4de3ced645fa945e358c Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sun, 23 Dec 2018 17:23:59 +0100
-Subject: [PATCH 334/362] saa716x: cleanup RETURN_VOID checkpatch warnings
+Subject: [PATCH 334/364] saa716x: cleanup RETURN_VOID checkpatch warnings
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
@@ -60524,10 +60204,10 @@ index e6ac5d9deeb66..e43bd28172114 100644
  
  static void saa716x_i2c_hwdeinit(struct saa716x_i2c *i2c, u32 I2C_DEV)
 
-From b3ee15b245ae8b5babf5a0d41d7d80dce294cb4b Mon Sep 17 00:00:00 2001
+From e41b0ab53da76962d03916bb40d4ac0bdf9cb17c Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sun, 23 Dec 2018 18:03:47 +0100
-Subject: [PATCH 335/362] saa716x: remove unused adap_lock
+Subject: [PATCH 335/364] saa716x: remove unused adap_lock
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
@@ -60561,10 +60241,10 @@ index f4573e30cc056..8b9fbd210b42c 100644
  
  	spinlock_t			gpio_lock;
 
-From 99c2ad68f98938d3d96505c6c7a47dfd30c7623e Mon Sep 17 00:00:00 2001
+From 8a7358beb174d1d8591697d3dac24a4d2290a375 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sun, 23 Dec 2018 21:25:49 +0100
-Subject: [PATCH 336/362] saa716x: #include cleanup
+Subject: [PATCH 336/364] saa716x: #include cleanup
 
 This also fixes INCLUDE_LINUX checkpatch warnings.
 
@@ -60695,10 +60375,10 @@ index 8b9fbd210b42c..81572e66182d1 100644
  #include "saa716x_cgu.h"
  #include "saa716x_dma.h"
 
-From ec4fe42e62143be667ff41d6baccf6dfebae98c4 Mon Sep 17 00:00:00 2001
+From c1b2703d6350207b2ac5a4bfe7da5dd045509ee0 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sun, 23 Dec 2018 21:34:59 +0100
-Subject: [PATCH 337/362] saa716x: use kcalloc for array memory allocation
+Subject: [PATCH 337/364] saa716x: use kcalloc for array memory allocation
 
 This also fixes ALLOC_WITH_MULTIPLY checkpatch warnings.
 
@@ -60721,10 +60401,10 @@ index 92cbf9a8dcf9f..4071f878f535e 100644
  		pci_err(saa716x->pdev, "Failed to allocate memory for scatterlist.");
  		return -ENOMEM;
 
-From deea5e3460933d051aa27f33106c585232f5f873 Mon Sep 17 00:00:00 2001
+From 2745bf2d01154226cec106cde7c49778a53eabaf Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sun, 23 Dec 2018 21:59:09 +0100
-Subject: [PATCH 338/362] saa716x_ff: cleanup CONSTANT_COMPARISON checkpatch
+Subject: [PATCH 338/364] saa716x_ff: cleanup CONSTANT_COMPARISON checkpatch
  warning
 
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -60746,10 +60426,10 @@ index 370b9e92cd638..e30ac0883f163 100644
  			parg = mbuf;
  		}
 
-From abbd65d68790f2b564617323e9fd99e94bac2a69 Mon Sep 17 00:00:00 2001
+From 9d5eab7ecabbb06cdc9c704248af18ebb736229a Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sun, 23 Dec 2018 22:02:58 +0100
-Subject: [PATCH 339/362] saa716x_hybrid: cleanup UNNECESSARY_ELSE checkpatch
+Subject: [PATCH 339/364] saa716x_hybrid: cleanup UNNECESSARY_ELSE checkpatch
  warning
 
 Signed-off-by: Soeren Moch <smoch@web.de>
@@ -60775,10 +60455,10 @@ index 7fc2d1f39f28c..24a5cd0b0f126 100644
  }
  
 
-From 818f8e60c0df0db35b1e5dfaf6bc06b9a8c027c8 Mon Sep 17 00:00:00 2001
+From 4d61274b384e7eeaa320474a3622afebe2d3732e Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sun, 23 Dec 2018 23:06:37 +0100
-Subject: [PATCH 340/362] saa716x: cleanup dma buffer sg list allocation
+Subject: [PATCH 340/364] saa716x: cleanup dma buffer sg list allocation
 
 Convert vmalloc plus memset to zero to vzalloc, remove oom error messages
 to cleanup OOM_MESSAGE checkpatch warnings.
@@ -60869,10 +60549,10 @@ index 4071f878f535e..752e7f9df315b 100644
  		pci_err(saa716x->pdev, "SG alloc failed");
  		goto err2;
 
-From a5d80f04223f07507446f4560ff0c59559f442e1 Mon Sep 17 00:00:00 2001
+From 780b95f46c1c02743b00001afcb188ec37e2cab4 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Wed, 26 Dec 2018 21:03:51 +0100
-Subject: [PATCH 341/362] saa716x_ff: use common device struct
+Subject: [PATCH 341/364] saa716x_ff: use common device struct
 
 Integrate PCIe bridge, decoder, and IR device structs. So we don't need multiple allocations and we can get rid
 of the links between the different structs.
@@ -61783,10 +61463,10 @@ index 81572e66182d1..445c17288615f 100644
  
  #endif /* __SAA716x_PRIV_H */
 
-From cac0fb3f2ea1fd18a6c5c645025b2fc175664112 Mon Sep 17 00:00:00 2001
+From ff1730dd9e5288c9693a7e25bb9c6aae9db3f946 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Wed, 26 Dec 2018 21:30:05 +0100
-Subject: [PATCH 342/362] saa716x_ff: cleanup LINE_SPACING checkpatch warning
+Subject: [PATCH 342/364] saa716x_ff: cleanup LINE_SPACING checkpatch warning
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
@@ -61809,10 +61489,10 @@ index 77a8e2cc35e5d..42d21e0d815ea 100644
  					 adapter->fe,
  					 &tt6400_stv6110x_config,
 
-From 76b4e80293ba24e2ebd848c9999aa7c58ce1d045 Mon Sep 17 00:00:00 2001
+From ccc9d3d97a3468bff93c3bd1f650b4750db1f8ae Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Thu, 27 Dec 2018 15:29:44 +0100
-Subject: [PATCH 343/362] saa716x: cleanup BRACES checkpatch warnings
+Subject: [PATCH 343/364] saa716x: cleanup BRACES checkpatch warnings
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
@@ -61933,10 +61613,10 @@ index 9ea098ea9f2c5..31da0d5362c3a 100644
  	}
  	saa716x->vip[port].saa716x = saa716x;
 
-From 9a22ae37caa7ffe4b6530e650528c10e3682b80a Mon Sep 17 00:00:00 2001
+From 994428771a1b2c0149fbb4ab843411fc157e5918 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Thu, 27 Dec 2018 15:30:20 +0100
-Subject: [PATCH 344/362] saa716x_budget: cleanup BRACES checkpatch warnings
+Subject: [PATCH 344/364] saa716x_budget: cleanup BRACES checkpatch warnings
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
@@ -62003,10 +61683,10 @@ index 2237311bd24f1..af45b64c30441 100644
  	if (!try_module_get(client->dev.driver->owner)) {
  		i2c_unregister_device(client);
 
-From 9d2ca9edda62015adf08905d6b01d2a87318dbaf Mon Sep 17 00:00:00 2001
+From 7b0aeecc7f1123ba2037c722921e50fc10c08361 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Thu, 27 Dec 2018 15:30:55 +0100
-Subject: [PATCH 345/362] saa716x_hybrid: cleanup BRACES checkpatch warnings
+Subject: [PATCH 345/364] saa716x_hybrid: cleanup BRACES checkpatch warnings
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
@@ -62051,10 +61731,10 @@ index 24a5cd0b0f126..e4d1079daee53 100644
  	return IRQ_HANDLED;
  }
 
-From 26c8f1eff88eaffb5022bc877934ae1304bff218 Mon Sep 17 00:00:00 2001
+From b3838b34aeb423987d5d3f9d5d900aadc1623e59 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Thu, 27 Dec 2018 15:31:46 +0100
-Subject: [PATCH 346/362] saa716x_ff: cleanup BRACES checkpatch warnings
+Subject: [PATCH 346/364] saa716x_ff: cleanup BRACES checkpatch warnings
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
@@ -62137,10 +61817,10 @@ index 4a02fe8aff987..3a7fee3cb2e33 100644
  	}
  }
 
-From 46790a8c8f27c2aac58655ef2ea6eaa7d3deb4f8 Mon Sep 17 00:00:00 2001
+From 710a144a354da7beb3976f6fd56838dfacf39efa Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Thu, 27 Dec 2018 17:49:23 +0100
-Subject: [PATCH 347/362] saa716x_ff: add SPDX license identifier
+Subject: [PATCH 347/364] saa716x_ff: add SPDX license identifier
 
 Adopt the SPDX license identifier to ease license compliance management.
 This is not a license change.
@@ -62258,10 +61938,10 @@ index 858c8b4c6cc46..ae4ee4d7892a4 100644
  #define __SAA716x_FF_PHI_H
  
 
-From d0eead63813ea0c7c967b79e442ca72a86dda655 Mon Sep 17 00:00:00 2001
+From 2473e39cee7dc7e0b1dedccae9d2571e14b7782c Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Thu, 27 Dec 2018 17:51:40 +0100
-Subject: [PATCH 348/362] saa716x_budget: add SPDX license identifier
+Subject: [PATCH 348/364] saa716x_budget: add SPDX license identifier
 
 Adopt the SPDX license identifier to ease license compliance management.
 This is not a license change.
@@ -62293,10 +61973,10 @@ index 5cf9bd5248d0d..06d46deca6d00 100644
  #define __SAA716x_BUDGET_H
  
 
-From aa3c7335cf1f3a5210fe27d3136c020d236b9be5 Mon Sep 17 00:00:00 2001
+From 8c837e4b89fcad364121b5b4e13d8a682e81654e Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Thu, 27 Dec 2018 17:52:22 +0100
-Subject: [PATCH 349/362] saa716x_hybrid: add SPDX license identifier
+Subject: [PATCH 349/364] saa716x_hybrid: add SPDX license identifier
 
 Adopt the SPDX license identifier to ease license compliance management.
 This is not a license change.
@@ -62328,10 +62008,10 @@ index fad41be4c0671..30cc44c7eb1cb 100644
  #define __SAA716x_HYBRID_H
  
 
-From b51591b85549a0e1afd1df40f94a2c986151923d Mon Sep 17 00:00:00 2001
+From 5e08ec307929a0f326a170e5f423613e00d59087 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Thu, 27 Dec 2018 17:52:53 +0100
-Subject: [PATCH 350/362] saa716x: add SPDX license identifier
+Subject: [PATCH 350/364] saa716x: add SPDX license identifier
 
 Adopt the SPDX license identifier to ease license compliance management.
 This is not a license change.
@@ -62693,10 +62373,10 @@ index b064c3583f4e9..3e69cef4b1e3e 100644
  #define __SAA716x_VIP_REG_H
  
 
-From a8ee9b7063689d5a0bd0066928f42558f430394e Mon Sep 17 00:00:00 2001
+From 213ecdc5c949a67f61be617c11d31e75f39c6fbc Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Thu, 27 Dec 2018 19:08:10 +0100
-Subject: [PATCH 351/362] saa716x_ff: cleanup comment style and length
+Subject: [PATCH 351/364] saa716x_ff: cleanup comment style and length
 
 This fixes LONG_LINE_COMMENT and BLOCK_COMMENT_STYLE checkpatch warnings.
 
@@ -62850,10 +62530,10 @@ index 2b39f78784e06..870bec9b0b3eb 100644
  	((__cs) + ((__ready) << 8) + ((__strobe) << 12) +  ((__cycle) << 20))
  
 
-From 7a7a3e1de441551b26e4bb529e2223fc0dbac59d Mon Sep 17 00:00:00 2001
+From 603989749a4c887829bfbe5dd5a7dabffe4a9dd9 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Thu, 27 Dec 2018 19:10:41 +0100
-Subject: [PATCH 352/362] saa716x_budget: cleanup comment style
+Subject: [PATCH 352/364] saa716x_budget: cleanup comment style
 
 This fixes BLOCK_COMMENT_STYLE checkpatch warnings.
 
@@ -62883,10 +62563,10 @@ index c6159ecc8b4d9..5187551d0bc3e 100644
  				adapter->fe->ops.init(adapter->fe);
  		} else {
 
-From d8cc35326610dca6160bb5df76df99cdcf52b9ba Mon Sep 17 00:00:00 2001
+From 827faa6f0adc99eef71b1424d4bc87abe1c73097 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Thu, 27 Dec 2018 19:12:30 +0100
-Subject: [PATCH 353/362] saa716x: cleanup comment style and length
+Subject: [PATCH 353/364] saa716x: cleanup comment style and length
 
 This fixes LONG_LINE_COMMENT and BLOCK_COMMENT_STYLE checkpatch warnings.
 
@@ -63205,10 +62885,10 @@ index ea7b0d2a01b97..02cd5345ad705 100644
  		     (stream_params->samples << 16) + num_lines);
  	/* set packet YUY2 output format */
 
-From dde52cb602d54adbfd037beec6fee874a3eb5388 Mon Sep 17 00:00:00 2001
+From 4b81c925631ef7d9d7d259e23a10ee41d08c6caa Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Thu, 27 Dec 2018 23:17:32 +0100
-Subject: [PATCH 354/362] saa716x_budget: cleanup LONG_LINE checkpatch warnings
+Subject: [PATCH 354/364] saa716x_budget: cleanup LONG_LINE checkpatch warnings
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
@@ -63260,10 +62940,10 @@ index 5187551d0bc3e..9718d38b7738c 100644
  	struct saa716x_dev *dev = adapter->saa716x;
  	struct i2c_adapter *i2cadapter;
 
-From ae16e511082757f5e22821ded9ee872c38b72f91 Mon Sep 17 00:00:00 2001
+From 9653ae663e5ed7aad27fbb1a06e06479228030a2 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Thu, 27 Dec 2018 23:18:26 +0100
-Subject: [PATCH 355/362] saa716x_hybrid: cleanup LONG_LINE checkpatch warnings
+Subject: [PATCH 355/364] saa716x_hybrid: cleanup LONG_LINE checkpatch warnings
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
@@ -63354,10 +63034,10 @@ index 8bdf74dd430f6..83894b52fa27f 100644
  	MAKE_ENTRY(KWORLD, KWORLD_DVB_T_PE310, SAA7162, &saa716x_atlantis_config),
  	MAKE_ENTRY(NXP_REFERENCE_BOARD, PCI_ANY_ID, SAA7162, &saa716x_atlantis_config),
 
-From a9973cc5a0725cb30e43656a9831a44c625f5e59 Mon Sep 17 00:00:00 2001
+From bfd5b4ef5e301f83e859fe534f89528bcf6c8a40 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Thu, 27 Dec 2018 23:19:08 +0100
-Subject: [PATCH 356/362] saa716x_ff: cleanup LONG_LINE checkpatch warnings
+Subject: [PATCH 356/364] saa716x_ff: cleanup LONG_LINE checkpatch warnings
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
@@ -63924,10 +63604,10 @@ index ce652feada2da..abb63d155c600 100644
  };
  MODULE_DEVICE_TABLE(pci, saa716x_ff_pci_table);
 
-From 32c10184559b7212dfc6a3919528146b6f651d2b Mon Sep 17 00:00:00 2001
+From 65df5b234ea63511dd30df868fb8a5749229622e Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Thu, 27 Dec 2018 23:19:32 +0100
-Subject: [PATCH 357/362] saa716x: cleanup LONG_LINE checkpatch warnings
+Subject: [PATCH 357/364] saa716x: cleanup LONG_LINE checkpatch warnings
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
@@ -64563,10 +64243,10 @@ index 8676745adb6a4..b8f7b127f6b89 100644
  struct saa716x_dev;
  struct saa716x_adapter;
 
-From aaac93fd28251240eeff007b590b1b1fbe317e4a Mon Sep 17 00:00:00 2001
+From bc4ff92826e55d9f172ced4240f430fb3baea130 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Sun, 30 Dec 2018 01:01:41 +0100
-Subject: [PATCH 358/362] saa716x: do not report recoverable i2c transfer
+Subject: [PATCH 358/364] saa716x: do not report recoverable i2c transfer
  errors
 
 Do not report errors for i2c transfers that will be retried.
@@ -64670,10 +64350,10 @@ index 785bff37dc631..fcf82faf15cf6 100644
  
  static u32 saa716x_i2c_func(struct i2c_adapter *adapter)
 
-From 2e05ae7cd42cd6a029872c11cc1798f288ffce7c Mon Sep 17 00:00:00 2001
+From 69322d12fbacc8558bdaf3e139bd15781b717780 Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Fri, 28 Dec 2018 01:44:19 +0100
-Subject: [PATCH 359/362] saa716x_ff: simplify PHI code
+Subject: [PATCH 359/364] saa716x_ff: simplify PHI code
 
 Always use the fast PHI clock in the PCIe bridge, use the same slow FPGA clock
 in phi_mode=0 as before.
@@ -64861,10 +64541,10 @@ index ae4ee4d7892a4..27cb29a3b2c79 100644
  				 u32 address, const u8 *data, int length);
  extern void saa716x_ff_phi_read(struct saa716x_ff_dev *saa716x_ff,
 
-From dcd3f392f615d2605799a6d5baa043993f5fb832 Mon Sep 17 00:00:00 2001
+From f2391da5cf295d619b8eec4377f0e275a7e9880e Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Fri, 28 Dec 2018 02:31:50 +0100
-Subject: [PATCH 360/362] saa716x_budget/ff/hybrid: autoselect PCI interrupt
+Subject: [PATCH 360/364] saa716x_budget/ff/hybrid: autoselect PCI interrupt
  mode
 
 Let the PCI core decide about legacy or MSI interrupt mode, no need for the
@@ -64986,10 +64666,10 @@ index b8f7b127f6b89..7db944fbc01e0 100644
  	struct saa716x_i2c		i2c[2];
  	u32				I2C_DEV[2];
 
-From 01a93b4b0491892a8482082042809b99fadf351e Mon Sep 17 00:00:00 2001
+From 09e42974ec51c676520f5b0bc83d7f7d3bc7bdec Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
 Date: Fri, 28 Dec 2018 13:25:41 +0100
-Subject: [PATCH 361/362] saa716x_ff: autoselect phi_mode
+Subject: [PATCH 361/364] saa716x_ff: autoselect phi_mode
 
 Select phi_mode=0 for FPGA firmware versions < 1.10, phi_mode=1 otherwise.
 So we automatically use the faster mode when supported.
@@ -65200,10 +64880,247 @@ index 54b4c224193ba..29bea6a78ca2e 100644
 +	iowrite32_rep(PHI_0_0, data, length/4);
  }
 
-From 76d373a6347f00fb4d97710a5db30d5258689008 Mon Sep 17 00:00:00 2001
+From dd899187e862af654732903e19546b5943a2adfc Mon Sep 17 00:00:00 2001
 From: Soeren Moch <smoch@web.de>
-Date: Fri, 28 Dec 2018 20:40:13 +0100
-Subject: [PATCH 362/362] saa716x: hook up driver in drives/media/pci
+Date: Fri, 4 Jan 2019 09:36:02 +0100
+Subject: [PATCH 362/364] saa716x_budget: simplify TBS frontend attach code
+
+Use the recommended dvb_module_probe() / dvb_module_release() calls.
+
+Signed-off-by: Soeren Moch <smoch@web.de>
+---
+ drivers/media/pci/saa716x/saa716x_adap.c   |  17 +---
+ drivers/media/pci/saa716x/saa716x_budget.c | 109 +++++++--------------
+ 2 files changed, 38 insertions(+), 88 deletions(-)
+
+diff --git a/drivers/media/pci/saa716x/saa716x_adap.c b/drivers/media/pci/saa716x/saa716x_adap.c
+index 13013a488a9e5..11276f7cc50c1 100644
+--- a/drivers/media/pci/saa716x/saa716x_adap.c
++++ b/drivers/media/pci/saa716x/saa716x_adap.c
+@@ -292,7 +292,6 @@ EXPORT_SYMBOL(saa716x_dvb_init);
+ void saa716x_dvb_exit(struct saa716x_dev *saa716x)
+ {
+ 	struct saa716x_adapter *saa716x_adap = saa716x->saa716x_adap;
+-	struct i2c_client *client;
+ 	int i;
+ 
+ 	for (i = 0; i < saa716x->config->adapters; i++) {
+@@ -300,19 +299,11 @@ void saa716x_dvb_exit(struct saa716x_dev *saa716x)
+ 		saa716x_fgpi_exit(saa716x,
+ 				  saa716x->config->adap_config[i].ts_fgpi);
+ 
+-		/* remove I2C tuner */
+-		client = saa716x_adap->i2c_client_tuner;
+-		if (client) {
+-			module_put(client->dev.driver->owner);
+-			i2c_unregister_device(client);
+-		}
++		/* remove I2C tuner if available */
++		dvb_module_release(saa716x_adap->i2c_client_tuner);
+ 
+-		/* remove I2C demod */
+-		client = saa716x_adap->i2c_client_demod;
+-		if (client) {
+-			module_put(client->dev.driver->owner);
+-			i2c_unregister_device(client);
+-		}
++		/* remove I2C demod if available */
++		dvb_module_release(saa716x_adap->i2c_client_demod);
+ 
+ 		if (saa716x_adap->fe) {
+ 			dvb_unregister_frontend(saa716x_adap->fe);
+diff --git a/drivers/media/pci/saa716x/saa716x_budget.c b/drivers/media/pci/saa716x/saa716x_budget.c
+index 49e1f7598a1ec..60094d0b16bdb 100644
+--- a/drivers/media/pci/saa716x/saa716x_budget.c
++++ b/drivers/media/pci/saa716x/saa716x_budget.c
+@@ -315,11 +315,9 @@ static int saa716x_tbs6281_frontend_attach(struct saa716x_adapter *adapter,
+ 					   int count)
+ {
+ 	struct saa716x_dev *dev = adapter->saa716x;
+-	struct i2c_adapter *i2cadapter;
+-	struct i2c_client *client;
+-	struct i2c_board_info info;
+-	struct si2168_config si2168_config;
+-	struct si2157_config si2157_config;
++	struct i2c_adapter *i2c_adapter;
++	struct si2168_config si2168_config = {};
++	struct si2157_config si2157_config = {};
+ 
+ 	if (count > 1)
+ 		goto err;
+@@ -332,47 +330,27 @@ static int saa716x_tbs6281_frontend_attach(struct saa716x_adapter *adapter,
+ 	msleep(100);
+ 
+ 	/* attach demod */
+-	memset(&si2168_config, 0, sizeof(si2168_config));
+-	si2168_config.i2c_adapter = &i2cadapter;
++	si2168_config.i2c_adapter = &i2c_adapter;
+ 	si2168_config.fe = &adapter->fe;
+ 	si2168_config.ts_mode = SI2168_TS_PARALLEL;
+ 	si2168_config.ts_clock_gapped = true;
+-	memset(&info, 0, sizeof(struct i2c_board_info));
+-	strlcpy(info.type, "si2168", I2C_NAME_SIZE);
+-	info.addr = 0x64;
+-	info.platform_data = &si2168_config;
+-	request_module(info.type);
+-	client = i2c_new_device(&dev->i2c[1 - count].i2c_adapter, &info);
+-	if (client == NULL || client->dev.driver == NULL)
++	adapter->i2c_client_demod =
++			dvb_module_probe("si2168", NULL,
++					 &dev->i2c[1 - count].i2c_adapter,
++					 0x64, &si2168_config);
++	if (!adapter->i2c_client_demod)
+ 		goto err;
+-	if (!try_module_get(client->dev.driver->owner)) {
+-		i2c_unregister_device(client);
+-		goto err;
+-	}
+-	adapter->i2c_client_demod = client;
+ 
+ 	/* attach tuner */
+-	memset(&si2157_config, 0, sizeof(si2157_config));
+ 	si2157_config.fe = adapter->fe;
+ 	si2157_config.if_port = 1;
+-	memset(&info, 0, sizeof(struct i2c_board_info));
+-	strlcpy(info.type, "si2157", I2C_NAME_SIZE);
+-	info.addr = 0x60;
+-	info.platform_data = &si2157_config;
+-	request_module(info.type);
+-	client = i2c_new_device(i2cadapter, &info);
+-	if (client == NULL || client->dev.driver == NULL) {
+-		module_put(adapter->i2c_client_demod->dev.driver->owner);
+-		i2c_unregister_device(adapter->i2c_client_demod);
++	adapter->i2c_client_tuner = dvb_module_probe("si2157", NULL,
++						     i2c_adapter,
++						     0x60, &si2157_config);
++	if (!adapter->i2c_client_tuner) {
++		dvb_module_release(adapter->i2c_client_demod);
+ 		goto err;
+ 	}
+-	if (!try_module_get(client->dev.driver->owner)) {
+-		i2c_unregister_device(client);
+-		module_put(adapter->i2c_client_demod->dev.driver->owner);
+-		i2c_unregister_device(adapter->i2c_client_demod);
+-		goto err;
+-	}
+-	adapter->i2c_client_tuner = client;
+ 
+ 	pci_dbg(dev->pdev, "%s frontend %d attached",
+ 		dev->config->model_name, count);
+@@ -413,60 +391,41 @@ static int saa716x_tbs6285_frontend_attach(struct saa716x_adapter *adapter,
+ 					   int count)
+ {
+ 	struct saa716x_dev *dev = adapter->saa716x;
+-	struct i2c_adapter *i2cadapter;
+-	struct i2c_client *client;
+-	struct i2c_board_info info;
+-	struct si2168_config si2168_config;
+-	struct si2157_config si2157_config;
++	struct i2c_adapter *i2c_adapter;
++	struct si2168_config si2168_config = {};
++	struct si2157_config si2157_config = {};
+ 
+ 	if (count > 3)
+ 		goto err;
+ 
+ 	/* attach demod */
+-	memset(&si2168_config, 0, sizeof(si2168_config));
+-	si2168_config.i2c_adapter = &i2cadapter;
++	si2168_config.i2c_adapter = &i2c_adapter;
+ 	si2168_config.fe = &adapter->fe;
+ 	si2168_config.ts_mode = SI2168_TS_SERIAL;
+ 	si2168_config.ts_clock_gapped = true;
+-	memset(&info, 0, sizeof(struct i2c_board_info));
+-	strlcpy(info.type, "si2168", I2C_NAME_SIZE);
+-	info.addr = ((count == 0) || (count == 2)) ? 0x64 : 0x66;
+-	info.platform_data = &si2168_config;
+-	request_module(info.type);
+-	client = i2c_new_device(((count == 0) || (count == 1)) ?
+-		&dev->i2c[1].i2c_adapter : &dev->i2c[0].i2c_adapter,
+-		&info);
+-	if (client == NULL || client->dev.driver == NULL)
++	adapter->i2c_client_demod =
++			dvb_module_probe("si2168", NULL,
++					 ((count == 0) || (count == 1)) ?
++					  &dev->i2c[1].i2c_adapter :
++					  &dev->i2c[0].i2c_adapter,
++					 ((count == 0) || (count == 2)) ?
++					  0x64 : 0x66,
++					 &si2168_config);
++	if (!adapter->i2c_client_demod)
+ 		goto err;
+ 
+-	if (!try_module_get(client->dev.driver->owner)) {
+-		i2c_unregister_device(client);
+-		goto err;
+-	}
+-	adapter->i2c_client_demod = client;
+-
+ 	/* attach tuner */
+-	memset(&si2157_config, 0, sizeof(si2157_config));
+ 	si2157_config.fe = adapter->fe;
+ 	si2157_config.if_port = 1;
+-	memset(&info, 0, sizeof(struct i2c_board_info));
+-	strlcpy(info.type, "si2157", I2C_NAME_SIZE);
+-	info.addr = ((count == 0) || (count == 2)) ? 0x62 : 0x60;
+-	info.platform_data = &si2157_config;
+-	request_module(info.type);
+-	client = i2c_new_device(i2cadapter, &info);
+-	if (client == NULL || client->dev.driver == NULL) {
+-		module_put(adapter->i2c_client_demod->dev.driver->owner);
+-		i2c_unregister_device(adapter->i2c_client_demod);
+-		goto err;
+-	}
+-	if (!try_module_get(client->dev.driver->owner)) {
+-		i2c_unregister_device(client);
+-		module_put(adapter->i2c_client_demod->dev.driver->owner);
+-		i2c_unregister_device(adapter->i2c_client_demod);
++	adapter->i2c_client_tuner =
++			dvb_module_probe("si2157", NULL, i2c_adapter,
++					 ((count == 0) || (count == 2)) ?
++					  0x62 : 0x60,
++					 &si2157_config);
++	if (!adapter->i2c_client_tuner) {
++		dvb_module_release(adapter->i2c_client_demod);
+ 		goto err;
+ 	}
+-	adapter->i2c_client_tuner = client;
+ 
+ 	pci_dbg(dev->pdev, "%s frontend %d attached",
+ 		dev->config->model_name, count);
+
+From d4e61dc0ffef5e31ca7cc9ef462a354a0787a570 Mon Sep 17 00:00:00 2001
+From: Uwe Scheffler <scheffler.u@web.de>
+Date: Sat, 12 Jan 2019 13:57:56 +0100
+Subject: [PATCH 363/364] saa716x_ff : reduce ir repeat delay and period
+
+The S2-6400 card comes with an infrared remote
+control that reacts more smoothly with this change.
+
+Signed-off-by: Uwe Scheffler <scheffler.u@web.de>
+Signed-off-by: Soeren Moch <smoch@web.de>
+---
+ drivers/media/pci/saa716x/saa716x_ff_ir.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/drivers/media/pci/saa716x/saa716x_ff_ir.c b/drivers/media/pci/saa716x/saa716x_ff_ir.c
+index 936258c471c0a..f95d3e690c046 100644
+--- a/drivers/media/pci/saa716x/saa716x_ff_ir.c
++++ b/drivers/media/pci/saa716x/saa716x_ff_ir.c
+@@ -173,7 +173,7 @@ int saa716x_ir_init(struct saa716x_ff_dev *saa716x_ff)
+ 		ir->key_map[i] = i+1;
+ 	ir_register_keys(ir);
+ 
+-	input_enable_softrepeat(input_dev, 800, 200);
++	input_enable_softrepeat(input_dev, 400, 125);
+ 	tasklet_init(&ir->tasklet, ir_emit_key, (unsigned long) saa716x_ff);
+ 	return 0;
+ 
+
+From f68ceb79b3d1f3a0b53e0ca51727b9299addede1 Mon Sep 17 00:00:00 2001
+From: Soeren Moch <smoch@web.de>
+Date: Fri, 4 Jan 2019 09:40:13 +0100
+Subject: [PATCH 364/364] saa716x: hook up driver in drivers/media/pci
 
 Signed-off-by: Soeren Moch <smoch@web.de>
 ---
